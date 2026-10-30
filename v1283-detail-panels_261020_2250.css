@@ -1,0 +1,132 @@
+/* V1.2.79 detail panels; scoped to new nodes and existing lecture theme. */
+#wordDetailDialog .v1278-detail-panel{--v1278-base:var(--v1242-content-body-size,var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1.125))));--v1278-small:max(12px,calc(var(--v1278-base) * .5));--v1278-label:max(15px,calc(var(--v1278-base) * .6666666667));--v1278-english:calc(var(--v1278-base) * .7407407407);--v1278-chinese:calc(var(--v1278-base) * .6666666667);--v1278-type-0:#648fff;--v1278-type-1:#80a4ff;--v1278-type-2:#9bbaff;--v1278-type-3:#b1ccff;--v1278-type-4:#c5dcff;--v1278-type-5:#9dc2ff;--v1278-type-6:#80b1ff;container-type:inline-size;width:100%;min-width:0;color:var(--lecture-text);font-family:inherit;font-size:var(--v1278-label);line-height:1.5;}
+#wordDetailDialog .v1278-detail-panel *{box-sizing:border-box;}
+#wordDetailDialog .v1278-detail-panel [hidden]{display:none!important;}
+#wordDetailDialog .v1278-detail-panel button{font-family:inherit;cursor:pointer;}
+#wordDetailDialog .v1278-detail-panel button:focus-visible,#wordDetailDialog .v1278-example:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:3px;}
+#wordDetailDialog .v1278-detail-panel button:disabled{cursor:default;}
+#wordDetailDialog .v1278-managed-panel>.vwn-panel-scroll{display:block;min-width:0;padding-top:12px;}
+#wordDetailDialog .v1278-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 12px;}
+#wordDetailDialog .v1278-panel-heading h3{margin:0;color:var(--lecture-text);font-size:var(--v1278-label);font-weight:700;line-height:1.5;}
+#wordDetailDialog :is(.v1278-result-count,.v1278-chart-count,.v1278-current-edition){font-size:var(--v1278-small);color:var(--lecture-muted);font-weight:400;}
+#wordDetailDialog .v1278-exam-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,1fr);gap:24px;align-items:start;}
+#wordDetailDialog .v1278-exam-examples{min-width:0;}
+#wordDetailDialog .v1278-meanings-chart{min-width:0;position:sticky;top:0;padding:16px;border:1px solid var(--lecture-border);border-radius:9px;background:var(--lecture-panel);}
+#wordDetailDialog .v1278-type-selector{margin:0 0 10px;min-width:0;}
+#wordDetailDialog .v1278-type-strip{display:flex;align-items:stretch;width:100%;min-height:54px;overflow:hidden;border-radius:7px;background:color-mix(in srgb,var(--lecture-border) 65%,var(--lecture-panel));}
+#wordDetailDialog .v1278-type-segment{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;min-width:0;max-width:100%;margin:0;padding:7px 1px;border:0;border-radius:0;background:var(--v1278-type-color);color:#fff;font-size:var(--v1278-small);line-height:1.35;overflow:hidden;transition:opacity .12s;}
+#wordDetailDialog .v1278-type-segment>span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#wordDetailDialog .v1278-type-segment>b{font-size:var(--v1278-label);line-height:1.2;}
+#wordDetailDialog .v1278-type-segment:hover{box-shadow:inset 0 0 0 2px rgba(255,255,255,.65);}
+#wordDetailDialog .v1278-type-segment:focus-visible{outline-offset:-3px;outline-color:#fff;}
+#wordDetailDialog [data-v1278-type-active] .v1278-type-segment[aria-pressed="false"]{opacity:.5;}
+#wordDetailDialog .v1278-type-segment[aria-pressed="true"]{box-shadow:inset 0 0 0 3px #fff, inset 0 -6px 0 rgba(18,57,94,.3);filter:brightness(1.08);}
+#wordDetailDialog .v1278-detail-panel :is(.v1278-pos-filter,.v1278-edition-switch){position:static;display:inline-flex;gap:0;align-items:center;min-height:32px;padding:2px;border:1px solid var(--lecture-border);border-radius:8px;background:var(--lecture-panel);}
+#wordDetailDialog .v1278-detail-panel :is(.v1278-pos-filter,.v1278-edition-switch)>button{min-height:28px;margin:0;padding:4px 11px;border:0;border-radius:6px;background:transparent;color:var(--lecture-text);font-size:var(--v1278-small);font-weight:700;line-height:1.4;white-space:nowrap;}
+#wordDetailDialog .v1278-detail-panel :is(.v1278-pos-filter,.v1278-edition-switch)>button[aria-pressed="true"]{background:var(--lecture-primary);color:#fff;}
+#wordDetailDialog .v1278-pos-filter{margin-bottom:14px;}
+#wordDetailDialog :is(.v1278-location-status,.v1278-chart-policy){margin:11px 0 0;color:var(--lecture-muted);font-size:var(--v1278-small);line-height:1.5;overflow-wrap:anywhere;}
+#wordDetailDialog .v1278-location-status:empty{display:none;}
+#wordDetailDialog .v1278-example-list{width:100%;min-width:0;}
+#wordDetailDialog .v1278-example{display:flex;gap:12px;min-width:0;margin:0;padding:20px 0;border-bottom:1px solid var(--lecture-border);border-radius:0;}
+#wordDetailDialog .v1278-example.is-located{padding-inline:10px;border-radius:7px;background:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel));box-shadow:inset 3px 0 var(--lecture-primary);}
+#wordDetailDialog .v1278-example-number{flex:0 0 22px;padding-top:5px;font-size:var(--v1278-small);color:var(--lecture-muted);line-height:1.5;}
+#wordDetailDialog .v1278-example-copy{flex:1 1 auto;min-width:0;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel .v1278-native-example{display:block!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel .v1278-native-example>.v1223-sense-example-line{display:flex!important;flex-direction:column;align-items:flex-start;gap:0;min-width:0;margin:0;padding:0!important;border:0!important;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel .v1223-example-text{display:block;min-width:0;width:100%;margin:0 0 5px;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel .v1223-example-copy{font-size:var(--v1278-english)!important;line-height:1.5!important;color:var(--lecture-text);white-space:pre-wrap;overflow-wrap:anywhere;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel .v1222-sense-example-translation{margin:0 0 7px!important;padding:0!important;color:var(--lecture-muted);font-size:var(--v1278-chinese)!important;line-height:1.5!important;white-space:pre-wrap;overflow-wrap:anywhere;}
+#wordDetailDialog .resource-popover-body .v1278-detail-panel :is(.v1223-example-copy,.v1222-sense-example-translation) :is(span,strong,b,i,em,u){font-size:inherit!important;}
+#wordDetailDialog .v1278-example-metadata{display:flex;align-items:center;flex-wrap:wrap;gap:5px 6px;min-width:0;margin-top:4px;line-height:1.5;}
+#wordDetailDialog .v1278-example-metadata>span{display:inline-flex;align-items:center;min-height:21px;max-width:100%;margin:0;padding:1px 6px;border:1px solid var(--lecture-border);border-radius:4px;font-size:var(--v1278-small)!important;font-weight:400;line-height:1.4;overflow-wrap:anywhere;}
+#wordDetailDialog .v1278-example-metadata>.v1278-meaning-chip{background:color-mix(in srgb,var(--lecture-primary) 8%,var(--lecture-panel));color:var(--lecture-primary);border-color:color-mix(in srgb,var(--lecture-primary) 22%,var(--lecture-border));}
+#wordDetailDialog .v1278-example-metadata>.v1278-provenance-chip{background:color-mix(in srgb,var(--lecture-muted) 8%,var(--lecture-panel));color:var(--lecture-muted);border-color:color-mix(in srgb,var(--lecture-muted) 15%,var(--lecture-panel));}
+#wordDetailDialog .v1278-example-metadata>.v1278-topic-chip{background:color-mix(in srgb,var(--lecture-primary) 17%,var(--lecture-panel));color:var(--lecture-primary);border-color:color-mix(in srgb,var(--lecture-primary) 32%,var(--lecture-border));font-weight:700;}
+#wordDetailDialog .v1278-example-metadata>.v1278-mock-chip{color:var(--lecture-muted);background:var(--lecture-panel);border-style:dashed;}
+#wordDetailDialog .v1278-textbook-summary{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;margin:0 0 2px;}
+#wordDetailDialog .v1278-empty{padding:24px 8px;text-align:center;color:var(--lecture-muted);font-size:var(--v1278-label);line-height:1.6;}
+@container (max-width:850px){#wordDetailDialog .v1278-exam-layout{grid-template-columns:minmax(0,1fr);}#wordDetailDialog .v1278-meanings-chart{position:static;}}
+@media(max-width:1000px){#wordDetailDialog .v1278-exam-layout{grid-template-columns:minmax(0,1fr);}#wordDetailDialog .v1278-meanings-chart{position:static;}#wordDetailDialog .v1278-type-segment{min-height:48px;}#wordDetailDialog .v1278-example{gap:8px;}}
+@media(prefers-reduced-motion:reduce){#wordDetailDialog .v1278-type-segment{transition:none;}}
+
+/* The October 20 naming revision separates the two views, retaining state. */
+#wordDetailDialog .v1278-exam-layout{display:block;}
+#wordDetailDialog .v1278-statistics-content{max-width:1080px;margin:0 auto;}
+#wordDetailDialog .v1278-statistics-content .v1278-meanings-chart{position:static;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-detail-panel .v1278-example-metadata>span{font-size:var(--v1278-small)!important;line-height:1.5!important;padding:2px 8px!important;min-height:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-detail-panel :is(.v1278-panel-heading h3){font-size:var(--v1278-label)!important;}
+
+/* One shared table and donut; both follow the dimension switch. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .vwn-panel .v1278-type-segment>b{color:#fff!important;}
+#wordDetailDialog .v1278-statistics-content{max-width:1120px;}
+#wordDetailDialog .v1279-statistics-heading{flex-wrap:nowrap;align-items:center;}
+#wordDetailDialog .v1279-statistics-switch{position:static;display:inline-flex;align-items:center;flex:0 0 auto;gap:0;padding:3px;border:1px solid var(--lecture-border);border-radius:8px;background:var(--lecture-panel);}
+#wordDetailDialog .v1279-statistics-switch>button{margin:0;min-height:32px;padding:5px 17px;border:0;border-radius:5px;background:transparent;color:var(--lecture-muted);font-size:var(--v1278-small);font-weight:700;line-height:1.4;}
+#wordDetailDialog .v1279-statistics-switch>button[aria-pressed="true"]{background:var(--lecture-primary);color:#fff;}
+#wordDetailDialog .v1279-statistics-filters{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;margin-bottom:14px;}
+#wordDetailDialog .v1279-statistics-filters .v1278-pos-filter{margin:0;flex-wrap:wrap;max-width:100%;}
+#wordDetailDialog .v1279-statistics-chart{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.85fr);gap:26px;align-items:start;min-width:0;}
+#wordDetailDialog .v1279-stat-table-wrap{min-width:0;max-width:100%;overflow-x:auto;}
+#wordDetailDialog .v1279-stat-table{width:100%;border-collapse:collapse;table-layout:auto;color:var(--lecture-text);font-size:var(--v1278-label);line-height:1.5;}
+#wordDetailDialog .v1279-stat-table th{padding:10px 9px;border-bottom:1px solid var(--lecture-border);background:color-mix(in srgb,var(--lecture-primary) 5%,var(--lecture-panel));color:var(--lecture-muted);text-align:left;font-size:var(--v1278-small);font-weight:600;white-space:nowrap;}
+#wordDetailDialog .v1279-stat-table td{padding:9px;border-bottom:1px solid var(--lecture-border);vertical-align:middle;overflow-wrap:anywhere;}
+#wordDetailDialog .v1279-stat-table td:first-child{white-space:nowrap;}
+#wordDetailDialog .v1279-stat-table .v1279-stat-number{width:1%;color:var(--lecture-text);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;}
+#wordDetailDialog .v1279-stat-table tr.is-selected{background:color-mix(in srgb,var(--lecture-primary) 8%,var(--lecture-panel));}
+#wordDetailDialog .v1279-stat-table tr.is-selected td:first-child{box-shadow:inset 3px 0 var(--lecture-primary);}
+#wordDetailDialog .v1279-stat-link{display:inline-flex;align-items:center;gap:9px;width:100%;min-width:0;min-height:32px;margin:0;padding:2px 0;border:0;border-radius:3px;background:transparent;color:inherit;text-align:left;font-size:inherit;font-weight:400;line-height:1.5;overflow-wrap:anywhere;}
+#wordDetailDialog .v1279-stat-link:hover{color:var(--lecture-primary);}
+#wordDetailDialog .v1279-stat-link>span{min-width:0;overflow-wrap:anywhere;}
+#wordDetailDialog .v1279-stat-swatch{display:inline-block;flex:0 0 10px;width:10px;height:10px;border-radius:3px;}
+#wordDetailDialog .v1279-donut-wrap{position:sticky;top:8px;display:flex;justify-content:center;align-items:center;min-width:0;padding:8px;}
+#wordDetailDialog .v1279-donut{display:block;width:100%;max-width:320px;height:auto;overflow:visible;}
+#wordDetailDialog .v1279-donut-segment{stroke:var(--lecture-panel);stroke-width:2;cursor:pointer;transition:opacity .12s,filter .12s;}
+#wordDetailDialog .v1279-donut-segment:hover{filter:brightness(1.1);stroke:var(--lecture-text);stroke-width:2;}
+#wordDetailDialog .v1279-donut-segment:focus-visible{outline:none;stroke:var(--lecture-text);stroke-width:4;}
+#wordDetailDialog [data-selected] .v1279-donut-segment[aria-pressed="false"]{opacity:.38;}
+#wordDetailDialog .v1279-donut-segment[aria-pressed="true"]{stroke:var(--lecture-text);stroke-width:3;}
+#wordDetailDialog .v1279-donut-total{fill:var(--lecture-text);font-family:inherit;font-size:36px;font-weight:700;}
+#wordDetailDialog .v1279-donut-caption{fill:var(--lecture-muted);font-family:inherit;font-size:14px;}
+#wordDetailDialog .v1279-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;}
+@container (max-width:690px){#wordDetailDialog .v1279-statistics-chart{grid-template-columns:minmax(0,1fr);gap:16px;}#wordDetailDialog .v1279-donut-wrap{position:static;grid-row:2;}#wordDetailDialog .v1279-donut{max-width:270px;}}
+@media(max-width:650px){#wordDetailDialog .v1279-statistics-chart{grid-template-columns:minmax(0,1fr);gap:16px;}#wordDetailDialog .v1279-donut-wrap{position:static;}#wordDetailDialog .v1279-donut{max-width:270px;}#wordDetailDialog .v1279-stat-table th,#wordDetailDialog .v1279-stat-table td{padding-inline:6px;}}
+@media(prefers-reduced-motion:reduce){#wordDetailDialog .v1279-donut-segment{transition:none;}}
+
+/* Reset the inherited 980px generic table minimum inside this responsive chart. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-stat-table{width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-stat-table :is(th,td){width:auto!important;min-width:0!important;max-width:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-statistics-chart[data-mode="meaning"] .v1279-stat-table :is(th,td):first-child{width:54px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-statistics-chart .v1279-stat-table :is(th,td):nth-last-child(2){width:56px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-statistics-chart .v1279-stat-table :is(th,td):last-child{width:64px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-stat-table-wrap{overflow:visible!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-stat-link{white-space:normal!important;}
+
+/* V80 chart colours follow the bright blue lecture theme, with no dark outlines. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .vwn-panel .v1278-type-segment,#wordDetailDialog.vwn-dialog.v1220-dialog .vwn-panel .v1278-type-segment>b{color:#173f94!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .vwn-panel .v1278-type-segment[aria-pressed="true"]{background:var(--lecture-primary,#2864f0)!important;color:#fff!important;box-shadow:inset 0 -3px 0 #b8d2ff!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .vwn-panel .v1278-type-segment[aria-pressed="true"]>b{color:#fff!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-donut-segment:hover,#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-donut-segment[aria-pressed="true"]{stroke:#c7d9ff!important;stroke-width:3!important;filter:none;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1279-donut-segment:focus-visible{stroke:var(--lecture-primary,#2864f0)!important;stroke-width:4!important;}
+
+/* V81: one combined examination lesson, with independently scrolling examples. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson>.v1278-exam-layout{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr)!important;gap:24px!important;height:var(--v1281-exam-room,560px);min-height:220px;max-height:var(--v1281-exam-room,560px);align-items:stretch;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-scroll-column{min-height:0;min-width:0;display:flex;flex-direction:column;overflow:hidden;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-scroll-column>.v1278-example-list{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:14px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1278-meanings-chart{position:static!important;min-width:0;min-height:0;max-height:100%;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:14px;border-radius:10px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-statistics-chart{grid-template-columns:minmax(0,1fr) minmax(170px,.8fr)!important;gap:10px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-donut{max-width:240px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-stat-table{font-size:12px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-stat-table :is(th,td){padding:5px 4px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-stat-link{min-height:24px;font-size:12px;line-height:1.4;gap:5px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-statistics-chart[data-mode="meaning"] .v1279-stat-table :is(th,td):first-child{width:30px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-statistics-chart .v1279-stat-table :is(th,td):nth-last-child(2){width:32px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-statistics-chart .v1279-stat-table :is(th,td):last-child{width:44px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-meaning-heading{margin:0;padding:10px 0 8px;color:var(--lecture-primary,#2864f0);font-size:16px;line-height:1.5;font-weight:650;border-bottom:1px solid var(--lecture-border);}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1278-example{padding-block:15px;}
+@media(max-width:1050px){#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson>.v1278-exam-layout{gap:16px!important;grid-template-columns:minmax(0,1fr) minmax(0,.9fr)!important;}#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-statistics-chart{display:flex!important;flex-direction:column-reverse;}#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-donut-wrap{align-self:center;position:static;max-width:210px;}#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson .v1279-stat-table-wrap{width:100%;}}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-content:has(.vwn-panel[aria-labelledby$="-tab-cases"]:not([hidden])){min-height:0!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog>.resource-popover-body:has(.vwn-panel[aria-labelledby$="-tab-cases"]:not([hidden])){scroll-behavior:auto!important;}

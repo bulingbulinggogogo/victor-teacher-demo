@@ -1,0 +1,67 @@
+/* V71 example UI. V70 filter/selection/export layout stays unchanged. Every content rule is confined to the two managed example panels. */
+#wordDetailDialog .v1270-example-contact{display:block;min-width:0;border:0;padding:0;margin:0;background:transparent;}
+#wordDetailDialog[data-v1270-example-active] .vwn-main-nav{margin-bottom:0!important;padding-bottom:0!important;min-height:40px;align-items:stretch;row-gap:0;}
+#wordDetailDialog[data-v1270-example-active] .vwn-main-nav>button{min-height:40px;height:auto;align-self:stretch;margin-block:0;}
+#wordDetailDialog[data-v1270-example-active] .vwn-main-nav>button::after{bottom:0;}
+#wordDetailDialog[data-v1270-example-active] .v1270-example-contact{margin-top:calc(-1 * var(--v1270-nav-gap,0px));}
+#wordDetailDialog .v1270-filter-slot{min-width:0;width:100%;margin:0;padding:0;}
+#wordDetailDialog .v1270-filter-slot[hidden],#wordDetailDialog .v1270-example-controls[hidden]{display:none!important;}
+#wordDetailDialog .v1270-example-controls{position:relative;min-width:0;width:100%;margin:0;padding:16px;border:1px solid var(--lecture-border);border-radius:0 0 7px 7px;background:var(--lecture-panel);font-family:inherit;color:var(--lecture-text);font-size:var(--v1270-font-14);line-height:1.5;}
+#wordDetailDialog .v1270-example-controls *,#wordDetailDialog .v1270-example-browser *{box-sizing:border-box;}
+#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser) button,#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser) input{font-family:inherit;}
+#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser) button{cursor:pointer;}
+#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser) button:disabled{opacity:.45;cursor:default;}
+#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser) :is(button,input):focus-visible{outline:2px solid var(--lecture-primary);outline-offset:2px;}
+#wordDetailDialog .v1270-filter-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:10px;}
+#wordDetailDialog .v1270-filter-row:first-child{padding-right:calc(var(--v1270-type-base) * 11.11111111);min-height:34px;}
+#wordDetailDialog .v1270-filter-label{flex:0 0 calc(var(--v1270-type-base) * 2.296296296);padding:7px 0;color:var(--lecture-muted);font-size:var(--v1270-font-14);line-height:1.45;}
+#wordDetailDialog .v1270-filter-options{display:flex;flex-wrap:wrap;min-width:0;gap:6px 8px;}
+#wordDetailDialog .v1270-filter-options>button{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 12px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--lecture-text);font-size:var(--v1270-font-13);font-weight:700;line-height:1.4;}
+#wordDetailDialog .v1270-filter-options>button:hover{background:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel));border-color:var(--lecture-border);color:var(--lecture-primary);}
+#wordDetailDialog .v1270-filter-options>button[aria-pressed="true"]{background:color-mix(in srgb,var(--lecture-primary) 12%,var(--lecture-panel));border-color:var(--lecture-border);color:var(--lecture-primary);}
+#wordDetailDialog .v1270-keyword-row{display:flex;align-items:center;gap:12px;margin-top:12px;}
+#wordDetailDialog .v1270-keyword-row>label{display:flex;align-items:center;gap:14px;min-width:0;flex:0 1 580px;}
+#wordDetailDialog .v1270-keyword-row>label>span{flex:0 0 calc(var(--v1270-type-base) * 2.296296296);font-size:var(--v1270-font-14);color:var(--lecture-muted);}
+#wordDetailDialog .v1270-keyword-row input{width:100%;min-width:120px;height:36px;padding:0 11px;border:1px solid var(--lecture-border);border-radius:6px;background:var(--lecture-panel);color:var(--lecture-text);font-size:var(--v1270-font-14);line-height:normal;}
+#wordDetailDialog .v1270-keyword-row>button{border:0;background:transparent;color:var(--lecture-primary);padding:5px 0;font-size:var(--v1270-font-13);white-space:nowrap;}
+#wordDetailDialog .v1270-sort{display:inline-flex;align-items:center;gap:10px;position:absolute;right:16px;top:17px;font-size:var(--v1270-font-12);line-height:1.4;white-space:nowrap;}
+#wordDetailDialog .v1270-sort>span{font-size:var(--v1270-font-12);font-weight:500;color:var(--lecture-muted);}
+#wordDetailDialog .v1270-sort-segments{display:inline-flex;align-items:center;min-height:32px;gap:0;padding:2px;border:1px solid var(--lecture-border);border-radius:8px;background:var(--lecture-panel);}
+#wordDetailDialog .v1270-sort-segments>button{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border:0;border-radius:6px;background:transparent;color:var(--lecture-text);font-size:var(--v1270-font-12);font-weight:700;line-height:1.4;white-space:nowrap;}
+#wordDetailDialog .v1270-sort-segments>button[aria-pressed="true"]{background:var(--lecture-primary);color:#fff;}
+#wordDetailDialog .v1270-example-panel>.vwn-panel-scroll{display:block;min-width:0;padding:0;}
+#wordDetailDialog .v1270-example-browser{width:100%;min-width:0;font-family:inherit;font-size:var(--v1270-font-14);color:var(--lecture-text);line-height:1.5;}
+#wordDetailDialog .v1270-result-summary{display:flex;align-items:center;flex-wrap:wrap;gap:8px 26px;margin:17px 0 12px;color:var(--lecture-muted);font-size:var(--v1270-font-14);}
+#wordDetailDialog .v1270-result-summary b{font-size:var(--v1270-font-15);font-weight:600;color:var(--lecture-primary);}
+#wordDetailDialog .v1270-outside,#wordDetailDialog .v1270-mock-summary{color:var(--lecture-muted);font-size:var(--v1270-font-12);}
+#wordDetailDialog .v1270-example-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding-bottom:13px;border-bottom:1px solid var(--lecture-border);}
+#wordDetailDialog .v1270-example-actions>label{display:inline-flex;align-items:center;gap:8px;font-size:var(--v1270-font-13);color:var(--lecture-text);cursor:pointer;}
+#wordDetailDialog .v1270-example-actions>button{min-height:34px;padding:0 11px;border:1px solid var(--lecture-border);border-radius:6px;background:var(--lecture-panel);color:var(--lecture-text);font-size:var(--v1270-font-13);font-weight:600;line-height:1.4;}
+#wordDetailDialog .v1270-example-actions>.v1270-export{border-color:var(--lecture-border);background:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel));color:var(--lecture-primary);}
+#wordDetailDialog .v1270-action-spacer{flex:1 1 12px;}
+#wordDetailDialog .v1270-example-browser input[type="checkbox"]{appearance:auto;accent-color:var(--lecture-primary);width:16px;height:16px;min-width:16px;margin:0;cursor:pointer;}
+#wordDetailDialog .v1270-example-row{display:flex;align-items:flex-start;gap:13px;padding:20px 0;border-bottom:1px solid var(--lecture-border);min-width:0;}
+#wordDetailDialog .v1270-example-choice{display:flex;align-items:center;gap:9px;flex:0 0 54px;padding-top:7px;}
+#wordDetailDialog .v1270-example-number{font-size:var(--v1270-font-12);color:var(--lecture-muted);}
+#wordDetailDialog .v1270-example-copy{flex:1 1 auto;min-width:0;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example{display:block!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example>.v1223-sense-example-line{display:flex!important;flex-direction:column;align-items:flex-start;gap:0;min-width:0;margin:0;padding:0!important;border:0!important;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example .v1223-example-text{display:block;min-width:0;width:100%;margin:0 0 5px;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example .v1223-example-copy{font-size:var(--v1270-font-20)!important;line-height:1.5!important;color:var(--lecture-text);white-space:pre-wrap;overflow-wrap:anywhere;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example .v1222-sense-example-translation{margin:0 0 6px!important;padding:0!important;font-size:var(--v1270-font-18)!important;line-height:1.5!important;color:var(--lecture-muted);white-space:pre-wrap;overflow-wrap:anywhere;}
+#wordDetailDialog .v1270-example-meaning{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:0 0 4px;font-size:var(--v1270-font-13)!important;line-height:1.6!important;color:var(--lecture-muted);}
+#wordDetailDialog .v1270-source-tags{display:flex!important;align-items:center;flex-wrap:wrap;gap:4px 6px;width:100%;margin:0!important;padding:0!important;font-size:var(--v1270-font-12)!important;line-height:1.4!important;}
+#wordDetailDialog .v1270-source-tags .v1270-source-tag{display:inline-flex;align-items:center;min-height:21px;max-width:100%;padding:1px 6px;border:1px solid var(--lecture-border);border-radius:4px;background:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel));color:var(--lecture-muted);font-size:var(--v1270-font-12)!important;font-weight:400;line-height:1.4;overflow-wrap:anywhere;}
+#wordDetailDialog .v1270-source-tags .v1270-mock-tag{border-style:dashed;}
+#wordDetailDialog .v1270-example-empty{padding:32px 10px;text-align:center;font-size:var(--v1270-font-15);color:var(--lecture-muted);}
+#wordDetailDialog .v1270-export-status{min-height:22px;margin-top:9px;font-size:var(--v1270-font-12);line-height:1.5;color:var(--lecture-muted);}
+@media(max-width:1000px){#wordDetailDialog .v1270-sort{position:static;justify-content:flex-end;display:flex;margin-top:10px;}#wordDetailDialog .v1270-filter-row:first-child{padding-right:0;}#wordDetailDialog .v1270-action-spacer{display:none;}#wordDetailDialog .v1270-filter-row{gap:8px;}}
+
+/* The original body token equals 27px at global size 36; keep the approved
+   20/18/14/12 proportions while following the same 36→60 scale and theme. */
+#wordDetailDialog :is(.v1270-example-controls,.v1270-example-browser){--v1270-type-base:var(--v1242-content-body-size,var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1.125))));--v1270-font-12:calc(var(--v1270-type-base) * 0.444444444444);--v1270-font-13:calc(var(--v1270-type-base) * 0.481481481481);--v1270-font-14:calc(var(--v1270-type-base) * 0.518518518519);--v1270-font-15:calc(var(--v1270-type-base) * 0.555555555556);--v1270-font-18:calc(var(--v1270-type-base) * 0.666666666667);--v1270-font-20:calc(var(--v1270-type-base) * 0.740740740741);}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-native-example :is(.v1223-example-copy,.v1222-sense-example-translation) :is(span,strong,b,i,em,u){font-size:inherit!important;}
+#wordDetailDialog .resource-popover-body .v1270-example-browser .v1270-example-meaning :is(span,button){font-size:inherit!important;}
+
+/* Keep result totals on the same blue accent as the source controls. */
+#wordDetailDialog .resource-popover-body .v1270-result-summary b{color:var(--lecture-primary)!important;}

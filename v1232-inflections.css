@@ -1,0 +1,34 @@
+/* V1.2.32: morphology stays as real dt/dd pairs, without a visible table.
+   Track widths respond to the current body em, so larger text reduces the
+   number of pairs on each row before names or forms need to wrap. */
+#wordDetailDialog .v1227-inflections {
+  --v1232-form-gap:.5em;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,max(16em,calc((100% - 2 * var(--v1232-form-gap)) / 3))),1fr));
+  align-items:start;
+  gap:.3em var(--v1232-form-gap);
+  min-width:0;
+  max-width:100%;
+  border:0;
+  background:transparent;
+}
+#wordDetailDialog .v1227-inflection {
+  display:grid;
+  grid-template-columns:minmax(0,min(10em,62%)) minmax(0,1fr);
+  align-items:baseline;
+  gap:0 .35em;
+  min-width:0;
+  max-width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+#wordDetailDialog .v1227-inflection > :is(dt,dd) {
+  min-width:0;
+  max-width:100%;
+  margin:0;
+  padding:0;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}

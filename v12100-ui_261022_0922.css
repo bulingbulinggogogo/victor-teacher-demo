@@ -1,0 +1,9 @@
+/* Actual content determines geometry; no business records are altered. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v1298-content-label {color:var(--lecture-primary,#2563ff)!important;border-color:var(--lecture-primary,#2563ff)!important;background:color-mix(in srgb,var(--lecture-primary,#2563ff) 6%,transparent)!important;}
+[data-v1288-horizontal-network] .pgi-copy {min-width:0!important;box-sizing:border-box!important;white-space:nowrap!important;overflow:visible!important;}
+[data-v1288-horizontal-network] .pgi-copy>span {white-space:nowrap!important;display:block!important;}
+#classroomDock.v12100-empty .dock-footer-actions {border-top:0!important;margin-top:0!important;padding-top:0!important;}
+#classroomDock.v12100-empty .v1270-dock-heading {display:none!important;}
+
+#classroomDock.v12100-empty > .v1223-word-primary {padding:0!important;margin:0!important;border:0!important;min-height:0!important;}
+#classroomDock.v12100-empty .v1275-display-heading {display:none!important;}

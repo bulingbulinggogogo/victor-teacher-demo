@@ -1,0 +1,7 @@
+/* Only the non-expanded vocabulary mother popup inside the lecture. Height and all child styles remain V149. */
+@media (min-width:800px){
+ body:has(#fullscreenPage:not(.hidden)) #popover#popover#popover#popover#popover#popover#popover#popover.v148-vocabulary[data-knowledge-type="词汇"]:not(.ke-expanded):not(.v1263-interactive-fullscreen){
+  width:min(calc(1120px * var(--v113-scale,1)),calc(100vw - 160px))!important;
+  max-width:calc(100vw - 160px)!important;
+ }
+}

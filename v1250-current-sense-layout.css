@@ -1,0 +1,20 @@
+/* V50: a current-context definition is continuous inline text. The previous
+   wrapping flex row treated the entire Chinese definition as one flex item,
+   leaving its grammatical notes alone on the preceding line. Keep the existing
+   POS, context badge and detail action owners; only the definition's inner flow
+   changes. Full word detail and expanded views are intentionally outside scope. */
+#popover.resource-popover:not(.ke-expanded):is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary .resource-current-summary .resource-sense-copy {
+  display: block !important;
+  white-space: normal !important;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+#popover.resource-popover:not(.ke-expanded):is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary .resource-current-summary .resource-sense-copy > .resource-sense-meta {
+  display: inline-flex;
+  margin-inline-end: .35em;
+  vertical-align: baseline;
+}
+#popover.resource-popover:not(.ke-expanded):is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary .resource-current-summary .resource-sense-copy > .resource-sense-meta:empty {
+  display: none;
+  margin-inline-end: 0;
+}

@@ -1,0 +1,14 @@
+/* The note heading and its body form one section in vocabulary mother cards. */
+#popover#popover#popover#popover.v105-vocabulary .v105-notes::before {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+}
+#popover#popover#popover#popover.v105-vocabulary .v105-notes {
+  padding-top: 0 !important;
+}
+#popover#popover#popover#popover.v105-vocabulary .v105-note-card > .knowledge-explanation:first-child {
+  border-top: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

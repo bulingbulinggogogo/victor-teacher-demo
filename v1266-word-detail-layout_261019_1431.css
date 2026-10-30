@@ -1,0 +1,45 @@
+/* Like charts share a group, and the shortest cards stretch to the row bottom. */
+#wordDetailDialog .v1227-word-statistics .v1227-exam-distribution{display:block;}
+#wordDetailDialog .v1266-chart-type-group{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(420px,24em,calc((100% - .75em)/2))),1fr));
+ gap:.75em;align-items:stretch;margin-bottom:.75em;
+}
+#wordDetailDialog .v1266-chart-type-group:last-child{margin-bottom:0;}
+#wordDetailDialog .v1266-chart-type-group>.vside-single-chart{height:100%;display:flex;flex-direction:column;}
+#wordDetailDialog .v1266-chart-type-group>.vside-single-chart>.vside-single-chart-body{flex:1;min-width:0;}
+#wordDetailDialog .v1266-chart-type-group>.vside-single-chart:last-child:nth-child(odd){grid-column:1/-1;}
+/* Small glyphs align with the first printed line; the word remains a wide hit target. */
+#wordDetailDialog .v1222-family-tree .vft-node-content{padding-inline-start:22px;}
+#wordDetailDialog .v1222-family-tree .vft-toggle{position:relative;}
+#wordDetailDialog .v1222-family-tree .vft-toggle-icon{
+ inset-inline-start:-22px;top:50%;transform:translateY(-50%);width:14px;height:14px;
+ font-size:12px;line-height:1;border-radius:2px;
+}
+#wordDetailDialog .v1222-family-tree .vft-toggle[aria-expanded="false"] .vft-toggle-icon{transform:translateY(-50%);}
+#wordDetailDialog .v1222-family-tree .vft-children>.vft-node::before{top:var(--v1266-guide-y,.9em);}
+/* All inline cards keep original tools under their own event delegate. */
+#wordDetailDialog [data-v1266-inline-tools] .vpi-tools{display:flex;flex-wrap:wrap;justify-content:flex-start;margin-top:12px;}
+#wordDetailDialog [data-v1266-inline-tools] .vpi-tools[hidden]{display:none!important;}
+#wordDetailDialog [data-v1266-inline-tools] .v1247-reasoning-controls{white-space:normal;gap:8px;}
+#wordDetailDialog [data-v1266-inline-tools] :is(.v1247-reasoning-noun,.v1247-reasoning-result){align-items:flex-start;text-align:left;}
+#wordDetailDialog [data-v1266-inline-tools] .v1247-nominalization{height:auto;min-height:0;}
+/* Sense -> block/example -> bilingual child: guides follow the first text line. */
+#wordDetailDialog .v1222-sense-examples>.v1222-sense-example::before,
+#wordDetailDialog .v1222-sense-examples>.v1223-sense-block::before,
+#wordDetailDialog .v1266-block-children>.v1222-sense-example::before{top:var(--v1266-guide-y,.95em);}
+#wordDetailDialog .v1266-branch-heading{position:relative;}
+#wordDetailDialog .v1266-branch-toggle{
+ position:absolute;inset-inline-start:-22px;top:var(--v1266-guide-y,.75em);transform:translateY(-50%);
+ display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;min-height:0;min-width:0;
+ box-sizing:border-box;margin:0;padding:0;border:1px solid var(--lecture-border);border-radius:2px;
+ background:var(--lecture-panel);color:var(--lecture-primary);font:700 12px/1 sans-serif;cursor:pointer;z-index:1;
+}
+#wordDetailDialog .v1266-branch-toggle::before{content:'−';}
+#wordDetailDialog .v1266-branch-toggle[aria-expanded="false"]::before{content:'+';}
+#wordDetailDialog .v1266-branch-toggle::after{content:'';position:absolute;inset:-8px;}
+#wordDetailDialog .v1266-branch-toggle:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:3px;}
+#wordDetailDialog .v1266-block-children>.v1222-sense-example{position:relative;margin-inline-start:.65em;padding-inline-start:.5em;border-inline-start:1px solid var(--lecture-border);}
+#wordDetailDialog .v1266-block-children>.v1222-sense-example::before{content:'';position:absolute;inset-inline-start:0;width:.35em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .v1266-example-children{grid-column:2;min-width:0;color:var(--lecture-muted);}
+#wordDetailDialog .v1266-example-children[hidden],#wordDetailDialog .v1266-block-children[hidden]{display:none!important;}
+#wordDetailDialog .v1266-visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}

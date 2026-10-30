@@ -1,0 +1,62 @@
+/* Source diagrams stay at layout size; only copy is measured against the available columns. */
+.vpi-module{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;min-width:0;height:100%;color:var(--lecture-text)}
+.vpi-module .pgi-module-head{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.vpi-module .pgi-module-head h3{margin:0;font-size:calc(18px * var(--full-dialog-scale,1) / 1.5);line-height:1.4}
+.vpi-module[data-graph-kind="single"] .pgi-module-head,
+.vpi-module[data-graph-kind="contrast"] .pgi-module-head{position:static;flex:0 0 auto;width:100%;height:auto;padding:0 0 12px;overflow:visible;clip-path:none;white-space:normal;text-align:center}
+.vpi-module[data-graph-kind="single"] .pgi-module-head h3,
+.vpi-module[data-graph-kind="contrast"] .pgi-module-head h3{font-size:var(--pgi-title-font,30px);font-weight:600;line-height:1.35}
+.vpi-module .pgi-scene-slot{position:relative;width:100%;flex:1 1 auto;min-height:0;min-width:0;background:var(--lecture-panel);overflow:visible}
+.vpi-module .pgi-scene{display:flex;flex-direction:column;box-sizing:border-box;width:100%;height:100%;min-width:0;min-height:0;font-family:inherit;color:var(--lecture-text);--pgi-copy-font:30px;--pgi-columns:repeat(4,minmax(0,1fr))}
+.vpi-module .pgi-row{display:grid;grid-template-columns:var(--pgi-columns);gap:12px;min-width:0}
+.vpi-module .pgi-visual-row{flex:0 0 var(--pgi-image-height,240px);height:var(--pgi-image-height,240px);min-height:0;margin-top:8px}
+.vpi-module .pgi-card{display:flex;flex-direction:column;text-align:center;min-width:0;min-height:0}
+.vpi-module .pgi-card-label{flex:0 0 auto;font-size:min(28px,calc(30px * var(--full-dialog-scale,1) / 1.5));line-height:1.35;display:flex;align-items:center;justify-content:center;gap:5px;position:relative;padding:4px 0;box-sizing:border-box}
+.vpi-module .pgi-card-label i{font-size:inherit;font-weight:400}
+.vpi-module .pgi-card>img{display:block;width:100%;height:100%;flex:none;min-height:0;object-fit:contain;background:white;border-radius:4px}
+.vpi-module .pgi-copy-row{flex:0 0 auto;margin-top:8px}
+.vpi-module .pgi-copy{box-sizing:border-box;font-family:inherit;font-size:var(--pgi-copy-font);font-weight:400;line-height:1.35;color:var(--lecture-text);white-space:nowrap;overflow-wrap:normal;word-break:normal;text-align:center;margin:0;padding:5px 7px;border:1px solid transparent;border-radius:6px;background:transparent;min-width:0;cursor:pointer}
+.vpi-module .pgi-copy>span{display:block;white-space:inherit;font:inherit;line-height:inherit}
+.vpi-module .pgi-copy [data-pgi-line]{display:block;white-space:nowrap;font:inherit;line-height:inherit}
+.vpi-module .pgi-copy .pgi-wrap-line{white-space:normal;overflow-wrap:normal;word-break:normal}
+.vpi-module .pgi-static-copy{cursor:default}
+.vpi-module .pgi-copy-mask.is-hidden{color:transparent;background:var(--lecture-panel-deep);border-color:var(--lecture-border)}
+.vpi-module .pgi-copy-mask.is-hidden>span{opacity:0}
+.vpi-module .pgi-copy-mask:hover{border-color:var(--lecture-border)}
+.vpi-module .pgi-derivation{color:var(--lecture-translation,var(--lecture-muted))}
+.vpi-module .pgi-source-red{color:var(--demo-red,#ef4444)}
+.vpi-module .pgi-connectors{flex:0 0 24px;height:24px}
+.vpi-module .pgi-branches{display:block;width:100%;height:24px;overflow:visible}
+.vpi-module .pgi-branches path{fill:none;stroke:var(--lecture-text);stroke-width:1.6}
+.vpi-module .pgi-base{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;max-width:100%;margin:0 auto;font-size:var(--pgi-copy-font);line-height:1.35}
+.vpi-module .pgi-base p{white-space:pre-wrap;font:inherit;line-height:1.35;margin:0}
+.vpi-module .pgi-base img{height:var(--pgi-base-image-height,45px);width:145px;max-width:24vw;object-fit:contain;border-radius:4px;background:white}
+.vpi-module .pgi-base.is-present{gap:8px}
+.vpi-module .pgi-present-root{display:flex;flex-direction:column;align-items:center;width:min(1100px,calc(100vw - 120px));font:inherit}
+.vpi-module .pgi-formation-row{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr) 36px minmax(0,1.4fr);align-items:center;width:100%;gap:8px}
+.vpi-module .pgi-formation-box{display:flex;flex-direction:column;gap:2px;padding:6px 10px;border:2px solid #ed7d31;border-radius:8px;background:var(--lecture-panel-deep);box-sizing:border-box;white-space:nowrap;font:inherit}
+.vpi-module .pgi-formation-box strong{font:inherit;font-weight:600}
+.vpi-module .pgi-formation-box span{white-space:pre-wrap;font:inherit}
+.vpi-module .pgi-formation-operator{font:inherit;color:#ed7d31;text-align:center}
+.vpi-module .pgi-formation-result-arrow{display:block;width:100%;height:24px;overflow:visible}
+.vpi-module .pgi-formation-result-arrow path{fill:none;stroke:#ed7d31;stroke-width:2}
+.vpi-module .pgi-scene-single{align-items:center;gap:12px}
+.vpi-module .pgi-scene-single .pgi-copy{flex:0 0 auto;width:100%}
+.vpi-module .pgi-single-image{display:block;flex:0 0 var(--pgi-image-height,240px);min-height:0;object-fit:contain;width:100%;height:var(--pgi-image-height,240px);border-radius:5px}
+.vpi-module .pgi-contrast-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto var(--pgi-image-height,240px);column-gap:24px;row-gap:10px;flex:0 0 auto;min-height:0}
+.vpi-module .pgi-contrast-grid .pgi-card{display:contents}
+.vpi-module .pgi-contrast-grid .pgi-card>img{grid-row:2;height:100%;min-height:0;flex:none}
+.vpi-module .pgi-contrast-grid .pgi-copy{grid-row:1;align-self:start;flex:0 0 auto;margin-top:0}
+.vpi-module .pgi-contrast-grid .pgi-card:nth-child(1)>*{grid-column:1}
+.vpi-module .pgi-contrast-grid .pgi-card:nth-child(2)>*{grid-column:2}
+.vpi-module .pgi-contrast-grid .pgi-card:nth-child(3)>*{grid-column:3}
+.vpi-tools,.vpi-pos-tabs{display:flex;flex:0 1 auto;align-items:center;gap:6px;white-space:nowrap;min-width:0;flex-wrap:wrap;max-width:100%}
+.vpi-tools button{font:inherit;font-size:16px;line-height:1.4;padding:.4em .7em;color:var(--lecture-text);background:var(--lecture-panel-deep);border:1px solid var(--lecture-border);border-radius:6px;cursor:pointer;min-height:38px;flex:0 0 auto}
+.vpi-tools button[aria-selected="true"],.vpi-tools button[aria-pressed="true"]{color:var(--lecture-primary);border-color:currentColor}
+.vpi-module button:focus-visible,.vpi-tools button:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:3px}
+
+/* V1.2.22: the root's illustration and explanation form a readable side-by-side node. */
+.vpi-module .pgi-basic-node{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:18px;min-width:0;max-width:100%;font-size:var(--pgi-base-font,30px);line-height:1.35}
+.vpi-module .pgi-basic-node>img{height:var(--pgi-base-image-height,102px);width:auto;max-width:210px;max-height:120px;object-fit:contain;flex:0 1 auto}
+.vpi-module .pgi-basic-node>p{text-align:left;font:inherit;white-space:normal;max-width:32em;min-width:0}
+.vpi-module .pgi-base.is-present .pgi-present-root{padding-bottom:0}

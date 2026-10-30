@@ -1,0 +1,12 @@
+/* Full equations fit the available content width, keeping the confirmed role typography. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1287-complete-flow{overflow:visible!important;min-width:0!important;max-width:100%!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1287-complete-flow>.v1287-full-equation{width:100%!important;min-width:0!important;max-width:100%!important;flex-wrap:wrap!important;gap:clamp(8px,.65vw,12px)!important;align-items:center!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1287-full-equation :is(.v1287-equation-term,.v1287-derivation-stage){flex:0 1 auto!important;min-width:0!important;max-width:100%!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1287-full-equation .v1287-term-meaning{white-space:normal!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1287-full-equation .v1287-derivation-stage{white-space:normal!important;align-self:center!important;text-align:left;}
+/* The diagram stage stays blue; the rest of the popup keeps its current theme. */
+.sgp-backdrop .sgp-panel .sgp-media{background:#eef5ff!important;border-bottom-color:#dce8fc!important;}
+.sgp-backdrop[data-theme-kind="dark"] .sgp-panel .sgp-media{background:#14263e!important;border-bottom-color:#2c4770!important;}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1299-stage-group{display:inline-flex;align-items:center;gap:clamp(8px,.65vw,12px);flex:0 1 auto;min-width:0;max-width:100%;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v1299-stage-group>.v1287-operator{flex:none!important;}

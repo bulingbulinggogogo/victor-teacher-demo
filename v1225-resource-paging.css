@@ -1,0 +1,21 @@
+/* V1.2.26: the pager sits directly beside fullscreen in its mirrored group. */
+#popover.classroom-tools-dialog > .classroom-modal-tools > .classroom-modal-expand-host > .resource-popover-pager.v1225-resource-pager{
+ position:static!important;inset:auto!important;display:flex!important;flex:0 0 auto!important;flex-direction:row!important;direction:ltr!important;
+ align-items:center!important;justify-content:center!important;width:auto!important;min-width:144px;max-width:none;gap:8px!important;
+ height:var(--v15-tool-height,40px)!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;overflow:visible!important;
+}
+#popover .v1225-resource-pager > button{flex:0 0 var(--v15-tool-height,40px);width:var(--v15-tool-height,40px)!important;height:var(--v15-tool-height,40px)!important;min-height:var(--v15-tool-height,40px)!important;padding:0!important;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--lecture-border);border-radius:6px;background:var(--lecture-panel-deep);color:var(--lecture-text);cursor:pointer;}
+#popover .v1225-resource-pager > button:disabled{opacity:.4;cursor:default;}
+#popover .v1225-resource-pager > button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+#popover .v1225-resource-pager > button > span{display:none!important;}
+#popover .v1225-resource-pager > span{flex:0 0 auto;min-width:48px;text-align:center;white-space:nowrap;font-family:inherit;font-size:20px!important;font-weight:600;line-height:var(--v15-tool-height,40px);color:var(--lecture-muted);font-variant-numeric:tabular-nums;}
+@media(max-width:720px){#popover.classroom-tools-dialog > .classroom-modal-tools > .classroom-modal-expand-host > .v1225-resource-pager{gap:6px!important;min-width:140px;}}
+
+/* V52: grouped speech pages keep their native record/audio/detail owners.
+   The adaptive dialog's forced display:block must not reveal inactive pages. */
+#popover.resource-popover .resource-popover-body .v16-speech-group[data-v1225-member-page] > .ke-resource-content[data-knowledge-record][hidden]{
+ display:none!important;
+}
+#popover.resource-popover .resource-popover-body .v16-speech-group[data-v1225-member-page] > .ke-resource-content[data-knowledge-record]:not([hidden]){
+ margin-block-start:0!important;
+}

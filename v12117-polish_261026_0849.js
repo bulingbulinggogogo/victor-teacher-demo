@@ -1,0 +1,2 @@
+/* Reuse the original metadata rows and their updates. */
+(()=>{const meta=document.querySelector('#questionPanel .question-meta');if(!meta)return;function reorder(){const ability=meta.querySelector('.demo-ability-line'),point=meta.querySelector('.exam-point-line:not(.demo-ability-line):not(.demo-topic-line)');if(ability&&point&&point.nextElementSibling!==ability)point.after(ability)}new MutationObserver(reorder).observe(meta,{childList:true});reorder()})();

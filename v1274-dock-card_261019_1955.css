@@ -1,0 +1,34 @@
+/* Category paint follows the real multi-selection set and preserves
+ * all unavailable/closed-control rules. */
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-block-category][data-v1271-category-displayed="true"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+  border-color:transparent!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 15%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+  font-weight:600!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-block-category][data-v1271-category-displayed="true"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):hover {
+  background-color:color-mix(in srgb,var(--lecture-primary) 20%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-block-category][data-v1271-category-displayed="false"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+  border-color:transparent!important;
+  background-color:transparent!important;
+  color:var(--lecture-muted)!important;
+  font-weight:500!important;
+}
+
+/* Meaning-owned companion cards render their completed contents without an
+ * entrance/reveal animation. Original GIF sources remain animated.
+ * This selector cannot reach standalone tabs. */
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-v1271-static-card],
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-v1271-static-card] *,
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-v1271-static-card] *::before,
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-v1271-static-card] *::after {
+  animation:none!important;
+  transition:none!important;
+}
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-v1271-static-final="true"] .v1247-reasoning-bridge {
+  cursor:default!important;
+  border-color:transparent!important;
+  background:transparent!important;
+}

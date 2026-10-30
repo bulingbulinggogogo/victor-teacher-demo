@@ -1,0 +1,62 @@
+/* The eight review layouts share the teacher Demo's existing color and font roles. */
+.wdc-dialog{height:min(960px,calc(100dvh - 48px));max-height:calc(100dvh - 48px)!important}
+.wdc-mode-switch{flex:0 0 auto;padding:12px 24px 14px;border-bottom:1px solid var(--lecture-border);background:var(--lecture-panel-deep);color:var(--lecture-text)}
+.wdc-mode-heading{display:flex;gap:12px;align-items:baseline;margin-bottom:10px;line-height:1.3}
+.wdc-mode-heading strong{font-size:16px;font-weight:600}.wdc-mode-heading>span{font-size:13px;color:var(--lecture-muted)}
+.wdc-mode-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.wdc-mode-buttons>button{display:flex;align-items:center;gap:6px;min-height:34px;padding:7px 9px;border:1px solid var(--lecture-border);border-radius:7px;background:var(--lecture-panel);color:var(--lecture-muted);font-family:inherit;font-size:12px;line-height:1.3;cursor:pointer;text-align:left;transition:background .18s,color .18s,border-color .18s}
+.wdc-mode-buttons b{flex:0 0 auto;display:grid;place-items:center;width:20px;height:20px;border-radius:5px;background:var(--lecture-panel-deep);color:var(--lecture-text);font-weight:700}
+.wdc-mode-buttons span{min-width:0;overflow-wrap:normal}
+.wdc-mode-buttons [aria-pressed="true"]{border-color:var(--lecture-primary);background:color-mix(in srgb,var(--lecture-primary) 10%,var(--lecture-panel));color:var(--lecture-primary)}
+.wdc-mode-buttons [aria-pressed="true"] b{background:var(--lecture-primary);color:#fff}
+.wdc-dialog>.resource-popover-body{display:block;flex:1 1 auto;padding:20px 28px 24px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable;min-height:0;min-width:0}
+.wdc-word-intro{flex:0 0 auto;min-width:0}.wdc-word-intro .knowledge-entry{gap:8px!important}.wdc-word-intro .knowledge-term{margin:0;line-height:1}.wdc-word-intro .knowledge-word{font-size:calc(48px * var(--full-dialog-scale,1))!important}.wdc-word-intro .resource-pronunciations{margin-bottom:0!important}
+.wdc-layout{display:block;min-width:0;margin-top:16px}
+.wdc-layout-flow{padding-right:5px}
+.wdc-meanings-above-navigation{border-bottom:1px solid var(--lecture-border);padding-bottom:20px;margin-bottom:20px}
+.wdc-flow-modules>.wdc-module+.wdc-module{border-top:1px solid var(--lecture-border);margin-top:24px;padding-top:24px}
+.wdc-module{min-width:0}.wdc-module>h3,.wdc-module-heading>h3{margin:0 0 18px;font-size:calc(21px * var(--full-dialog-scale,1));font-weight:600;line-height:1.3;color:var(--lecture-text)}
+.wdc-module-heading{display:flex;gap:14px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}.wdc-module-heading>h3{margin:0}
+.wdc-sense-actions{display:flex;gap:8px;flex-wrap:wrap}.wdc-sense-actions button{border:1px solid var(--lecture-border);border-radius:7px;background:var(--lecture-panel-deep);color:var(--lecture-primary);padding:5px 8px;font:inherit;font-size:13px;line-height:1.3;cursor:pointer}
+.wdc-senses{display:grid;gap:0;border:1px solid var(--lecture-border);border-radius:12px;overflow:hidden}
+.wdc-sense{min-width:0;background:var(--lecture-panel)}.wdc-sense+.wdc-sense{border-top:1px solid var(--lecture-border)}
+.wdc-sense-header{display:flex;align-items:baseline;gap:10px;min-width:0;padding:13px 14px;line-height:1;color:var(--lecture-text)}
+button.wdc-sense-header{width:100%;border:0;background:transparent;text-align:left;font-family:inherit;cursor:pointer}
+.wdc-sense.is-context>.wdc-sense-header{background:color-mix(in srgb,var(--lecture-context) 9%,var(--lecture-panel))}
+.wdc-sense-number{flex:0 0 auto;font-size:calc(15px * var(--full-dialog-scale,1));color:var(--lecture-muted)}
+.wdc-sense-header .resource-sense-pos{flex:0 0 auto;min-width:36px;font-size:calc(19px * var(--full-dialog-scale,1));font-style:italic;font-family:Georgia,'Times New Roman',serif}
+.wdc-sense-copy{flex:1 1 auto;min-width:0;font-size:calc(21px * var(--full-dialog-scale,1));line-height:1.12;font-weight:500;overflow-wrap:break-word}
+.wdc-sense-copy .resource-sense-meta{display:inline-flex;gap:6px;margin-right:8px;color:var(--lecture-muted);font-size:.85em;font-weight:400}
+.wdc-context-tag{flex:0 0 auto;white-space:nowrap;border-radius:12px;background:color-mix(in srgb,var(--lecture-context) 12%,transparent);color:var(--lecture-context);padding:4px 9px;font-size:calc(11px * var(--full-dialog-scale,1));font-weight:500;line-height:1}
+.wdc-sense-chevron{flex:0 0 auto;color:var(--lecture-muted);transition:transform .2s}.wdc-sense-chevron svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}.is-expanded>.wdc-sense-header .wdc-sense-chevron{transform:rotate(180deg)}
+.wdc-sense-content{padding:0 18px 18px}.wdc-sense-content[hidden],.wdc-tab-panels>[hidden]{display:none!important}
+.wdc-sense-associated{display:grid;gap:16px;padding-top:8px}
+.wdc-dialog .wdc-example p,.wdc-chunk-dialog .wdc-example p{font-size:calc(21px * var(--full-dialog-scale,1));line-height:1!important;overflow-wrap:break-word;margin:0}
+.wdc-example-english{display:flex;align-items:flex-start;gap:12px}.wdc-example-english p{flex:1 1 auto;min-width:0}.wdc-example-english>.resource-inline-audio{flex:0 0 auto;align-self:flex-start;margin-top:0}
+.wdc-dialog .wdc-example .wdc-translation,.wdc-chunk-dialog .wdc-example .wdc-translation{font-size:calc(18px * var(--full-dialog-scale,1));color:var(--lecture-muted);margin-top:10px}
+.wdc-relation-row{display:grid;grid-template-columns:calc(54px * var(--full-dialog-scale,1)) minmax(0,1fr);gap:12px;align-items:baseline}
+.wdc-relation-row>h4{margin:0;font-size:calc(15px * var(--full-dialog-scale,1));color:var(--lecture-muted);line-height:1.2;font-weight:500}
+.wdc-relation-row>div{display:flex;gap:10px 20px;flex-wrap:wrap;min-width:0}.wdc-related-term{display:inline-flex;gap:8px;align-items:baseline;font-size:calc(18px * var(--full-dialog-scale,1));line-height:1.1}.wdc-related-term strong{font-weight:500}.wdc-related-term>span{font-size:.82em;color:var(--lecture-muted)}
+.wdc-dialog .wdc-usage-note,.wdc-chunk-dialog .wdc-usage-note{font-size:calc(16px * var(--full-dialog-scale,1));line-height:1.3!important;color:var(--lecture-muted)}
+.wdc-tabs{display:flex;min-width:0;gap:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;border-bottom:1px solid var(--lecture-border);margin-bottom:16px;padding-bottom:2px}
+.wdc-tabs>button{flex:0 0 auto;position:relative;border:0;background:transparent;color:var(--lecture-muted);font:inherit;font-size:calc(14px * var(--full-dialog-scale,1));line-height:1.3;padding:10px 13px 13px;cursor:pointer;white-space:nowrap;transition:color .18s}
+.wdc-tabs>button[aria-selected="true"]{color:var(--lecture-primary);font-weight:600}.wdc-tabs>button[aria-selected="true"]::after{content:'';position:absolute;left:12px;right:12px;bottom:0;height:3px;border-radius:3px;background:var(--lecture-primary)}
+.wdc-tab-panels{padding-right:5px}.wdc-tab-panels>div{min-width:0}.wdc-tab-panels .wdc-module>h3{display:none}
+.wdc-meaning-group{padding:18px 0;border-bottom:1px dashed var(--lecture-border)}.wdc-meaning-group:first-child{padding-top:0}.wdc-meaning-group:last-child{border-bottom:0}
+.wdc-meaning-group>h4,.wdc-root>h4{font-size:calc(18px * var(--full-dialog-scale,1));line-height:1.2;font-weight:600;margin:0 0 16px}.wdc-meaning-group>h4>span{color:var(--lecture-primary);margin-right:8px}.wdc-meaning-group>.wdc-relation-row{margin-top:16px}
+.wdc-definition-list{margin:18px 0 0;display:grid;gap:0}.wdc-definition-list>div{display:grid;grid-template-columns:minmax(130px,35%) minmax(0,1fr);gap:18px;padding:14px 0;border-top:1px dashed var(--lecture-border)}
+.wdc-definition-list dt,.wdc-definition-list dd{font-size:calc(19px * var(--full-dialog-scale,1));line-height:1.2;margin:0;overflow-wrap:break-word}.wdc-definition-list dt{font-weight:600}.wdc-definition-list dt i{font-size:.8em;font-weight:400;color:var(--lecture-muted)}.wdc-definition-list small{display:block;margin-top:8px;font-size:.85em;color:var(--lecture-muted)}
+.wdc-collocation+.wdc-collocation,.wdc-root+.wdc-root{margin-top:22px;padding-top:20px;border-top:1px dashed var(--lecture-border)}
+.wdc-word-link{display:inline-flex;gap:10px;align-items:center;border:0;background:transparent;padding:0;color:var(--lecture-primary);font:inherit;font-size:calc(23px * var(--full-dialog-scale,1));line-height:1.2;text-decoration:underline;text-underline-offset:5px;cursor:pointer}.wdc-word-link>span{font-size:.65em;text-decoration:none}
+.wdc-dialog .wdc-collocation>p{margin-top:12px;line-height:1!important}.wdc-root-family{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.wdc-root-family>span{padding:6px 9px;border:1px solid var(--lecture-border);border-radius:7px;background:var(--lecture-panel-deep);font-size:calc(16px * var(--full-dialog-scale,1));line-height:1.2}
+.wdc-source-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:14px}.wdc-source-links a{color:var(--lecture-primary)}
+.wdc-sample-label{display:inline-block;margin:0 0 14px}.wdc-exam-cases>.ke-exam-case:first-child{border-top:0;padding-top:0}
+.wdc-chunk-backdrop{z-index:421}.wdc-chunk-dialog{z-index:422}.wdc-chunk-dialog .wdc-sense-associated{padding:8px 16px 20px}.wdc-chunk-dialog .wdc-sense-header .wdc-sense-copy{font-size:calc(21px * var(--full-dialog-scale,1))}
+.wdc-dialog button:focus-visible,.wdc-chunk-dialog button:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:3px}
+.wdc-dialog .resource-audio-icon,.wdc-chunk-dialog .resource-audio-icon{pointer-events:none}
+@media(max-width:720px){.wdc-dialog{height:calc(100dvh - 24px)}.wdc-mode-switch{padding:10px 14px}.wdc-mode-heading>span{display:none}.wdc-mode-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.wdc-mode-buttons>button{font-size:11px}.wdc-dialog>.resource-popover-body{padding:14px 16px;gap:10px}.wdc-word-intro .knowledge-word{font-size:calc(30px * var(--full-dialog-scale,1))!important}.wdc-sense-header{gap:7px;padding:11px 10px}.wdc-context-tag{padding:3px 6px}.wdc-sense-copy{font-size:calc(18px * var(--full-dialog-scale,1))}.wdc-sense-header .resource-sense-pos{min-width:25px;font-size:calc(16px * var(--full-dialog-scale,1))}.wdc-definition-list>div{grid-template-columns:minmax(85px,35%) minmax(0,1fr);gap:12px}}
+@media(max-height:680px){.wdc-mode-heading{display:none}.wdc-mode-switch{padding-top:8px;padding-bottom:8px}.wdc-word-intro .knowledge-word{font-size:calc(26px * var(--full-dialog-scale,1))!important}.wdc-dialog>.resource-popover-body{gap:8px;padding-top:10px;padding-bottom:12px}.wdc-mode-buttons>button{min-height:28px;padding-top:4px;padding-bottom:4px}}
+@media(prefers-reduced-motion:reduce){.wdc-mode-buttons>button,.wdc-tabs>button,.wdc-sense-chevron{transition:none}}
+
+/* Keep the short association note visually secondary to the example sentence. */
+#wordDetailDialog.wdc-dialog .wdc-usage-note,#lexicalChunkDialog.wdc-chunk-dialog .wdc-usage-note{font-size:calc(16px * var(--full-dialog-scale,1));line-height:1.3!important}

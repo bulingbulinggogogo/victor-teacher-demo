@@ -1,0 +1,47 @@
+/* The copied book controls keep their original geometry and state handling.
+   Only word-detail dark palettes replace their light-only color literals. */
+#wordDetailDialog[data-theme-kind="dark"] .vwn-secondary-tools :is(.vwn-pos-tabs,.book-unit-options,.v1220-secondary-tabs) > button {
+  color:var(--lecture-muted);
+  background-color:var(--lecture-panel-deep);
+  border-color:var(--lecture-border);
+}
+#wordDetailDialog[data-theme-kind="dark"] .vwn-secondary-tools :is(.vwn-pos-tabs,.book-unit-options,.v1220-secondary-tabs) > button:not(:disabled):hover {
+  color:var(--lecture-button-hover-text);
+  background-color:var(--lecture-action-hover-background);
+  border-color:var(--lecture-button-hover-border);
+}
+#wordDetailDialog[data-theme-kind="dark"] .vwn-secondary-tools :is(.vwn-pos-tabs,.book-unit-options,.v1220-secondary-tabs) > button:is(.active,[aria-selected="true"]) {
+  color:var(--lecture-text);
+  background-color:var(--lecture-segment-selected-background);
+  border-color:var(--lecture-primary);
+}
+#wordDetailDialog[data-theme-kind="dark"] .vwn-secondary-tools :is(.vwn-pos-tabs,.book-unit-options,.v1220-secondary-tabs) > button:focus-visible {
+  outline-color:var(--lecture-focus-ring);
+}
+
+/* Preserve the original main-tab underline and layout. */
+#wordDetailDialog[data-theme-kind="dark"] .vwn-main-nav > button {
+  color:var(--lecture-muted);
+}
+#wordDetailDialog[data-theme-kind="dark"] .vwn-main-nav > button:is(.active,[aria-selected="true"],:hover,:focus-visible) {
+  color:var(--lecture-button-hover-text);
+}
+
+/* Keep the original hidden radio and segmented-control measurements. */
+#wordDetailDialog[data-theme-kind="dark"] [data-word-sense-sort] {
+  color:var(--lecture-text);
+  background-color:var(--lecture-segment-background);
+  border-color:var(--lecture-border);
+}
+#wordDetailDialog[data-theme-kind="dark"] [data-word-sense-sort] label {
+  color:var(--lecture-text);
+}
+#wordDetailDialog[data-theme-kind="dark"] [data-word-sense-sort] label:is(:hover,:has(input:focus-visible)) {
+  color:var(--lecture-button-hover-text);
+  background-color:var(--lecture-action-hover-background);
+  outline-color:var(--lecture-focus-ring);
+}
+#wordDetailDialog[data-theme-kind="dark"] [data-word-sense-sort] label:has(input:checked) {
+  color:var(--lecture-play-text);
+  background-color:var(--lecture-play-background);
+}

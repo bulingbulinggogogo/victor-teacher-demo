@@ -1,0 +1,4776 @@
+{
+  "version": "V1.2.5",
+  "sets": [
+    {
+      "setId": 14255,
+      "setName": "Welcome Unit 听力训练（一）",
+      "texts": [
+        {
+          "textNo": 1,
+          "questionId": 214274,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text01.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text01.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 10.423,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "打扰一下，我能加入这个俱乐部吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "当然可以。无论年龄、性别或国籍，我们都欢迎。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 4.243,
+              "text": "Excuse me, can I become a member of the club?",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14157,
+              "clueSentence": "can I become a member of the club?",
+              "clueQuestionIds": [
+                261511
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-1-0-0",
+                  "startChar": 0,
+                  "endChar": 45,
+                  "text": "Excuse me, can I become a member of the club?",
+                  "translation": "打扰一下，我能加入这个俱乐部吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 4.39,
+              "end": 9.963,
+              "text": "Sure. Everyone is welcome, whatever your age, sex or nationality is.",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14158,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-1-1-0",
+                  "startChar": 0,
+                  "endChar": 5,
+                  "text": "Sure.",
+                  "translation": "当然可以。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-1-1-6",
+                  "startChar": 6,
+                  "endChar": 68,
+                  "text": "Everyone is welcome, whatever your age, sex or nationality is.",
+                  "translation": "无论年龄、性别或国籍，我们都欢迎。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T01_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214274,
+            "setId": 14255,
+            "textNo": 1
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 2,
+          "questionId": 214275,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text02.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text02.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 17.032,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "这是我的销售报告，你星期一要用于……"
+            },
+            {
+              "speaker": "W",
+              "text": "星期一开会要用。安迪，我知道了。我已经把这事记下来了。"
+            },
+            {
+              "speaker": "M",
+              "text": "那么，我还漏了什么？如果你有需要的，我下周五就休假回来了……"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.08,
+              "end": 4.488,
+              "text": "Here's my sales report; you're gonna need that for Monday's ...",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14159,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-2-0-0",
+                  "startChar": 0,
+                  "endChar": 63,
+                  "text": "Here's my sales report; you're gonna need that for Monday's ...",
+                  "translation": "这是我的销售报告，你星期一要用于……",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 4.74,
+              "end": 10.105,
+              "text": "For Monday's meeting. Andy, I got that. I've already taken a written note of that.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14160,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-2-1-0",
+                  "startChar": 0,
+                  "endChar": 21,
+                  "text": "For Monday's meeting.",
+                  "translation": "星期一开会要用。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-2-1-22",
+                  "startChar": 22,
+                  "endChar": 39,
+                  "text": "Andy, I got that.",
+                  "translation": "安迪，我知道了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-2-1-40",
+                  "startChar": 40,
+                  "endChar": 82,
+                  "text": "I've already taken a written note of that.",
+                  "translation": "我已经把这事记下来了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 10.34,
+              "end": 16.651,
+              "text": "So, what am I forgetting? I'll be back next Friday from vacation if you need anything ...",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14161,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-2-2-0",
+                  "startChar": 0,
+                  "endChar": 25,
+                  "text": "So, what am I forgetting?",
+                  "translation": "那么，我还漏了什么？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-2-2-26",
+                  "startChar": 26,
+                  "endChar": 89,
+                  "text": "I'll be back next Friday from vacation if you need anything ...",
+                  "translation": "如果你有需要的，我下周五就休假回来了……",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T02_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214275,
+            "setId": 14255,
+            "textNo": 2
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 3,
+          "questionId": 214276,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text03.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text03.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 15.621,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "大学校园附近新开了一家餐馆。"
+            },
+            {
+              "speaker": "M",
+              "text": "你去过那儿吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "去过。价格还不错。一大碗汤面6美元，一碗鸡肉炒面8美元。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 4.029,
+              "text": "There is a new restaurant near the university campus.",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14162,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-3-0-0",
+                  "startChar": 0,
+                  "endChar": 53,
+                  "text": "There is a new restaurant near the university campus.",
+                  "translation": "大学校园附近新开了一家餐馆。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 4.07,
+              "end": 5.619,
+              "text": "Have you ever been there?",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14163,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-3-1-0",
+                  "startChar": 0,
+                  "endChar": 25,
+                  "text": "Have you ever been there?",
+                  "translation": "你去过那儿吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.65,
+              "end": 15.436,
+              "text": "Yes. The prices are not bad. A large bowl of noodle soup is $6, and a bowl of fried noodles with chicken costs $8.",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14164,
+              "clueSentence": "The prices are not bad.",
+              "clueQuestionIds": [
+                261513
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-3-2-0",
+                  "startChar": 0,
+                  "endChar": 4,
+                  "text": "Yes.",
+                  "translation": "去过。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-3-2-5",
+                  "startChar": 5,
+                  "endChar": 28,
+                  "text": "The prices are not bad.",
+                  "translation": "价格还不错。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-3-2-29",
+                  "startChar": 29,
+                  "endChar": 114,
+                  "text": "A large bowl of noodle soup is $6, and a bowl of fried noodles with chicken costs $8.",
+                  "translation": "一大碗汤面6美元，一碗鸡肉炒面8美元。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T03_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214276,
+            "setId": 14255,
+            "textNo": 3
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 4,
+          "questionId": 214277,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text04.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text04.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 17.189,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "也许我可以在校园附近整个小公寓——就我自己住的小单间。"
+            },
+            {
+              "speaker": "M",
+              "text": "一个人住公寓？"
+            },
+            {
+              "speaker": "W",
+              "text": "是啊！要是我一个人住，想怎么乱就怎么乱，也不会因为我乱而烦到别人。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 7.324,
+              "text": "Maybe I could just get a little flat near campus — a little one-room place by myself.",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14165,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-4-0-0",
+                  "startChar": 0,
+                  "endChar": 85,
+                  "text": "Maybe I could just get a little flat near campus — a little one-room place by myself.",
+                  "translation": "也许我可以在校园附近整个小公寓——就我自己住的小单间。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 7.43,
+              "end": 9.164,
+              "text": "A flat alone?",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14166,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-4-1-0",
+                  "startChar": 0,
+                  "endChar": 13,
+                  "text": "A flat alone?",
+                  "translation": "一个人住公寓？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.164,
+              "end": 16.757,
+              "text": "Yeah! If I live alone, I can be messy if I want to, and I won't annoy anyone else with my mess.",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14167,
+              "clueSentence": "If I live alone, I can be messy if I want to, and I won't annoy anyone else with my mess.",
+              "clueQuestionIds": [
+                261514
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-4-2-0",
+                  "startChar": 0,
+                  "endChar": 5,
+                  "text": "Yeah!",
+                  "translation": "是啊！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-4-2-6",
+                  "startChar": 6,
+                  "endChar": 95,
+                  "text": "If I live alone, I can be messy if I want to, and I won't annoy anyone else with my mess.",
+                  "translation": "要是我一个人住，想怎么乱就怎么乱，也不会因为我乱而烦到别人。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T04_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214277,
+            "setId": 14255,
+            "textNo": 4
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 5,
+          "questionId": 214278,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text05.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text05.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 14.89,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "打扰一下，我能问你几个问题吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "可以。行啊。"
+            },
+            {
+              "speaker": "M",
+              "text": "嗯……你买名牌服装吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "嗯，买的。就说这条牛仔裤吧，我是在纽约的一家店里买的。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 3.778,
+              "text": "Excuse me. Can I ask you a few questions?",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14168,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-5-0-0",
+                  "startChar": 0,
+                  "endChar": 10,
+                  "text": "Excuse me.",
+                  "translation": "打扰一下，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-5-0-11",
+                  "startChar": 11,
+                  "endChar": 41,
+                  "text": "Can I ask you a few questions?",
+                  "translation": "我能问你几个问题吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 3.71,
+              "end": 5.787,
+              "text": "Yes. OK.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14169,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-5-1-0",
+                  "startChar": 0,
+                  "endChar": 4,
+                  "text": "Yes.",
+                  "translation": "可以。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-5-1-5",
+                  "startChar": 5,
+                  "endChar": 8,
+                  "text": "OK.",
+                  "translation": "行啊。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.81,
+              "end": 8.692,
+              "text": "Erm … Do you ever buy designer clothes?",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14170,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-5-2-0",
+                  "startChar": 0,
+                  "endChar": 39,
+                  "text": "Erm … Do you ever buy designer clothes?",
+                  "translation": "嗯……你买名牌服装吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 8.79,
+              "end": 14.516,
+              "text": "Well, yes, I do. These jeans, actually. I got them in a store in New York.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14171,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-5-3-0",
+                  "startChar": 0,
+                  "endChar": 16,
+                  "text": "Well, yes, I do.",
+                  "translation": "嗯，买的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-5-3-17",
+                  "startChar": 17,
+                  "endChar": 39,
+                  "text": "These jeans, actually.",
+                  "translation": "就说这条牛仔裤吧，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-5-3-40",
+                  "startChar": 40,
+                  "endChar": 74,
+                  "text": "I got them in a store in New York.",
+                  "translation": "我是在纽约的一家店里买的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T05_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214278,
+            "setId": 14255,
+            "textNo": 5
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 6,
+          "questionId": 214279,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text06.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text06.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 39.811,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "嗨，萨拉。我忘了选课报名，晚了一天。你觉得我该怎么办？"
+            },
+            {
+              "speaker": "W",
+              "text": "杰克，你真惨！这事你可没办法了。"
+            },
+            {
+              "speaker": "M",
+              "text": "你觉得现在去注册办公室会有用吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "没用，他们也会这么跟你说。"
+            },
+            {
+              "speaker": "M",
+              "text": "你报名了吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "当然报了，而且我选上这门课可不容易。它太热门了，而且是面向初学者。我以后想当程序员。"
+            },
+            {
+              "speaker": "M",
+              "text": "你觉得还有哪些课没满？"
+            },
+            {
+              "speaker": "W",
+              "text": "也许是近代史和化学吧。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 7.435,
+              "text": "Hey, Sarah. I forgot to register for the courses. I'm one day late. What do you think I should do?",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14172,
+              "clueSentence": "Hey, Sarah. I forgot to register for the courses. I'm one day late. What do you think I should do?",
+              "clueQuestionIds": [
+                261516
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-0-0",
+                  "startChar": 0,
+                  "endChar": 11,
+                  "text": "Hey, Sarah.",
+                  "translation": "嗨，萨拉。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-0-12",
+                  "startChar": 12,
+                  "endChar": 49,
+                  "text": "I forgot to register for the courses.",
+                  "translation": "我忘了选课报名，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-0-50",
+                  "startChar": 50,
+                  "endChar": 67,
+                  "text": "I'm one day late.",
+                  "translation": "晚了一天。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-0-68",
+                  "startChar": 68,
+                  "endChar": 98,
+                  "text": "What do you think I should do?",
+                  "translation": "你觉得我该怎么办？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 7.55,
+              "end": 11.409,
+              "text": "Poor you, Jack! You can't do anything about that.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14173,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-1-0",
+                  "startChar": 0,
+                  "endChar": 15,
+                  "text": "Poor you, Jack!",
+                  "translation": "杰克，你真惨！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-1-16",
+                  "startChar": 16,
+                  "endChar": 49,
+                  "text": "You can't do anything about that.",
+                  "translation": "这事你可没办法了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 11.41,
+              "end": 14.826,
+              "text": "Do you think going to the registration office will help now?",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14174,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-2-0",
+                  "startChar": 0,
+                  "endChar": 60,
+                  "text": "Do you think going to the registration office will help now?",
+                  "translation": "你觉得现在去注册办公室会有用吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 14.93,
+              "end": 18.175,
+              "text": "No, they will tell you the same thing.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14175,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-3-0",
+                  "startChar": 0,
+                  "endChar": 38,
+                  "text": "No, they will tell you the same thing.",
+                  "translation": "没用，他们也会这么跟你说。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 18.31,
+              "end": 19.625,
+              "text": "Did you register yet?",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14176,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-4-0",
+                  "startChar": 0,
+                  "endChar": 21,
+                  "text": "Did you register yet?",
+                  "translation": "你报名了吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 20.09,
+              "end": 33.329,
+              "text": "Of course, and it wasn't easy for me to register for the course. It's so popular. And it is designed for beginners. I want to be a program designer in the future.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14177,
+              "clueSentence": "it wasn't easy for me to register for the course. It's so popular. And it is designed for beginners. I want to be a program designer in the future.",
+              "clueQuestionIds": [
+                261517
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-5-0",
+                  "startChar": 0,
+                  "endChar": 64,
+                  "text": "Of course, and it wasn't easy for me to register for the course.",
+                  "translation": "当然报了，而且我选上这门课可不容易。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-5-65",
+                  "startChar": 65,
+                  "endChar": 81,
+                  "text": "It's so popular.",
+                  "translation": "它太热门了，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-5-82",
+                  "startChar": 82,
+                  "endChar": 115,
+                  "text": "And it is designed for beginners.",
+                  "translation": "而且是面向初学者。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-6-5-116",
+                  "startChar": 116,
+                  "endChar": 162,
+                  "text": "I want to be a program designer in the future.",
+                  "translation": "我以后想当程序员。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 33.49,
+              "end": 36.301,
+              "text": "What classes do you think are still open?",
+              "speaker": "M",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14178,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-6-0",
+                  "startChar": 0,
+                  "endChar": 41,
+                  "text": "What classes do you think are still open?",
+                  "translation": "你觉得还有哪些课没满？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 36.45,
+              "end": 39.39,
+              "text": "Maybe Modern History and Chemistry.",
+              "speaker": "W",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14179,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-6-7-0",
+                  "startChar": 0,
+                  "endChar": 35,
+                  "text": "Maybe Modern History and Chemistry.",
+                  "translation": "也许是近代史和化学吧。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T06_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214279,
+            "setId": 14255,
+            "textNo": 6
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 0,
+              "charIndex": 0,
+              "questionNo": 6,
+              "marker": "⑥",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 0
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 15,
+              "questionNo": 7,
+              "marker": "⑦",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 216
+            }
+          ]
+        },
+        {
+          "textNo": 7,
+          "questionId": 214280,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text07.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text07.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 33.567,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "你好，我昨天买了这副耳机，可回家后发现不是我想要的型号。所以……"
+            },
+            {
+              "speaker": "W",
+              "text": "恐怕不行，一经拆封我就无能为力了，而这副已经拆了。"
+            },
+            {
+              "speaker": "M",
+              "text": "可是我只是拆开看看，它还完好无损呢。"
+            },
+            {
+              "speaker": "W",
+              "text": "这不是重点。我们耳机售出概不退钱。"
+            },
+            {
+              "speaker": "M",
+              "text": "我不是要你退款，只是想换个别的型号。"
+            },
+            {
+              "speaker": "W",
+              "text": "抱歉，我不能这么做。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 9.328,
+              "text": "Hi, I bought this pair of earphones yesterday, but when I got home, I realised it's not the model I wanted. So ...",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14180,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-0-0",
+                  "startChar": 0,
+                  "endChar": 107,
+                  "text": "Hi, I bought this pair of earphones yesterday, but when I got home, I realised it's not the model I wanted.",
+                  "translation": "你好，我昨天买了这副耳机，可回家后发现不是我想要的型号。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-7-0-108",
+                  "startChar": 108,
+                  "endChar": 114,
+                  "text": "So ...",
+                  "translation": "所以……",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.63,
+              "end": 14.235,
+              "text": "I'm afraid I'm not allowed to do that once it's been opened, which this one has.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14181,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-1-0",
+                  "startChar": 0,
+                  "endChar": 80,
+                  "text": "I'm afraid I'm not allowed to do that once it's been opened, which this one has.",
+                  "translation": "恐怕不行，一经拆封我就无能为力了，而这副已经拆了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 14.43,
+              "end": 19.972,
+              "text": "Well, I only opened it to check, and it's still in perfect condition.",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14182,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-2-0",
+                  "startChar": 0,
+                  "endChar": 69,
+                  "text": "Well, I only opened it to check, and it's still in perfect condition.",
+                  "translation": "可是我只是拆开看看，它还完好无损呢。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 19.99,
+              "end": 24.982,
+              "text": "That's not the point. We never give money back on earphone sales.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14183,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-3-0",
+                  "startChar": 0,
+                  "endChar": 21,
+                  "text": "That's not the point.",
+                  "translation": "这不是重点。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-7-3-22",
+                  "startChar": 22,
+                  "endChar": 65,
+                  "text": "We never give money back on earphone sales.",
+                  "translation": "我们耳机售出概不退钱。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 25.074,
+              "end": 29.708,
+              "text": "I'm not asking you to do that, just to exchange a different model.",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14184,
+              "clueSentence": "just to exchange a different model.",
+              "clueQuestionIds": [
+                261519
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-4-0",
+                  "startChar": 0,
+                  "endChar": 66,
+                  "text": "I'm not asking you to do that, just to exchange a different model.",
+                  "translation": "我不是要你退款，只是想换个别的型号。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 29.99,
+              "end": 33.4,
+              "text": "I'm sorry. I'm not allowed to do that.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14185,
+              "clueSentence": "I'm sorry. I'm not allowed to do that.",
+              "clueQuestionIds": [
+                261519
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-7-5-0",
+                  "startChar": 0,
+                  "endChar": 10,
+                  "text": "I'm sorry.",
+                  "translation": "抱歉，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-7-5-11",
+                  "startChar": 11,
+                  "endChar": 38,
+                  "text": "I'm not allowed to do that.",
+                  "translation": "我不能这么做。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T07_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214280,
+            "setId": 14255,
+            "textNo": 7
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 4,
+              "charIndex": 31,
+              "questionNo": 9,
+              "marker": "⑨",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 270
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 0,
+              "questionNo": 9,
+              "marker": "⑨",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 299
+            }
+          ]
+        },
+        {
+          "textNo": 8,
+          "questionId": 214281,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text08.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text08.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 50.103,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "汤姆，你在看什么？"
+            },
+            {
+              "speaker": "M",
+              "text": "一些关于观星聚会的信息。"
+            },
+            {
+              "speaker": "W",
+              "text": "观星聚会？是有很多电影明星参加的派对之类的吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "不是，辛迪。在观星聚会上，大家聚在一起看夜空。"
+            },
+            {
+              "speaker": "W",
+              "text": "做这个还需要专门去参加聚会吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "是这样，他们要去乡下，那里远离大城市和小镇。"
+            },
+            {
+              "speaker": "W",
+              "text": "我明白了……所以那里没有城市的灯光。"
+            },
+            {
+              "speaker": "M",
+              "text": "没错。大家都说特别有意思。你想去吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "好啊。什么时候？"
+            },
+            {
+              "speaker": "M",
+              "text": "大巴星期五下午五点出发，所以大家必须四点三十集合。大概七点三十到达目的地，回来大概是半夜。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 1.935,
+              "text": "Tom, what are you reading?",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14186,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-0-0",
+                  "startChar": 0,
+                  "endChar": 26,
+                  "text": "Tom, what are you reading?",
+                  "translation": "汤姆，你在看什么？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 2.21,
+              "end": 5.354,
+              "text": "Some information about a star party.",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14187,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-1-0",
+                  "startChar": 0,
+                  "endChar": 36,
+                  "text": "Some information about a star party.",
+                  "translation": "一些关于观星聚会的信息。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.45,
+              "end": 11.163,
+              "text": "A star party? Is that a party with a lot of movie stars or something?",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14188,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-2-0",
+                  "startChar": 0,
+                  "endChar": 13,
+                  "text": "A star party?",
+                  "translation": "观星聚会？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-2-14",
+                  "startChar": 14,
+                  "endChar": 69,
+                  "text": "Is that a party with a lot of movie stars or something?",
+                  "translation": "是有很多电影明星参加的派对之类的吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 10.97,
+              "end": 17.199,
+              "text": "No, Cindy. At the star party, people get together to look at the night sky.",
+              "speaker": "M",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14189,
+              "clueSentence": "At the star party, people get together to look at the night sky.",
+              "clueQuestionIds": [
+                261520
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-3-0",
+                  "startChar": 0,
+                  "endChar": 10,
+                  "text": "No, Cindy.",
+                  "translation": "不是，辛迪。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-3-11",
+                  "startChar": 11,
+                  "endChar": 75,
+                  "text": "At the star party, people get together to look at the night sky.",
+                  "translation": "在观星聚会上，大家聚在一起看夜空。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 17.35,
+              "end": 20.069,
+              "text": "Do you need to go to a party to do that?",
+              "speaker": "W",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14190,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-4-0",
+                  "startChar": 0,
+                  "endChar": 40,
+                  "text": "Do you need to go to a party to do that?",
+                  "translation": "做这个还需要专门去参加聚会吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 20.23,
+              "end": 26.649,
+              "text": "Well, they're going to the countryside. It's far from any big cities or small towns.",
+              "speaker": "M",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14191,
+              "clueSentence": "they're going to the countryside. It's far from any big cities or small towns.",
+              "clueQuestionIds": [
+                261521
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-5-0",
+                  "startChar": 0,
+                  "endChar": 39,
+                  "text": "Well, they're going to the countryside.",
+                  "translation": "是这样，他们要去乡下，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-5-40",
+                  "startChar": 40,
+                  "endChar": 84,
+                  "text": "It's far from any big cities or small towns.",
+                  "translation": "那里远离大城市和小镇。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 26.745,
+              "end": 30.493,
+              "text": "I see ... so there are no city lights.",
+              "speaker": "W",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14192,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-6-0",
+                  "startChar": 0,
+                  "endChar": 9,
+                  "text": "I see ...",
+                  "translation": "我明白了……",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-6-10",
+                  "startChar": 10,
+                  "endChar": 38,
+                  "text": "so there are no city lights.",
+                  "translation": "所以那里没有城市的灯光。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 30.493,
+              "end": 35.463,
+              "text": "Exactly. People say it's a lot of fun. Do you want to go?",
+              "speaker": "M",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14193,
+              "clueSentence": "Do you want to go?",
+              "clueQuestionIds": [
+                261521
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-7-0",
+                  "startChar": 0,
+                  "endChar": 8,
+                  "text": "Exactly.",
+                  "translation": "没错。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-7-9",
+                  "startChar": 9,
+                  "endChar": 38,
+                  "text": "People say it's a lot of fun.",
+                  "translation": "大家都说特别有意思。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-7-39",
+                  "startChar": 39,
+                  "endChar": 57,
+                  "text": "Do you want to go?",
+                  "translation": "你想去吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 35.525,
+              "end": 37.134,
+              "text": "OK. When?",
+              "speaker": "W",
+              "turnIndex": 8,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14194,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-8-0",
+                  "startChar": 0,
+                  "endChar": 3,
+                  "text": "OK.",
+                  "translation": "好啊。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-8-4",
+                  "startChar": 4,
+                  "endChar": 9,
+                  "text": "When?",
+                  "translation": "什么时候？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 37.37,
+              "end": 50.026,
+              "text": "The bus leaves at five o'clock on Friday afternoon, so everyone must get together at 4:30. It gets to the place around 7:30. And it gets back around midnight.",
+              "speaker": "M",
+              "turnIndex": 9,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14195,
+              "clueSentence": "The bus leaves at five o'clock on Friday afternoon,",
+              "clueQuestionIds": [
+                261522
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-8-9-0",
+                  "startChar": 0,
+                  "endChar": 90,
+                  "text": "The bus leaves at five o'clock on Friday afternoon, so everyone must get together at 4:30.",
+                  "translation": "大巴星期五下午五点出发，所以大家必须四点三十集合。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-9-91",
+                  "startChar": 91,
+                  "endChar": 124,
+                  "text": "It gets to the place around 7:30.",
+                  "translation": "大概七点三十到达目的地，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-8-9-125",
+                  "startChar": 125,
+                  "endChar": 158,
+                  "text": "And it gets back around midnight.",
+                  "translation": "回来大概是半夜。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T08_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214281,
+            "setId": 14255,
+            "textNo": 8
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 3,
+              "charIndex": 11,
+              "questionNo": 10,
+              "marker": "⑩",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 110
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 6,
+              "questionNo": 11,
+              "marker": "⑪",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 193
+            },
+            {
+              "segmentIndex": 7,
+              "charIndex": 39,
+              "questionNo": 11,
+              "marker": "⑪",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 308
+            },
+            {
+              "segmentIndex": 9,
+              "charIndex": 0,
+              "questionNo": 11,
+              "marker": "⑪",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 327
+            },
+            {
+              "segmentIndex": 9,
+              "charIndex": 0,
+              "questionNo": 12,
+              "marker": "⑫",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 327
+            },
+            {
+              "segmentIndex": 9,
+              "charIndex": 91,
+              "questionNo": 12,
+              "marker": "⑫",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 398
+            }
+          ]
+        },
+        {
+          "textNo": 9,
+          "questionId": 214282,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text09.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text09.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 69.669,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "嗨，苏珊！你怎么了？"
+            },
+            {
+              "speaker": "W",
+              "text": "我今天真是倒霉透了。先是妈妈的车打不着火，幸好邻居帮忙送我去学校，可我还是迟到了。史密斯小姐很生气，因为这个月已经是第三次了。然后我发现昨晚的英语作业我没做完。"
+            },
+            {
+              "speaker": "M",
+              "text": "哦，不会吧！后来呢？"
+            },
+            {
+              "speaker": "W",
+              "text": "今天放学后我得为作业的事去见史密斯小姐。我很担心，希望她能让我晚点交。"
+            },
+            {
+              "speaker": "M",
+              "text": "唉，史密斯小姐是个好老师，她可能会多给你点时间。"
+            },
+            {
+              "speaker": "W",
+              "text": "我这倒霉的一天还没完呢。体育课上我们踢足球，我没留神，球砸到我头上了！我还摔倒在地上。"
+            },
+            {
+              "speaker": "M",
+              "text": "你去校医那儿了吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "没有，我没受伤。为什么今天尽是倒霉事发生在我身上？我觉得好绝望。"
+            },
+            {
+              "speaker": "M",
+              "text": "唉，希望你好起来。也许你回家后看看电视、放松一下就好了。"
+            },
+            {
+              "speaker": "W",
+              "text": "希望吧。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 3.191,
+              "text": "Hi, Susan! What's the matter with you?",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14198,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-0-0",
+                  "startChar": 0,
+                  "endChar": 10,
+                  "text": "Hi, Susan!",
+                  "translation": "嗨，苏珊！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-0-11",
+                  "startChar": 11,
+                  "endChar": 38,
+                  "text": "What's the matter with you?",
+                  "translation": "你怎么了？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 3.23,
+              "end": 23.121,
+              "text": "I'm having such a bad day. First, my mum's car wouldn't start, luckily my neighbour helped send me to school but I was late for school. Miss Smith was angry because it was the third time this month. Then I realised that I hadn't finished my English homework last night.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14199,
+              "clueSentence": "I was late for school. Miss Smith was angry because it was the third time this month.",
+              "clueQuestionIds": [
+                261523
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-1-0",
+                  "startChar": 0,
+                  "endChar": 26,
+                  "text": "I'm having such a bad day.",
+                  "translation": "我今天真是倒霉透了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-1-27",
+                  "startChar": 27,
+                  "endChar": 135,
+                  "text": "First, my mum's car wouldn't start, luckily my neighbour helped send me to school but I was late for school.",
+                  "translation": "先是妈妈的车打不着火，幸好邻居帮忙送我去学校，可我还是迟到了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-1-136",
+                  "startChar": 136,
+                  "endChar": 198,
+                  "text": "Miss Smith was angry because it was the third time this month.",
+                  "translation": "史密斯小姐很生气，因为这个月已经是第三次了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-1-199",
+                  "startChar": 199,
+                  "endChar": 269,
+                  "text": "Then I realised that I hadn't finished my English homework last night.",
+                  "translation": "然后我发现昨晚的英语作业我没做完。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 23.35,
+              "end": 25.551,
+              "text": "Oh, no! What happened then?",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14201,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-2-0",
+                  "startChar": 0,
+                  "endChar": 7,
+                  "text": "Oh, no!",
+                  "translation": "哦，不会吧！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-2-8",
+                  "startChar": 8,
+                  "endChar": 27,
+                  "text": "What happened then?",
+                  "translation": "后来呢？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 25.69,
+              "end": 34.741,
+              "text": "I have to see Miss Smith after school today about my homework. I'm worried. I hope she lets me turn it in late.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14202,
+              "clueSentence": "I have to see Miss Smith after school today about my homework.",
+              "clueQuestionIds": [
+                261524
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-3-0",
+                  "startChar": 0,
+                  "endChar": 62,
+                  "text": "I have to see Miss Smith after school today about my homework.",
+                  "translation": "今天放学后我得为作业的事去见史密斯小姐。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-3-63",
+                  "startChar": 63,
+                  "endChar": 75,
+                  "text": "I'm worried.",
+                  "translation": "我很担心，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-3-76",
+                  "startChar": 76,
+                  "endChar": 111,
+                  "text": "I hope she lets me turn it in late.",
+                  "translation": "希望她能让我晚点交。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 34.83,
+              "end": 39.795,
+              "text": "Well, Miss Smith is a nice teacher. She will probably give you more time.",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14203,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-4-0",
+                  "startChar": 0,
+                  "endChar": 35,
+                  "text": "Well, Miss Smith is a nice teacher.",
+                  "translation": "唉，史密斯小姐是个好老师，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-4-36",
+                  "startChar": 36,
+                  "endChar": 73,
+                  "text": "She will probably give you more time.",
+                  "translation": "她可能会多给你点时间。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 39.99,
+              "end": 51.995,
+              "text": "That isn't the end of my bad day yet. In PE class, we were playing football, and I wasn't paying attention. The ball hit me on the head! And I fell down on the ground.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14204,
+              "clueSentence": "In PE class, we were playing football, and I wasn't paying attention. The ball hit me on the head!",
+              "clueQuestionIds": [
+                261525
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-5-0",
+                  "startChar": 0,
+                  "endChar": 37,
+                  "text": "That isn't the end of my bad day yet.",
+                  "translation": "我这倒霉的一天还没完呢。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-5-38",
+                  "startChar": 38,
+                  "endChar": 107,
+                  "text": "In PE class, we were playing football, and I wasn't paying attention.",
+                  "translation": "体育课上我们踢足球，我没留神，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-5-108",
+                  "startChar": 108,
+                  "endChar": 136,
+                  "text": "The ball hit me on the head!",
+                  "translation": "球砸到我头上了！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-5-137",
+                  "startChar": 137,
+                  "endChar": 167,
+                  "text": "And I fell down on the ground.",
+                  "translation": "我还摔倒在地上。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 51.93,
+              "end": 53.926,
+              "text": "Did you go to the school nurse?",
+              "speaker": "M",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14205,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-6-0",
+                  "startChar": 0,
+                  "endChar": 31,
+                  "text": "Did you go to the school nurse?",
+                  "translation": "你去校医那儿了吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 54.07,
+              "end": 60.33,
+              "text": "No, I wasn't hurt. Why are only bad things happening to me today? I feel hopeless.",
+              "speaker": "W",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14206,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-7-0",
+                  "startChar": 0,
+                  "endChar": 18,
+                  "text": "No, I wasn't hurt.",
+                  "translation": "没有，我没受伤。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-7-19",
+                  "startChar": 19,
+                  "endChar": 65,
+                  "text": "Why are only bad things happening to me today?",
+                  "translation": "为什么今天尽是倒霉事发生在我身上？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-7-66",
+                  "startChar": 66,
+                  "endChar": 82,
+                  "text": "I feel hopeless.",
+                  "translation": "我觉得好绝望。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 60.53,
+              "end": 67.61,
+              "text": "Well, I hope that your day gets better. Maybe when you get home, you can just watch television and relax.",
+              "speaker": "M",
+              "turnIndex": 8,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14207,
+              "clueSentence": "Maybe when you get home, you can just watch television and relax.",
+              "clueQuestionIds": [
+                261526
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-8-0",
+                  "startChar": 0,
+                  "endChar": 39,
+                  "text": "Well, I hope that your day gets better.",
+                  "translation": "唉，希望你好起来。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-9-8-40",
+                  "startChar": 40,
+                  "endChar": 105,
+                  "text": "Maybe when you get home, you can just watch television and relax.",
+                  "translation": "也许你回家后看看电视、放松一下就好了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 67.65,
+              "end": 69.227,
+              "text": "I hope so.",
+              "speaker": "W",
+              "turnIndex": 9,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14208,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-9-9-0",
+                  "startChar": 0,
+                  "endChar": 10,
+                  "text": "I hope so.",
+                  "translation": "希望吧。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T09_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214282,
+            "setId": 14255,
+            "textNo": 9
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 1,
+              "charIndex": 113,
+              "questionNo": 13,
+              "marker": "⑬",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 114
+            },
+            {
+              "segmentIndex": 1,
+              "charIndex": 204,
+              "questionNo": 14,
+              "marker": "⑭",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 185
+            },
+            {
+              "segmentIndex": 3,
+              "charIndex": 0,
+              "questionNo": 14,
+              "marker": "⑭",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 258
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 38,
+              "questionNo": 15,
+              "marker": "⑮",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 427
+            },
+            {
+              "segmentIndex": 8,
+              "charIndex": 40,
+              "questionNo": 16,
+              "marker": "⑯",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 641
+            }
+          ]
+        },
+        {
+          "textNo": 10,
+          "questionId": 214283,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14255-Text10.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14255-Text10.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 69.355,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "大家好，我叫杰克。我喜欢我的高中生活。我是一名高一学生。"
+            },
+            {
+              "speaker": "M",
+              "text": "我想谈谈我的课程。星期一上午我有四节课，下午有两节课。"
+            },
+            {
+              "speaker": "M",
+              "text": "第一节课是数学。我喜欢数学，它很容易。"
+            },
+            {
+              "speaker": "M",
+              "text": "我的数学班上有二十三名学生，其中有几名来自不同国家的交换生。"
+            },
+            {
+              "speaker": "M",
+              "text": "化学课有点儿无聊，那个班有二十名学生。老师喜欢穿正装，看起来很精神。"
+            },
+            {
+              "speaker": "M",
+              "text": "我的英语班人数不多。"
+            },
+            {
+              "speaker": "M",
+              "text": "我们的英语老师朱迪讲课总是很精彩，我觉得说英语很有趣。"
+            },
+            {
+              "speaker": "M",
+              "text": "科学课是人数最多的班，有二十名男生和十名女生。不过科学课很难。"
+            },
+            {
+              "speaker": "M",
+              "text": "每门课我们都有测验。下午第一节课是物理，我最喜欢它。"
+            },
+            {
+              "speaker": "M",
+              "text": "一天的最后一节课是音乐，我们在那节课上很活跃。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.04,
+              "end": 7.005,
+              "text": "Hi, my name is Jack. I like my senior high school life. I'm a Grade 10 student.",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14209,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-0-0",
+                  "startChar": 0,
+                  "endChar": 20,
+                  "text": "Hi, my name is Jack.",
+                  "translation": "大家好，我叫杰克。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-0-21",
+                  "startChar": 21,
+                  "endChar": 55,
+                  "text": "I like my senior high school life.",
+                  "translation": "我喜欢我的高中生活。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-0-56",
+                  "startChar": 56,
+                  "endChar": 79,
+                  "text": "I'm a Grade 10 student.",
+                  "translation": "我是一名高一学生。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 7.005,
+              "end": 15.505,
+              "text": "I'd like to talk about my courses. On Mondays, I have four classes in the morning and two classes in the afternoon.",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14210,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-1-0",
+                  "startChar": 0,
+                  "endChar": 34,
+                  "text": "I'd like to talk about my courses.",
+                  "translation": "我想谈谈我的课程。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-1-35",
+                  "startChar": 35,
+                  "endChar": 115,
+                  "text": "On Mondays, I have four classes in the morning and two classes in the afternoon.",
+                  "translation": "星期一上午我有四节课，下午有两节课。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 15.505,
+              "end": 20.29,
+              "text": "The first class is maths. I like maths. It's easy.",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14211,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-2-0",
+                  "startChar": 0,
+                  "endChar": 25,
+                  "text": "The first class is maths.",
+                  "translation": "第一节课是数学。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-2-26",
+                  "startChar": 26,
+                  "endChar": 39,
+                  "text": "I like maths.",
+                  "translation": "我喜欢数学，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-2-40",
+                  "startChar": 40,
+                  "endChar": 50,
+                  "text": "It's easy.",
+                  "translation": "它很容易。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 20.29,
+              "end": 28.05,
+              "text": "There are twenty-three students in my maths class, including a few exchange students who come from different nations.",
+              "speaker": "M",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14212,
+              "clueSentence": "There are twenty-three students in my maths class, including a few exchange students who come from different nations.",
+              "clueQuestionIds": [
+                261527
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-3-0",
+                  "startChar": 0,
+                  "endChar": 117,
+                  "text": "There are twenty-three students in my maths class, including a few exchange students who come from different nations.",
+                  "translation": "我的数学班上有二十三名学生，其中有几名来自不同国家的交换生。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 28.05,
+              "end": 37.42,
+              "text": "Chemistry is a bit boring, and there are twenty students in that class. The teacher likes to wear formal clothes and he looks nice.",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14213,
+              "clueSentence": "Chemistry is a bit boring,",
+              "clueQuestionIds": [
+                261528
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-4-0",
+                  "startChar": 0,
+                  "endChar": 71,
+                  "text": "Chemistry is a bit boring, and there are twenty students in that class.",
+                  "translation": "化学课有点儿无聊，那个班有二十名学生。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-4-72",
+                  "startChar": 72,
+                  "endChar": 131,
+                  "text": "The teacher likes to wear formal clothes and he looks nice.",
+                  "translation": "老师喜欢穿正装，看起来很精神。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 37.42,
+              "end": 39.74,
+              "text": "My English class is small.",
+              "speaker": "M",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14214,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-5-0",
+                  "startChar": 0,
+                  "endChar": 26,
+                  "text": "My English class is small.",
+                  "translation": "我的英语班人数不多。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 39.74,
+              "end": 45.93,
+              "text": "Our English teacher Judy always gives great lectures and I think it's fun to speak English.",
+              "speaker": "M",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14215,
+              "clueSentence": "Our English teacher Judy always gives great lectures and I think it's fun to speak English.",
+              "clueQuestionIds": [
+                261529
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-6-0",
+                  "startChar": 0,
+                  "endChar": 91,
+                  "text": "Our English teacher Judy always gives great lectures and I think it's fun to speak English.",
+                  "translation": "我们的英语老师朱迪讲课总是很精彩，我觉得说英语很有趣。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 45.93,
+              "end": 55.331,
+              "text": "Science is the biggest class. There are twenty male students and ten female students. Science is very hard, though.",
+              "speaker": "M",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14216,
+              "clueSentence": "Science is the biggest class. There are twenty male students and ten female students.",
+              "clueQuestionIds": [
+                261530
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-7-0",
+                  "startChar": 0,
+                  "endChar": 29,
+                  "text": "Science is the biggest class.",
+                  "translation": "科学课是人数最多的班，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-7-30",
+                  "startChar": 30,
+                  "endChar": 85,
+                  "text": "There are twenty male students and ten female students.",
+                  "translation": "有二十名男生和十名女生。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-7-86",
+                  "startChar": 86,
+                  "endChar": 115,
+                  "text": "Science is very hard, though.",
+                  "translation": "不过科学课很难。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 55.208,
+              "end": 63.05,
+              "text": "In each class, we have a test. The first class in the afternoon is physics and I like it best.",
+              "speaker": "M",
+              "turnIndex": 8,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14217,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-8-0",
+                  "startChar": 0,
+                  "endChar": 30,
+                  "text": "In each class, we have a test.",
+                  "translation": "每门课我们都有测验。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14255-10-8-31",
+                  "startChar": 31,
+                  "endChar": 94,
+                  "text": "The first class in the afternoon is physics and I like it best.",
+                  "translation": "下午第一节课是物理，我最喜欢它。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 63.05,
+              "end": 69.275,
+              "text": "The last class of the day is music, and we are active in that class.",
+              "speaker": "M",
+              "turnIndex": 9,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14218,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14255-10-9-0",
+                  "startChar": 0,
+                  "endChar": 68,
+                  "text": "The last class of the day is music, and we are active in that class.",
+                  "translation": "一天的最后一节课是音乐，我们在那节课上很活跃。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU一T10_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214283,
+            "setId": 14255,
+            "textNo": 10
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 3,
+              "charIndex": 0,
+              "questionNo": 17,
+              "marker": "⑰",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 185
+            },
+            {
+              "segmentIndex": 4,
+              "charIndex": 0,
+              "questionNo": 18,
+              "marker": "⑱",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 282
+            },
+            {
+              "segmentIndex": 6,
+              "charIndex": 0,
+              "questionNo": 19,
+              "marker": "⑲",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 408
+            },
+            {
+              "segmentIndex": 7,
+              "charIndex": 0,
+              "questionNo": 20,
+              "marker": "⑳",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 482
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "setId": 14256,
+      "setName": "Welcome Unit 听力训练（二）",
+      "texts": [
+        {
+          "textNo": 1,
+          "questionId": 214284,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text01.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text01.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 11.572,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "玛丽，你想来杯咖啡吗？你得在沙发上休息一下。"
+            },
+            {
+              "speaker": "W",
+              "text": "哦，不用。别管我，我得专心写论文。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 5.735,
+              "text": "Mary, would you like a cup of coffee? You need to have a rest on the sofa.",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14219,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-1-0-0",
+                  "startChar": 0,
+                  "endChar": 37,
+                  "text": "Mary, would you like a cup of coffee?",
+                  "translation": "玛丽，你想来杯咖啡吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-1-0-38",
+                  "startChar": 38,
+                  "endChar": 74,
+                  "text": "You need to have a rest on the sofa.",
+                  "translation": "你得在沙发上休息一下。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.83,
+              "end": 11.096,
+              "text": "Oh, no. Just leave me alone. I need to concentrate on my paper.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14220,
+              "clueSentence": "Just leave me alone.",
+              "clueQuestionIds": [
+                261531
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-1-1-0",
+                  "startChar": 0,
+                  "endChar": 7,
+                  "text": "Oh, no.",
+                  "translation": "哦，不用。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-1-1-8",
+                  "startChar": 8,
+                  "endChar": 28,
+                  "text": "Just leave me alone.",
+                  "translation": "别管我，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-1-1-29",
+                  "startChar": 29,
+                  "endChar": 63,
+                  "text": "I need to concentrate on my paper.",
+                  "translation": "我得专心写论文。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T01_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214284,
+            "setId": 14256,
+            "textNo": 1
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 2,
+          "questionId": 214285,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text02.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text02.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 15.308,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "嘿，你收到约翰逊先生的消息了吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "还没呢。他说什么了？"
+            },
+            {
+              "speaker": "W",
+              "text": "他发了一封关于即将开展的项目的邮件。我把他的邮件转发给你。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.24,
+              "end": 4.926,
+              "text": "Hey, did you receive the information from Mr Johnson?",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14221,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-2-0-0",
+                  "startChar": 0,
+                  "endChar": 53,
+                  "text": "Hey, did you receive the information from Mr Johnson?",
+                  "translation": "嘿，你收到约翰逊先生的消息了吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 4.74,
+              "end": 8.519,
+              "text": "No, not yet. What did he say?",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14222,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-2-1-0",
+                  "startChar": 0,
+                  "endChar": 12,
+                  "text": "No, not yet.",
+                  "translation": "还没呢。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-2-1-13",
+                  "startChar": 13,
+                  "endChar": 29,
+                  "text": "What did he say?",
+                  "translation": "他说什么了？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 8.7,
+              "end": 14.832,
+              "text": "He sent an email about the upcoming project. I'll forward his email to you.",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14223,
+              "clueSentence": "He sent an email about the upcoming project. I'll forward his email to you.",
+              "clueQuestionIds": [
+                261532
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-2-2-0",
+                  "startChar": 0,
+                  "endChar": 44,
+                  "text": "He sent an email about the upcoming project.",
+                  "translation": "他发了一封关于即将开展的项目的邮件。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-2-2-45",
+                  "startChar": 45,
+                  "endChar": 75,
+                  "text": "I'll forward his email to you.",
+                  "translation": "我把他的邮件转发给你。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T02_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214285,
+            "setId": 14256,
+            "textNo": 2
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 3,
+          "questionId": 214286,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text03.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text03.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 15.621,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "派对还是定在十一号吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "那样我们准备的时间太少了。而且二十七号场地订满了。所以我最后决定改到二十五号。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.08,
+              "end": 3.092,
+              "text": "Is the party still on the eleventh?",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14224,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-3-0-0",
+                  "startChar": 0,
+                  "endChar": 35,
+                  "text": "Is the party still on the eleventh?",
+                  "translation": "派对还是定在十一号吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 3.2,
+              "end": 15.216,
+              "text": "That gives us too little time to prepare for it. And the place's booked up on the twenty-seventh. So I decide to change it to the date of the twenty-fifth at last.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14225,
+              "clueSentence": "So I decide to change it to the date of the twenty-fifth at last.",
+              "clueQuestionIds": [
+                261533
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-3-1-0",
+                  "startChar": 0,
+                  "endChar": 48,
+                  "text": "That gives us too little time to prepare for it.",
+                  "translation": "那样我们准备的时间太少了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-3-1-49",
+                  "startChar": 49,
+                  "endChar": 97,
+                  "text": "And the place's booked up on the twenty-seventh.",
+                  "translation": "而且二十七号场地订满了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-3-1-98",
+                  "startChar": 98,
+                  "endChar": 163,
+                  "text": "So I decide to change it to the date of the twenty-fifth at last.",
+                  "translation": "所以我最后决定改到二十五号。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T03_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214286,
+            "setId": 14256,
+            "textNo": 3
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 4,
+          "questionId": 214287,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text04.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text04.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 15.282,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "艾琳，你的努力真让我印象深刻。"
+            },
+            {
+              "speaker": "W",
+              "text": "我太喜欢化学了，所以对我来说这不太像工作。一有空我就想花在实验上。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.14,
+              "end": 4.826,
+              "text": "Irene, your hard work really left me with a deep impression.",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14226,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-4-0-0",
+                  "startChar": 0,
+                  "endChar": 60,
+                  "text": "Irene, your hard work really left me with a deep impression.",
+                  "translation": "艾琳，你的努力真让我印象深刻。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.14,
+              "end": 14.979,
+              "text": "I'm into chemistry so much, so for me it's not very much like work. Whenever there is free time, I'd like to spend it on my experiment.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14227,
+              "clueSentence": "I'm into chemistry so much, so for me it's not very much like work. Whenever there is free time, I'd like to spend it on my experiment.",
+              "clueQuestionIds": [
+                261534
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-4-1-0",
+                  "startChar": 0,
+                  "endChar": 67,
+                  "text": "I'm into chemistry so much, so for me it's not very much like work.",
+                  "translation": "我太喜欢化学了，所以对我来说这不太像工作。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-4-1-68",
+                  "startChar": 68,
+                  "endChar": 135,
+                  "text": "Whenever there is free time, I'd like to spend it on my experiment.",
+                  "translation": "一有空我就想花在实验上。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T04_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214287,
+            "setId": 14256,
+            "textNo": 4
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 5,
+          "questionId": 214288,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text05.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text05.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 16.927,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "这是我第一次现场看足球比赛，感觉和看电视转播完全不同。"
+            },
+            {
+              "speaker": "M",
+              "text": "是啊，比赛真精彩。我们队赢得很漂亮。四比一是很棒的成绩。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.08,
+              "end": 8.826,
+              "text": "This is the first football match I've ever watched live, and the experience is completely different from watching it on TV.",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14228,
+              "clueSentence": "This is the first football match I've ever watched live,",
+              "clueQuestionIds": [
+                261535
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-5-0-0",
+                  "startChar": 0,
+                  "endChar": 123,
+                  "text": "This is the first football match I've ever watched live, and the experience is completely different from watching it on TV.",
+                  "translation": "这是我第一次现场看足球比赛，感觉和看电视转播完全不同。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.04,
+              "end": 16.722,
+              "text": "Yeah, the game was really exciting. Our team won really well. Four goals to one is a great result.",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14229,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-5-1-0",
+                  "startChar": 0,
+                  "endChar": 35,
+                  "text": "Yeah, the game was really exciting.",
+                  "translation": "是啊，比赛真精彩。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-5-1-36",
+                  "startChar": 36,
+                  "endChar": 61,
+                  "text": "Our team won really well.",
+                  "translation": "我们队赢得很漂亮。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-5-1-62",
+                  "startChar": 62,
+                  "endChar": 98,
+                  "text": "Four goals to one is a great result.",
+                  "translation": "四比一是很棒的成绩。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T05_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214288,
+            "setId": 14256,
+            "textNo": 5
+          },
+          "derivedClueMarkers": []
+        },
+        {
+          "textNo": 6,
+          "questionId": 214289,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text06.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text06.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 29.022,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "嗨，玛丽！"
+            },
+            {
+              "speaker": "W",
+              "text": "你好，马克！"
+            },
+            {
+              "speaker": "M",
+              "text": "你脸色有点苍白。怎么了？担心我们的数学考试还是下午的实验？"
+            },
+            {
+              "speaker": "W",
+              "text": "不是。我只是对明天的歌唱比赛有点紧张。"
+            },
+            {
+              "speaker": "M",
+              "text": "别担心。你已经练了很久了。我觉得之前的准备给了你信心。我相信你会表现得很棒。"
+            },
+            {
+              "speaker": "W",
+              "text": "谢谢你，马克！这话我正需要听。明天我会尽力的。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 1.282,
+              "text": "Hi, Mary!",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14230,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-0-0",
+                  "startChar": 0,
+                  "endChar": 9,
+                  "text": "Hi, Mary!",
+                  "translation": "嗨，玛丽！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 1.43,
+              "end": 2.842,
+              "text": "Hello, Mark!",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14231,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-1-0",
+                  "startChar": 0,
+                  "endChar": 12,
+                  "text": "Hello, Mark!",
+                  "translation": "你好，马克！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 2.85,
+              "end": 9.817,
+              "text": "You look a little pale. What's up? Worried about our maths exam or the experiment in the afternoon?",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14232,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-2-0",
+                  "startChar": 0,
+                  "endChar": 23,
+                  "text": "You look a little pale.",
+                  "translation": "你脸色有点苍白。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-2-24",
+                  "startChar": 24,
+                  "endChar": 34,
+                  "text": "What's up?",
+                  "translation": "怎么了？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-2-35",
+                  "startChar": 35,
+                  "endChar": 99,
+                  "text": "Worried about our maths exam or the experiment in the afternoon?",
+                  "translation": "担心我们的数学考试还是下午的实验？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.817,
+              "end": 14.797,
+              "text": "No. I'm just a little anxious about my singing competition tomorrow.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14233,
+              "clueSentence": "I'm just a little anxious about my singing competition tomorrow.",
+              "clueQuestionIds": [
+                261536
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-3-0",
+                  "startChar": 0,
+                  "endChar": 3,
+                  "text": "No.",
+                  "translation": "不是。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-3-4",
+                  "startChar": 4,
+                  "endChar": 68,
+                  "text": "I'm just a little anxious about my singing competition tomorrow.",
+                  "translation": "我只是对明天的歌唱比赛有点紧张。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 14.797,
+              "end": 23.591,
+              "text": "Don't worry. You've been practising for a long time. I think you've got confidence from earlier preparation. I'm sure you'll do great.",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14234,
+              "clueSentence": "Don't worry. You've been practising for a long time. I think you've got confidence from earlier preparation. I'm sure you'll do great.",
+              "clueQuestionIds": [
+                261537
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-4-0",
+                  "startChar": 0,
+                  "endChar": 12,
+                  "text": "Don't worry.",
+                  "translation": "别担心。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-4-13",
+                  "startChar": 13,
+                  "endChar": 52,
+                  "text": "You've been practising for a long time.",
+                  "translation": "你已经练了很久了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-4-53",
+                  "startChar": 53,
+                  "endChar": 108,
+                  "text": "I think you've got confidence from earlier preparation.",
+                  "translation": "我觉得之前的准备给了你信心。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-4-109",
+                  "startChar": 109,
+                  "endChar": 134,
+                  "text": "I'm sure you'll do great.",
+                  "translation": "我相信你会表现得很棒。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 23.61,
+              "end": 28.746,
+              "text": "Thanks, Mark! I needed that. I'll do my best tomorrow.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14235,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-6-5-0",
+                  "startChar": 0,
+                  "endChar": 13,
+                  "text": "Thanks, Mark!",
+                  "translation": "谢谢你，马克！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-5-14",
+                  "startChar": 14,
+                  "endChar": 28,
+                  "text": "I needed that.",
+                  "translation": "这话我正需要听。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-6-5-29",
+                  "startChar": 29,
+                  "endChar": 54,
+                  "text": "I'll do my best tomorrow.",
+                  "translation": "明天我会尽力的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T06_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214289,
+            "setId": 14256,
+            "textNo": 6
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 3,
+              "charIndex": 4,
+              "questionNo": 6,
+              "marker": "⑥",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 95
+            },
+            {
+              "segmentIndex": 4,
+              "charIndex": 0,
+              "questionNo": 7,
+              "marker": "⑦",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 148
+            }
+          ]
+        },
+        {
+          "textNo": 7,
+          "questionId": 214290,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text07.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text07.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 33.855,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "我们要去三塔主题公园了。我太兴奋了。"
+            },
+            {
+              "speaker": "W",
+              "text": "真的吗？我讨厌主题公园。我去年夏天去过，那个过山车太吓人了。"
+            },
+            {
+              "speaker": "M",
+              "text": "是吗？我听说很棒啊！"
+            },
+            {
+              "speaker": "W",
+              "text": "嗯，如果你想要吓破胆的话，确实很棒。我觉得“幽灵之旅”更好玩。"
+            },
+            {
+              "speaker": "M",
+              "text": "才不呢，我去年玩过那个，烦死了。吃的很难吃，那个项目也很无聊。我倒是盼着坐过山车。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.11,
+              "end": 5.048,
+              "text": "We're going to the Three Towers Theme Park. I'm so excited.",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14236,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-7-0-0",
+                  "startChar": 0,
+                  "endChar": 43,
+                  "text": "We're going to the Three Towers Theme Park.",
+                  "translation": "我们要去三塔主题公园了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-0-44",
+                  "startChar": 44,
+                  "endChar": 59,
+                  "text": "I'm so excited.",
+                  "translation": "我太兴奋了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.09,
+              "end": 12.644,
+              "text": "Really? I hate theme parks. I went last summer and the roller coaster was way too frightening.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14237,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-7-1-0",
+                  "startChar": 0,
+                  "endChar": 7,
+                  "text": "Really?",
+                  "translation": "真的吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-1-8",
+                  "startChar": 8,
+                  "endChar": 27,
+                  "text": "I hate theme parks.",
+                  "translation": "我讨厌主题公园。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-1-28",
+                  "startChar": 28,
+                  "endChar": 94,
+                  "text": "I went last summer and the roller coaster was way too frightening.",
+                  "translation": "我去年夏天去过，那个过山车太吓人了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 12.63,
+              "end": 15.783,
+              "text": "Really? I heard it was fantastic!",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14238,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-7-2-0",
+                  "startChar": 0,
+                  "endChar": 7,
+                  "text": "Really?",
+                  "translation": "是吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-2-8",
+                  "startChar": 8,
+                  "endChar": 33,
+                  "text": "I heard it was fantastic!",
+                  "translation": "我听说很棒啊！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 15.783,
+              "end": 21.926,
+              "text": "Well, it is, if you want to be frightened out of your mind. I thought Ghost Ride was better.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14239,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-7-3-0",
+                  "startChar": 0,
+                  "endChar": 59,
+                  "text": "Well, it is, if you want to be frightened out of your mind.",
+                  "translation": "嗯，如果你想要吓破胆的话，确实很棒。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-3-60",
+                  "startChar": 60,
+                  "endChar": 92,
+                  "text": "I thought Ghost Ride was better.",
+                  "translation": "我觉得“幽灵之旅”更好玩。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 22.13,
+              "end": 33.63,
+              "text": "No, I went on that last year and I was totally annoyed. The food was terrible. And the ride was boring. I'm looking forward to going on the roller coaster.",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14240,
+              "clueSentence": "I went on that last year and I was totally annoyed. The food was terrible. And the ride was boring.",
+              "clueQuestionIds": [
+                261539
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-7-4-0",
+                  "startChar": 0,
+                  "endChar": 55,
+                  "text": "No, I went on that last year and I was totally annoyed.",
+                  "translation": "才不呢，我去年玩过那个，烦死了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-4-56",
+                  "startChar": 56,
+                  "endChar": 78,
+                  "text": "The food was terrible.",
+                  "translation": "吃的很难吃，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-4-79",
+                  "startChar": 79,
+                  "endChar": 103,
+                  "text": "And the ride was boring.",
+                  "translation": "那个项目也很无聊。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-7-4-104",
+                  "startChar": 104,
+                  "endChar": 155,
+                  "text": "I'm looking forward to going on the roller coaster.",
+                  "translation": "我倒是盼着坐过山车。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T07_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214290,
+            "setId": 14256,
+            "textNo": 7
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 4,
+              "charIndex": 4,
+              "questionNo": 9,
+              "marker": "⑨",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 218
+            }
+          ]
+        },
+        {
+          "textNo": 8,
+          "questionId": 214291,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text08.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text08.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 60.813,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "昨天的派对很棒，对吧？"
+            },
+            {
+              "speaker": "M",
+              "text": "是啊，我玩得很开心。音乐很棒，吃的也很好。"
+            },
+            {
+              "speaker": "W",
+              "text": "人也挺有意思。伊恩把我介绍给了劳拉·辛格。你见过她吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "应该没有。你能描述一下她吗？"
+            },
+            {
+              "speaker": "W",
+              "text": "她个子不高，很瘦，头发乌黑，眼睛是绿色的。昨天穿了一条蓝色连衣裙。"
+            },
+            {
+              "speaker": "M",
+              "text": "她这个人怎么样？"
+            },
+            {
+              "speaker": "W",
+              "text": "她外向、乐于助人，也很独立。她的善良给我留下了很深的印象。她去过新西兰和非洲。"
+            },
+            {
+              "speaker": "M",
+              "text": "真的吗？太了不起了。"
+            },
+            {
+              "speaker": "W",
+              "text": "还不止这些。一月份她赢得了全国写作比赛，明年九月她要去哥伦比亚大学学创意写作！"
+            },
+            {
+              "speaker": "M",
+              "text": "我很想见见她。"
+            },
+            {
+              "speaker": "W",
+              "text": "嗯，我们打算明天去看电影。你为什么不一起来呢？"
+            },
+            {
+              "speaker": "M",
+              "text": "好啊，那太好了！"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.08,
+              "end": 3.196,
+              "text": "The party was great yesterday, wasn't it?",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14241,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-0-0",
+                  "startChar": 0,
+                  "endChar": 41,
+                  "text": "The party was great yesterday, wasn't it?",
+                  "translation": "昨天的派对很棒，对吧？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 3.24,
+              "end": 9.224,
+              "text": "Yes, I really enjoyed it. The music was great and the food was excellent.",
+              "speaker": "M",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14242,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-1-0",
+                  "startChar": 0,
+                  "endChar": 25,
+                  "text": "Yes, I really enjoyed it.",
+                  "translation": "是啊，我玩得很开心。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-1-26",
+                  "startChar": 26,
+                  "endChar": 73,
+                  "text": "The music was great and the food was excellent.",
+                  "translation": "音乐很棒，吃的也很好。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.32,
+              "end": 15.47,
+              "text": "The people were interesting too. Ian introduced me to Laura Singer. Did you meet her?",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14243,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-2-0",
+                  "startChar": 0,
+                  "endChar": 32,
+                  "text": "The people were interesting too.",
+                  "translation": "人也挺有意思。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-2-33",
+                  "startChar": 33,
+                  "endChar": 67,
+                  "text": "Ian introduced me to Laura Singer.",
+                  "translation": "伊恩把我介绍给了劳拉·辛格。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-2-68",
+                  "startChar": 68,
+                  "endChar": 85,
+                  "text": "Did you meet her?",
+                  "translation": "你见过她吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 15.54,
+              "end": 18.887,
+              "text": "I don't think so. Can you give a description of her?",
+              "speaker": "M",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14244,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-3-0",
+                  "startChar": 0,
+                  "endChar": 17,
+                  "text": "I don't think so.",
+                  "translation": "应该没有。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-3-18",
+                  "startChar": 18,
+                  "endChar": 52,
+                  "text": "Can you give a description of her?",
+                  "translation": "你能描述一下她吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 19.08,
+              "end": 26.708,
+              "text": "She's short and thin, with dark black hair and green eyes. She was in a blue dress yesterday.",
+              "speaker": "W",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14245,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-4-0",
+                  "startChar": 0,
+                  "endChar": 58,
+                  "text": "She's short and thin, with dark black hair and green eyes.",
+                  "translation": "她个子不高，很瘦，头发乌黑，眼睛是绿色的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-4-59",
+                  "startChar": 59,
+                  "endChar": 93,
+                  "text": "She was in a blue dress yesterday.",
+                  "translation": "昨天穿了一条蓝色连衣裙。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 26.72,
+              "end": 28.283,
+              "text": "And what is she like?",
+              "speaker": "M",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14246,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-5-0",
+                  "startChar": 0,
+                  "endChar": 21,
+                  "text": "And what is she like?",
+                  "translation": "她这个人怎么样？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 28.373,
+              "end": 38.335,
+              "text": "She's outgoing, helpful and independent. I was deeply impressed with her kindness. She's been to New Zealand and Africa.",
+              "speaker": "W",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14247,
+              "clueSentence": "I was deeply impressed with her kindness.",
+              "clueQuestionIds": [
+                261540
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-6-0",
+                  "startChar": 0,
+                  "endChar": 40,
+                  "text": "She's outgoing, helpful and independent.",
+                  "translation": "她外向、乐于助人，也很独立。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-6-41",
+                  "startChar": 41,
+                  "endChar": 82,
+                  "text": "I was deeply impressed with her kindness.",
+                  "translation": "她的善良给我留下了很深的印象。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-6-83",
+                  "startChar": 83,
+                  "endChar": 120,
+                  "text": "She's been to New Zealand and Africa.",
+                  "translation": "她去过新西兰和非洲。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 37.436,
+              "end": 39.95,
+              "text": "Really? That's so impressive.",
+              "speaker": "M",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14248,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-7-0",
+                  "startChar": 0,
+                  "endChar": 7,
+                  "text": "Really?",
+                  "translation": "真的吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-7-8",
+                  "startChar": 8,
+                  "endChar": 29,
+                  "text": "That's so impressive.",
+                  "translation": "太了不起了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 39.95,
+              "end": 51.831,
+              "text": "And that's not all. In January she won the National Writing Competition and next September she is going to Columbia University to study Creative Writing!",
+              "speaker": "W",
+              "turnIndex": 8,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14249,
+              "clueSentence": "next September she is going to Columbia University to study Creative Writing!",
+              "clueQuestionIds": [
+                261541
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-8-0",
+                  "startChar": 0,
+                  "endChar": 19,
+                  "text": "And that's not all.",
+                  "translation": "还不止这些。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-8-20",
+                  "startChar": 20,
+                  "endChar": 153,
+                  "text": "In January she won the National Writing Competition and next September she is going to Columbia University to study Creative Writing!",
+                  "translation": "一月份她赢得了全国写作比赛，明年九月她要去哥伦比亚大学学创意写作！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 51.763,
+              "end": 53.134,
+              "text": "I'd love to meet her.",
+              "speaker": "M",
+              "turnIndex": 9,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14250,
+              "clueSentence": "I'd love to meet her.",
+              "clueQuestionIds": [
+                261542
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-9-0",
+                  "startChar": 0,
+                  "endChar": 21,
+                  "text": "I'd love to meet her.",
+                  "translation": "我很想见见她。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 53.173,
+              "end": 58.585,
+              "text": "Well, we're thinking of going to the cinema tomorrow. Why not join us?",
+              "speaker": "W",
+              "turnIndex": 10,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14251,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-10-0",
+                  "startChar": 0,
+                  "endChar": 53,
+                  "text": "Well, we're thinking of going to the cinema tomorrow.",
+                  "translation": "嗯，我们打算明天去看电影。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-8-10-54",
+                  "startChar": 54,
+                  "endChar": 70,
+                  "text": "Why not join us?",
+                  "translation": "你为什么不一起来呢？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 58.54,
+              "end": 60.281,
+              "text": "Sure, that'd be great!",
+              "speaker": "M",
+              "turnIndex": 11,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14252,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-8-11-0",
+                  "startChar": 0,
+                  "endChar": 22,
+                  "text": "Sure, that'd be great!",
+                  "translation": "好啊，那太好了！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T08_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214291,
+            "setId": 14256,
+            "textNo": 8
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 6,
+              "charIndex": 41,
+              "questionNo": 10,
+              "marker": "⑩",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 317
+            },
+            {
+              "segmentIndex": 8,
+              "charIndex": 76,
+              "questionNo": 11,
+              "marker": "⑪",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 464
+            },
+            {
+              "segmentIndex": 9,
+              "charIndex": 0,
+              "questionNo": 12,
+              "marker": "⑫",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 529
+            }
+          ]
+        },
+        {
+          "textNo": 9,
+          "questionId": 214292,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text09.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text09.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 62.302,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "M",
+              "text": "打扰一下，你是莉萨·埃文斯吗？史密斯先生说，我在做实验之前应该先跟你说一声。"
+            },
+            {
+              "speaker": "W",
+              "text": "是的。第一次来实验室吗？"
+            },
+            {
+              "speaker": "M",
+              "text": "是的。我不太清楚我该做什么。"
+            },
+            {
+              "speaker": "W",
+              "text": "我来给你讲讲实验室的一些安全规则，好让你在这儿知道该怎么正确操作。记住这些，确保你不会伤到自己或你的实验搭档。"
+            },
+            {
+              "speaker": "M",
+              "text": "好的，我需要知道些什么？"
+            },
+            {
+              "speaker": "W",
+              "text": "首先，不许打闹，也不许奔跑、打斗或玩游戏。而且在实验室要穿合适的衣服。也就是说，你必须全程穿实验服，还必须戴手套，也需要戴护目镜。"
+            },
+            {
+              "speaker": "M",
+              "text": "可如果我要跑去洗手间什么的呢？"
+            },
+            {
+              "speaker": "W",
+              "text": "遇到那种情况，你得把防护服全部脱下来，放到那边的清洁筐里……"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.08,
+              "end": 9.126,
+              "text": "Excuse me, but is your name Lisa Evans? Mr Smith said that I should speak with you before I carry out an experiment.",
+              "speaker": "M",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14253,
+              "clueSentence": "I should speak with you before I carry out an experiment.",
+              "clueQuestionIds": [
+                261544
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-0-0",
+                  "startChar": 0,
+                  "endChar": 39,
+                  "text": "Excuse me, but is your name Lisa Evans?",
+                  "translation": "打扰一下，你是莉萨·埃文斯吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-0-40",
+                  "startChar": 40,
+                  "endChar": 116,
+                  "text": "Mr Smith said that I should speak with you before I carry out an experiment.",
+                  "translation": "史密斯先生说，我在做实验之前应该先跟你说一声。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 9.16,
+              "end": 11.648,
+              "text": "Yes. First time in the lab?",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14254,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-1-0",
+                  "startChar": 0,
+                  "endChar": 4,
+                  "text": "Yes.",
+                  "translation": "是的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-1-5",
+                  "startChar": 5,
+                  "endChar": 27,
+                  "text": "First time in the lab?",
+                  "translation": "第一次来实验室吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 11.78,
+              "end": 15.477,
+              "text": "Yeah. I'm not really sure what I'm supposed to do.",
+              "speaker": "M",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14255,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-2-0",
+                  "startChar": 0,
+                  "endChar": 5,
+                  "text": "Yeah.",
+                  "translation": "是的。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-2-6",
+                  "startChar": 6,
+                  "endChar": 50,
+                  "text": "I'm not really sure what I'm supposed to do.",
+                  "translation": "我不太清楚我该做什么。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 15.6,
+              "end": 29.608,
+              "text": "Let me go over some of the safety rules in the lab so that you know how to act properly while you're here. Remember these to make sure that you don't do any harm to yourself or your lab partner.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14256,
+              "clueSentence": "Let me go over some of the safety rules in the lab so that you know how to act properly while you're here.",
+              "clueQuestionIds": [
+                261545
+              ],
+              "derivedClueQuestionIds": [
+                261543
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-3-0",
+                  "startChar": 0,
+                  "endChar": 106,
+                  "text": "Let me go over some of the safety rules in the lab so that you know how to act properly while you're here.",
+                  "translation": "我来给你讲讲实验室的一些安全规则，好让你在这儿知道该怎么正确操作。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-3-107",
+                  "startChar": 107,
+                  "endChar": 194,
+                  "text": "Remember these to make sure that you don't do any harm to yourself or your lab partner.",
+                  "translation": "记住这些，确保你不会伤到自己或你的实验搭档。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 30.76,
+              "end": 32.463,
+              "text": "OK, what do I need to know?",
+              "speaker": "M",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14259,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-4-0",
+                  "startChar": 0,
+                  "endChar": 27,
+                  "text": "OK, what do I need to know?",
+                  "translation": "好的，我需要知道些什么？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 32.46,
+              "end": 54.456,
+              "text": "First of all, you will not joke around, nor will you run, fight, or play games. And you need to wear proper clothes in the lab. This means you must wear a lab coat the whole time. You must also wear gloves, and you also need to wear safety glasses.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14260,
+              "clueSentence": "you must wear a lab coat the whole time.",
+              "clueQuestionIds": [
+                261546
+              ],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-5-0",
+                  "startChar": 0,
+                  "endChar": 79,
+                  "text": "First of all, you will not joke around, nor will you run, fight, or play games.",
+                  "translation": "首先，不许打闹，也不许奔跑、打斗或玩游戏。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-5-80",
+                  "startChar": 80,
+                  "endChar": 127,
+                  "text": "And you need to wear proper clothes in the lab.",
+                  "translation": "而且在实验室要穿合适的衣服。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-5-128",
+                  "startChar": 128,
+                  "endChar": 179,
+                  "text": "This means you must wear a lab coat the whole time.",
+                  "translation": "也就是说，你必须全程穿实验服，",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-9-5-180",
+                  "startChar": 180,
+                  "endChar": 248,
+                  "text": "You must also wear gloves, and you also need to wear safety glasses.",
+                  "translation": "还必须戴手套，也需要戴护目镜。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 50.98,
+              "end": 54.4,
+              "text": "But what if I have to run to the bathroom or something?",
+              "speaker": "M",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14261,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-6-0",
+                  "startChar": 0,
+                  "endChar": 55,
+                  "text": "But what if I have to run to the bathroom or something?",
+                  "translation": "可如果我要跑去洗手间什么的呢？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 54.374,
+              "end": 62.225,
+              "text": "When that happens, you need to take off all of your protective clothing and put it into the cleaning basket over there ...",
+              "speaker": "W",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14262,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-9-7-0",
+                  "startChar": 0,
+                  "endChar": 122,
+                  "text": "When that happens, you need to take off all of your protective clothing and put it into the cleaning basket over there ...",
+                  "translation": "遇到那种情况，你得把防护服全部脱下来，放到那边的清洁筐里……",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T09_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214292,
+            "setId": 14256,
+            "textNo": 9
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 0,
+              "charIndex": 59,
+              "questionNo": 14,
+              "marker": "⑭",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 45
+            },
+            {
+              "segmentIndex": 3,
+              "charIndex": 0,
+              "questionNo": 13,
+              "marker": "⑬",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 148
+            },
+            {
+              "segmentIndex": 3,
+              "charIndex": 0,
+              "questionNo": 15,
+              "marker": "⑮",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 148
+            },
+            {
+              "segmentIndex": 3,
+              "charIndex": 107,
+              "questionNo": 15,
+              "marker": "⑮",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 230
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 139,
+              "questionNo": 16,
+              "marker": "⑯",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 423
+            }
+          ]
+        },
+        {
+          "textNo": 10,
+          "questionId": 214293,
+          "sourceAudioPath": "prototype/assets/audio/welcome-unit/14256-Text10.mp3",
+          "audioPath": "prototype/assets/audio/welcome-unit/14256-Text10.mp3",
+          "whisperJsonPath": "",
+          "sourceCropStart": 0,
+          "sourceCropEnd": 84.663,
+          "alignmentScore": null,
+          "translationGroups": [
+            {
+              "speaker": "W",
+              "text": "大家好！我要讲讲我高中生活的第一天。"
+            },
+            {
+              "speaker": "W",
+              "text": "今天早上我很早就醒了，因为今天是我开启高中生活的日子。"
+            },
+            {
+              "speaker": "W",
+              "text": "无数念头涌上我的心头。我能融入大家吗？和新同学说话时我会不会感到尴尬？"
+            },
+            {
+              "speaker": "W",
+              "text": "我会遇到好老师吗？早上七点，我穿上外套，对着镜子笑了笑，希望这一天顺顺利利。"
+            },
+            {
+              "speaker": "W",
+              "text": "书包压得我有些沉，但我依然站得笔直，心里满是自豪。"
+            },
+            {
+              "speaker": "W",
+              "text": "上午八点，我来到学校礼堂，迎接我的是一张张热情的笑脸。"
+            },
+            {
+              "speaker": "W",
+              "text": "随后我们参观了学校，校园里有很多值得探索的地方。"
+            },
+            {
+              "speaker": "W",
+              "text": "我只希望需要的时候能把这些都记住。之后我们前往教室去见新同学。"
+            },
+            {
+              "speaker": "W",
+              "text": "同学们都很友善，和他们在一起我很开心。"
+            },
+            {
+              "speaker": "W",
+              "text": "下午我们进一步了解了老师们，他们既友好又乐于助人。"
+            },
+            {
+              "speaker": "W",
+              "text": "下午五点，当我意识到这一天已经结束时，我也不知道自己为什么不再紧张了。"
+            },
+            {
+              "speaker": "W",
+              "text": "高中看起来或许令人害怕，但它其实和小学、初中没什么两样。我现在喜欢上高中了。"
+            },
+            {
+              "speaker": "W",
+              "text": "这是最美好的一件事。"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0.055,
+              "end": 5.41,
+              "text": "Hello, everyone! I'll talk about my first day of senior high school.",
+              "speaker": "W",
+              "turnIndex": 0,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14263,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-0-0",
+                  "startChar": 0,
+                  "endChar": 16,
+                  "text": "Hello, everyone!",
+                  "translation": "大家好！",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-0-17",
+                  "startChar": 17,
+                  "endChar": 68,
+                  "text": "I'll talk about my first day of senior high school.",
+                  "translation": "我要讲讲我高中生活的第一天。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 5.41,
+              "end": 12.825,
+              "text": "I woke up early this morning, as today was the day when I would begin my journey of senior high school.",
+              "speaker": "W",
+              "turnIndex": 1,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14264,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261547
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-1-0",
+                  "startChar": 0,
+                  "endChar": 103,
+                  "text": "I woke up early this morning, as today was the day when I would begin my journey of senior high school.",
+                  "translation": "今天早上我很早就醒了，因为今天是我开启高中生活的日子。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 12.825,
+              "end": 21.29,
+              "text": "Thousands of thoughts rushed through my mind. Will I fit in? Will I feel awkward when I talk to new classmates?",
+              "speaker": "W",
+              "turnIndex": 2,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14265,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261547
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-2-0",
+                  "startChar": 0,
+                  "endChar": 45,
+                  "text": "Thousands of thoughts rushed through my mind.",
+                  "translation": "无数念头涌上我的心头。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-2-46",
+                  "startChar": 46,
+                  "endChar": 60,
+                  "text": "Will I fit in?",
+                  "translation": "我能融入大家吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-2-61",
+                  "startChar": 61,
+                  "endChar": 111,
+                  "text": "Will I feel awkward when I talk to new classmates?",
+                  "translation": "和新同学说话时我会不会感到尴尬？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 21.29,
+              "end": 30.53,
+              "text": "Will I have nice teachers? At 7 a.m. I put on my coat and smiled in front of the mirror hoping for a good day.",
+              "speaker": "W",
+              "turnIndex": 3,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14266,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261547
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-3-0",
+                  "startChar": 0,
+                  "endChar": 26,
+                  "text": "Will I have nice teachers?",
+                  "translation": "我会遇到好老师吗？",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-3-27",
+                  "startChar": 27,
+                  "endChar": 110,
+                  "text": "At 7 a.m. I put on my coat and smiled in front of the mirror hoping for a good day.",
+                  "translation": "早上七点，我穿上外套，对着镜子笑了笑，希望这一天顺顺利利。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 30.53,
+              "end": 35.365,
+              "text": "My bag weighed me down, but I stood up tall and proud.",
+              "speaker": "W",
+              "turnIndex": 4,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14267,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-4-0",
+                  "startChar": 0,
+                  "endChar": 54,
+                  "text": "My bag weighed me down, but I stood up tall and proud.",
+                  "translation": "书包压得我有些沉，但我依然站得笔直，心里满是自豪。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 35.365,
+              "end": 41.45,
+              "text": "I arrived at the school hall with welcoming smiles at 8 a.m.",
+              "speaker": "W",
+              "turnIndex": 5,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14268,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261548,
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-5-0",
+                  "startChar": 0,
+                  "endChar": 60,
+                  "text": "I arrived at the school hall with welcoming smiles at 8 a.m.",
+                  "translation": "上午八点，我来到学校礼堂，迎接我的是一张张热情的笑脸。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 41.45,
+              "end": 47.055,
+              "text": "Then we had a tour of the school and there's a lot to explore at school.",
+              "speaker": "W",
+              "turnIndex": 6,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14269,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261548,
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-6-0",
+                  "startChar": 0,
+                  "endChar": 72,
+                  "text": "Then we had a tour of the school and there's a lot to explore at school.",
+                  "translation": "随后我们参观了学校，校园里有很多值得探索的地方。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 47.055,
+              "end": 55.395,
+              "text": "I just hoped I could remember it all when I needed to. Then we headed for our classroom to meet our classmates.",
+              "speaker": "W",
+              "turnIndex": 7,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14270,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261548,
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-7-0",
+                  "startChar": 0,
+                  "endChar": 54,
+                  "text": "I just hoped I could remember it all when I needed to.",
+                  "translation": "我只希望需要的时候能把这些都记住。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-7-55",
+                  "startChar": 55,
+                  "endChar": 111,
+                  "text": "Then we headed for our classroom to meet our classmates.",
+                  "translation": "之后我们前往教室去见新同学。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 55.395,
+              "end": 59.485,
+              "text": "I was happy with my classmates as they were all nice.",
+              "speaker": "W",
+              "turnIndex": 8,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14271,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261548,
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-8-0",
+                  "startChar": 0,
+                  "endChar": 53,
+                  "text": "I was happy with my classmates as they were all nice.",
+                  "translation": "同学们都很友善，和他们在一起我很开心。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 59.485,
+              "end": 66.335,
+              "text": "In the afternoon we got to know our teachers a bit more and they were friendly and helpful.",
+              "speaker": "W",
+              "turnIndex": 9,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14272,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261548,
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-9-0",
+                  "startChar": 0,
+                  "endChar": 91,
+                  "text": "In the afternoon we got to know our teachers a bit more and they were friendly and helpful.",
+                  "translation": "下午我们进一步了解了老师们，他们既友好又乐于助人。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 66.335,
+              "end": 73.735,
+              "text": "At 5 p.m. when I knew the day was over, I didn't know why I wasn't nervous any more.",
+              "speaker": "W",
+              "turnIndex": 10,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14273,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261549
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-10-0",
+                  "startChar": 0,
+                  "endChar": 84,
+                  "text": "At 5 p.m. when I knew the day was over, I didn't know why I wasn't nervous any more.",
+                  "translation": "下午五点，当我意识到这一天已经结束时，我也不知道自己为什么不再紧张了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 73.735,
+              "end": 82.25,
+              "text": "High school may seem frightening but it's just like primary school or junior high school. I love high school now.",
+              "speaker": "W",
+              "turnIndex": 11,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14274,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261550
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-11-0",
+                  "startChar": 0,
+                  "endChar": 89,
+                  "text": "High school may seem frightening but it's just like primary school or junior high school.",
+                  "translation": "高中看起来或许令人害怕，但它其实和小学、初中没什么两样。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                },
+                {
+                  "sentenceId": "14256-10-11-90",
+                  "startChar": 90,
+                  "endChar": 113,
+                  "text": "I love high school now.",
+                  "translation": "我现在喜欢上高中了。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            },
+            {
+              "start": 82.25,
+              "end": 84.262,
+              "text": "It's the best thing of all.",
+              "speaker": "W",
+              "turnIndex": 12,
+              "words": [],
+              "source": "录音稿时间轴_260929_1757",
+              "sourceExcelRow": 14275,
+              "clueSentence": "",
+              "clueQuestionIds": [],
+              "derivedClueQuestionIds": [
+                261550
+              ],
+              "sentenceUnits": [
+                {
+                  "sentenceId": "14256-10-12-0",
+                  "startChar": 0,
+                  "endChar": 27,
+                  "text": "It's the best thing of all.",
+                  "translation": "这是最美好的一件事。",
+                  "translationSource": "源译文按英文句界细分；原translationGroups保留"
+                }
+              ]
+            }
+          ],
+          "timingSource": "录音稿时间轴_260929_1757",
+          "sourceAudioFilename": "690_WU二T10_YM.aac",
+          "audioSource": "原Demo对应录音稿MP3（新版Excel AAC素材未提供）",
+          "audioProvenance": {
+            "source": "original-demo",
+            "transcriptId": 214293,
+            "setId": 14256,
+            "textNo": 10
+          },
+          "derivedClueMarkers": [
+            {
+              "segmentIndex": 1,
+              "charIndex": 0,
+              "questionNo": 17,
+              "marker": "⑰",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 53
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 0,
+              "questionNo": 18,
+              "marker": "⑱",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 345
+            },
+            {
+              "segmentIndex": 5,
+              "charIndex": 0,
+              "questionNo": 19,
+              "marker": "⑲",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 345
+            },
+            {
+              "segmentIndex": 10,
+              "charIndex": 0,
+              "questionNo": 19,
+              "marker": "⑲",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 650
+            },
+            {
+              "segmentIndex": 11,
+              "charIndex": 0,
+              "questionNo": 20,
+              "marker": "⑳",
+              "source": "原录音稿HTML实际圈号",
+              "normalizedSourceCharIndex": 710
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

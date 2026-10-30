@@ -1,0 +1,37 @@
+/* V1.2.27: disclosure preserves each original POS, meaning and associated row. */
+#wordDetailDialog .resource-sense-overview>section.v1227-meaning-group{display:block;min-width:0;}
+#wordDetailDialog .v1227-group-heading,#wordDetailDialog .resource-sense-overview>section>.resource-sense-pos.v1227-group-heading{display:block;height:auto;padding:0;margin:0 0 .2em;font-family:inherit;font-style:normal;}
+#wordDetailDialog .v1227-group-toggle{display:flex;align-items:center;justify-content:space-between;gap:.5em;box-sizing:border-box;width:100%;min-height:44px;padding:.2em .3em;background:transparent;border:0;border-bottom:1px solid var(--lecture-border);border-radius:0;color:var(--lecture-text);font:inherit;font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));font-weight:600;line-height:1.45;text-align:start;cursor:pointer;}
+#wordDetailDialog .v1227-group-toggle:hover{background:color-mix(in srgb,var(--lecture-primary) 5%,transparent);}
+#wordDetailDialog .v1227-group-toggle:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:2px;}
+#wordDetailDialog .v1227-fold-label{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15em .6em;min-width:0;}
+#wordDetailDialog .v1227-fold-arrow{flex:0 0 auto;width:.75em;height:.75em;fill:none;stroke:var(--lecture-muted);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+#wordDetailDialog .v1227-group-toggle[aria-expanded="false"] .v1227-fold-arrow{transform:rotate(-90deg);}
+#wordDetailDialog [data-v1227-fold-body][hidden]{display:none!important;}
+#wordDetailDialog .v1227-meaning-group>.resource-sense-list{margin-inline-start:.45em;}
+#wordDetailDialog .v1226-block-group>.v1227-group-heading{font-size:1em;}
+#wordDetailDialog .v1227-fold-label>.v1226-block-parent-meaning{color:var(--lecture-text);font-weight:500;}
+#wordDetailDialog .v1227-inflections{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em .8em;min-width:0;margin:.15em .3em .25em;padding:.15em 0 .3em;border-bottom:1px solid var(--lecture-border);font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));line-height:1.5;font-weight:400;}
+#wordDetailDialog .v1227-inflection{display:flex;flex-wrap:wrap;align-items:baseline;gap:.1em .35em;max-width:100%;}
+#wordDetailDialog .v1227-inflection dt{margin:0;color:var(--lecture-muted);font:inherit!important;font-weight:500;}
+#wordDetailDialog .v1227-inflection dd{margin:0;color:var(--lecture-muted);font:inherit;overflow-wrap:anywhere;}
+/* The definition, its grammatical notes and its inflection fields use one body size.
+   Citations, navigation, pronunciation and example badges keep their own rules. */
+#wordDetailDialog .v1227-meaning-group .resource-sense-line,
+#wordDetailDialog .v1227-meaning-group .resource-sense-copy,
+#wordDetailDialog .v1227-meaning-group .resource-sense-meaning,
+#wordDetailDialog .v1227-meaning-group .v1220-english-definition,
+#wordDetailDialog .v1227-meaning-group .resource-sense-chunk,
+#wordDetailDialog .v1227-meaning-group .resource-sense-meta,
+#wordDetailDialog .v1227-meaning-group .resource-sense-meta > span:not(.v1228-sense-tag),
+#wordDetailDialog .v1227-meaning-group .v1220-sense-number,
+#wordDetailDialog .v1227-inflections,
+#wordDetailDialog .v1227-inflection dt,
+#wordDetailDialog .v1227-inflection dd,
+#popover .ke-vocabulary .resource-sense-copy,
+#popover .ke-vocabulary .resource-sense-meaning,
+#popover .ke-vocabulary .resource-sense-meta,
+#popover .ke-vocabulary .resource-sense-meta > span:not(.v1228-sense-tag) {
+  font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)))!important;
+  line-height:1.45!important;
+}

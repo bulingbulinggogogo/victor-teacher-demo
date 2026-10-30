@@ -1,0 +1,61 @@
+/* Only the live upper region and its two disclosures are styled here. */
+#wordDetailDialog.v1270-upper-enabled .v1270-word-upper{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start;flex:0 0 auto;min-width:0}
+#wordDetailDialog.v1270-upper-enabled .v1270-word-upper.v1270-has-media{grid-template-columns:repeat(2,minmax(0,1fr))}
+#wordDetailDialog.v1263-interactive-fullscreen>.resource-popover-body>.v1270-word-upper{display:none}
+#wordDetailDialog .v1270-word-upper>.vwn-word-intro{width:100%;min-width:0;margin:0;padding:0}
+#wordDetailDialog .v1270-word-upper>.vwn-word-intro>.knowledge-entry{width:100%;min-width:0}
+#wordDetailDialog .v1270-word-upper .resource-guidance-card{box-sizing:border-box;width:100%;min-width:0}
+#wordDetailDialog .v1270-word-upper .resource-guidance-profile{min-width:0;flex-wrap:wrap}
+#wordDetailDialog .v1270-word-upper .resource-guidance-player{min-width:0;width:100%;grid-template-columns:44px minmax(0,1fr) auto}
+#wordDetailDialog .v1270-word-upper .resource-guidance-player input{box-sizing:border-box;width:100%;min-width:0;margin:2px 0;flex:1 1 auto}
+#wordDetailDialog .v1270-word-upper .resource-guidance-player time{min-width:0;flex:0 1 auto;overflow-wrap:anywhere}
+#wordDetailDialog .v1270-folds{--v1270-fold-base:var(--v1242-content-body-size,var(--v1229-copy-font,27px));min-width:0;width:100%;font-family:inherit;font-size:calc(var(--v1270-fold-base) * .4814814815);color:var(--lecture-text)}
+#wordDetailDialog .v1270-fold{margin:0;border:0;border-bottom:1px solid var(--lecture-border);min-width:0}
+#wordDetailDialog .v1270-fold-summary{display:grid;grid-template-columns:auto minmax(0,1fr) 14px;align-items:baseline;gap:.4em;min-width:0;padding:calc(var(--v1270-fold-base) * .3703703704) 0;cursor:pointer;list-style:none;font:inherit;line-height:1.4}
+#wordDetailDialog .v1270-fold-summary::-webkit-details-marker{display:none}
+#wordDetailDialog .v1270-fold-summary::marker{content:''}
+#wordDetailDialog .v1270-fold-title{font:inherit;font-size:calc(var(--v1270-fold-base) * .5185185185);font-weight:600;white-space:nowrap;color:var(--lecture-text)}
+#wordDetailDialog .v1270-fold-preview{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:inherit;font-weight:400;color:var(--lecture-muted)}
+#wordDetailDialog .v1270-fold-marker{align-self:center;box-sizing:border-box;width:8px;height:8px;border-right:1.5px solid var(--lecture-muted);border-bottom:1.5px solid var(--lecture-muted);transform:rotate(45deg);margin-top:-4px}
+#wordDetailDialog .v1270-fold[open] .v1270-fold-marker{transform:rotate(225deg);margin-top:4px}
+#wordDetailDialog .v1270-fold[open] .v1270-fold-title{color:var(--lecture-primary)}
+#wordDetailDialog .v1270-fold-fields{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px .55em;box-sizing:border-box;min-width:0;margin:0 0 .3em;padding:8px 12px;border:1px dashed var(--lecture-border);border-radius:8px;background:var(--lecture-panel-deep);font:inherit;line-height:1.4}
+#wordDetailDialog .v1270-fold-field{display:inline-flex;flex:0 1 auto;align-items:baseline;gap:.2em;box-sizing:border-box;max-width:100%;min-width:0;width:auto;padding:0;margin:0;border:0;background:transparent;font:inherit;line-height:1.4}
+#wordDetailDialog .v1270-fold-field>dt{display:inline;flex:0 0 auto;width:auto;margin:0;padding:0;color:var(--lecture-muted);font:inherit;line-height:1.4}
+#wordDetailDialog .v1270-fold-field>dd{display:inline;flex:0 1 auto;min-width:0;width:auto;margin:0;padding:0;color:var(--lecture-text);font:inherit;font-size:calc(var(--v1270-fold-base) * .5925925926);line-height:1.4;overflow-wrap:anywhere}
+#wordDetailDialog .v1270-fold-field strong{font:inherit;font-weight:700}
+#wordDetailDialog .v1270-word-media{width:100%;min-width:0;box-sizing:border-box;padding:7px 7px 12px;font-family:inherit;color:var(--lecture-text)}
+#wordDetailDialog .v1270-word-media[hidden],#wordDetailDialog .v1270-folds[hidden]{display:none!important}
+#wordDetailDialog .v1270-media-card{position:relative;isolation:isolate;z-index:0;display:grid;grid-template-columns:minmax(0,1fr);gap:20px;box-sizing:border-box;width:min(100%,440px);min-width:0;margin-inline:auto;padding:16px;border:1px solid var(--lecture-border);border-radius:3px;background:var(--lecture-panel);box-shadow:0 7px 18px #17243b12}
+#wordDetailDialog .v1270-media-card[data-v1270-media-mode="both"]{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));margin-inline:0}
+#wordDetailDialog .v1270-media-card::before,#wordDetailDialog .v1270-media-card::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;border:1px solid var(--lecture-border);border-radius:3px;background:var(--lecture-panel)}
+#wordDetailDialog .v1270-media-card::before{transform:translate(-3px,3px) rotate(-1deg)}
+#wordDetailDialog .v1270-media-card::after{z-index:-2;transform:translate(4px,5px) rotate(.8deg);background:var(--lecture-panel-deep)}
+#wordDetailDialog .v1270-media-figure{position:relative;z-index:1;min-width:0;width:100%;margin:0;padding:0}
+#wordDetailDialog .v1270-media-video{order:0}
+#wordDetailDialog .v1270-media-image{order:1}
+#wordDetailDialog .v1270-media-stage{position:relative;box-sizing:border-box;display:block;width:100%;max-width:100%;min-width:0;height:auto;min-height:0;margin:0;padding:0;aspect-ratio:16/9;overflow:hidden;border:0;border-radius:2px;background:var(--lecture-panel-deep);box-shadow:none}
+#wordDetailDialog .v1270-media-stage>img,#wordDetailDialog .v1270-media-stage>video{display:block;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;object-fit:cover;object-position:center;aspect-ratio:auto}
+#wordDetailDialog .v1270-image-frame>img{cursor:zoom-in}
+#wordDetailDialog .v1270-media-caption{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.35em;min-width:0;margin:0;padding:.45em 0 0;border:0;background:none;font-family:inherit;font-size:var(--v1242-stat-tag-size,inherit);line-height:1.4;color:var(--lecture-muted)}
+#wordDetailDialog .v1270-media-title{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+#wordDetailDialog .v1270-media-pager{display:inline-flex;flex:0 0 auto;align-items:center;gap:.3em;white-space:nowrap}
+#wordDetailDialog .v1270-media-button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:1.6em;min-height:1.7em;height:auto;margin:0;padding:.05em .3em;border:1px solid var(--lecture-border);border-radius:4px;background:var(--lecture-panel);font:inherit;line-height:1.4;color:var(--lecture-primary);cursor:pointer}
+#wordDetailDialog .v1270-media-button:disabled{opacity:.35;cursor:default}
+#wordDetailDialog .v1270-image-frame>.v1271-image-zoom{position:absolute;right:6px;bottom:6px;width:30px;height:30px;min-width:0;min-height:0;padding:0;background:var(--lecture-panel);font-size:20px;color:var(--lecture-primary)}
+#wordDetailDialog .v1270-video-proxy{position:relative;display:block;width:100%;height:100%;border:0;border-radius:0;padding:0;font-size:30px;color:var(--lecture-primary);background:var(--lecture-panel-deep)}
+#wordDetailDialog .v1270-video-proxy>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#wordDetailDialog .v1270-proxy-play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:1.6em;height:1.6em;border-radius:50%;background:var(--lecture-panel);color:var(--lecture-primary);pointer-events:none}
+#wordDetailDialog .v1270-image-frame:fullscreen{display:flex!important;align-items:center;justify-content:center;width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;aspect-ratio:auto;background:#000}
+#wordDetailDialog .v1270-image-frame:fullscreen>img{width:100%!important;height:100%!important;object-fit:contain!important;cursor:zoom-out}
+#wordDetailDialog .v1270-fold-summary:focus-visible,#wordDetailDialog .v1270-media-button:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:3px}
+/* The original vocabulary typography includes important text sizes. Keep this compact local hierarchy explicit. */
+#wordDetailDialog .v1270-fold-title{font-size:calc(var(--v1270-fold-base) * .5185185185)!important}
+#wordDetailDialog .v1270-fold-preview,#wordDetailDialog .v1270-fold-field>dt{font-size:calc(var(--v1270-fold-base) * .4814814815)!important}
+#wordDetailDialog .v1270-fold-field>dd,#wordDetailDialog .v1270-fold-field>dd strong{font-size:calc(var(--v1270-fold-base) * .5925925926)!important}
+@media(max-width:1000px){#wordDetailDialog .v1270-word-upper{gap:16px}#wordDetailDialog .v1270-media-card{gap:12px;padding:12px}}
+@media(max-width:1000px){#wordDetailDialog .v1270-word-upper .resource-guidance-player{grid-template-columns:44px minmax(0,1fr)}#wordDetailDialog .v1270-word-upper .resource-guidance-player time{grid-column:2;justify-self:end}#wordDetailDialog .v1270-word-upper .resource-guidance-player .resource-inline-audio{grid-row:1 / span 2}}
+#wordDetailDialog .v1271-media-demo-tools{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;min-width:0;margin:0 0 12px;font-family:inherit;font-size:var(--v1242-stat-tag-size,12px);line-height:1.4}
+#wordDetailDialog .v1271-media-demo-label{flex:0 0 auto;color:var(--lecture-muted)}
+#wordDetailDialog .v1271-media-demo-tools .v1270-media-button{min-height:1.9em;padding:.2em .5em;font-size:inherit}
+#wordDetailDialog .v1271-media-demo-tools [aria-pressed="true"]{color:var(--lecture-primary);border-color:var(--lecture-primary);background:var(--lecture-panel-deep)}

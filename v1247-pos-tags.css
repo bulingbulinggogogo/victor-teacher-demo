@@ -1,0 +1,36 @@
+/* Block-source POS is a grammatical label, like countability/transitivity.
+   Keep field colors theme-owned and leave the meaning's POS title unchanged. */
+#wordDetailDialog :is([data-case-module="collocations"],[data-case-module="idioms"]) .v1226-block-pos[data-word-tag-field="pos"] {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  flex:0 0 auto;
+  border:1px solid color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-pos)) var(--v1241-tag-edge,28%),var(--lecture-panel,#fff))!important;
+  border-radius:5px;
+  background-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-pos)) var(--v1241-tag-tint,8%),var(--lecture-panel,#fff))!important;
+  color:var(--v1239-tag-ink,var(--v1239-tag-pos))!important;
+  font-family:inherit!important;
+  font-size:var(--v1242-content-body-size)!important;
+  font-style:normal;
+  font-weight:600!important;
+  line-height:1.2!important;
+  min-height:0!important;
+  height:auto;
+  padding:.05em .22em!important;
+  margin:0;
+  white-space:nowrap;
+  vertical-align:baseline;
+}
+
+/* Source context is copied intact into both modules. Its label and meaning
+   need the same visible separation even when no category wrapper remains. */
+#wordDetailDialog :is([data-case-module="collocations"],[data-case-module="idioms"]) .v1235-block-source-context {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:.15em .35em;
+  margin:.1em 0 .15em;
+  padding:0;
+  border:0;
+}

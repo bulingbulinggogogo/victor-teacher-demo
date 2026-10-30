@@ -1,0 +1,92 @@
+/* The original lecture dock remains the only dock instance.
+ * These rules change word-detail placement; button typography, theme and settings remain shared. */
+.v1223-word-dock-owner #classroomDock.v1223-word-dock > .dock-primary:not(.v1223-word-primary),
+.v1223-word-dock-owner #classroomDock.v1223-word-dock > .v13-answer-tools { display:none!important; }
+/* A new primary group uses the unchanged .dock-primary and .dock-text-action rules. */
+.v1223-word-dock-owner #classroomDock.v1223-word-dock > .v1223-word-primary {
+  max-height:calc(100dvh - 190px);overflow-x:hidden;overflow-y:auto;scrollbar-width:none;
+  overscroll-behavior:contain;min-height:0;
+}
+.v1223-word-dock-owner #classroomDock .v1223-word-label {display:block;max-width:100%;white-space:normal;line-height:inherit;}
+.v1223-word-dock-owner #classroomDock .vwn-count {display:inline!important;font-size:10px;margin-left:3px;padding:0;background:transparent;}
+.v1223-word-dock-owner.dock-left-layout > .resource-popover-body {padding-left:104px!important;padding-right:24px!important;}
+.v1223-word-dock-owner.dock-right-layout > .resource-popover-body {padding-right:104px!important;padding-left:24px!important;}
+.v1223-word-dock-owner.v1223-word-dock-collapsed.dock-left-layout > .resource-popover-body {padding-left:68px!important;}
+.v1223-word-dock-owner.v1223-word-dock-collapsed.dock-right-layout > .resource-popover-body {padding-right:68px!important;}
+/* Keep original module and categorical navigation above the content. */
+.v1223-word-subnav{flex:0 0 auto;min-width:0;}
+.v1223-word-subnav[hidden]{display:none!important;}
+.v1223-word-dock-owner #classroomDock .v1225-word-tree {display:flex;flex-direction:column;align-items:center;width:64px;gap:6px;}
+.v1223-word-dock-owner #classroomDock .v1225-word-main-nav {display:contents;}
+.v1223-word-dock-owner #classroomDock .v1225-word-main-nav > .dock-text-action {min-height:0;}
+.v1223-word-dock-owner #classroomDock .v1225-sub-label {display:block;max-width:100%;white-space:normal;line-height:inherit;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary {display:flex;flex-direction:column;align-items:center;gap:6px;max-height:none;overflow:visible;flex:0 0 auto;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary[hidden] {display:none!important;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary.v1225-no-flow {display:contents;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary > :not([hidden]),
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary .vpi-pos-tabs {display:contents!important;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary > [hidden],
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary .vpi-pos-tabs[hidden] {display:none!important;}
+.v1223-word-dock-owner #classroomDock .v1225-word-tree .classroom-tools-floating {
+ left:calc(var(--classroom-tool-left,0px) - var(--v1225-floating-origin-left,0px))!important;
+ top:calc(var(--classroom-tool-top,0px) - var(--v1225-floating-origin-top,0px))!important;
+}
+/* Collapsing the sidebar leaves its original floating footer tool available. */
+.v1223-word-dock-owner #classroomDock.collapsed > .v1225-word-tree,
+.v1223-word-dock-owner #classroomDock.collapsed .v1225-word-secondary:not([hidden]) {display:contents!important;}
+.v1223-word-dock-owner #classroomDock.collapsed > .v1225-word-tree > .dock-text-action,
+.v1223-word-dock-owner #classroomDock.collapsed .v1225-word-main-nav > button,
+.v1223-word-dock-owner #classroomDock.collapsed .v1225-word-secondary button:not(.classroom-tools-floating):not(.v16-icon-tool) {display:none!important;}
+/* Read the actual original .dock-text-action button, including its font,
+   40px height, palette and selected state. Cancel only old secondary-tab rules. */
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button:not(.classroom-tools-floating):not(.v16-icon-tool) {
+ display:block!important;box-sizing:border-box;flex:0 0 auto;min-width:0!important;max-width:var(--v1225-sub-normal-width)!important;
+ font-family:var(--v1225-sub-normal-font-family)!important;
+ font-size:var(--v1225-sub-normal-font-size)!important;
+ font-weight:var(--v1225-sub-normal-font-weight)!important;
+ font-style:var(--v1225-sub-normal-font-style)!important;
+ line-height:var(--v1225-sub-normal-line-height)!important;
+ letter-spacing:var(--v1225-sub-normal-letter-spacing)!important;
+ width:var(--v1225-sub-normal-width)!important;
+ height:var(--v1225-sub-normal-height)!important;
+ min-height:var(--v1225-sub-normal-min-height)!important;
+ padding:var(--v1225-sub-normal-padding)!important;
+ border-width:var(--v1225-sub-normal-border-width)!important;
+ border-style:var(--v1225-sub-normal-border-style)!important;
+ border-radius:var(--v1225-sub-normal-border-radius)!important;
+ border-color:var(--v1225-sub-normal-border-color)!important;
+ background-color:var(--v1225-sub-normal-background-color)!important;
+ color:var(--v1225-sub-normal-color)!important;
+ text-align:var(--v1225-sub-normal-text-align)!important;
+ white-space:var(--v1225-sub-normal-white-space)!important;
+ box-shadow:var(--v1225-sub-normal-box-shadow)!important;
+}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button.active:not(.classroom-tools-floating):not(.v16-icon-tool) {
+ color:var(--v1225-sub-active-color)!important;
+ background-color:var(--v1225-sub-active-background-color)!important;
+ border-color:var(--v1225-sub-active-border-color)!important;
+ font-weight:var(--v1225-sub-active-font-weight)!important;
+}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button:hover:not(.classroom-tools-floating):not(.v16-icon-tool) {
+ border-color:color-mix(in srgb,var(--lecture-primary) 54%,var(--lecture-border))!important;
+ background-color:color-mix(in srgb,var(--lecture-primary) 10%,transparent)!important;
+ color:color-mix(in srgb,var(--lecture-primary) 78%,#fff)!important;
+}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button.active:hover:not(.classroom-tools-floating):not(.v16-icon-tool) {
+ color:#fff!important;background-color:#0f5beae6!important;border-color:#0f5beaf5!important;
+}
+.v1223-word-dock-owner > .classroom-modal-tools {
+  display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;grid-template-rows:40px!important;
+  align-items:center;position:relative;min-height:60px;height:60px;padding:10px 24px!important;gap:12px;box-sizing:border-box;
+}
+.v1223-word-dock-owner > .classroom-modal-tools > .classroom-modal-toolstrip {display:none!important;}
+.v1223-word-dock-owner > .classroom-modal-tools > .classroom-modal-expand-host {grid-row:1!important;grid-column:1!important;justify-self:start!important;align-self:center!important;margin:0;order:0;}
+.v1223-word-dock-owner.dock-right-layout > .classroom-modal-tools > .classroom-modal-expand-host {grid-column:2!important;justify-self:end!important;}
+.v1223-word-dock-owner .v1223-word-layout-host {grid-row:1;grid-column:2;justify-self:end;display:flex;align-items:center;height:40px;margin:0;}
+.v1223-word-dock-owner.dock-right-layout .v1223-word-layout-host {grid-column:1;justify-self:start;}
+.v1223-word-layout-host > #dockLayoutSwitch {margin:0!important;}
+@media(max-height:600px){.v1223-word-dock-owner #classroomDock.v1223-word-dock > .v1223-word-primary {max-height:calc(100dvh - 170px);}}
+@media(max-width:600px){
+ .v1223-word-dock-owner.dock-left-layout > .resource-popover-body{padding-left:92px!important;padding-right:12px!important;}
+ .v1223-word-dock-owner.dock-right-layout > .resource-popover-body{padding-left:12px!important;padding-right:92px!important;}
+}

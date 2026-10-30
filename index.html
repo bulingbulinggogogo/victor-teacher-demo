@@ -1,0 +1,1821 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>教师端 Demo · V1.2.159</title>
+    <meta name="teacher-demo-version" content="V1.2.129" />
+  <link rel="stylesheet" href="./test-font.css?v=938499914dd3" />
+  <link rel="stylesheet" href="./styles.css?v=283103724c66" />
+  <link rel="stylesheet" href="./site-sync.css?v=3fc38122fbc8" />
+<link rel="stylesheet" href="./new-demo-core.css?v=32de138e525c" />
+<link rel="stylesheet" href="./knowledge-enhancements.css?v=d4fe7f9d46fc" />
+<link rel="stylesheet" href="./word-detail-case-ui.css?v=c6f96d5b60f3" />
+<link rel="stylesheet" href="./popup-dismiss.css?v=11bb7a97fcab" />
+<link rel="stylesheet" href="./theme-sync.css?v=3a7f868bec63" />
+  <link rel="stylesheet" href="./confirmed-dialog-repairs.css?v=262da1fb0eca">
+  <link rel="stylesheet" href="./test-shared-dialogs.css?v=dc942d2d9097">
+<link rel="stylesheet" href="./classroom-tools.css?v=8a7dc49137df">
+<link rel="stylesheet" href="./topic-compact.css?v=b3c144c819c1">
+<link rel="stylesheet" href="./v1213-word-navigation.css?v=50ca809688c2">
+<link rel="stylesheet" href="./v1213-illustrations.css?v=665e62f0713f">
+<link rel="stylesheet" href="./v1213-answer-entry.css?v=8cdcee05cd19">
+<link rel="stylesheet" href="./single-book-clue-markers.css?v=d34e7a1017bd">
+<link rel="stylesheet" href="./v1214-review-repairs.css?v=ab442c2ee775">
+<link rel="stylesheet" href="./v1215-popup-media.css?v=0d772288f89a">
+<link rel="stylesheet" href="./v1216-speech-alignment.css?v=08afcd629c2d">
+<link rel="stylesheet" href="./v1220-word-detail.css?v=0706f38d20ff" />
+<link rel="stylesheet" href="./v1222-family-tree.css?v=10feda9f1e3d" />
+<link rel="stylesheet" href="./v1222-sense-examples.css?v=1e15d818e4ec" />
+<link rel="stylesheet" href="./v1223-word-dock.css?v=07d0989164d7">
+<link rel="stylesheet" href="./v1224-layout.css?v=f567bd42d622">
+<link rel="stylesheet" href="./v1224-navigation.css?v=3731d92d9e38">
+<link rel="stylesheet" href="./v1225-scrollbars.css?v=e9397f75fc40">
+<link rel="stylesheet" href="./v1225-similar.css?v=9d1ce2a99fdf">
+<link rel="stylesheet" href="./v1225-resource-paging.css?v=ef6bcde04f99">
+<link rel="stylesheet" href="./v1226-diagram-size.css?v=051ac4cd65fe">
+<link rel="stylesheet" href="./v1226-word-blocks.css?v=435cb3677313">
+<link rel="stylesheet" href="./v1226-scrollbars.css?v=c3d435bce908">
+
+<link rel="stylesheet" href="v1227-folds-forms.css?v=4c6143c7101c">
+<link rel="stylesheet" href="v1227-word-metadata.css?v=c4a3602ecd3d">
+<link rel="stylesheet" href="v1227-exam-distribution.css?v=3fd9ca0cfdf3">
+<link rel="stylesheet" href="v1227-word-statistics.css?v=e95a9b84fb78">
+<link rel="stylesheet" href="v1228-layout.css?v=f6f9fc320a4e">
+<link rel="stylesheet" href="v1228-example-groups.css?v=4e6173f81aed">
+<link rel="stylesheet" href="v1229-detail-sync.css?v=60fe7950fcd0">
+<link rel="stylesheet" href="v1229-typography.css?v=9c867097672b">
+<link rel="stylesheet" href="v1231-detail-polish.css?v=07f4cb8f6d42">
+<link rel="stylesheet" href="v1232-content.css?v=3d337172ccc4">
+<link rel="stylesheet" href="v1232-pronunciation.css?v=ced121cfea8d">
+<link rel="stylesheet" href="v1232-inflections.css?v=0aa9fa498eb4">
+<link rel="stylesheet" href="v1232-topic-layout.css?v=eb02ee7cd397" />
+<link rel="stylesheet" href="v1233-word-notes.css?v=06577cf1c38e" />
+<link rel="stylesheet" href="v1235-knowledge-size.css?v=4273502c7622" />
+<link rel="stylesheet" href="v1235-video-entry.css?v=dad98e995ade" />
+<link rel="stylesheet" href="v1235-block-groups.css?v=2754f6e1ff93" />
+<link rel="stylesheet" href="v1235-detail-cleanup.css?v=eae4de651f55" />
+<link rel="stylesheet" href="v1235-note-modules.css?v=38bc00270df8" />
+<link rel="stylesheet" href="./v1241-interactions.css?v=35789df62cc8">
+<link rel="stylesheet" href="./v1241-content-alignment.css?v=1290320c37c3">
+<link rel="stylesheet" href="./v1241-tag-and-pos.css?v=0f48ee995e66">
+<link rel="stylesheet" href="./v1241-dock-layout.css?v=7667fe79bc8d">
+<link rel="stylesheet" href="./v1242-word-typography.css?v=0bb6b097a8cc" />
+<link rel="stylesheet" href="./v1242-video-card.css?v=830a803a6789" />
+<link rel="stylesheet" href="./v1244-word-theme.css?v=822a4869df50">
+<link rel="stylesheet" href="./v1244-knowledge-layout.css?v=197d400067e6">
+<link rel="stylesheet" href="./v1244-block-relations.css?v=f7f7f7ceef2a">
+<link rel="stylesheet" href="./v1245-video-card-scale.css?v=b327cb7528ee">
+<link rel="stylesheet" href="./v1246-video-highlight.css?v=e817cf0fc30a">
+<link rel="stylesheet" href="./v1246-peer-modules.css?v=40031297dae0">
+<link rel="stylesheet" href="./v1247-pos-tags.css?v=84776bb42d6a">
+<link rel="stylesheet" href="./v1247-polysemy-controls.css?v=8f93987d6f63">
+<link rel="stylesheet" href="./v1247-nominalization.css?v=29f9e8914ee7">
+<link rel="stylesheet" href="./v1250-current-sense-layout.css?v=65b75807a481">
+<link rel="stylesheet" href="./v1250-block-example-toggle.css?v=bc5168e3c80d">
+<link rel="stylesheet" href="./v1258-word-tab-scale.css?v=0a5339255304">
+<link rel="stylesheet" href="./v1260-video-stack-c_261017_2232.css?v=51a4e8394db4">
+<link rel="stylesheet" href="./v1262-video-player-layout_261018_0718.css?v=2fc190a1f67d">
+<link rel="stylesheet" href="./v1292-inline-tags-folds_261021_1216.css?v=0641590b8311">
+<link rel="stylesheet" href="./v1293-formation-typography_261021_1311.css?v=a80d30baa317">
+<script src="./v1297-dialog-keyguard_261021_2007.js?v=1159a718d60a"></script>
+<script src="./v1299-detail-repairs_261021_2116.js?v=fd2e069fb684"></script>
+<link rel="stylesheet" href="./v12146-settings-visibility_261028_1621.css?v=c8335bd9a1ea">
+<link rel="stylesheet" href="./v12104-alignment_261022_1211.css?v=7d48e33d65be">
+<link rel="stylesheet" href="v12108-refinements_261023_1101.css?v=b5ff9d597035">
+<link rel="stylesheet" href="v12117-drawer_261026_0849.css?v=7bac7c6269b6">
+<link rel="stylesheet" href="./v12114-vocabulary_261023_1510.css?v=1859b85cd2ad">
+<link rel="stylesheet" href="./v12115-listening_261023_1635.css?v=a24ecd510237">
+<link rel="stylesheet" href="./v12116-reading_261023_1700.css?v=792265d0e818">
+<link rel="stylesheet" href="./v12117-polish_261026_0849.css?v=fb1d6b1fddf1">
+<link rel="stylesheet" href="./v12118-layout_261026_0913.css?v=4ffb334b866d">
+<link rel="stylesheet" href="./v12119-spacing_261026_0932.css?v=2c88f3504e90">
+<link rel="stylesheet" href="./v12120-alignment_261026_0948.css?v=8742e8a652a9">
+<link rel="stylesheet" href="./v12121-visibility_261026_1007.css?v=dee37905e5d7">
+  <link rel="stylesheet" href="./v12122-footer_261026_1027.css?v=12e0dfcc75ca" />
+<link rel="stylesheet" href="./v12124-comments_261026_1331.css?v=7353d4512010">
+<link rel="stylesheet" href="./v12125-pronunciation-icons_261026_1413.css?v=deec5873c252">
+<link rel="stylesheet" href="./v12127-note-continuity_261026_1507.css?v=fce2ab058f9d">
+<link rel="stylesheet" href="./v12138-guidance-and-phrase_261027_1557.css?v=83d0cf304f65">
+<link rel="stylesheet" href="./v12139-example-linebreaks_261027_1613.css?v=ff7cea93c5ca">
+<link rel="stylesheet" href="./v12142-grammar-highlights_261028_0948.css?v=8830bcb65002">
+<link rel="stylesheet" href="./v12143-grammar-spacing_261028_1001.css?v=27eb90e34357">
+</head>
+  <body>
+    <button id="globalHalfScreenRestore" class="global-half-screen-restore" type="button" aria-label="点击恢复页面高度"></button>
+    <div id="globalAssistToolbar" class="global-assist-toolbar" aria-label="全局辅助工具栏">
+      <button id="globalAssistToggle" class="global-assist-handle" type="button" aria-label="展开全局辅助工具栏" aria-expanded="false">‹</button>
+      <div class="global-assist-actions" aria-hidden="true">
+        <button id="globalZoomIn" class="global-assist-button global-assist-icon-button" type="button" aria-label="放大页面">＋</button>
+        <button id="globalZoomOut" class="global-assist-button global-assist-icon-button" type="button" aria-label="缩小页面">－</button>
+        <button id="globalHalfScreen" class="global-assist-button global-assist-text-button" type="button">降半屏</button>
+      </div>
+    </div>
+
+    <section id="loginPage" class="login-page" aria-labelledby="loginTitle">
+      <img class="login-page-background" src="./assets/backgrounds/login-page-hero-16x9-v1.png?v=584e0512ed96" alt="" />
+      <div class="login-layout">
+        <section class="login-brand-panel" aria-label="维克多教师端品牌介绍">
+          <header class="login-brand-lockup">
+            <img src="./assets/brand/victor-crm-logo.png?v=2bfa4502316c" alt="维克多英语" />
+            <div>
+              <h1>维克多教师端</h1>
+              <p>让每一次英语教学更高效</p>
+            </div>
+          </header>
+        </section>
+
+        <form id="loginForm" class="login-card" novalidate>
+          <header>
+            <h2 id="loginTitle">欢迎登录</h2>
+          </header>
+          <div class="login-field">
+            <label for="loginAccount">账号</label>
+            <div class="login-input-wrap">
+              <span data-icon="user" aria-hidden="true"></span>
+              <input id="loginAccount" name="account" type="text" inputmode="numeric" autocomplete="username" value="13100001111" placeholder="请输入手机号或账号" aria-describedby="loginError" required />
+            </div>
+          </div>
+          <div class="login-field">
+            <label for="loginPassword">密码</label>
+            <div class="login-input-wrap">
+              <span data-icon="lock" aria-hidden="true"></span>
+              <input id="loginPassword" name="password" type="password" autocomplete="current-password" value="123456" placeholder="请输入密码" aria-describedby="loginError" required />
+              <button id="loginPasswordToggle" class="login-password-toggle" type="button" aria-label="显示密码" aria-pressed="false">
+                <span data-icon="eye" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <p id="loginError" class="login-error" role="alert" aria-live="polite"></p>
+          <div class="login-options">
+            <button id="loginForgot" type="button">忘记密码</button>
+          </div>
+          <button id="loginSubmit" class="login-submit" type="submit"><span>登录</span></button>
+          <p class="login-support">首次使用？请联系学校管理员开通账号</p>
+        </form>
+      </div>
+    </section>
+
+    <div id="app" class="app-shell hidden" aria-hidden="true">
+      <aside class="sidebar">
+        <div class="brand">
+          <img class="brand-logo" src="./assets/brand/victor-crm-logo.png?v=2bfa4502316c" alt="维克多英语" />
+        </div>
+        <nav class="nav">
+          <button class="nav-item active" data-page="home" title="首页">
+            <span class="nav-icon" data-icon="home"></span>
+            <span>首页</span>
+          </button>
+          <button class="nav-item" data-page="books" title="校本书籍">
+            <span class="nav-icon" data-icon="book"></span>
+            <span>校本书籍</span>
+          </button>
+          <button class="nav-item" data-page="question-bank" title="题库组卷">
+            <span class="nav-icon" data-icon="database"></span>
+            <span>题库组卷</span>
+          </button>
+          <button class="nav-item" data-page="work" title="检查作业">
+            <span class="nav-icon" data-icon="clipboard"></span>
+            <span>检查作业</span>
+          </button>
+          <button class="nav-item" data-page="classes" title="班级管理">
+            <span class="nav-icon" data-icon="users"></span>
+            <span>班级管理</span>
+          </button>
+        </nav>
+        <div class="sidebar-utilities">
+          <button id="sidebarProfileButton" class="sidebar-avatar" type="button" title="个人中心" aria-label="打开李岚岚的个人中心">
+            <img src="./assets/brand/victor-teacher-role-avatar.png?v=0859f84ccbd4" alt="李岚岚课堂机器人头像" />
+          </button>
+          <div class="sidebar-role-picker">
+            <button id="sidebarRoleToggle" class="sidebar-role-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" title="仅切换身份标签，不切换页面或数据">
+              <span id="sidebarRoleLabel">教师</span>
+              <span class="sidebar-role-caret" aria-hidden="true"></span>
+            </button>
+            <div id="sidebarRoleMenu" class="sidebar-role-menu hidden" role="listbox" aria-label="切换身份（仅原型展示）">
+              <button type="button" role="option" aria-selected="true" data-sidebar-role="teacher">教师</button>
+              <button type="button" role="option" aria-selected="false" data-sidebar-role="grade-leader">年级组长</button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-glow"></div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="home-title-row">
+            <h1 id="pageTitle" class="page-title">老师，您好</h1>
+          </div>
+        </header>
+
+        <section id="homePage" class="page home-page">
+          <p class="lead">欢迎使用维克多教师端，今天想从哪里开始呢？</p>
+          <button id="enterListening" class="feature-card">
+            <div class="feature-copy">
+              <h2>听力错题精讲</h2>
+              <p>智能分析做题数据，精准讲评高频错题，一键生成精听挖空。</p>
+            </div>
+            <img class="feature-visual-img" src="./assets/illustrations/feature-listening.png?v=1f798a52d048" alt="" />
+            <span class="feature-arrow" data-icon="arrow-right"></span>
+          </button>
+        </section>
+
+        <section id="profilePage" class="page profile-page hidden" aria-labelledby="profilePageHeading">
+          <div class="profile-page-head">
+            <div>
+              <h2 id="profilePageHeading">个人中心</h2>
+            </div>
+          </div>
+
+          <div class="profile-layout">
+            <aside class="profile-summary-card">
+              <img src="./assets/brand/victor-teacher-role-avatar.png?v=0859f84ccbd4" alt="李岚岚课堂机器人头像" />
+              <h3 id="profileSummaryName">李岚岚</h3>
+              <div class="profile-summary-actions">
+                <label class="profile-school-switch" for="profileSchoolSelect">
+                  <span>切换学校</span>
+                  <select id="profileSchoolSelect">
+                    <option value="第一中学">第一中学</option>
+                    <option value="第一中学第二校区">第一中学第二校区</option>
+                  </select>
+                </label>
+                <button id="profileLogout" class="profile-logout-button" type="button">退出登录</button>
+              </div>
+            </aside>
+
+            <div class="profile-form-stack">
+              <section class="profile-form-card" aria-labelledby="profileInfoHeading">
+                <header>
+                  <div><h3 id="profileInfoHeading">基本信息</h3></div>
+                </header>
+                <dl class="profile-info-list">
+                  <div><dt>姓名：</dt><dd id="profileInfoName">李岚岚</dd></div>
+                  <div><dt>手机号：</dt><dd id="profileInfoPhone">13100001111</dd></div>
+                  <div><dt>任职学校：</dt><dd id="profileInfoSchool">第一中学、第一中学第二校区</dd></div>
+                </dl>
+              </section>
+
+              <form id="profilePasswordForm" class="profile-form-card" novalidate>
+                <header>
+                  <div><h3 id="profilePasswordHeading">修改密码</h3></div>
+                </header>
+                <div class="profile-fields profile-password-fields">
+                  <label class="profile-field" for="profileCurrentPassword"><span><i class="profile-required-mark" aria-hidden="true">*</i>当前密码</span><input id="profileCurrentPassword" type="password" autocomplete="current-password" placeholder="请输入当前密码" /></label>
+                  <label class="profile-field" for="profileNewPassword"><span><i class="profile-required-mark" aria-hidden="true">*</i>新密码</span><input id="profileNewPassword" type="password" minlength="6" maxlength="20" autocomplete="new-password" placeholder="请输入新密码" /></label>
+                  <label class="profile-field" for="profileConfirmPassword"><span><i class="profile-required-mark" aria-hidden="true">*</i>确认新密码</span><input id="profileConfirmPassword" type="password" minlength="6" maxlength="20" autocomplete="new-password" placeholder="请再次输入新密码" /></label>
+                </div>
+                <p id="profilePasswordError" class="profile-form-error" role="alert" aria-live="polite"></p>
+                <footer><button type="submit" class="primary-action">确认修改密码</button></footer>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section id="booksPage" class="page books-page hidden">
+          <div class="school-book-tabs" role="tablist" aria-label="校本书籍状态">
+            <button class="school-book-tab active" type="button" role="tab" aria-selected="true" data-book-tab="active">
+              已激活 <b>2</b>
+            </button>
+            <button class="school-book-tab" type="button" role="tab" aria-selected="false" data-book-tab="expired">
+              已过期 <b>1</b>
+            </button>
+          </div>
+
+          <div class="school-book-panels">
+            <section class="school-book-panel" data-book-panel="active">
+              <article class="school-book-card" data-book-key="legacy-book">
+                <div class="school-book-body">
+                  <div class="school-book-summary">
+                    <img
+                      class="school-book-cover"
+                      src="./assets/book-covers/listening-advanced-grade-1-semester-1-2026.jpg?v=98a59a3c897b"
+                      alt="2026版新高中英语听力进阶高一上封面"
+                    />
+                    <div class="school-book-copy">
+                      <div class="school-book-heading">
+                        <h2>2026版《新高中英语听力进阶 高一上》</h2>
+                        <span class="school-book-status active">使用中</span>
+                      </div>
+                      <dl class="school-book-meta">
+                        <div>
+                          <dt><span data-icon="calendar"></span>有效期至</dt>
+                          <dd>2027-08-31</dd>
+                        </div>
+                        <div>
+                          <dt><span data-icon="clock"></span>最近作答</dt>
+                          <dd>Welcome Unit 听力训练（一） · 2026-08-03</dd>
+                        </div>
+                      </dl>
+                      <div class="school-book-actions" aria-label="书籍功能">
+                        <button type="button" data-book-detail-mode="catalog"><span data-icon="detail"></span><b>书籍详情</b></button>
+                        <button type="button" data-book-action="下载答题卡"><span data-icon="download"></span><b>下载答题卡</b></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <aside class="school-book-classes" aria-label="班级使用情况">
+                    <div id="schoolBookClassSummary" class="school-book-class-list"></div>
+                  </aside>
+                </div>
+
+              </article>
+              <article class="school-book-card" data-book-key="test-single-book">
+                <div class="school-book-body">
+                  <div class="school-book-summary">
+                    <img
+                      class="school-book-cover"
+                      hidden
+                      alt="测试一套题封面"
+                    />
+                    <div class="school-book-copy">
+                      <div class="school-book-heading">
+                        <h2>测试一套题</h2>
+                        <span class="school-book-status active">使用中</span>
+                      </div>
+                      <dl class="school-book-meta">
+                        <div>
+                          <dt><span data-icon="calendar"></span>有效期至</dt>
+                          <dd>--</dd>
+                        </div>
+                        <div>
+                          <dt><span data-icon="clock"></span>最近作答</dt>
+                          <dd>--</dd>
+                        </div>
+                      </dl>
+                      <div class="school-book-actions" aria-label="书籍功能">
+                        <button type="button" data-book-detail-mode="catalog"><span data-icon="detail"></span><b>书籍详情</b></button>
+                        <button type="button" data-book-action="下载答题卡"><span data-icon="download"></span><b>下载答题卡</b></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <aside class="school-book-classes" aria-label="班级使用情况">
+                    <div id="testSingleBookClassSummary" class="school-book-class-list"></div>
+                  </aside>
+                </div>
+
+              </article>
+            </section>
+
+            <section class="school-book-panel hidden" data-book-panel="expired">
+              <article class="school-book-card expired">
+                <div class="school-book-body">
+                  <div class="school-book-summary">
+                    <img
+                      class="school-book-cover"
+                      src="./assets/book-covers/listening-advanced-grade-2-semester-1-2026.jpg?v=3d365f53abc8"
+                      alt="2026版新高中英语听力进阶高二上封面"
+                    />
+                    <div class="school-book-copy">
+                      <div class="school-book-heading">
+                        <h2>2026版《新高中英语听力进阶 高二上》</h2>
+                        <span class="school-book-status expired">已过期</span>
+                      </div>
+                      <dl class="school-book-meta">
+                        <div>
+                          <dt><span data-icon="calendar"></span>有效期至</dt>
+                          <dd>2026-06-30</dd>
+                        </div>
+                        <div>
+                          <dt><span data-icon="clock"></span>最近作答</dt>
+                          <dd>Welcome Unit 听力训练（二） · 2026-06-18</dd>
+                        </div>
+                      </dl>
+                      <div class="school-book-actions" aria-label="过期书籍功能">
+                        <button type="button" data-book-action="查看详情"><span data-icon="detail"></span><b>查看详情</b></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <aside class="school-book-classes" aria-label="历史班级使用情况">
+                    <div class="school-book-class-list">
+                      <div class="school-book-class-row">
+                        <div class="school-book-class-header"><strong>高二1班</strong><span>正答率 <em>74%</em></span></div>
+                        <div class="school-book-progress-row">
+                          <b>已批改 44 / 44 套</b>
+                          <div class="school-book-progress"><i style="width: 100%"></i></div>
+                        </div>
+                      </div>
+                      <div class="school-book-class-row">
+                        <div class="school-book-class-header"><strong>高二2班</strong><span>正答率 <em>69%</em></span></div>
+                        <div class="school-book-progress-row">
+                          <b>已批改 44 / 44 套</b>
+                          <div class="school-book-progress"><i style="width: 100%"></i></div>
+                        </div>
+                      </div>
+                      <div class="school-book-class-row">
+                        <div class="school-book-class-header"><strong>高二3班</strong><span>正答率 <em>63%</em></span></div>
+                        <div class="school-book-progress-row">
+                          <b>已批改 44 / 44 套</b>
+                          <div class="school-book-progress"><i style="width: 100%"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <section id="bookOverviewPage" class="page book-overview-page hidden">
+          <header class="book-overview-header" aria-label="书籍工作台导航">
+            <nav class="book-workbench-breadcrumb" aria-label="面包屑">
+              <button id="backToBooksFromOverview" class="book-workbench-breadcrumb-link" type="button">校本书籍</button>
+              <span class="book-workbench-breadcrumb-separator" aria-hidden="true">/</span>
+              <span class="book-workbench-breadcrumb-current" aria-current="page">书籍详情</span>
+            </nav>
+          </header>
+
+          <section class="book-workbench-identity-card" aria-label="当前书籍">
+            <img src="./assets/book-covers/listening-advanced-grade-1-semester-1-2026.jpg?v=98a59a3c897b" alt="2026版新高中英语听力进阶高一上封面" />
+            <div class="book-workbench-identity-copy">
+              <h2>2026版《新高中英语听力进阶 高一上》</h2>
+              <div class="book-workbench-identity-meta">
+                <span class="school-book-status active">使用中</span>
+                <span><span data-icon="calendar"></span>有效期至：2027-08-31</span>
+              </div>
+            </div>
+            <div id="bookOverviewTabs" class="book-overview-tabs book-workbench-tabs" role="tablist" aria-label="书籍工作台视图">
+              <button type="button" data-book-workbench-tab="catalog" role="tab" aria-selected="false">试题详情</button>
+              <button type="button" data-book-workbench-tab="compose" role="tab" aria-selected="false">组卷挖空</button>
+              <span class="book-workbench-tab-divider" aria-hidden="true"></span>
+              <button type="button" class="active" data-book-workbench-tab="whole" role="tab" aria-selected="true">整书报告</button>
+              <button type="button" data-book-workbench-tab="knowledge" role="tab" aria-selected="false">知识点</button>
+              <button type="button" data-book-workbench-tab="mistakes" role="tab" aria-selected="false">高频错题</button>
+              <button type="button" data-book-workbench-tab="students" role="tab" aria-selected="false">学生列表</button>
+            </div>
+            <select id="bookOverviewClassSelect" class="book-overview-class-select" aria-label="切换班级">
+              <option value="1班">高一1班</option>
+              <option value="2班">高一2班</option>
+              <option value="3班">高一3班</option>
+            </select>
+          </section>
+
+          <section id="bookOverviewContent" class="book-overview-content" aria-label="书籍工作台内容"></section>
+        </section>
+
+        <section id="bookDetailPage" class="page book-detail-page hidden">
+          <nav class="detail-back-nav" aria-label="面包屑">
+            <div class="book-workbench-breadcrumb">
+              <button id="backToBooks" class="book-workbench-breadcrumb-link" type="button">校本书籍</button>
+              <span class="book-workbench-breadcrumb-separator" aria-hidden="true">/</span>
+              <span class="book-workbench-breadcrumb-current" aria-current="page">书籍详情</span>
+            </div>
+          </nav>
+
+          <header class="book-workbench-identity-card" aria-label="当前书籍">
+            <img src="./assets/book-covers/listening-advanced-grade-1-semester-1-2026.jpg?v=98a59a3c897b" alt="2026版新高中英语听力进阶高一上封面" />
+            <div class="book-workbench-identity-copy">
+              <h2>2026版《新高中英语听力进阶 高一上》</h2>
+              <div class="book-workbench-identity-meta">
+                <span class="school-book-status active">使用中</span>
+                <span><span data-icon="calendar"></span>有效期至：2027-08-31</span>
+              </div>
+            </div>
+            <div id="bookDetailTabs" class="book-overview-tabs book-detail-tabs book-workbench-tabs" role="tablist" aria-label="书籍工作台视图">
+              <button type="button" data-book-workbench-tab="catalog" role="tab" aria-selected="false">试题详情</button>
+              <button type="button" class="active" data-book-workbench-tab="compose" role="tab" aria-selected="true">组卷挖空</button>
+              <span class="book-workbench-tab-divider" aria-hidden="true"></span>
+              <button type="button" data-book-workbench-tab="whole" role="tab" aria-selected="false">整书报告</button>
+              <button type="button" data-book-workbench-tab="knowledge" role="tab" aria-selected="false">知识点</button>
+              <button type="button" data-book-workbench-tab="mistakes" role="tab" aria-selected="false">高频错题</button>
+              <button type="button" data-book-workbench-tab="students" role="tab" aria-selected="false">学生列表</button>
+            </div>
+            <select id="bookDetailHeaderClassSelect" class="book-overview-class-select" aria-label="切换班级">
+              <option value="1班">高一1班</option>
+              <option value="2班">高一2班</option>
+              <option value="3班">高一3班</option>
+            </select>
+          </header>
+
+          <section class="book-workbench-selector-panel" aria-label="组卷范围">
+            <nav id="bookQuestionModeTabs" class="book-question-mode-tabs" role="tablist" aria-label="选择组卷模式"></nav>
+            <section id="bookCatalogView" class="book-catalog-view" aria-label="书籍套题目录">
+              <div id="bookSetList" class="book-set-list"></div>
+            </section>
+            <section id="bookQuestionFilters" class="book-question-filters hidden" aria-label="试题筛选与显示设置">
+              <div class="book-question-filter-group">
+                <span>排序</span>
+                <div class="book-question-filter-options" role="radiogroup" aria-label="试题排序">
+                  <label><input type="radio" name="bookQuestionSort" value="questionNo" data-book-question-sort="questionNo" /><span>题号</span></label>
+                  <label><input type="radio" name="bookQuestionSort" value="classRate" data-book-question-sort="classRate" /><span>班级正答率</span></label>
+                  <label><input type="radio" name="bookQuestionSort" value="nationalRate" data-book-question-sort="nationalRate" /><span>全国正答率</span></label>
+                </div>
+              </div>
+              <label class="preview-switch book-transcript-switch">
+                <b>显示录音稿</b>
+                <input id="toggleBookTranscript" type="checkbox" />
+                <span class="switch-track" aria-hidden="true"></span>
+              </label>
+            </section>
+          </section>
+
+          <section id="bookSetWorkspace" class="book-set-workspace hidden" aria-label="书籍详情内容">
+            <div id="bookQuestionsView" class="book-questions-layout">
+              <div class="book-question-main">
+                <main id="bookQuestionCards" class="book-question-cards" aria-label="具体题目"></main>
+              </div>
+              <aside class="book-question-basket" aria-label="试题篮">
+                <header><div><span data-icon="cart"></span><h3>试题篮</h3></div><b id="bookBasketCount">0 题</b><button id="bookBasketClearAll" type="button" disabled>清空</button></header>
+                <div id="bookBasketItems" class="book-basket-items"></div>
+                <div class="book-basket-actions">
+                  <button id="bookPaperAction" type="button" disabled><span data-icon="files"></span>去组卷</button>
+                  <button id="bookDictationAction" type="button" disabled><span data-icon="cloze"></span>去精听挖空</button>
+                  <button id="bookQuestionAssignmentAction" type="button" disabled><span data-icon="phone"></span>布置到学生端</button>
+                </div>
+              </aside>
+            </div>
+
+            <div id="bookDataView" class="book-data-view hidden">
+              <header class="book-data-toolbar">
+                <div id="bookDataTabs" class="book-data-tabs" role="tablist" aria-label="批改数据视图">
+                  <button type="button" class="active" data-book-data-tab="overview" role="tab" aria-selected="true">总览</button>
+                  <button type="button" data-book-data-tab="students" role="tab" aria-selected="false">学生得分统计</button>
+                  <button type="button" data-book-data-tab="questions" role="tab" aria-selected="false">题目正确率统计</button>
+                </div>
+                <div id="bookClassSwitch" class="book-class-switch" role="tablist" aria-label="切换班级"></div>
+                <select id="bookClassSelect" class="hidden" aria-label="查看班级"><option value="1班">高一1班</option><option value="2班">高一2班</option><option value="3班">高一3班</option></select>
+              </header>
+              <section class="book-data-panel" aria-label="班级作答与批改数据">
+                <div id="bookDataContent"></div>
+              </section>
+            </div>
+
+            <div id="bookQuestionAudioBar" class="book-question-audio-bar" aria-label="套题音频播放器">
+              <button id="bookQuestionAudioToggle" type="button" aria-label="播放当前材料" disabled><span data-icon="play"></span></button>
+              <div class="book-question-audio-copy">
+                <strong id="bookQuestionAudioTitle">点击题目播放录音</strong>
+                <small id="bookQuestionAudioMeta"></small>
+              </div>
+              <input id="bookQuestionAudioSeek" type="range" min="0" max="1" value="0" step="0.01" aria-label="录音播放进度" disabled />
+              <time id="bookQuestionAudioTime">00:00 / 00:00</time>
+            </div>
+          </section>
+        </section>
+
+        <section id="listeningPage" class="page listening-page hidden">
+          <section class="book-workbench-identity-card listening-book-summary" aria-label="当前书籍统计">
+            <img src="./assets/book-covers/listening-advanced-grade-1-semester-1-2026.jpg?v=98a59a3c897b" alt="2026版新高中英语听力进阶高一上封面" />
+            <div class="book-workbench-identity-copy">
+              <h2>2026版《新高中英语听力进阶 高一上》</h2>
+            </div>
+            <div class="stats-grid" aria-label="听力错题统计">
+            <article class="stat-card stat-overview">
+              <span>已批改</span>
+              <strong>2<small>套</small></strong>
+              <div class="stat-meta"><em id="participantCount">参与学生 100 人次</em></div>
+            </article>
+            <article class="stat-card stat-overall">
+              <span>综合正答率</span>
+              <strong id="overallRate">72%</strong>
+              <div class="stat-meta"><em>共 40 题</em></div>
+            </article>
+            <article class="stat-card stat-short">
+              <span>短对话正答率</span>
+              <strong id="shortRate">80%</strong>
+              <div class="stat-meta"><em>共 10 题</em></div>
+            </article>
+            <article class="stat-card stat-long">
+              <span>长对话正答率</span>
+              <strong id="longRate">70%</strong>
+              <div class="stat-meta"><em>共 22 题</em></div>
+            </article>
+            <article class="stat-card stat-monologue">
+              <span>独白正答率</span>
+              <strong id="monologueRate">65%</strong>
+              <div class="stat-meta"><em>共 8 题</em></div>
+            </article>
+            </div>
+          </section>
+
+          <div id="listeningWorkspaceAnchor" hidden></div>
+          <section class="table-panel">
+            <div class="panel-title-row">
+              <div class="panel-title-main">
+                <h2>高频错题列表</h2>
+                <div class="filter-actions">
+                  <p id="filterSummary" class="filter-summary">当前筛选：1班 · 近7天 · 正答率低于 70%</p>
+                  <button id="clearFilters" class="ghost-button clear-filters hidden">清除筛选</button>
+                </div>
+              </div>
+              <label class="switch-pill listening-composed-filter">
+                <span>过滤已组卷</span>
+                <input id="filterComposedQuestions" type="checkbox" />
+                <i aria-hidden="true"></i>
+              </label>
+            </div>
+            <div class="table-wrap">
+              <table class="listening-data-table">
+                <thead>
+                  <tr>
+                    <th class="book-column"><button class="column-filter-trigger" data-filter-column="bookName" title="筛选书籍"><span>书籍</span><i data-icon="filter"></i></button></th>
+                    <th class="listening-unit-column"><button class="column-filter-trigger" data-filter-column="unit" title="筛选单元"><span>单元</span><i data-icon="filter"></i></button></th>
+                    <th class="listening-set-column"><button class="column-filter-trigger" data-filter-column="setName" title="筛选套题"><span>套题</span><i data-icon="filter"></i></button></th>
+                    <th>题号</th>
+                    <th><button class="column-filter-trigger" data-filter-column="questionType" title="筛选题型"><span>题型</span><i data-icon="filter"></i></button></th>
+                    <th class="answer-dist-heading">正答率</th>
+                    <th>时间</th>
+                    <th>错误人数/班级人数</th>
+                    <th class="listening-operation-heading"><div><span>操作</span><button id="addAllFilteredToBasket" type="button"><span data-icon="cart"></span>全部加入</button></div></th>
+                  </tr>
+                </thead>
+                <tbody id="questionRows"></tbody>
+              </table>
+            </div>
+            <div id="columnFilterMenu" class="column-filter-menu hidden"></div>
+            <div class="pagination">
+              <span id="pageInfo"></span>
+              <div class="page-size-field">
+                <details id="pageSizeSelect" class="page-size-select">
+                  <summary><strong id="pageSizeValue">20</strong><i data-icon="chevron-up"></i></summary>
+                  <div class="page-size-menu">
+                    <button data-page-size="10">10</button>
+                    <button data-page-size="20">20</button>
+                    <button data-page-size="30">30</button>
+                    <button data-page-size="40">40</button>
+                    <button data-page-size="50">50</button>
+                  </div>
+                </details>
+                <span>题/页</span>
+              </div>
+              <button id="prevPage" class="ghost-button">上一页</button>
+              <button id="nextPage" class="ghost-button">下一页</button>
+            </div>
+          </section>
+
+          <aside id="basket" class="basket hidden" aria-label="试题篮">
+            <div class="basket-panel">
+              <div class="basket-head">
+                <div><span data-icon="cart"></span><div id="basketTitle" class="basket-title">试题篮（1班）</div></div>
+                <b id="basketTotal">0 题</b>
+                <button id="clearBasket" class="danger-text">清空</button>
+              </div>
+              <div id="basketGroups"></div>
+              <div class="listening-basket-actions">
+                <button id="dictationBtn" class="primary-action" disabled>去精听挖空（0）</button>
+                <button id="paperBtn" class="secondary-action" disabled>去组卷（0）</button>
+                <button id="basketPublishBtn" class="secondary-action" disabled>布置到学生端（0）</button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="questionBankPage" class="page question-bank-page hidden">
+          <div class="question-bank-heading">
+            <div class="question-bank-tabs" role="tablist" aria-label="题库分类">
+              <button
+                id="myPaperTab"
+                class="question-bank-tab active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="myPaperPanel"
+              >
+                <span class="question-bank-tab-icon" data-icon="paper" aria-hidden="true"></span>
+                <span>我的试卷</span>
+              </button>
+              <button
+                id="aiAssignmentTab"
+                class="question-bank-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="aiAssignmentPanel"
+              >
+                <span class="question-bank-tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m12 2 1.4 5.1L18 9l-4.6 1.9L12 16l-1.4-5.1L6 9l4.6-1.9L12 2Z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></svg>
+                </span>
+                <span>AI作业</span>
+              </button>
+            </div>
+          </div>
+
+          <section id="myPaperPanel" class="question-bank-my-paper-panel" role="tabpanel" aria-labelledby="myPaperTab">
+            <div id="myPaperFilterSwitches" class="work-filter-switches question-bank-paper-filters" aria-label="我的试卷筛选">
+              <div class="work-filter-tab-row">
+                <div class="work-filter-group work-paper-type-filter" role="group" aria-label="按试卷类型筛选">
+                  <span class="work-time-filter-label">试卷类型</span>
+                  <button type="button" class="active" data-my-paper-type-filter="all" aria-pressed="true">全部</button>
+                  <button type="button" data-my-paper-type-filter="paper" aria-pressed="false">听力组卷</button>
+                  <button type="button" data-my-paper-type-filter="dictation" aria-pressed="false">精听挖空</button>
+                </div>
+                <div class="work-filter-time-tools">
+                  <div class="work-filter-group work-time-filter" role="group" aria-label="按创建时间筛选">
+                    <span class="work-time-filter-label">创建时间</span>
+                    <button type="button" class="active" data-my-paper-time-filter="7" aria-pressed="true">近7天</button>
+                    <button type="button" data-my-paper-time-filter="15" aria-pressed="false">近15天</button>
+                    <button type="button" data-my-paper-time-filter="custom" aria-pressed="false">自定义</button>
+                  </div>
+                  <div id="myPaperCustomDateRange" class="work-custom-date-range hidden" aria-label="自定义试卷时间范围">
+                    <input id="myPaperDateStart" type="date" aria-label="开始日期" />
+                    <span>至</span>
+                    <input id="myPaperDateEnd" type="date" aria-label="结束日期" />
+                    <small>最多30天</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="work-card-panel" aria-label="我的试卷列表">
+              <div id="myPaperRows" class="work-card-list"></div>
+            </section>
+          </section>
+
+          <section id="aiAssignmentPanel" class="question-bank-panel hidden" role="tabpanel" aria-labelledby="aiAssignmentTab">
+            <article class="ai-assignment-card ai-assignment-card-personal">
+              <div class="ai-assignment-visual">
+                <img src="./assets/question-bank/student-personal.webp?v=33b2f9d4a3de" alt="" />
+              </div>
+              <div class="ai-assignment-copy">
+                <span class="ai-assignment-category">AI听力自习室</span>
+                <h2>学生个性作业</h2>
+                <p>根据学生水平与学习情况<br />智能推荐个性化作业内容</p>
+              </div>
+              <button class="question-bank-action" type="button" aria-label="布置：AI听力自习室 - 学生个性作业">
+                <span>布置作业</span><span data-icon="arrow-right" aria-hidden="true"></span>
+              </button>
+            </article>
+
+            <article class="ai-assignment-card ai-assignment-card-class">
+              <div class="ai-assignment-visual">
+                <img src="./assets/question-bank/class-unified.webp?v=b966817c9078" alt="" />
+              </div>
+              <div class="ai-assignment-copy">
+                <span class="ai-assignment-category">AI听力自习室</span>
+                <h2>班级统一作业</h2>
+                <p>一键布置统一作业<br />智能统计全班完成情况</p>
+              </div>
+              <button class="question-bank-action" type="button" aria-label="布置：AI听力自习室 - 班级统一作业">
+                <span>布置作业</span><span data-icon="arrow-right" aria-hidden="true"></span>
+              </button>
+            </article>
+
+            <article class="ai-assignment-card ai-assignment-card-exam">
+              <div class="ai-assignment-visual">
+                <img src="./assets/question-bank/exam-focus.webp?v=4d4625e275df" alt="" />
+              </div>
+              <div class="ai-assignment-copy">
+                <span class="ai-assignment-category">AI听力自习室</span>
+                <h2>高考考点专练</h2>
+                <p>紧扣高考考点与题型<br />专项训练，精准提分</p>
+              </div>
+              <button class="question-bank-action" type="button" aria-label="布置：AI听力自习室 - 高考考点专练">
+                <span>布置作业</span><span data-icon="arrow-right" aria-hidden="true"></span>
+              </button>
+            </article>
+
+            <article class="ai-assignment-card ai-assignment-card-daily">
+              <div class="ai-assignment-visual">
+                <img src="./assets/question-bank/daily-listening.webp?v=ac7c31380030" alt="" />
+              </div>
+              <div class="ai-assignment-copy">
+                <span class="ai-assignment-category">AI听力自习室</span>
+                <h2>每日5分钟听力速练</h2>
+                <p>每日定制听力训练计划<br />碎片时间，高效提升</p>
+              </div>
+              <button class="question-bank-action" type="button" aria-label="布置：AI听力自习室 - 每日5分钟听力速练">
+                <span>布置作业</span><span data-icon="arrow-right" aria-hidden="true"></span>
+              </button>
+            </article>
+          </section>
+        </section>
+
+        <section id="classPage" class="page hidden class-page">
+          <header class="class-page-title">
+            <div class="class-page-title-copy">
+              <span data-icon="users" aria-hidden="true"></span>
+              <h1>班级管理</h1>
+            </div>
+            <div class="class-page-actions">
+              <label class="student-search">
+                <span data-icon="search" aria-hidden="true"></span>
+                <input id="studentSearch" type="search" placeholder="搜索学生姓名" autocomplete="off" />
+              </label>
+            </div>
+          </header>
+          <div class="class-management-layout">
+            <section class="student-roster-panel" aria-label="学生名单">
+              <header class="student-roster-head">
+                <h2 id="studentRosterTitle">学生名单（高一1班）</h2>
+                <div class="student-roster-tools">
+                  <div class="class-filter-control">
+                    <span class="class-filter-label">班级筛选</span>
+                    <details id="studentClassFilter" class="student-class-filter">
+                      <summary><b id="studentClassFilterSummary">高一1班</b><i data-icon="chevron-down" aria-hidden="true"></i></summary>
+                      <div id="studentClassFilterOptions" class="student-class-filter-options" role="group" aria-label="选择班级"></div>
+                    </details>
+                  </div>
+                  <details id="studentExportMenu" class="student-export-menu">
+                    <summary><span data-icon="download" aria-hidden="true"></span>导出<span data-icon="chevron-down" aria-hidden="true"></span></summary>
+                    <div class="student-export-options" role="menu">
+                      <button type="button" data-student-export="excel" role="menuitem">导出 Excel</button>
+                      <button type="button" data-student-export="text" role="menuitem">导出文字</button>
+                    </div>
+                  </details>
+                </div>
+              </header>
+              <div class="student-table-wrap">
+                <table class="student-table">
+                  <thead><tr><th>账号</th><th>学号</th><th>班级</th><th>姓名</th><th>听力等级</th><th>账号操作</th></tr></thead>
+                  <tbody id="studentRows"></tbody>
+                </table>
+              </div>
+              <div id="studentEmptyState" class="student-empty-state hidden">
+                <span data-icon="search" aria-hidden="true"></span>
+                <strong>没有匹配的学生</strong>
+                <p>请检查学生姓名后重新搜索。</p>
+                <button id="clearStudentFilters" type="button">清除筛选</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="workPage" class="page hidden work-page">
+          <div id="workFilterSwitches" class="work-filter-switches" aria-label="学生端作业筛选">
+            <div class="work-filter-tab-row">
+              <div class="work-filter-time-tools">
+                <div class="work-filter-group work-time-filter" role="group" aria-label="按布置时间筛选">
+                  <span class="work-time-filter-label">布置时间</span>
+                  <button type="button" class="active" data-work-time-filter="7" aria-pressed="true">近7天</button>
+                  <button type="button" data-work-time-filter="15" aria-pressed="false">近15天</button>
+                  <button type="button" data-work-time-filter="custom" aria-pressed="false">自定义</button>
+                </div>
+                <div id="workCustomDateRange" class="work-custom-date-range hidden" aria-label="自定义作业时间范围">
+                  <input id="workDateStart" type="date" aria-label="开始日期" />
+                  <span>至</span>
+                  <input id="workDateEnd" type="date" aria-label="结束日期" />
+                  <small>最多30天</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="work-card-panel" aria-label="作业列表">
+            <div id="workRows" class="work-card-list"></div>
+          </section>
+        </section>
+
+        <section id="workReportPage" class="page hidden work-report-page book-overview-page">
+          <header class="book-overview-header work-report-header" aria-label="作业报告导航">
+            <nav class="book-workbench-breadcrumb" aria-label="面包屑">
+              <button id="backToWorkReport" class="book-workbench-breadcrumb-link" type="button">作业</button>
+              <span class="book-workbench-breadcrumb-separator" aria-hidden="true">/</span>
+              <span class="book-workbench-breadcrumb-current" aria-current="page">作业报告</span>
+            </nav>
+          </header>
+
+          <section class="book-workbench-identity-card work-report-identity-card" aria-label="当前作业">
+            <div class="work-report-identity-icon" aria-hidden="true"><span data-icon="clipboard"></span></div>
+            <div class="book-workbench-identity-copy">
+              <h2 id="workReportTitle">--</h2>
+              <div id="workReportMeta" class="book-workbench-identity-meta">
+                <span><span data-icon="clock"></span>作答时间：--</span>
+              </div>
+            </div>
+            <div id="workReportTabs" class="book-overview-tabs book-workbench-tabs work-report-tabs" role="tablist" aria-label="作业报告视图">
+              <button type="button" data-work-report-tab="catalog" role="tab" aria-selected="false">试题详情</button>
+              <span class="book-workbench-tab-divider" aria-hidden="true"></span>
+              <button type="button" class="active" data-work-report-tab="overall" role="tab" aria-selected="true">总体报告</button>
+              <button type="button" data-work-report-tab="knowledge" role="tab" aria-selected="false">知识点</button>
+              <button type="button" data-work-report-tab="mistakes" role="tab" aria-selected="false">高频错题</button>
+              <button type="button" data-work-report-tab="students" role="tab" aria-selected="false">学生列表</button>
+            </div>
+            <select id="workReportClassSwitch" class="book-overview-class-select" aria-label="切换报告班级">
+              <option value="1班">高一1班</option>
+              <option value="2班">高一2班</option>
+              <option value="3班">高一3班</option>
+            </select>
+          </section>
+
+          <section id="workReportContent" class="book-overview-content work-report-content" aria-label="作业报告内容"></section>
+        </section>
+
+        <section id="dictationPage" class="page hidden dictation-page">
+          <header class="editor-header">
+            <button id="exitDictationEditor" class="editor-back-button" type="button"><span data-icon="arrow-left"></span><b>返回</b></button>
+            <div class="editor-title-block">
+              <label class="task-name-field">
+                <span data-icon="pencil" aria-hidden="true"></span>
+                <input id="dictationName" class="task-name-input" aria-label="任务名称" />
+              </label>
+              <p id="dictationSummary"></p>
+            </div>
+            <div class="editor-header-actions">
+              <button id="smartBlankDictation" class="smart-blank-action" type="button"><span data-icon="sparkles"></span><b>智能挖空</b></button>
+              <label class="preview-switch">
+                <b>预览挖空</b>
+                <input id="previewDictation" type="checkbox" />
+                <span class="switch-track" aria-hidden="true"></span>
+              </label>
+              <label class="preview-switch source-switch">
+                <b>查看原题</b>
+                <input id="toggleSourceQuestions" type="checkbox" />
+                <span class="switch-track" aria-hidden="true"></span>
+              </label>
+              <button id="saveDictation" class="primary-action">保存作业</button>
+            </div>
+          </header>
+          <div class="dictation-layout">
+            <section class="material-editor">
+              <div id="materialTranscript" class="material-transcript"></div>
+            </section>
+            <aside class="material-order-panel">
+              <div class="material-panel-title">
+                <strong>材料顺序</strong>
+                <span class="help-inline">
+                  <button class="help-trigger" type="button" aria-label="材料顺序说明"><span data-icon="help"></span></button>
+                  <span class="help-bubble">拖动左侧手柄调整材料顺序；也可点击序号直接输入目标位置。</span>
+                </span>
+              </div>
+              <div id="materialOrderList" class="material-order-list"></div>
+              <button id="addMaterialEntry" class="add-material-entry" type="button">
+                <span>+</span>
+                <strong>添加材料</strong>
+              </button>
+            </aside>
+          </div>
+          <footer class="dictation-player-bar">
+            <div class="player-current">
+              <strong id="materialTitle">Text</strong>
+              <span id="materialSource"></span>
+            </div>
+            <div class="material-audio">
+              <button id="editorPlay" class="icon-action" title="播放"><span data-icon="play"></span></button>
+              <input id="editorProgress" type="range" min="0" max="100" value="0" />
+              <span id="editorTime">00:00 / 00:00</span>
+            </div>
+          </footer>
+        </section>
+
+        <section id="dictationPublishPage" class="page hidden dictation-publish-page">
+          <header class="publish-page-header">
+            <button id="backToDictationEditor" class="editor-back-button" type="button"><span data-icon="arrow-left"></span><b>返回</b></button>
+            <div>
+              <h2>学生端作答设置</h2>
+            </div>
+          </header>
+
+          <div class="publish-setup-stack">
+            <article class="publish-practice-card publish-practice-card-standalone">
+              <div>
+                <strong id="publishPracticeName">精听挖空</strong>
+                <p id="publishPracticeMeta">来源：听力讲评</p>
+              </div>
+              <span id="publishPracticeDuration">预计 0秒</span>
+            </article>
+
+            <section class="publish-setup-section publish-mode-section">
+              <header>
+                <h3>练习设置</h3>
+              </header>
+              <div id="publishRuleSection" class="publish-student-app-settings">
+                <div class="publish-rule-list">
+                  <div class="publish-rule-column">
+                    <div class="publish-rule-row">
+                      <strong>答题模式</strong>
+                      <label><input type="radio" name="publishAnswerMode" value="exam" checked />考试模式</label>
+                      <label><input type="radio" name="publishAnswerMode" value="practice" />练习模式</label>
+                    </div>
+                    <div class="publish-rule-row">
+                      <strong>题目顺序</strong>
+                      <label><input type="radio" name="publishQuestionOrder" value="ordered" checked />顺序排序</label>
+                      <label><input type="radio" name="publishQuestionOrder" value="random" />随机排序</label>
+                    </div>
+                    <div class="publish-rule-row">
+                      <strong>公布成绩</strong>
+                      <label><input type="radio" name="publishScoreRelease" value="after-completion" checked />学生完成后公布</label>
+                      <label><input type="radio" name="publishScoreRelease" value="after-end" />作业结束后公布</label>
+                      <label><input type="radio" name="publishScoreRelease" value="manual" />老师手动公布</label>
+                    </div>
+                    <div class="publish-rule-row">
+                      <strong>达标设置</strong>
+                      <label><input type="radio" name="publishTargetRate" value="none" checked />不限制</label>
+                      <label><input type="radio" name="publishTargetRate" value="60" />60%</label>
+                      <label><input type="radio" name="publishTargetRate" value="70" />70%</label>
+                      <label><input type="radio" name="publishTargetRate" value="80" />80%</label>
+                      <label><input type="radio" name="publishTargetRate" value="90" />90%</label>
+                      <label><input id="publishTargetCustom" type="radio" name="publishTargetRate" value="custom" />自定义正答率</label>
+                      <label class="publish-inline-field publish-custom-field"><input id="publishTargetCustomValue" type="number" min="1" max="100" value="75" />%</label>
+                    </div>
+                    <div id="publishRetryLimitRow" class="publish-rule-row hidden">
+                      <strong>允许未达标次数</strong>
+                      <label><input type="radio" name="publishRetryLimit" value="2" checked />2次</label>
+                      <label><input type="radio" name="publishRetryLimit" value="3" />3次</label>
+                      <label><input type="radio" name="publishRetryLimit" value="4" />4次</label>
+                      <label><input id="publishRetryCustom" type="radio" name="publishRetryLimit" value="custom" />自定义</label>
+                      <label class="publish-inline-field publish-custom-field"><input id="publishRetryCustomValue" type="number" min="1" max="20" value="5" />次</label>
+                    </div>
+                  </div>
+                  <div class="publish-rule-column">
+                    <div class="publish-rule-row publish-plan-row">
+                      <strong>计划天数</strong>
+                      <label class="publish-inline-field"><input id="publishPlanDays" type="number" min="1" value="2" />天</label>
+                      <strong id="publishDailyUnitLabel">每日完成套数</strong>
+                      <span id="publishDailySets" class="publish-static-value">1 套</span>
+                    </div>
+                    <div class="publish-rule-row">
+                      <strong>解锁设置</strong>
+                      <label><input type="radio" name="publishUnlockMode" value="all" checked />一次性解锁全部套题</label>
+                      <label><input type="radio" name="publishUnlockMode" value="daily" />一天一套</label>
+                    </div>
+                    <div class="publish-rule-row">
+                      <strong>补交设置</strong>
+                      <label><input type="radio" name="publishMakeup" value="allow" checked />允许结束后补交</label>
+                      <label><input type="radio" name="publishMakeup" value="deny" />不允许结束后补交</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="publishTargetSection" class="publish-setup-section hidden">
+              <header>
+                <h3>布置对象</h3>
+                <div class="publish-target-header-actions">
+                  <div class="publish-student-search">
+                    <span data-icon="search"></span>
+                    <input id="publishStudentSearch" type="search" autocomplete="off" placeholder="搜索学生姓名" aria-label="搜索学生姓名" />
+                    <div id="publishStudentSearchResults" class="publish-student-search-results hidden" role="listbox" aria-label="学生搜索结果"></div>
+                  </div>
+                  <p id="publishTargetSummary">请选择学生</p>
+                </div>
+              </header>
+              <div class="publish-target-layout">
+                <div id="publishClassList" class="publish-class-list"></div>
+                <div class="publish-student-panel">
+                  <div id="publishStudentGrid" class="publish-student-grid"></div>
+                </div>
+              </div>
+            </section>
+
+            <section id="publishTimeSection" class="publish-setup-section publish-time-section hidden">
+              <header>
+                <h3>练习时间</h3>
+              </header>
+              <div class="publish-rule-list publish-time-rule-list">
+                <div class="publish-rule-column">
+                  <div class="publish-rule-row publish-time-rule-row">
+                    <strong>开始时间</strong>
+                    <label><input type="radio" name="publishStart" value="now" checked />立即开始</label>
+                    <label><input id="publishStartScheduled" type="radio" name="publishStart" value="scheduled" />指定时间</label>
+                    <div class="publish-datetime-fields" data-publish-time-fields="start">
+                      <input id="publishStartDate" type="date" aria-label="指定开始日期" />
+                      <input id="publishStartTime" type="time" aria-label="指定开始时间" />
+                    </div>
+                  </div>
+                  <div class="publish-rule-row publish-time-rule-row">
+                    <strong>结束时间</strong>
+                    <label><input type="radio" name="publishEnd" value="today" />当天23:59</label>
+                    <label><input type="radio" name="publishEnd" value="tomorrow" />次日23:59</label>
+                    <label><input type="radio" name="publishEnd" value="day-after" />后日23:59</label>
+                    <label><input type="radio" name="publishEnd" value="week" checked />一周后</label>
+                    <label><input id="publishEndCustom" type="radio" name="publishEnd" value="custom" />自选时间</label>
+                    <div class="publish-datetime-fields" data-publish-time-fields="end">
+                      <input id="publishEndDate" type="date" aria-label="自选结束日期" />
+                      <input id="publishEndTime" type="time" aria-label="自选结束时间" />
+                    </div>
+                  </div>
+                </div>
+                <div class="publish-rule-column">
+                  <div class="publish-rule-row publish-time-rule-row">
+                    <strong>可见时间</strong>
+                    <label><input type="radio" name="publishVisible" value="now" checked />立即可见</label>
+                    <label><input type="radio" name="publishVisible" value="start" />练习开始时可见</label>
+                    <label><input id="publishVisibleScheduled" type="radio" name="publishVisible" value="scheduled" />指定时间</label>
+                    <div class="publish-datetime-fields" data-publish-time-fields="visible">
+                      <input id="publishVisibleDate" type="date" aria-label="指定可见日期" />
+                      <input id="publishVisibleTime" type="time" aria-label="指定可见时间" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <footer class="publish-page-actions">
+              <button id="publishConfirm" type="button" class="primary-action">保存并布置</button>
+            </footer>
+
+          </div>
+        </section>
+
+        <section id="paperPage" class="page hidden dictation-page paper-page">
+          <header class="editor-header">
+            <button id="exitPaperEditor" class="editor-back-button" type="button"><span data-icon="arrow-left"></span><b>返回</b></button>
+            <div class="editor-title-block">
+              <label class="task-name-field">
+                <span data-icon="pencil" aria-hidden="true"></span>
+                <input id="paperName" class="task-name-input" aria-label="组卷名称" />
+              </label>
+              <p id="paperSummary"></p>
+            </div>
+            <div class="editor-header-actions">
+              <label class="preview-switch transcript-switch">
+                <b>显示录音稿</b>
+                <input id="togglePaperTranscript" type="checkbox" />
+                <span class="switch-track" aria-hidden="true"></span>
+              </label>
+              <button id="savePaper" class="primary-action">保存并进入下一步</button>
+            </div>
+          </header>
+          <div class="dictation-layout paper-layout">
+            <section class="material-editor paper-editor">
+              <div id="paperQuestionList" class="paper-question-list"></div>
+            </section>
+            <aside class="material-order-panel paper-order-panel">
+              <div class="material-panel-title">
+                <strong>试题顺序</strong>
+                <span class="help-inline">
+                  <button class="help-trigger" type="button" aria-label="试题顺序说明"><span data-icon="help"></span></button>
+                  <span class="help-bubble">同一 Text 的题目固定成组；点击可定位，拖动或输入序号可调整整组顺序。组卷页不添加试题，如需加题请返回听力讲评加入试题篮。</span>
+                </span>
+              </div>
+              <div id="paperOrderList" class="material-order-list paper-order-list"></div>
+            </aside>
+          </div>
+          <footer class="dictation-player-bar">
+            <div class="player-current">
+              <strong id="paperPlayerTitle">题目音频</strong>
+              <span id="paperPlayerSource"></span>
+            </div>
+            <div class="material-audio">
+              <button id="paperPlay" class="icon-action" title="播放"><span data-icon="play"></span></button>
+              <input id="paperProgress" type="range" min="0" max="100" value="0" />
+              <span id="paperTime">00:00 / 00:00</span>
+            </div>
+          </footer>
+        </section>
+      </main>
+
+      <footer id="bottomBar" class="bottom-bar hidden">
+        <div class="footer-filter-field">
+          <span>班级</span>
+          <details id="classSelect" class="bottom-select">
+            <summary><strong id="classValue">1班</strong><i data-icon="chevron-up"></i></summary>
+            <div class="bottom-select-menu">
+              <button data-class-value="1班" class="selected">1班</button>
+              <button data-class-value="2班">2班</button>
+              <button data-class-value="3班">3班</button>
+            </div>
+          </details>
+        </div>
+        <div class="footer-filter-field">
+          <span>时间</span>
+          <details id="timeSelect" class="bottom-select time-select">
+            <summary><strong id="timeValue">近7天</strong><i data-icon="chevron-up"></i></summary>
+            <div class="bottom-select-menu time-select-menu">
+              <button data-time-value="近7天" class="selected">近7天</button>
+              <button data-time-value="近15天">近15天</button>
+              <button id="customTimeToggle">自定义近 X 天</button>
+              <div id="dateRangePanel" class="date-range-panel hidden">
+                <label data-time-custom="days"><span>近</span><input id="customTimeDays" type="number" min="1" value="30" inputmode="numeric" /><em>天</em></label>
+                <label class="hidden" data-time-custom="range"><span>开始日期</span><input id="dateStart" type="date" /></label>
+                <label class="hidden" data-time-custom="range"><span>结束日期</span><input id="dateEnd" type="date" /></label>
+                <div><button id="cancelDateRange" class="date-cancel">取消</button><button id="applyDateRange" class="date-apply">确定</button></div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <div class="rate-control">
+          <span>正答率低于</span>
+          <div class="number-stepper">
+            <button id="rateMinus" title="降低 10%">−</button>
+            <strong id="rateThreshold">70%</strong>
+            <button id="ratePlus" title="提高 10%">＋</button>
+          </div>
+        </div>
+        <label id="listeningBookField" class="footer-filter-field listening-book-filter" for="listeningBookSelect">
+          <span>切换书籍</span>
+          <select id="listeningBookSelect" aria-label="切换听力错题书籍" disabled title="当前只有一本可用书籍">
+            <option value="grade-1-semester-1" selected>高一上</option>
+          </select>
+        </label>
+        <button id="filteredFullBtn" class="secondary-action" disabled>去全屏讲解（0）</button>
+      </footer>
+    </div>
+
+    <section id="fullscreenPage" class="fullscreen hidden dark-mode">
+      <audio id="audio"></audio>
+      <audio id="practiceInstructionAudio"></audio>
+      <header class="full-header">
+        <h2 id="fullTitle"></h2>
+        <span id="practicePlaybackStatus" class="practice-playback-status hidden" aria-live="polite"></span>
+      </header>
+      <div class="full-grid">
+        <section id="questionPanel" class="question-panel full-card">
+          <div id="fullQuestion"></div>
+          <aside class="question-meta" aria-label="教学数据">
+            <div class="exam-point-line">
+              <span data-icon="target"></span>
+              <strong>考点：<b id="examPoint">--</b></strong>
+            </div>
+            <div class="question-metrics">
+              <div><span>班级正答率</span><b id="classRate"></b></div>
+              <div><span>全国正答率</span><b id="nationalRate">52%</b></div>
+            </div>
+          </aside>
+          <img id="similarQuestionStamp" class="similar-question-stamp hidden" src="./assets/illustrations/similar-question-stamp-v1.png?v=2c7b274c67cd" alt="同类题印章" />
+          <button id="questionPanelCollapse" class="question-panel-collapse hidden" type="button" title="折叠试题卡片" aria-label="折叠试题卡片" aria-expanded="true">
+            <span data-icon="chevron-up" aria-hidden="true"></span>
+          </button>
+          <button id="swapSimilarQuestion" class="full-similar-swap hidden" type="button" title="换一道同类题">
+            <span data-icon="refresh" aria-hidden="true"></span><b>换一换</b>
+          </button>
+        </section>
+        <section id="transcriptPanel" class="transcript-panel full-card hidden">
+          <div class="transcript-scroll">
+            <div id="transcript"></div>
+          </div>
+          <aside id="leftKnowledgeRail" class="knowledge-rail hidden" aria-label="原文讲解工具"></aside>
+        </section>
+      </div>
+      <div id="followReadWaveform" class="follow-read-waveform" aria-hidden="true">
+        <div class="follow-read-waveform-bars" aria-hidden="true"></div>
+        <span class="visually-hidden">现在请跟读</span>
+      </div>
+      <footer class="full-toolbar">
+        <div id="questionPickerPanel" class="question-picker-panel hidden" aria-label="题目选择面板">
+          <div class="question-picker-head">
+            <strong>题目选择</strong>
+            <button id="closeQuestionPicker" type="button" title="关闭题目选择" aria-label="关闭题目选择">
+              <span data-icon="x" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="lecture-filter-row">
+            <div class="lecture-filter-field">
+              <span>套题</span>
+              <details id="setSelect" class="lecture-select set-select">
+                <summary><strong id="setSelectValue">请选择</strong><i data-icon="chevron-up"></i></summary>
+                <div id="setSelectMenu" class="lecture-select-menu"></div>
+              </details>
+            </div>
+            <div class="lecture-filter-field">
+              <span>讲评顺序</span>
+              <details id="orderSelect" class="lecture-select order-select">
+                <summary><strong id="orderSelectValue">正答率</strong><i data-icon="chevron-up"></i></summary>
+                <div class="lecture-select-menu">
+                  <button id="orderRate" class="active"><span data-icon="check"></span>正答率</button>
+                  <button id="orderNatural"><span data-icon="check"></span>套题顺序</button>
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="wrong-nav-scroll-shell">
+            <div id="wrongNavItems" class="wrong-nav-items"></div>
+            <div id="questionPickerScrollbar" class="question-picker-scrollbar no-overflow" role="scrollbar" aria-label="题目列表滚动位置" aria-controls="wrongNavItems" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span id="questionPickerScrollThumb" class="question-picker-scroll-thumb"></span>
+            </div>
+          </div>
+          <p class="question-picker-legend" aria-label="正答率颜色图例">
+            <strong>正答率：</strong>
+            <span><i class="legend-dot legend-dot-green"></i>100%</span>
+            <span><i class="legend-dot legend-dot-yellow"></i>70%–99%</span>
+            <span><i class="legend-dot legend-dot-red"></i>&lt;70%</span>
+          </p>
+        </div>
+        <div class="footer-edge-actions footer-control-group">
+          <button id="returnToLecture" class="round-tool return-lecture close" title="返回试题详情" aria-label="返回试题详情"><span data-icon="return-lecture"></span><b id="returnToLectureLabel">返回</b></button>
+        </div>
+        <div class="footer-question-nav footer-control-group" aria-label="题目导航">
+          <button id="prevQuestion" class="footer-nav-arrow" type="button" title="上一题" aria-label="上一题"><span data-icon="arrow-left"></span></button>
+          <button id="currentQuestionPicker" class="footer-current-question" type="button">第 1 题</button>
+          <button id="nextQuestion" class="footer-nav-arrow" type="button" title="下一题" aria-label="下一题"><span data-icon="arrow-right"></span></button>
+        </div>
+        <div id="similarSourceSwitch" class="similar-source-switch footer-control-group hidden" aria-label="同类题来源">
+          <span class="similar-source-label">同类题</span>
+          <div class="similar-source-options">
+            <button type="button" data-similar-source="gaokao" class="active">高考</button><button type="button" data-similar-source="book">本书</button>
+          </div>
+        </div>
+        <div class="footer-playback footer-control-group" aria-label="播放控制">
+          <div id="speedSelect" class="speed-menu-control">
+            <button id="speedMenuToggle" class="speed-menu-toggle" type="button" aria-label="选择播放倍速" aria-expanded="false">
+              <strong id="speedValue">1.0x</strong><span data-icon="chevron-up" aria-hidden="true"></span>
+            </button>
+            <div id="speedMenu" class="speed-menu hidden" role="menu" aria-label="播放倍速">
+              <div class="speed-menu-column">
+                <button type="button" data-playback-rate="0.7">0.7x</button>
+                <button type="button" data-playback-rate="0.8">0.8x</button>
+                <button type="button" data-playback-rate="0.9">0.9x</button>
+                <button type="button" data-playback-rate="1.0">1.0x</button>
+              </div>
+              <div class="speed-menu-column">
+                <button type="button" data-playback-rate="2.0">2.0x</button>
+                <button type="button" data-playback-rate="1.5">1.5x</button>
+                <button type="button" data-playback-rate="1.4">1.4x</button>
+                <button type="button" data-playback-rate="1.3">1.3x</button>
+                <button type="button" data-playback-rate="1.2">1.2x</button>
+                <button type="button" data-playback-rate="1.1">1.1x</button>
+              </div>
+            </div>
+          </div>
+          <button id="playPause" class="footer-play" title="播放/暂停" aria-label="播放"><span data-icon="play"></span></button>
+          <div id="audioProgressFloat" class="audio-progress-float">
+            <input id="audioSeek" type="range" min="0" max="1000" value="0" aria-label="播放进度" />
+            <span id="audioSeekBubble" class="audio-seek-bubble">00:00</span>
+            <span id="audioCurrentTime" class="audio-time-store">00:00</span>
+          </div>
+          <span id="audioDuration" class="audio-duration" aria-label="音频总时长">00:00</span>
+        </div>
+        <button id="dockLayoutSwitch" class="footer-layout-switch" type="button">
+          <span data-icon="layout-right"></span><b>右布局</b>
+        </button>
+      </footer>
+      <aside id="classroomDock" class="classroom-dock dock-left" aria-label="课堂控制台">
+        <div class="dock-primary">
+          <button id="answerToggle" class="dock-text-action" title="显示或隐藏答案">答案</button>
+          <button id="answerAnalysisToggle" class="dock-text-action" title="显示或隐藏答案解析">答案解析</button>
+          <button id="analysisToggle" class="dock-text-action" title="显示或隐藏原文讲解">原文讲解</button>
+          <div id="dockKnowledge" class="dock-knowledge"></div>
+          <button id="questionTranslate" class="dock-text-action" title="显示或隐藏题目翻译">题目翻译</button>
+          <button id="similarBtn" class="dock-text-action" title="进入同类题">同类题</button>
+          <button id="followReadBtn" class="dock-text-action" type="button" title="开启跟读" aria-pressed="false">跟读</button>
+          <div id="followReadTools" class="dock-follow-tools" aria-label="跟读辅助功能" aria-hidden="true">
+            <button id="maskTranscriptBtn" class="dock-text-action" type="button" title="开启遮挡原文" aria-pressed="false">遮挡原文</button>
+          </div>
+          <div id="practiceModeTools" class="dock-practice-tools" aria-label="套题音频播放设置" aria-hidden="true">
+            <button id="practiceQuestionVisibilityBtn" class="dock-text-action practice-question-visibility active" type="button" title="当前显示试题；点击隐藏试题" aria-label="显示试题" aria-pressed="true">显示试题</button>
+            <button id="practiceShortOnceBtn" class="dock-text-action practice-short-once active" type="button" title="短对话当前播放2遍；点击改为1遍" aria-label="短对话播放2遍" aria-pressed="true"><span>短对话</span><span>2遍</span></button>
+            <button id="practiceInstructionBtn" class="dock-text-action" type="button" title="当前播放指令；点击跳过指令" aria-pressed="true">播放指令</button>
+          </div>
+        </div>
+        <div class="dock-footer-actions" aria-label="课堂工具栏操作">
+          <button id="classroomDockToggle" class="dock-collapse-toggle" type="button" title="收起课堂工具" aria-label="收起课堂工具" aria-expanded="true">
+            <span data-icon="arrow-left" aria-hidden="true"></span>
+          </button>
+          <button id="interfaceSettingsToggle" class="dock-icon-action" type="button" title="界面设置" aria-label="界面设置" aria-expanded="false">
+            <span data-icon="settings" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div id="interfaceSettingsPanel" class="interface-settings-panel hidden" aria-label="界面设置">
+          <div class="interface-settings-head">
+            <strong>界面设置</strong>
+            <button id="closeInterfaceSettings" type="button" title="关闭界面设置" aria-label="关闭界面设置">
+              <span data-icon="x" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="interface-setting-row">
+            <span>字号</span>
+            <div class="font-setting-controls">
+              <button id="fontDown" type="button" title="缩小文字" aria-label="缩小文字"><span data-icon="type-minus"></span></button>
+              <button id="fontUp" type="button" title="放大文字" aria-label="放大文字"><span data-icon="type-plus"></span></button>
+            </div>
+          </div>
+          <div id="themeSegment" class="theme-segment" role="radiogroup" aria-label="界面明暗">
+            <button type="button" data-theme-choice="dark" role="radio">暗色</button>
+            <button type="button" data-theme-choice="light" role="radio">亮色</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="onlinePage" class="fullscreen online-page hidden dark-mode">
+      <audio id="onlineAudio"></audio>
+      <header class="online-header full-header"><h2 id="onlineTitle">在线精听</h2></header>
+      <main class="online-main full-grid">
+        <section class="online-transcript-panel transcript-panel full-card no-knowledge">
+          <div class="transcript-scroll">
+            <div class="online-material-head"><strong id="onlineMaterialTitle">Text 1</strong><span id="onlineMaterialSource"></span></div>
+            <div id="onlineTranscript" class="online-transcript"></div>
+            <section id="onlineQuestionPanel" class="online-question-panel hidden">
+              <div id="onlineSourceQuestions"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer class="online-toolbar full-toolbar">
+        <div class="footer-edge-actions footer-control-group">
+          <button id="closeOnline" class="round-tool close" title="关闭在线精听" aria-label="关闭在线精听"><span data-icon="x"></span></button>
+        </div>
+        <div id="onlineMaterialNav" class="online-material-nav online-segment-nav footer-question-nav footer-control-group">
+          <button id="onlinePrevSegment" class="footer-nav-arrow online-segment-step" type="button" title="上一段" aria-label="上一段"><span data-icon="arrow-left"></span></button>
+          <button id="onlineCurrentSegment" class="footer-current-question online-segment-current" type="button">Text 1</button>
+          <button id="onlineNextSegment" class="footer-nav-arrow online-segment-step" type="button" title="下一段" aria-label="下一段"><span data-icon="arrow-right"></span></button>
+        </div>
+        <div class="online-playback footer-playback footer-control-group">
+          <div id="onlineSpeedSelect" class="speed-menu-control online-speed-select">
+            <button id="onlineSpeedMenuToggle" class="speed-menu-toggle" type="button" aria-label="选择在线精听播放倍速" aria-expanded="false">
+              <strong id="onlineSpeedValue">1.0x</strong><span data-icon="chevron-up" aria-hidden="true"></span>
+            </button>
+            <div id="onlineSpeedMenu" class="speed-menu hidden" role="menu" aria-label="在线精听播放倍速">
+              <div class="speed-menu-column">
+                <button type="button" data-online-playback-rate="0.7">0.7x</button>
+                <button type="button" data-online-playback-rate="0.8">0.8x</button>
+                <button type="button" data-online-playback-rate="0.9">0.9x</button>
+                <button type="button" data-online-playback-rate="1.0">1.0x</button>
+              </div>
+              <div class="speed-menu-column">
+                <button type="button" data-online-playback-rate="2.0">2.0x</button>
+                <button type="button" data-online-playback-rate="1.5">1.5x</button>
+                <button type="button" data-online-playback-rate="1.4">1.4x</button>
+                <button type="button" data-online-playback-rate="1.3">1.3x</button>
+                <button type="button" data-online-playback-rate="1.2">1.2x</button>
+                <button type="button" data-online-playback-rate="1.1">1.1x</button>
+              </div>
+            </div>
+          </div>
+          <button id="onlinePlay" class="footer-play online-dock-play" title="播放/暂停" aria-label="播放"><span data-icon="play"></span></button>
+          <div id="onlineAudioProgressFloat" class="audio-progress-float">
+            <input id="onlineProgress" type="range" min="0" max="1000" value="0" aria-label="在线精听播放进度" />
+            <span id="onlineSeekBubble" class="audio-seek-bubble">00:00</span>
+            <span id="onlineCurrentTime" class="audio-time-store">00:00</span>
+          </div>
+          <span id="onlineDuration" class="audio-duration" aria-label="在线精听音频总时长">00:00</span>
+        </div>
+        <button id="onlineLayoutSwitch" class="footer-layout-switch online-layout-switch" type="button">
+          <span data-icon="layout-right"></span><b>右布局</b>
+        </button>
+      </footer>
+      <aside class="online-dock classroom-dock dock-right" aria-label="在线精听控制">
+        <div class="online-dock-primary dock-primary">
+          <button id="revealNext" class="online-tool-action dock-text-action" type="button">下一个</button>
+          <button id="revealAll" class="online-tool-action dock-text-action" type="button">全部答案</button>
+          <button id="toggleOnlineQuestions" class="online-tool-action dock-text-action" type="button">试题</button>
+        </div>
+        <div class="dock-footer-actions online-dock-footer-actions" aria-label="在线精听工具栏操作">
+          <button id="onlineDockToggle" class="dock-collapse-toggle" type="button" title="收起在线精听工具" aria-label="收起在线精听工具" aria-expanded="true">
+            <span data-icon="arrow-left" aria-hidden="true"></span>
+          </button>
+          <button id="onlineSettingsToggle" class="dock-icon-action" type="button" title="界面设置" aria-label="界面设置" aria-expanded="false">
+            <span data-icon="settings" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div id="onlineSettingsPanel" class="interface-settings-panel online-settings-panel hidden" aria-label="在线精听界面设置">
+          <div class="interface-settings-head">
+            <strong>界面设置</strong>
+            <button id="closeOnlineSettings" type="button" title="关闭界面设置" aria-label="关闭界面设置">
+              <span data-icon="x" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="interface-setting-row">
+            <span>字号</span>
+            <div class="font-setting-controls">
+              <button id="onlineFontDown" type="button" title="缩小文字" aria-label="缩小文字"><span data-icon="type-minus"></span></button>
+              <button id="onlineFontUp" type="button" title="放大文字" aria-label="放大文字"><span data-icon="type-plus"></span></button>
+            </div>
+          </div>
+          <div id="onlineThemeSegment" class="theme-segment" role="radiogroup" aria-label="在线精听界面明暗">
+            <button type="button" data-theme-choice="dark" role="radio">暗色</button>
+            <button type="button" data-theme-choice="light" role="radio">亮色</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div id="resourcePopoverBackdrop" class="resource-popover-backdrop hidden" aria-hidden="true"></div>
+    <div id="popover" class="popover resource-popover hidden" role="dialog" aria-modal="true" aria-label="知识讲解"></div>
+    <div id="paperSetupDialog" class="publish-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="paperSetupTitle">
+      <div class="publish-dialog-backdrop" data-paper-setup-cancel></div>
+      <section class="publish-dialog-panel publish-panel paper-setup-panel">
+        <header>
+          <div>
+            <h3 id="paperSetupTitle">去组卷</h3>
+          </div>
+          <button type="button" data-paper-setup-cancel title="关闭"><span data-icon="x"></span></button>
+        </header>
+        <div class="paper-count-box"><span>错题数量</span><strong id="paperSetupWrongCount">0 题</strong></div>
+        <div class="paper-similar-card">
+          <label class="paper-similar-toggle">
+            <span data-icon="files"></span>
+            <span><b>包含同类题</b><small>为已选错题随机匹配一道同类题</small></span>
+            <input id="includeSimilarPaper" type="checkbox" checked />
+            <i class="switch-track" aria-hidden="true"></i>
+          </label>
+          <div id="paperSimilarScope" class="paper-scope-options">
+            <label class="active"><input type="radio" name="paperSimilarScope" value="gaokao" checked />高考题</label>
+            <label><input type="radio" name="paperSimilarScope" value="book" />本册书</label>
+          </div>
+        </div>
+        <footer>
+          <button type="button" class="ghost-button" data-paper-setup-cancel>取消</button>
+          <button id="paperSetupConfirm" type="button" class="primary-action">预览试卷 · 0 题</button>
+        </footer>
+      </section>
+    </div>
+    <div id="addMaterialDialog" class="add-material-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="addMaterialTitle">
+      <div class="add-material-backdrop" data-add-material-cancel></div>
+      <section class="add-material-panel">
+        <header>
+          <div>
+            <h3 id="addMaterialTitle">添加材料</h3>
+            <p>沿用当前听力讲评筛选范围，可在这里重新筛选。</p>
+          </div>
+          <button type="button" data-add-material-cancel title="关闭"><span data-icon="x"></span></button>
+        </header>
+        <div class="add-material-filters">
+          <label><span>班级</span><select id="addMaterialClass"><option>1班</option><option>2班</option><option>3班</option></select></label>
+          <label><span>时间</span><select id="addMaterialTime"><option>近7天</option><option>近15天</option><option>近30天</option></select></label>
+          <label><span>正答率低于</span><select id="addMaterialRate"><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="80">80%</option></select></label>
+          <label><span>套题</span><select id="addMaterialSet"></select></label>
+          <label><span>题型</span><select id="addMaterialType"></select></label>
+        </div>
+        <div class="add-material-summary" id="addMaterialSummary">当前筛选：</div>
+        <div class="add-material-table-wrap">
+          <table class="add-material-table">
+            <thead>
+              <tr><th>选择</th><th>套题</th><th>Text</th><th>题型</th><th>题量</th><th>平均正答率</th><th>状态</th></tr>
+            </thead>
+            <tbody id="addMaterialRows"></tbody>
+          </table>
+        </div>
+        <footer>
+          <span id="addMaterialSelected">已选 0 段</span>
+          <div>
+            <button type="button" class="ghost-button" data-add-material-cancel>取消</button>
+            <button id="addMaterialConfirm" type="button" class="primary-action" disabled>添加到任务</button>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <div id="bookAssignmentDialog" class="publish-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="bookAssignmentTitle">
+      <div class="publish-dialog-backdrop" data-book-assignment-close></div>
+      <section class="publish-dialog-panel book-assignment-dialog-panel">
+        <header>
+          <div>
+            <h3 id="bookAssignmentTitle">布置校本作业</h3>
+            <p id="bookAssignmentSummary">已选 0 题，请选择布置对象。</p>
+          </div>
+          <button type="button" data-book-assignment-close title="关闭"><span data-icon="x"></span></button>
+        </header>
+        <div class="book-assignment-targets">
+          <aside>
+            <strong>选择班级</strong>
+            <div id="assignmentClassList" class="assignment-class-list"></div>
+          </aside>
+          <section>
+            <div class="assignment-student-head">
+              <div><strong id="assignmentStudentClass">高一1班</strong><span id="assignmentSelectedCount">已选 0 人</span></div>
+              <label><input id="assignmentSelectClass" type="checkbox" /><span>选择本班全部学生</span></label>
+            </div>
+            <div id="assignmentStudentGrid" class="assignment-student-grid"></div>
+          </section>
+        </div>
+        <div class="assignment-time-note"><span data-icon="clock"></span><p><strong>立即发布</strong><small>原型暂按创建后立即推送；定时发布与截止时间留到正式作业设置。</small></p></div>
+        <footer>
+          <span id="assignmentTargetSummary">请选择至少 1 名学生</span>
+          <button type="button" class="ghost-button" data-book-assignment-close>取消</button>
+          <button id="confirmBookAssignment" type="button" class="primary-action" disabled>生成作业</button>
+        </footer>
+      </section>
+    </div>
+    <div id="appNotice" class="app-notice hidden" role="status" aria-live="polite">
+      <span id="appNoticeIcon" class="app-notice-icon" data-icon="warning" aria-hidden="true"></span>
+      <p id="appNoticeText"></p>
+      <button id="appNoticeClose" type="button" title="关闭提示"><span data-icon="x"></span></button>
+    </div>
+    <div id="appDialog" class="app-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="appDialogTitle">
+      <div class="app-dialog-backdrop" data-dialog-cancel></div>
+      <section class="app-dialog-panel">
+        <span class="app-dialog-icon" data-icon="warning" aria-hidden="true"></span>
+        <div class="app-dialog-copy">
+          <h3 id="appDialogTitle">确认操作</h3>
+          <p id="appDialogMessage"></p>
+        </div>
+        <footer>
+          <button id="appDialogCancel" type="button" class="ghost-button">取消</button>
+          <button id="appDialogConfirm" type="button" class="primary-action">确定</button>
+        </footer>
+      </section>
+    </div>
+    <div id="fullOptionStudentDialog" class="app-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="fullOptionStudentTitle">
+      <div class="app-dialog-backdrop" data-full-option-students-close></div>
+      <section class="app-dialog-panel full-option-student-panel">
+        <header>
+          <div>
+            <h3 id="fullOptionStudentTitle">选项学生名单</h3>
+            <p id="fullOptionStudentSummary"></p>
+          </div>
+          <button type="button" class="icon-action" data-full-option-students-close aria-label="关闭学生名单"><span data-icon="x"></span></button>
+        </header>
+        <div id="fullOptionStudentList" class="full-option-student-list"></div>
+        <footer><button type="button" class="primary-action" data-full-option-students-close>关闭</button></footer>
+      </section>
+    </div>
+    <div id="passwordResetDialog" class="app-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="passwordResetTitle">
+      <div class="app-dialog-backdrop" data-password-reset-close></div>
+      <section class="app-dialog-panel password-reset-panel">
+        <span class="app-dialog-icon success" data-icon="check-filled" aria-hidden="true"></span>
+        <div class="app-dialog-copy">
+          <h3 id="passwordResetTitle">密码已重置</h3>
+          <p>该学生的 APP 密码已恢复为学校默认初始密码，请单独告知学生。</p>
+          <dl class="password-reset-result">
+            <div><dt>学生</dt><dd id="passwordResetStudent">--</dd></div>
+            <div><dt>登录账号</dt><dd id="passwordResetAccount">--</dd></div>
+            <div><dt>重置后密码</dt><dd><code id="passwordResetValue">--</code></dd></div>
+          </dl>
+        </div>
+        <footer>
+          <button id="copyResetPassword" type="button" class="ghost-button">复制账号和密码</button>
+          <button type="button" class="primary-action" data-password-reset-close>我知道了</button>
+        </footer>
+      </section>
+    </div>
+    <div id="studentEditDialog" class="app-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="studentEditTitle">
+      <div class="app-dialog-backdrop" data-student-edit-close></div>
+      <form id="studentEditForm" class="app-dialog-panel student-edit-panel">
+        <div class="student-edit-head">
+          <div><h3 id="studentEditTitle">修改学生信息</h3></div>
+          <button type="button" data-student-edit-close title="关闭"><span data-icon="x"></span></button>
+        </div>
+        <div class="student-edit-fields">
+          <label><span>学生姓名</span><input id="studentEditName" type="text" maxlength="20" autocomplete="off" required /></label>
+          <label><span>学号</span><input id="studentEditNo" type="text" inputmode="numeric" maxlength="7" autocomplete="off" required /></label>
+          <p id="studentEditError" class="student-edit-error" role="alert"></p>
+        </div>
+        <footer>
+          <button type="button" class="ghost-button" data-student-edit-close>取消</button>
+          <button type="submit" class="primary-action">保存修改</button>
+        </footer>
+      </form>
+    </div>
+    <script src="./storage-scope.js?v=819cbbae0683"></script>
+    <script src="./data/data-inline.js?v=115dfcaaba87"></script>
+  <script src="./data/fullscreen-knowledge-library.js?v=0eb5532c475c"></script>
+    <script src="./vendor/echarts.min.js?v=baa8dfe7e1d9"></script>
+<script src="./data/v12141-suite_261028_0930.js?v=c5ee474373c8"></script>
+<script src="./data/v12141-words_261028_0930.js?v=1ce73971619e"></script>
+<script src="./data/v12133-notes_261027_1342.js?v=67a8b00211e2"></script>
+<script src="./data/v12133-media_261027_1342.js?v=d713a0a69e51"></script>
+<script src="./data/v12133-aac-map_261027_1342.js?v=0d11ad0916f3"></script>
+<script src="./v12131-aac-runtime_261027_1034.js?v=b8ef90e3214a"></script>
+<script src="./single-book-preload.js?v=fc39c195f850"></script>
+<script src="./v12122-app_261026_1027.js?v=3c707990babc"></script>
+<script src="./v12141-practice-source_261028_0930.js?v=ffd94213c7ca"></script>
+<script src="./v12141-audio-engine_261028_0932.js?v=264ebba15174"></script>
+<script src="./v12105-core_261023_0922.js?v=5a6ece805b6e"></script>
+<script src="./grammar-role-palette.js?v=5bccf33dfb3a"></script>
+<script src="./grammar-diagram-layout.js?v=0c85084bd0ce"></script>
+<script src="./v1215-grammar-color.js?v=575ec508b51f"></script>
+<script src="./single-book-catalog.js?v=89bca7b3c6d3"></script>
+<script src="./v12124-grammar-focus_261026_1331.js?v=15e41645de04"></script>
+<script src="./v12144-knowledge_261028_1012.js?v=a6bfabb0e10e"></script>
+<script src="./v12125-resources_261026_1413.js?v=97450a5abeeb"></script>
+<script src="./data/v12133-grammar_261027_1342.js?v=8d567cf8a161"></script>
+<script src="./word-detail-case-ui.js?v=4586ff69a545"></script>
+<script src="./v12108-dismiss_261023_1101.js?v=047fdd294076"></script>
+<script src="./theme-sync.js?v=d1095514c631"></script>
+  <script src="./confirmed-dialog-repairs.js?v=874c68320552"></script>
+<script src="./v12122-tools_261026_1027.js?v=3d9a163f113c"></script>
+<script src="./v12144-topic_261028_1012.js?v=edc3c64197b4"></script>
+<script src="./data/v12133-ppt_261027_1342.js?v=22e3d7dcb46f"></script>
+<script src="./v12121-illustrations_261026_1007.js?v=d61eb8825cbb"></script>
+<script src="./v12123-source-navigation_261026_1220.js?v=e199e1733890"></script>
+<script src="./v1219-polysemy-keys.js?v=51f7f3e9d273"></script>
+<script src="./v1213-answer-entry.js?v=7530c0cd3b0a"></script>
+<script src="./single-book-clue-markers.js?v=9f8d9a83fa63"></script>
+<script src="./v1214-review-repairs.js?v=d5463ca45a92"></script>
+<script src="./v12136-media_261027_1444.js?v=451257967920"></script>
+<script src="./v1216-speech-alignment.js?v=18acbda63434"></script>
+<script src="v1218-pager-keys.js?v=dce5f5bc3b4b"></script>
+<script src="./v1222-family-tree.js?v=0e03fb2788cb"></script>
+<script src="./data/v12141-example-media_261028_0930.js?v=fe47aef074b0"></script>
+<script src="./v12141-exact-example-audio_261028_0930.js?v=a91f8742a8d6"></script>
+<script src="./v12137-sense-examples_261027_1516.js?v=65fce6c0435b"></script>
+<script src="./v12131-word-core_261027_1039.js?v=0821bdc75b5e"></script>
+<script src="./v1221-ppt-copy.js?v=9d3df2968105"></script>
+<script src="./v1275-word-dock_261019_2036.js?v=94a6b320c4a3"></script>
+<script src="./v1224-navigation.js?v=82fb0b93dc87"></script>
+<script src="./v1225-present.js?v=58a2d669bb8f"></script>
+<script src="./data/v12133-similar_261027_1342.js?v=1a2615f1f35d"></script>
+<script src="./v1225-similar.js?v=b25c0886cdfe"></script>
+<script src="./v12117-paging_261026_0849.js?v=b8e4905e292a"></script>
+
+<script src="data/v12141-gaokao_261028_0930.js?v=654ca24c7003"></script>
+<script src="v12102-exam-data_261022_1102.js?v=50f63e343b98"></script>
+<script src="v12142-word-metadata_261028_0948.js?v=a578747b5916"></script>
+<script src="v1272-word-statistics_261019_1900.js?v=a9d7ed2932c9"></script>
+<script src="v1227-exam-navigation.js?v=871bfb1a1bd7"></script>
+<script src="v1235-knowledge-size.js?v=d41aaf2c86e3"></script>
+<script src="v1235-video-entry.js?v=23198dc8c991"></script>
+<script src="v1235-block-groups.js?v=5bb11fdf2890"></script>
+<script src="v1235-exam-examples.js?v=9a814a399b41"></script>
+<script src="v1235-detail-cleanup.js?v=52d697f5682e"></script>
+<script src="v1235-parent-word.js?v=8ca1c54d7f78"></script>
+<script src="v1235-note-modules.js?v=aa7e17266c00"></script>
+<script src="./v1241-detail-notes.js?v=49f7344ee98b"></script>
+<script src="./v1242-video-card.js?v=726388cee5df"></script>
+<script src="./v1244-knowledge-layout.js?v=6267555ab21c"></script>
+<script src="./v1244-block-relations.js?v=49107af3f754"></script>
+<script src="./v1246-block-ownership.js?v=110478f76ec8"></script>
+<script src="./v12123-source-modules_261026_1220.js?v=536fd7a3f052"></script>
+<script src="./v12126-row-controls_261026_1449.js?v=8b6fdd795390"></script>
+<script src="./v1247-nominalization.js?v=6aa1839697dc"></script>
+<script src="./v1250-block-example-toggle.js?v=fe6ec9545311"></script>
+<link rel="stylesheet" href="./v1263-formation-card_261019_0942.css?v=145707e66113" />
+<script src="./v1263-formation-card_261019_0942.js?v=42db653d5cf2"></script>
+<link rel="stylesheet" href="./v1263-interactive-tabs_261019_0942.css?v=43dd3de5ff08" />
+<script src="./v1283-interactive-tabs_261020_2250.js?v=b1edba7c803e"></script>
+<link rel="stylesheet" href="./v1264-sense-cards-family_261019_1320.css?v=f4dd823c6576" />
+<script src="./v1264-sense-card-anchor_261019_1320.js?v=51e15853a1bf"></script>
+<link rel="stylesheet" href="./v1265-word-cards-statistics_261019_1342.css?v=0d318a860e01" />
+<link rel="stylesheet" href="./v1266-word-detail-layout_261019_1431.css?v=9845d064180c" />
+<script src="./v1266-word-detail-layout_261019_1431.js?v=6dafc7b68850"></script>
+<link rel="stylesheet" href="./v1267-dictionary-hierarchy_261019_1522.css?v=e49164f0a2c6" />
+<script src="./v1267-dictionary-hierarchy_261019_1522.js?v=96a5d634cd5e"></script>
+<link rel="stylesheet" href="./v1268-sense-flow_261019_1554.css?v=d9fbabcf724e" />
+<script src="./v1268-sense-flow_261019_1554.js?v=ab622a26b412"></script>
+<link rel="stylesheet" href="./v1269-word-controls_261019_1613.css?v=a45417737c09" />
+<script src="./v1269-word-controls_261019_1613.js?v=66aaf3ddc333"></script>
+
+<!-- V1.2.70: scoped word-detail presentation migration. -->
+<link rel="stylesheet" href="./v1271-upper_261019_1721.css?v=13c5d2fb779e">
+<link rel="stylesheet" href="./v1270-dock-hierarchy_261019_1643.css?v=ec167e8925c1">
+<script src="./v12123-word-media_261026_1220.js?v=8ac1e515163a"></script>
+<link rel="stylesheet" href="./v1271-example_261019_1721.css?v=6d6793b3e882">
+<script src="./v1271-example_261019_1721.js?v=d394e1da766a"></script>
+<link rel="stylesheet" href="./v1271-meaning-plain_261019_1721.css?v=db9a9c98cbd0">
+<script src="./v1271-meaning-plain_261019_1721.js?v=1b5a27caea50"></script>
+<link rel="stylesheet" href="./v1274-dock-card_261019_1955.css?v=b013e758049c">
+<script src="./v1274-dock-card_261019_1955.js?v=84877e50ec57"></script>
+<script src="./v1273-example-controls_261019_1925.js?v=9fba0d825517"></script>
+<link rel="stylesheet" href="./v1273-example-controls_261019_1925.css?v=ca5339a288b0">
+<script src="./v1272-idiom-image_261019_1900.js?v=1d1f03b2a853"></script>
+<link rel="stylesheet" href="./v1272-idiom-image_261019_1900.css?v=b8c4365af7d7">
+<link rel="stylesheet" href="./v1272-statistics-layout_261019_1900.css?v=3583b0617912">
+<script src="./v1274-sense-sort-label_261019_1955.js?v=8163463029a5"></script>
+<link rel="stylesheet" href="./v1274-sense-sort-label_261019_1955.css?v=ff349eed57a8">
+<link rel="stylesheet" href="./v1275-word-visual_261019_2154.css?v=4bee2baf769d">
+<link rel="stylesheet" href="./v1276-statistics-contrast_261019_2258.css?v=f685c08b1389">
+<link rel="stylesheet" href="./v1277-collapsed-dock-clearance_261019_2308.css?v=a3720eec6d28">
+<script src="./v12104-visual_261022_1211.js?v=4626d13756a0"></script>
+<script src="./v1291-floating-dock_261021_1149.js?v=be1a27199993"></script>
+<link rel="stylesheet" href="./v1283-detail-panels_261020_2250.css?v=81af94985e58">
+<link rel="stylesheet" href="./v1283-word-detail_261020_2250.css?v=00baf36e17a4">
+<script src="./v12124-detail-panels_261026_1331.js?v=21f48a1ad6cd"></script>
+<link rel="stylesheet" href="./approved-guidance_261020_2209/guidance-approved_261020_2250.css?v=8aa7a825f878">
+<script src="./v12102-guidance-popup_261022_1102.js?v=e24c4bfa5223"></script>
+<script src="./v1284-entry-context_261021_0739.js?v=6720f55fbc4f"></script>
+<script src="./v12124-word-detail_261026_1331.js?v=2e24587aac41"></script>
+<link rel="stylesheet" href="./v1283-semantic-network_261020_2250.css?v=2eee9dc56c47">
+<script src="./v1289-semantic-network_261021_1044.js?v=65a052e88286"></script>
+<link rel="stylesheet" href="./v1291-reading-layout_261021_1149.css?v=300741bfc00a">
+<script src="./v1283-reading-layout_261020_2250.js?v=55bd047bc658"></script>
+<link rel="stylesheet" href="./v1283-fullscreen_261020_2250.css?v=acb03bdb43fd">
+<script src="./v1283-fullscreen_261020_2250.js?v=0d3ddf611dad"></script>
+<link rel="stylesheet" href="./approved-contrast_261020_2209/contrast-approved_261020_2250.css?v=7a2054175d0f">
+<link rel="stylesheet" href="./v1283-contrast_261020_2250.css?v=8425082769c5">
+<script src="./approved-contrast_261020_2209/contrast-approved_261020_2250.js?v=b6026259324d"></script>
+<script src="./v1283-contrast_261020_2250.js?v=3d9ce5261ae1"></script>
+<link rel="stylesheet" href="./v1283-formation-gallery_261020_2250.css?v=75f97f9ae9c8">
+<script src="./v1283-formation-gallery_261020_2250.js?v=91849237a96d"></script>
+<link rel="stylesheet" href="./v1283-block-labels_261020_2250.css?v=d75fe0e6ca97">
+<script src="./v1283-block-labels_261020_2250.js?v=8212d848579e"></script>
+<link rel="stylesheet" href="./v1283-topic-blocks_261020_2250.css?v=c80b14878cbb">
+<script src="./v1283-topic-blocks_261020_2250.js?v=4c9898b03301"></script>
+<link rel="stylesheet" href="./v1285-family-type_261021_0817.css?v=70dfe70844db">
+<script src="./v1283-family-layout_261020_2250.js?v=3c72c9f36524"></script>
+<link rel="stylesheet" href="./v1285-contrast-fit_261021_0817.css?v=88ac13c22f27">
+<script src="./v1289-contrast-fit_261021_1044.js?v=81e396362935"></script>
+<link rel="stylesheet" href="./v1286-acceptance-fixes_261021_0852.css?v=486eb1191b60">
+
+<link rel="stylesheet" href="./v1287-complete-formation_261021_0925.css?v=d5d09397d19a">
+<script src="./v1289-complete-formation_261021_1044.js?v=d2f02e4109c6"></script>
+<script src="./v12100-network_261022_0922.js?v=84e5a3416263"></script>
+<link rel="stylesheet" href="./v1290-comment-styles_261021_1111.css?v=06f70fb981ab">
+<link rel="stylesheet" href="./v1294-word-detail-thin-lines_261021_1506.css?v=1bc6d2b48174">
+<link rel="stylesheet" href="./v1295-card-surfaces_261021_1604.css?v=f9d278cd88ab">
+<link rel="stylesheet" href="./v1296-detail-layout_261021_1912.css?v=9d44dc255c14">
+<script src="./v12124-detail-adapter_261026_1331.js?v=04b2f0a5c1b0"></script>
+<link rel="stylesheet" href="./v1297-entry-layout_261021_2007.css?v=f5748b9a21c9">
+<script src="./v12147-entry-scope_261028_1628.js?v=3fed1f1992a4"></script>
+<link rel="stylesheet" href="./v1298-detail-fixes_261021_2038.css?v=ed09fa9d6478">
+<script src="./v1298-block-labels_261021_2038.js?v=93f799a4eb14"></script>
+<link rel="stylesheet" href="./v1299-detail-repairs_261021_2116.css?v=e4ffdb65d5ba">
+<link rel="stylesheet" href="./v12100-ui_261022_0922.css?v=171ecce60312">
+<script src="./v12118-dock-state_261026_0913.js?v=9c243ae5d103"></script>
+<link rel="stylesheet" href="./v12102-interface_261022_1102.css?v=3d42e6718967">
+<link rel="stylesheet" href="./v12106-popup_261023_0945.css?v=ec3c76285fd8">
+<script src="./v12142-popup_261028_0948.js?v=228184785d65"></script>
+<link rel="stylesheet" href="./v12107-fixes_261023_1020.css?v=92f330c07e6b">
+<script src="./v12113-vocabulary_261023_1445.js?v=953744453603"></script>
+<script src="./v12137-listening_261027_1516.js?v=6517b974db85"></script>
+<script src="./v12116-reading_261023_1700.js?v=63b1dfd4d94c"></script>
+<script src="./v12117-polish_261026_0849.js?v=93c03f4994e6"></script>
+<script src="./v12120-accent-fit_261026_0948.js?v=cfebcaf33d9f"></script>
+<script src="./v12124-source-scope_261026_1331.js?v=e72499a1d012"></script>
+<link rel="stylesheet" href="./v12128-topic-layout_261027_0922.css?v=8d4a6cf53c13">
+<link rel="stylesheet" href="./v12138-label-width-tabs_261027_1557.css?v=65569e96de2e">
+<script src="./v12138-media-binding_261027_1557.js?v=f54e351d87d7"></script>
+<link rel="stylesheet" href="./v12134-theme-and-inline-audio_261027_1358.css?v=95afcd42e6a9">
+<script src="./v12140-media-recovery_261028_0919.js?v=74ac9df2a70a"></script>
+<link rel="stylesheet" href="./v12144-topic-grammar_261028_1012.css?v=f15acd44160f">
+<script src="./v12145-vocabulary-and-estimate_261028_1504.js?v=418f565f041c"></script>
+<link rel="stylesheet" href="./v12145-vocabulary-and-estimate_261028_1504.css?v=34be8b4461b4">
+<link rel="stylesheet" href="./v12147-entry-style01_261028_1635.css?v=ca178cd29e31">
+<script src="./v12148-mother-layout_261029_0850.js?v=fe1962c35b09"></script>
+<link rel="stylesheet" href="./v12148-mother-layout_261029_0847.css?v=32df9c2c7dcb">
+<link rel="stylesheet" href="./v12149-spacing-type-check_261029_0911.css?v=46e8a0d3c3f5">
+<link rel="stylesheet" href="./v12150-vocabulary-width_261029_1007.css?v=19d395d49b41">
+<link rel="stylesheet" href="./v12151-tab-contour_261029_1024.css?v=074fcdf3c86b">
+<script src="./v12151-tab-contour_261029_1026.js?v=0a145906a0a9"></script>
+<link rel="stylesheet" href="./v12152-notes-body_261029_1045.css?v=ee00e24e0b51">
+<script src="./v12152-notes-body_261029_1045.js?v=2ea5a49bb0ef"></script>
+<link rel="stylesheet" href="./v12153-tab-theme_261029_1101.css?v=276f392f4e68">
+<link rel="stylesheet" href="./v12154-button-theme_261029_1130.css?v=9e6ab05f6c44">
+<link rel="stylesheet" href="./v12155-tab-button-theme_261029_1149.css?v=e65a37e7a5f6">
+<link rel="stylesheet" href="./v12156-neutral-theme_261029_1242.css?v=412e04aba8f7">
+<link rel="stylesheet" href="./v12157-tab-reference-dark-edge_261029_1253.css?v=49c3def90d37">
+<link rel="stylesheet" href="./v12158-dark-tab_261029_1305.css?v=a49854419d9e">
+<script src="./v12158-guidance-seek_261029_1313.js?v=a31c3f7cf41e"></script>
+<link rel="stylesheet" href="./v12159-light-reference_261029_1324.css?v=7c2ad8cc05a1">
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Category headings share the established source-content hierarchy. */
+#wordDetailDialog .v1235-block-category-group > .v1226-block-group-heading .v1227-fold-label {
+  color:var(--lecture-primary);font-weight:600;
+}
+#wordDetailDialog .v1235-block-category-group .v1235-block-source-context {
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.15em .6em;
+  margin:.1em 0 .15em;padding:0;border:0;
+  color:var(--lecture-muted);font:inherit;line-height:1.5;
+}
+#wordDetailDialog .v1235-block-source-context > :is(.v1226-block-pos,.v1226-block-parent-meaning) {
+  color:inherit;font:inherit;
+}

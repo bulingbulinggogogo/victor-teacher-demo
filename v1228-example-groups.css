@@ -1,0 +1,10 @@
+/* Standalone example pages retain source kind/citations inside real source groups. */
+#wordDetailDialog .v1228-example-groups{margin-top:.2em;}
+#wordDetailDialog .v1228-example-group{position:relative;min-width:0;margin:0;padding:.15em 0 .25em;}
+#wordDetailDialog .v1228-example-group+.v1228-example-group{margin-top:.25em;}
+#wordDetailDialog .v1228-example-group::before{content:"";position:absolute;inset-inline-start:-.55em;top:1em;width:.4em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .v1228-example-group-heading{font:inherit;font-weight:600;color:var(--lecture-text);line-height:1.5;margin:0 0 .15em;overflow-wrap:anywhere;}
+#wordDetailDialog .v1228-example-group-body{min-width:0;margin-inline-start:.25em;padding-inline-start:.55em;border-inline-start:1px solid var(--lecture-border);}
+#wordDetailDialog .v1228-example-group-body>.v1220-example{position:relative;margin:0;padding:.15em 0 .25em;border:0;}
+#wordDetailDialog .v1228-example-group-body>.v1220-example::before{content:"";position:absolute;inset-inline-start:-.55em;top:1em;width:.4em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .v1228-example-group[hidden]{display:none!important;}

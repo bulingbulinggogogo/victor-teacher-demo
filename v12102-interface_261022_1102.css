@@ -1,0 +1,34 @@
+
+/* Reuse the word detail's surfaces, blue actions and native typography. */
+#wordDetailDialog dialog.v1297-entry-dialog {width:min(620px,calc(100vw - 32px));padding:0;border-radius:12px;font:16px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-height:calc(100dvh - 32px);box-shadow:var(--lecture-resource-shadow,0 18px 48px #0003);}
+.v12102-entry-header {display:flex;align-items:flex-start;gap:16px;padding:24px 24px 20px;border-bottom:1px solid var(--lecture-border);}
+.v12102-entry-header>div {flex:1;min-width:0;}
+.v12102-entry-header h2 {font-size:22px;font-weight:650;margin:0 0 6px;}
+.v12102-entry-header .v1297-entry-intro {font-size:14px;line-height:1.6;margin:0;}
+.v12102-entry-close {border:0;background:transparent;color:var(--lecture-muted);width:44px;height:44px;padding:11px;margin:-7px -9px 0 0;border-radius:6px;cursor:pointer;}
+.v12102-entry-close svg {width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;}
+.v12102-entry-close:hover {background:var(--lecture-button-background);color:var(--lecture-primary);}
+.v12102-entry-options {padding:6px 24px;}
+.v1297-entry-dialog .v1297-entry-row {padding:16px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;border-top:0;border-bottom:1px solid var(--lecture-border);}
+.v1297-entry-dialog .v1297-entry-row:last-child {border-bottom:0;}
+.v1297-entry-dialog .v1297-row-choice {min-height:52px;gap:12px;font-weight:400;}
+.v12102-row-copy {display:flex;flex-direction:column;gap:4px;}
+.v12102-row-copy strong {font-size:16px;font-weight:600;}
+.v12102-row-copy small {font-size:13px;color:var(--lecture-muted);font-weight:400;}
+.v1297-entry-dialog .v1297-row-choice>input {width:19px;height:19px;}
+.v1297-entry-dialog .v1297-mask-options {padding:0;margin:0;gap:8px;flex-wrap:nowrap;}
+.v1297-entry-dialog .v1297-mask-options label,.v1297-entry-dialog .v1297-contrast-options label {min-height:44px;box-sizing:border-box;padding:9px 12px;border:1px solid var(--lecture-border);border-radius:6px;font-size:14px;white-space:nowrap;gap:8px;}
+.v1297-entry-dialog :is(.v1297-mask-options,.v1297-contrast-options) label:has(input:checked) {color:var(--lecture-primary);border-color:var(--lecture-primary);background:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel));}
+.v1297-entry-dialog .v1297-entry-row.is-off .v1297-mask-options {opacity:.45;}
+.v1297-entry-dialog .v1297-entry-row.is-off .v1297-mask-options label {cursor:default;}
+.v1297-entry-dialog .v1297-contrast-options {margin:12px 0;padding:0;gap:12px;}
+.v1297-entry-dialog .v1297-contrast-options legend {font-size:14px;color:var(--lecture-muted);margin-bottom:12px;}
+.v1297-entry-dialog .v1297-entry-actions {padding:18px 24px;margin:0;border-top:1px solid var(--lecture-border);background:var(--lecture-panel);align-items:center;gap:10px;}
+.v1297-entry-dialog .v1297-entry-actions button {min-height:44px;border-radius:6px;font-size:14px;padding:9px 18px;white-space:nowrap;}
+.v1297-entry-dialog .v1297-entry-error {flex:1;font-size:13px;line-height:1.5;margin:0;min-height:0;}
+.v1297-entry-dialog .v1297-entry-error.is-error {color:var(--lecture-rate-bad,#c34d4d);}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1281-exam-lesson>.v1278-exam-layout.v12102-no-statistics {grid-template-columns:minmax(0,1fr)!important;}
+.v12102-no-statistics>.v1278-meanings-chart[hidden] {display:none!important;}
+@media(max-width:620px){.v1297-entry-dialog .v1297-entry-row{grid-template-columns:1fr;gap:10px}.v1297-entry-dialog .v1297-mask-options{padding-left:31px}.v1297-entry-dialog .v1297-entry-actions{flex-wrap:wrap}.v1297-entry-dialog .v1297-entry-error{flex-basis:100%;margin-bottom:4px}.v12102-entry-header,.v1297-entry-dialog .v1297-entry-actions{padding:18px}.v12102-entry-options{padding:4px 18px}}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog[data-v12102-no-sense-exam-stats] [data-latest-sense] [data-word-tag="sense-exam"] {display:none!important;}

@@ -1,0 +1,4 @@
+/* The answer entry uses the original side Tab class without custom type. */
+#classroomDock .v13-answer-tools{display:none;width:64px;justify-items:center;gap:6px;padding:0 0 6px}
+#fullscreenPage.demo-all-answers #classroomDock:not(.collapsed) .v13-answer-tools:not([hidden]){display:grid}
+#fullscreenPage .v13-answer-hint{margin:0 0 10px;color:var(--lecture-muted);font-size:16px;line-height:1.5;font-weight:400}

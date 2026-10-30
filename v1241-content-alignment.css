@@ -1,0 +1,84 @@
+/* V41, authored against the V39 component rules.
+   Definition and block modules share one native reading surface and type scale.
+   Tags, teaching notes, media, charts and hierarchy guides retain their owners. */
+
+/* Remove accumulated scaffold spacing around the two navigation levels.
+   Intro edge 8 + body gap 8 = 16px; body gap 8 + group edge 8 = 16px. */
+#wordDetailDialog.vwn-dialog.v1223-word-dock-owner > .resource-popover-body {
+  row-gap:8px!important;
+}
+#wordDetailDialog.vwn-dialog .vwn-word-intro {
+  margin-block-end:8px;
+  padding-block-end:0;
+}
+#wordDetailDialog > .resource-popover-body > .vwn-main-nav {
+  margin-block:0;
+}
+#wordDetailDialog .v1223-word-subnav > .vwn-secondary-tools {
+  padding-block:0;
+}
+#wordDetailDialog .vwn-panel > .vwn-panel-scroll {
+  margin-top:0;
+}
+#wordDetailDialog.vwn-dialog .vwn-content {
+  margin-top:0!important;
+}
+
+/* These exact outer nodes own the V39 definition enclosure. Removing their
+   frame does not remove borders from nested tags or semantic-note cards. */
+#wordDetailDialog [data-case-module="meanings"] > .ke-all-meanings {
+  margin:0;
+  padding-top:0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+#wordDetailDialog [data-case-module="meanings"] .resource-sense-overview,
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-groups {
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+#wordDetailDialog [data-case-module="meanings"] .resource-sense-overview > .v1227-meaning-group,
+#wordDetailDialog [data-case-module="collocations"] .v1235-block-category-group {
+  margin-top:0;
+  padding-block:8px;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+
+/* Reuse the definition's existing body-size token and 1.45 line rhythm.
+   Original rich-text emphasis, translation colors and small-label scales stay
+   intact; category shells and individual block units add no blue fill/frame. */
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-groups,
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-group-heading,
+#wordDetailDialog [data-case-module="collocations"] .v1235-block-source-context {
+  font-family:inherit;
+  font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));
+  line-height:1.45;
+}
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-group-heading .v1227-group-toggle {
+  border:0;
+  background:transparent;
+}
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-unit,
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-unit-head {
+  border:0;
+  background:transparent;
+  box-shadow:none;
+}
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-unit h4,
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-unit .v1226-block-chinese {
+  font-family:inherit!important;
+  font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)))!important;
+  line-height:1.5!important;
+}
+
+/* A category heading is the same level as a definition POS heading. */
+#wordDetailDialog [data-case-module="collocations"] .v1235-block-category-group > .v1226-block-group-heading .v1227-fold-label {
+  color:var(--lecture-text);
+  font-weight:600;
+}

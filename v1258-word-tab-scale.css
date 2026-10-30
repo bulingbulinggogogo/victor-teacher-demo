@@ -1,0 +1,38 @@
+/* Word-detail tabs: retain their current size at global font level 36. */
+#wordDetailDialog {
+  --v1258-tab-scale: calc(var(--full-dialog-scale, 1.125) / 1.125);
+}
+#wordDetailDialog .vwn-main-nav.book-question-mode-tabs,
+#wordDetailDialog .vwn-secondary-tools > .book-unit-options,
+#wordDetailDialog .v1220-secondary-tabs {
+  flex-wrap: wrap !important;
+  min-width: 0;
+  max-width: 100%;
+  row-gap: 6px;
+}
+#wordDetailDialog .vwn-main-nav.book-question-mode-tabs > button,
+#wordDetailDialog .vwn-secondary-tools > .book-unit-options > button {
+  font-size: calc(13px * var(--v1258-tab-scale)) !important;
+  line-height: 1.56;
+  height: auto;
+  min-height: calc(36px * var(--v1258-tab-scale));
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+#wordDetailDialog > .resource-popover-body > .vwn-main-nav.book-question-mode-tabs > button {
+  min-height: calc(36px * var(--v1258-tab-scale));
+}
+#wordDetailDialog .v1220-secondary-tabs > button {
+  font-size: calc(12px * var(--v1258-tab-scale)) !important;
+  height: auto;
+  min-height: calc(40px * var(--v1258-tab-scale));
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+/* Only the categorical POS tabs; graph segments and footer controls keep their rules. */
+#wordDetailDialog .vpi-pos-tabs > button[data-pgi-page] {
+  font-size: calc(16px * var(--v1258-tab-scale));
+  height: auto;
+  min-height: calc(38px * var(--v1258-tab-scale));
+  white-space: nowrap;
+}

@@ -1,0 +1,27 @@
+/* Share the exact body-size token used by encyclopedia and micro-skill copy. */
+#popover#popover#popover#popover.tc-topic-dialog{
+ --single-font:var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1)));
+ --single-answer:var(--single-font);--single-title:var(--single-font);
+ --single-card-height:calc(var(--single-font) * 2.4 + 18px);--single-columns:1;
+}
+#popover#popover#popover#popover.tc-topic-dialog .tc-grid{
+ height:auto!important;grid-template-rows:none!important;grid-auto-rows:auto!important;
+}
+#popover#popover#popover#popover.tc-topic-dialog .single-group{
+ grid-template-columns:minmax(3.2em,4.5em) minmax(0,1fr)!important;
+ font-size:var(--single-font)!important;
+}
+#popover#popover#popover#popover.tc-topic-dialog .single-items{
+ grid-template-columns:repeat(var(--single-columns),minmax(0,1fr))!important;
+ grid-template-rows:none!important;grid-auto-rows:var(--single-card-height)!important;
+}
+#popover#popover#popover#popover.tc-topic-dialog .tc-term{
+ font-family:inherit!important;font-size:var(--single-font)!important;
+}
+#popover#popover#popover#popover.tc-topic-dialog .tc-term :is(.tc-prompt,.tc-answer){
+ font-size:var(--single-font)!important;white-space:nowrap!important;line-height:1.2!important;
+}
+#popover#popover#popover#popover.tc-topic-dialog .tc-stage-title{
+ font-size:var(--single-font)!important;overflow-wrap:anywhere;
+}
+#popover#popover#popover .ke-grammar-basic [data-grammar-answer][hidden]{display:none!important}

@@ -1,0 +1,12 @@
+/* Group titles have a single compact gap before their terms. */
+#popover#popover#popover.tc-topic-dialog .tc-grid{row-gap:8px!important;align-content:start!important;}
+#popover#popover#popover.tc-topic-dialog .tc-stage-title{margin:12px 0 0!important;}
+#popover#popover#popover.tc-topic-dialog .tc-stage-title:first-child{margin-top:0!important;}
+/* Mother-card typography only; preserve buttons, colors and word-detail layout. */
+#popover#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-sense-meta,
+#popover#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-sense-meta span,
+#popover#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-collapsed-pos,
+#popover#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-sense-meaning{font-size:calc(30.4px * var(--v113-scale))!important;}
+#popover#popover#popover#popover.v105-vocabulary .v105-example .v105-example-en{font-size:calc(25px * var(--v113-scale))!important;}
+#popover#popover#popover#popover.v105-vocabulary .v105-word-header{padding-top:calc(12px * var(--v113-scale))!important;}
+#popover#popover#popover#popover.v105-vocabulary .v105-tags{margin-bottom:calc(8.5px * var(--v113-scale))!important;}

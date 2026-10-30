@@ -1,0 +1,139 @@
+/* V78 keeps the approved blue/white theme and its type scale. */
+#wordDetailDialog[data-v1278-word-detail] .v1278-meaning-relations{display:inline-flex;flex-wrap:wrap;gap:4px 18px;margin-left:24px;color:var(--lecture-muted,#64748b);font-family:inherit;font-size:.72em;font-weight:400;vertical-align:baseline;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-sense-prefix,#wordDetailDialog[data-v1278-word-detail] .v1278-sense-prefix [data-word-tag-field="usage"],#wordDetailDialog[data-v1278-word-detail] .resource-sense-chunk{color:var(--lecture-primary,#2563eb)!important;background:transparent!important;border:0!important;box-shadow:none!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-sense-prefix [data-word-tag-field="usage"]{padding:0!important;margin-right:12px;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guidance-button{float:right;display:inline-flex;align-items:center;justify-content:center;position:relative;margin:2px 20px 8px 18px;padding:7px 14px;border:1px solid var(--v1275-edge,#bfd1f8);border-radius:8px;background:var(--v1275-wash,#eff5ff);color:var(--lecture-resource-primary,#2563eb);font-family:inherit;font-size:var(--v1275-font-13,14px);font-weight:600;line-height:1.4;cursor:pointer;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guidance-button:hover{background:color-mix(in srgb,var(--lecture-resource-primary,#2563eb) 14%,var(--lecture-panel,#fff));}
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning{display:block!important;position:static!important;clear:both;border:0!important;box-shadow:none!important;border-radius:0!important;padding:10px 0!important;margin:6px 0 18px!important;background:transparent!important;text-align:left!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning [data-v1264-source-module]{padding:0!important;background:transparent!important;border:0!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning .pgi-scene{background:transparent!important;border:0!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning [data-graph-kind="single"]{margin:0!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-formation-content{display:grid;gap:22px;min-width:0;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-family-content :is(.vft-note,.vft-note-affix){color:var(--lecture-text,#334155)!important;font-weight:400!important;text-decoration:none!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-family-frequency{display:inline-flex;margin-left:12px;vertical-align:middle;font-size:var(--v1275-font-11,12px)!important;font-weight:500!important;white-space:nowrap;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-provenance-chip{display:inline-block;width:fit-content;max-width:100%;padding:2px 8px;border:1px solid color-mix(in srgb,var(--lecture-muted,#64748b) 18%,transparent)!important;border-radius:4px!important;background:color-mix(in srgb,var(--lecture-muted,#64748b) 8%,var(--lecture-panel,#fff))!important;color:var(--lecture-muted,#64748b)!important;font-size:var(--v1275-font-11,12px)!important;font-weight:400!important;font-style:normal!important;line-height:1.65;white-space:normal;}
+#wordDetailDialog[data-v1278-word-detail] :is(.v1225-example-topic-line,.v1278-example-metadata) [data-word-tag-field="topic"]{display:inline-block;padding:2px 8px;border:1px solid #e7a34d!important;border-radius:4px!important;background:#fff0cf!important;color:#9a4700!important;font-weight:600!important;font-style:normal!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-dialog{box-sizing:border-box;width:min(1080px,calc(100vw - 80px));max-width:calc(100vw - 40px);max-height:calc(100vh - 64px);padding:0;border:1px solid var(--v1275-edge,#bfd1f8);border-radius:16px;background:var(--lecture-panel,#fff);color:var(--lecture-text,#1e293b);box-shadow:0 24px 90px #0f23434d;overflow:hidden;font-family:inherit;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-dialog::backdrop{background:#11274466;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-header,#wordDetailDialog[data-v1278-word-detail] .v1278-guide-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;background:var(--v1275-wash,#f4f7ff);}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-header{border-bottom:1px solid var(--v1275-edge,#d8e3f8);}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-header h2{margin:0;font-size:20px;font-weight:650;color:var(--lecture-text,#1e293b);}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-footer{border-top:1px solid var(--v1275-edge,#d8e3f8);font-size:14px;color:var(--lecture-muted,#64748b);}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-dialog button{min-height:36px;border:1px solid var(--v1275-edge,#bfd1f8);border-radius:7px;background:var(--lecture-panel,#fff);color:var(--lecture-resource-primary,#2563eb);padding:6px 12px;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-dialog button:disabled{opacity:.38;cursor:default;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-body{min-height:120px;max-height:calc(100vh - 230px);overflow:auto;overscroll-behavior:contain;padding:24px;font-size:var(--v1275-font-18,20px);line-height:1.7;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-body .v1278-guidance-content{margin:0!important;border:0!important;padding:0!important;box-shadow:none!important;background:transparent!important;}
+#wordDetailDialog[data-v1278-word-detail] .v1278-guide-body img{max-width:100%;height:auto;object-fit:contain;}
+#wordDetailDialog[data-v1278-word-detail] :is(.v1278-guide-dialog button,.v1278-guidance-button):focus-visible{outline:3px solid var(--lecture-resource-primary,#2563eb);outline-offset:3px;}
+@media(max-width:900px){#wordDetailDialog[data-v1278-word-detail] .v1278-meaning-relations{display:flex;margin:4px 0 0;}#wordDetailDialog[data-v1278-word-detail] .v1278-guide-dialog{width:calc(100vw - 24px);max-width:calc(100vw - 24px);}#wordDetailDialog[data-v1278-word-detail] .v1278-guide-body{padding:16px;}}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1278-word-detail] .resource-sense-meta.v1278-sense-prefix[data-metadata-scope="sense"],#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1278-word-detail] .resource-sense-meta.v1278-sense-prefix[data-metadata-scope="sense"]>span{color:var(--lecture-primary,#2563eb)!important;background:transparent!important;border:0!important;}
+
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning .pgi-single-image{object-position:left center!important;}
+/* V79 review: original one-word-one-meaning prose stays first in the sense flow. */
+#wordDetailDialog[data-v1278-word-detail] .v1278-single-meaning .pgi-single-body-copy{display:block!important;text-align:left!important;color:var(--lecture-text,#21314a)!important;margin:0 0 14px!important;font-size:var(--v1275-font-18,20px)!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-single-meaning .pgi-scene-single{display:flex!important;flex-direction:column!important;align-items:flex-start!important;height:auto!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-single-meaning .pgi-single-image{align-self:flex-start!important;width:min(540px,100%)!important;height:auto!important;max-height:360px!important;object-fit:contain!important;flex:0 0 auto!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guidance-button{z-index:3;float:right;margin:0 30px 6px 18px;min-height:36px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog{width:min(1120px,calc(100vw - 72px));margin:auto;max-height:calc(100dvh - 56px);border-color:var(--v1275-edge,#aac4f6);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog[open]{display:flex;flex-direction:column;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header{flex:0 0 auto;justify-content:flex-start;min-height:72px;padding:16px 30px;background:var(--lecture-panel,#fff);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-kind{border-left:1px solid var(--v1275-edge,#cfddf5);padding-left:20px;color:var(--lecture-muted,#657791);font-size:17px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-count{margin-left:auto;color:var(--lecture-muted,#657791);font-size:16px;white-space:nowrap;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header .v1279-guide-close{border:0;background:transparent;min-width:38px;min-height:38px;padding:0;font-size:27px;font-weight:400;color:var(--lecture-muted,#657791);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-body{flex:1 1 auto;min-height:140px;max-height:none;overflow:auto;padding:0;font-size:20px;line-height:1.8;color:var(--lecture-text,#21314a);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-media{min-height:260px;padding:24px 52px;background:var(--v1275-wash,#eef5ff);border-bottom:1px solid var(--v1275-edge,#cfddf5);display:flex;gap:28px;justify-content:center;align-items:center;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-media>:is(img,video){max-height:260px;max-width:100%;height:auto;width:auto;object-fit:contain;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-media .pgi-scene{width:100%;height:auto!important;background:transparent!important;border:0!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-media img{max-height:220px!important;object-fit:contain;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-explanation{padding:24px 38px 28px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-explanation p{font-size:inherit!important;line-height:1.8!important;color:inherit!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-body .v1278-guidance-content{font-size:inherit!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-footer{justify-content:flex-end;flex:0 0 auto;padding:16px 30px;background:var(--lecture-panel,#fff);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager{display:flex;gap:12px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager>button{min-width:122px;min-height:46px;font-size:17px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager>.v1279-guide-next{background:var(--lecture-resource-primary,#2864f0);color:#fff;border-color:var(--lecture-resource-primary,#2864f0);}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog[open]~*{pointer-events:none;}
+@media(max-width:800px){#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog{width:calc(100vw - 24px);max-width:calc(100vw - 24px);}#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header{padding:12px 16px;gap:10px;}#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-kind{padding-left:10px;font-size:14px;}#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-explanation{padding:18px 22px;}#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-media{padding:18px;min-height:200px;}#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-body{font-size:18px;}}
+
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-explanation p{font-weight:400!important;}
+
+/* Only the pronunciation-guidance outline is removed; its fill and layout remain. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .resource-guidance-card{border-color:transparent!important;outline:none!important;box-shadow:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-example-number{display:inline-flex;align-items:center;justify-content:flex-start;gap:4px;flex:0 0 40px;min-width:40px;font-variant-numeric:tabular-nums;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-example-number .v1238-exam-example-star{display:inline-block!important;position:static!important;width:12px!important;height:12px!important;margin:0!important;flex:0 0 12px;vertical-align:middle;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1223-example-copy>.v1238-exam-example-star:first-child{margin:0 7px 0 0!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-example-number{align-self:flex-start;padding-top:3px!important;}
+
+/* Center the complete illustration groups; keep their source copy and GIFs. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning{width:min(540px,100%)!important;max-width:100%;margin-left:auto!important;margin-right:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-formation-content [data-graph-kind="nominalization"]{width:min(1100px,100%)!important;margin-inline:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-formation-content .v1247-reasoning-grid{grid-template-columns:minmax(0,1fr) minmax(180px,1.2fr) minmax(0,1fr)!important;align-items:center!important;justify-items:center;gap:24px!important;width:100%!important;margin-inline:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-formation-content .v1247-reasoning-grid>figure{width:100%!important;justify-self:center;align-self:center;text-align:center!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-formation-content .v1247-reasoning-grid img{display:block!important;height:180px!important;max-width:100%;object-fit:contain;margin-inline:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-formation-content .v1247-reasoning-bridge{width:100%!important;justify-self:center;text-align:center!important;}
+
+/* V81: live noun-to-verb discovery inside the 06 top-image/bottom-explanation dialog. */
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media{position:relative;padding-top:46px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(180px,1fr) minmax(0,1fr)!important;align-items:center!important;justify-items:center;gap:24px!important;width:100%!important;min-height:230px;margin:0 auto!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-grid>figure{width:100%!important;margin:0!important;text-align:center!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-grid img{display:block!important;width:auto!important;max-width:100%!important;height:150px!important;margin:0 auto!important;object-fit:contain!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-bridge{display:grid!important;place-items:center;width:100%!important;text-align:center;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-conversion-label{font-size:21px!important;margin:14px 0 0!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-bridge [data-v1247-bridge-reveal]{font-size:21px!important;font-weight:600!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-bridge svg{display:block!important;max-width:180px;height:38px;margin:12px auto 0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media [hidden]{display:none!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media [data-v1247-result-reveal]{display:block!important;opacity:1!important;visibility:visible!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-question{min-height:86px;padding:18px!important;width:100%;max-width:250px;border-style:dashed!important;font-size:20px!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-reset{position:absolute;top:12px;right:18px;min-height:30px!important;font-size:14px!important;background:transparent!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-guide-example-title{margin:0 0 4px;font-size:30px;font-weight:700;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-guide-instruction{margin:0 0 12px;color:var(--lecture-muted,#657791)!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-explanation .v1246-source-example{margin:0!important;font-size:16px!important;}
+
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-conversion-media .v1247-reasoning-bridge{border:0!important;background:transparent!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-guide-example{padding-top:14px;border-top:1px solid var(--v1275-edge,#cfddf5);margin:14px 0 0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-guide-example strong{color:var(--lecture-resource-primary,#2864f0);font-weight:700;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1281-guide-translation{font-size:17px!important;color:var(--lecture-muted,#657791)!important;margin:0;}
+
+/* V82: option 06, migrated from the actual 10-option reference. */
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog{width:min(840px,calc(100vw - 72px));max-height:calc(100dvh - 56px);border:1px solid #aac4f6;border-radius:14px;box-shadow:0 18px 60px #17376824;background:#fff;color:#21314a;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header{min-height:66px;padding:18px 26px;gap:16px;border-bottom:1px solid #cfddf5;background:#fff;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header h2{display:block!important;font-size:18px!important;font-weight:650!important;line-height:1.4!important;color:#21314a!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-kind{padding-left:15px;font-size:14px;color:#657791;border-left:1px solid #cfddf5;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-count{font-size:13px;color:#657791;font-variant-numeric:tabular-nums;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-header .v1279-guide-close{display:flex;align-items:center;justify-content:center;min-height:30px;min-width:30px;padding:5px;border:0;background:transparent;color:#6c7e98;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog button svg{display:block;width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;flex:none;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-body{display:flex;flex-direction:column;min-height:0;padding:0 30px 23px;overflow:auto;flex:1;font-size:17px;line-height:1.8;color:#21314a;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-media{order:-1;position:relative;flex:none;margin:0 -30px 23px;padding:24px 65px;min-height:220px;background:#eef5ff;border-bottom:1px solid #dce8fc;display:flex;align-items:center;justify-content:center;gap:16px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-media figure{flex:1;min-width:0;margin:0;text-align:center;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-media img{display:block;height:150px!important;max-height:150px!important;max-width:100%;width:auto;object-fit:contain;margin:auto;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-media figcaption{font-size:15px;margin-top:8px;color:#586e90;line-height:1.5;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-media figcaption b{font-family:Georgia,serif;font-style:italic;color:#2864f0;margin-right:5px;font-size:20px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-arrow{font-size:30px;line-height:1.3;color:#7b9acb;flex:none;text-align:center;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-arrow small{display:block;font-size:13px;color:#657791;white-space:nowrap;margin-bottom:3px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-topic{display:flex;align-items:baseline;gap:12px;margin:0 0 12px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-topic h3{display:block!important;font-size:26px!important;letter-spacing:-.5px;font-weight:700!important;color:#21314a!important;line-height:1.4!important;margin:0!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-topic-label{font-size:15px;color:#657791;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-explanation{font-size:17px!important;line-height:1.8!important;font-weight:400!important;margin:0!important;color:#21314a!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-explanation strong,#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-example strong{color:#2864f0;font-weight:700;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-example{margin-top:16px;border-top:1px solid #cfddf5;padding-top:14px;line-height:1.6;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-example-en{font-size:18px!important;font-weight:500!important;margin:0!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-example-zh{font-size:14px!important;font-weight:400!important;color:#657791!important;margin:5px 0 0!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-footer{padding:13px 26px;border-top:1px solid #cfddf5;background:#fff;justify-content:flex-end;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager{display:flex;align-items:center;gap:9px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager>button{display:flex;align-items:center;justify-content:center;gap:8px;min-height:38px;min-width:102px;padding:9px 15px;font-size:14px;font-weight:600;border-radius:8px;border:1px solid #cfddf5;color:#21314a;background:#fff;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1279-guide-pager>.v1279-guide-next{color:#fff;background:#2864f0;border-color:#2864f0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-concept-row{display:flex;align-items:center;justify-content:center;gap:20px;width:100%;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-concept{min-width:100px;text-align:center;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-concept b{display:block;font-size:25px;font-weight:650;color:#2864f0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-concept span{display:block;font-size:14px;color:#657791;margin-top:10px;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-word-flow{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-large{font-size:38px;font-weight:700;letter-spacing:-1px;color:#2864f0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-large small{display:block;text-align:center;font-size:16px;font-weight:400;color:#657791;margin-top:9px;letter-spacing:0;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-operator{font-size:30px;color:#9cb1d1;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-conversion [hidden]{display:none!important;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-guide-discover{border:1px dashed #aac4f6;background:#f5f8ff;padding:16px 12px;min-height:72px;font-size:15px;white-space:nowrap;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1282-conversion-reset{position:absolute;top:8px;right:12px;font-size:12px;min-height:28px;padding:4px 7px;background:transparent;color:#657791;border:0;}
+
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog::backdrop{background:#20365532;}
+#wordDetailDialog.vwn-dialog[data-v1278-word-detail] .v1278-guide-dialog:focus{outline:none;}

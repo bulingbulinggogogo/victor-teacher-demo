@@ -1,0 +1,18 @@
+/* V73: mirror native source-child scope without claiming data-word-feature=all.
+ * Two IDs protect hidden state from the original dock's !important display.
+ * The existing hierarchy owns type, palette, guide line and left/right inset. */
+#wordDetailDialog [data-v1272-example-all][hidden],
+#wordDetailDialog #classroomDock [data-v1272-example-all][hidden],
+#wordDetailDialog #classroomDock.collapsed [data-v1272-example-all] {
+  display:none!important;
+}
+#wordDetailDialog #classroomDock .v1225-word-secondary
+[data-v1220-subnav-for="meanings"][aria-label="释义内容开关"] > [data-v1272-example-all]:not([hidden]) {
+  box-sizing:border-box;
+  width:var(--v1267-child-normal-width,52px)!important;
+  max-width:var(--v1267-child-normal-width,52px)!important;
+  min-width:0!important;
+}
+/* Keep option text exact; UNIT 1 and years retain their own digits. */
+#wordDetailDialog .v1270-example-controls [data-v1270-filter]::after{content:none!important;}
+#wordDetailDialog .v1270-example-controls [data-v1270-filter] :is(.count,.facet-count,.filter-count,.v1270-filter-count,[data-facet-count],[data-filter-count],small){display:none!important;}

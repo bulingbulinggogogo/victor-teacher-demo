@@ -1,0 +1,53 @@
+/* Family tree: one left-aligned text tree inside the shared reading column. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree {
+ --v1282-family-scale:1;box-sizing:border-box!important;width:100%!important;max-width:100%!important;
+ margin:0!important;padding:12px 0 20px!important;overflow:visible!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-stage {
+ box-sizing:border-box!important;width:max-content!important;min-width:0!important;max-width:none!important;
+ margin-inline:0!important;padding:0!important;transform:none!important;text-align:left!important;justify-content:flex-start!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree :is(.vft-nodes,.vft-children) {
+ box-sizing:border-box!important;width:max-content!important;min-width:0!important;max-width:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-nodes {margin:0!important;padding:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-node {
+ box-sizing:border-box!important;width:auto!important;max-width:none!important;
+ padding-top:3px!important;padding-bottom:10px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-children {
+ margin-top:8px!important;padding-inline-start:12px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-word {
+ display:flex!important;flex-wrap:nowrap!important;align-items:baseline!important;gap:8px!important;
+ width:max-content!important;max-width:none!important;min-width:0!important;
+ font-size:calc(var(--v1229-copy-font,24px) * var(--v1282-family-scale))!important;line-height:1.5!important;
+ margin:0!important;padding:0!important;white-space:nowrap!important;
+ overflow:visible!important;text-overflow:clip!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-word strong,
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-word strong span {
+ font-size:inherit!important;line-height:inherit!important;white-space:nowrap!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-pos {
+ font-size:inherit!important;line-height:1.5!important;
+ white-space:nowrap!important;flex:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .v1278-family-frequency {
+ font-size:12px!important;line-height:1.4!important;white-space:nowrap!important;flex:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree :is(.vft-meaning,.vft-note) {
+ box-sizing:border-box!important;width:max-content!important;min-width:0!important;max-width:none!important;
+ white-space:nowrap!important;overflow:visible!important;text-overflow:clip!important;
+ overflow-wrap:normal!important;word-break:normal!important;line-height:1.5!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-meaning {
+ font-size:calc(var(--v1229-copy-font,24px) * var(--v1282-family-scale))!important;margin:2px 0 0!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-note {
+ font-size:calc(var(--v1229-copy-font,24px) * var(--v1282-family-scale))!important;font-weight:400!important;
+ margin:1px 0 0!important;color:var(--lecture-resource-muted,#718198)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree .vft-note :is(.vft-note-affix,strong,b) {
+ color:var(--lecture-primary)!important;font-size:inherit!important;font-weight:700!important;text-decoration:underline!important;text-underline-offset:.12em;
+}

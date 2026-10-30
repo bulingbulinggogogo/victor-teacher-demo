@@ -1,0 +1,57 @@
+/* Read the existing classroom palette instead of freezing light-theme colors. */
+#popover#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs {
+ --v129-rail:var(--lecture-panel-deep,var(--v105-soft));
+ --v129-active:var(--lecture-segment-selected-background,var(--v105-soft));
+ --v129-active-ink:var(--v105-blue); --v129-idle-ink:var(--lecture-muted,var(--v105-muted));
+}
+#popover#popover#popover#popover#popover#popover.v105-vocabulary.light-mode .v105-note-tabs {
+ --v129-rail:#edf0f3; --v129-active:#eaf2ff; --v129-idle-ink:#667487;
+}
+#popover#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-panels {
+ --v105-muted:var(--lecture-muted); --v105-text:var(--lecture-text);
+ background:var(--v105-surface) !important; border-color:var(--v105-line) !important;
+}
+#popover#popover#popover#popover#popover#popover.v105-vocabulary.light-mode .v105-note-panels { --v105-muted:#263c5a; --v105-text:#263c5a; }
+#popover#popover#popover#popover#popover#popover.v105-vocabulary :is(.ke-exam-frequency,.v105-primary,.v105-contrast,.ke-word-more) {
+ background:var(--v105-surface) !important; border-color:var(--v105-blue) !important; color:var(--v105-blue) !important;
+}
+#popover#popover#popover#popover#popover#popover.v105-vocabulary :is(.ke-exam-frequency,.v105-primary,.v105-contrast,.ke-word-more):hover {
+ background:var(--lecture-panel-deep,var(--v105-soft)) !important; color:var(--v105-blue) !important;
+ border-color:var(--v105-blue) !important;
+}
+#popover#popover#popover#popover#popover#popover.v105-vocabulary .resource-inline-audio {color:var(--v105-blue) !important;}
+/* This button is part of the sentence flow, at the sentence's own type size. */
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .v134-inline-related,
+#wordDetailDialog .v1223-example-text .v134-inline-related {
+ display:inline !important; white-space:nowrap !important; font-size:inherit !important; line-height:inherit !important;
+ margin:0 !important; padding:0 !important;
+}
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .resource-inline-audio,
+#wordDetailDialog#wordDetailDialog .v1223-example-text .v134-inline-related .resource-inline-audio {
+ display:inline-flex !important; align-items:center !important; justify-content:center !important;
+ font-size:inherit !important; line-height:1 !important; width:1em !important; height:1em !important;
+ min-width:1em !important; min-height:1em !important; max-width:1em !important; max-height:1em !important;
+ padding:0 !important; margin:0 0 0 .12em !important; border:0 !important; background:transparent !important;
+ vertical-align:-.12em !important; flex:none !important;
+}
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .resource-audio-icon,
+#wordDetailDialog#wordDetailDialog .v1223-example-text .v134-inline-related .resource-audio-icon {
+ display:inline-flex !important; width:1em !important; height:1em !important; font-size:inherit !important;
+}
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .resource-inline-audio svg,
+#wordDetailDialog#wordDetailDialog .v1223-example-text .v134-inline-related .resource-inline-audio svg {
+ width:100% !important; height:100% !important; max-width:none !important; max-height:none !important;
+}
+
+#v115ListeningDialog .v134-sentence-tail,
+#wordDetailDialog .v134-sentence-tail {white-space:nowrap !important;}
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .resource-inline-audio svg,
+#wordDetailDialog#wordDetailDialog .v1223-example-text .v134-inline-related .resource-inline-audio svg {
+ min-width:0 !important;min-height:0 !important;flex:none !important;
+}
+
+#v115ListeningDialog#v115ListeningDialog .v115-case-en .resource-audio-icon,
+#wordDetailDialog#wordDetailDialog .v1223-example-text .v134-inline-related .resource-audio-icon {
+ min-width:1em !important;max-width:1em !important;min-height:1em !important;max-height:1em !important;
+ flex:0 0 1em !important;
+}

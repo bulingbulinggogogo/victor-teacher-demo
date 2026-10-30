@@ -1,0 +1,8 @@
+/* V72: a full-width year row, then a single row of the available pie charts. */
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="columns"]{grid-template-columns:minmax(0,1fr);}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"]{grid-template-columns:repeat(var(--v1272-chart-count,3),minmax(0,1fr));}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"]>.vside-single-chart{grid-column:auto;}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"] .v1265-pie-with-legend{grid-template-columns:minmax(0,1fr);gap:.4em;}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"] .v1227-pie{width:100%;max-width:240px;justify-self:center;}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"] .v1265-pie-legend{width:100%;}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="pie"] .v1265-pie-numbers{gap:.3em;}

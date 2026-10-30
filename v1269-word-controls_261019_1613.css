@@ -1,0 +1,3 @@
+/* The shared sidebar forces buttons to display:block; unavailable controls must win. */
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button[data-word-block-category][hidden],
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary button[data-word-feature][hidden]{display:none!important;}

@@ -1,0 +1,137 @@
+/* V57: in-scope ordinary knowledge uses 16:9 candidates, then one shared content-height
+   rule. Word-detail, grammar and expanded views stay outside this layout. */
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]){
+ display:flex!important;flex-direction:column!important;box-sizing:border-box!important;
+ position:fixed!important;inset:0!important;margin:auto!important;transform:none!important;
+ width:var(--v1246-popup-width,720px)!important;min-width:0!important;max-width:90vw!important;
+ height:var(--v1246-popup-height,405px)!important;min-height:0!important;max-height:90dvh!important;
+ padding:0!important;border:0!important;outline:1px solid var(--lecture-border);outline-offset:-1px;
+ overflow:hidden!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-head,
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.classroom-modal-tools{
+ box-sizing:border-box;flex:0 0 auto!important;min-width:0!important;width:100%!important;max-width:100%!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-page,
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-page>article{
+ display:flex!important;flex-direction:column!important;box-sizing:border-box;
+ flex:1 1 0!important;min-width:0!important;width:100%!important;max-width:100%!important;
+ min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;
+ overflow:hidden!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-popover-body{
+ display:block!important;box-sizing:border-box!important;flex:1 1 0!important;
+ width:100%!important;min-width:0!important;max-width:100%!important;min-height:0!important;
+ height:auto!important;max-height:none!important;margin:0!important;padding:28px!important;
+ overflow-x:hidden!important;overflow-y:hidden!important;scrollbar-gutter:auto!important;overscroll-behavior:contain;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1246-size-state="capped-scroll"] .resource-popover-body{
+ overflow-y:auto!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .ke-resource-content{
+ display:block!important;box-sizing:border-box;flex:none!important;min-width:0!important;
+ width:100%!important;max-width:100%!important;min-height:0!important;height:auto!important;
+ max-height:none!important;margin:0!important;padding:0!important;overflow:visible!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) :is(.resource-detail-layout,.ke-topic-layout){
+ display:grid!important;box-sizing:border-box;flex:none!important;min-width:0!important;
+ width:100%!important;max-width:100%!important;min-height:0!important;height:auto!important;
+ max-height:none!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto!important;
+ gap:24px!important;margin:0!important;padding:0!important;align-items:start!important;overflow:visible!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) :is(.resource-detail-layout,.ke-topic-layout):has(>.resource-media-panel){
+ grid-template-columns:minmax(0,1fr) 400px!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) :is(.resource-detail-copy,.ke-topic-practice){
+ display:block!important;box-sizing:border-box;grid-column:1;grid-row:1;min-width:0!important;
+ width:100%!important;max-width:100%!important;min-height:0!important;height:auto!important;
+ max-height:none!important;margin:0!important;padding:0!important;overflow:visible!important;scrollbar-gutter:auto!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) :is(.resource-detail-layout,.ke-topic-layout)>.resource-media-panel{
+ box-sizing:border-box;grid-column:2;grid-row:1;align-self:start!important;justify-self:end;
+ width:400px!important;min-width:400px!important;max-width:400px!important;
+ height:auto!important;max-height:none!important;margin:0!important;padding:0!important;overflow:visible!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) :is(.resource-detail-layout,.ke-topic-layout).media-only{
+ grid-template-columns:minmax(0,1fr)!important;justify-items:center;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-detail-layout.media-only>.resource-media-panel{
+ grid-column:1;justify-self:center;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-image-frame:not(:fullscreen),
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-image-frame:not(:fullscreen)>img{
+ box-sizing:border-box;width:400px!important;min-width:400px!important;max-width:400px!important;
+ height:auto!important;max-height:none!important;object-fit:contain;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .ke-media-slot:not(.v15-video-player){
+ width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;max-height:none!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .v15-media-title-row{
+ box-sizing:border-box;width:100%!important;max-width:100%!important;min-width:0;
+ flex-wrap:nowrap!important;align-items:center;gap:20px;margin:0 0 20px!important;padding:0!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .ke-wiki-name{
+ box-sizing:border-box;min-width:0!important;width:auto!important;max-width:100%!important;padding:0!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-popover-body :is(p,li,h3,h4,.resource-sense-copy,.knowledge-term){
+ min-width:0;overflow-wrap:anywhere;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-page[hidden]{display:none!important;}
+
+/* V48: a word's current-context meaning is one compact card, not two nested
+   vertical padding layers. Full word detail, grammar and expanded views keep
+   their existing owners. Font sizes and horizontal insets are unchanged. */
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1248-natural-vocabulary] .resource-current-summary{
+ min-height:0!important;padding-block:8px!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1248-natural-vocabulary] .resource-current-summary .resource-sense-line{
+ min-height:0!important;padding-block:0!important;
+}
+/* The dashed divider belongs between the mother word and its explanation.
+   Restore symmetric breathing room lost when the V46 geometry owner replaced
+   v1235-fixed-knowledge; share one inset across copy and its 400px media rail. */
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1248-natural-vocabulary] .ke-vocabulary-mother-layout:has(+.ke-vocabulary-explanation-layout) > .resource-detail-copy{
+ padding-bottom:calc(18px * var(--full-dialog-scale,1))!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1248-natural-vocabulary] .ke-vocabulary-explanation-layout{
+ padding-top:calc(18px * var(--full-dialog-scale,1))!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])[data-v1248-natural-vocabulary] .ke-vocabulary-explanation-copy :is(.resource-word-notes,.resource-word-note,.knowledge-explanation){
+ min-height:0!important;height:auto!important;
+}
+
+/* Prepare current-page fonts/media before the first visible fitted frame.
+   Opacity leaves the actual layout measurable; a failed image cannot keep the
+   dialog hidden because the sizing owner bounds its preparation wait. */
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded)[data-v1256-size-ready="false"]{
+ opacity:0;pointer-events:none;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .resource-popover-body :is([hidden],.hidden){
+ display:none!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-head>div{
+ min-width:0;overflow-wrap:anywhere;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.resource-popover-head>button{
+ flex-shrink:0;
+}
+/* A real toolbar may wrap on a narrow desktop; it must not reserve an empty
+   row or introduce a second horizontal scroller. Original nodes/listeners and
+   the shared tool-positioning owner are retained. */
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.classroom-modal-tools:not([data-classroom-tools-empty="true"]){
+ display:flex!important;flex-wrap:wrap!important;
+ align-items:center!important;gap:8px 12px!important;
+ height:auto!important;min-height:0!important;max-height:none!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.classroom-modal-tools>.classroom-modal-expand-host{
+ flex:0 1 auto;max-width:100%;height:auto;flex-wrap:wrap!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden])>.classroom-modal-tools>.classroom-modal-toolstrip{
+ flex:1 1 0;min-width:0;height:auto;flex-wrap:wrap;overflow:visible;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .classroom-modal-toolstrip>:is(.classroom-modal-actions,.classroom-modal-navigation){
+ flex:0 1 auto;min-width:0;max-width:100%!important;height:auto!important;flex-wrap:wrap!important;
+}
+#popover.resource-popover.v1246-adaptive-knowledge:not([data-knowledge-type="话题词汇"]):not(.ke-expanded):not(.hidden):not([hidden]) .classroom-modal-toolstrip :is(.ke-topic-directions,.ke-topic-toolbar,.ke-topic-frozen-toolbar){
+ min-width:0;max-width:100%!important;height:auto!important;flex-wrap:wrap!important;
+}

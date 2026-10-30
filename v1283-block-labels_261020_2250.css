@@ -1,0 +1,12 @@
+/* Only the block category/header labels follow the adjacent phrase typography. */
+#wordDetailDialog .v1223-sense-block-heading > :is(.v1223-block-kind,.v1224-block-category) {
+ font-family:inherit!important;font-size:inherit!important;line-height:inherit!important;
+ vertical-align:baseline!important;
+}
+/* The removed kind chip formerly occupied grid column one. Keep sentence and translation aligned. */
+#wordDetailDialog .v1223-sense-example-line.v1282-unlabelled-block-example {
+ grid-template-columns:minmax(0,1fr)!important;column-gap:0!important;
+}
+#wordDetailDialog .v1223-sense-example-line.v1282-unlabelled-block-example > :is(.v1223-example-text,.v1266-example-children,.v1222-sense-example-translation) {
+ grid-column:1!important;
+}

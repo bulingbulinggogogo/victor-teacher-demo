@@ -1,0 +1,58 @@
+/* Shared charts use the existing lecture blue, body text and fine separators. */
+#wordDetailDialog .v1227-exam-distribution{--v1227-chart-color-0:var(--lecture-primary);--v1227-chart-color-1:color-mix(in srgb,var(--lecture-primary) 90%,var(--lecture-panel));--v1227-chart-color-2:color-mix(in srgb,var(--lecture-primary) 80%,var(--lecture-panel));--v1227-chart-color-3:color-mix(in srgb,var(--lecture-primary) 70%,var(--lecture-panel));--v1227-chart-color-4:color-mix(in srgb,var(--lecture-primary) 60%,var(--lecture-panel));--v1227-chart-color-5:color-mix(in srgb,var(--lecture-primary) 50%,var(--lecture-panel));--v1227-chart-color-6:color-mix(in srgb,var(--lecture-primary) 42%,var(--lecture-panel));--v1227-chart-color-7:color-mix(in srgb,var(--lecture-primary) 34%,var(--lecture-panel));--v1227-chart-color-8:color-mix(in srgb,var(--lecture-primary) 26%,var(--lecture-panel));--v1227-chart-color-9:color-mix(in srgb,var(--lecture-primary) 18%,var(--lecture-panel));color:var(--lecture-text);font:inherit;line-height:1.5;min-width:0;}
+#wordDetailDialog .v1227-exam-statistic-note{font:inherit!important;line-height:1.5!important;margin:0 0 .6em;color:var(--lecture-muted);}
+#wordDetailDialog .v1228-chart-group{min-width:0;margin:0;padding:.4em 0 .65em;}
+#wordDetailDialog .v1228-chart-group+.v1228-chart-group{border-top:1px solid var(--lecture-border);padding-top:.65em;}
+#wordDetailDialog .v1228-chart-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:.2em .7em;margin:0 0 .35em;}
+#wordDetailDialog .v1228-chart-heading h4{margin:0;color:var(--lecture-primary);font:inherit!important;font-weight:700!important;line-height:1.5!important;}
+#wordDetailDialog .v1228-chart-source-count{color:var(--lecture-muted);font-size:.78em;}
+#wordDetailDialog .v1227-stat-chart-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20em),1fr));align-items:start;gap:.75em;min-width:0;}
+#wordDetailDialog .v1227-pie-card,#wordDetailDialog .v1227-stat-bar-card{min-width:0;margin:0;padding:0;border:0;border-radius:0;background:transparent;}
+#wordDetailDialog .v1227-pie-card h4,#wordDetailDialog .v1227-stat-bar-card h5{font:inherit!important;color:var(--lecture-muted);line-height:1.5!important;margin:0 0 .2em;font-weight:500!important;}
+#wordDetailDialog .v1227-pie{display:block;width:100%;height:auto;margin:.2em 0 .4em;overflow:visible;font:inherit!important;}
+#wordDetailDialog .v1227-pie-slice{fill:var(--v1227-slice-color);stroke:var(--lecture-panel);stroke-width:1.5;cursor:pointer;outline:none;transition:filter .12s,stroke-width .12s;}
+#wordDetailDialog .v1227-pie-slice.is-missing,#wordDetailDialog .v1229-pie-annotation.is-missing,#wordDetailDialog .v1227-stat-bar-row.is-missing{--v1227-slice-color:var(--lecture-muted)!important;}
+#wordDetailDialog .v1227-pie-slice:hover,#wordDetailDialog .v1227-pie-slice:focus-visible,#wordDetailDialog .v1227-pie-slice.is-selected{stroke:var(--lecture-text);stroke-width:3;filter:brightness(1.08);}
+#wordDetailDialog .v1229-pie-annotation{cursor:pointer;}
+#wordDetailDialog .v1229-pie-direct-label{font:inherit;fill:var(--lecture-text);pointer-events:bounding-box;}
+#wordDetailDialog .v1229-pie-label-value{fill:var(--lecture-muted);}
+#wordDetailDialog .v1229-pie-leader{fill:none;stroke:var(--lecture-muted);stroke-width:1;vector-effect:non-scaling-stroke;}
+#wordDetailDialog .v1229-pie-annotation.is-selected .v1229-pie-leader{stroke:var(--lecture-primary);stroke-width:2;}
+#wordDetailDialog .v1229-pie-annotation.is-selected .v1229-pie-label-name{fill:var(--lecture-primary);text-decoration:underline;}
+#wordDetailDialog .v1229-chart-accessible-summary,#wordDetailDialog .v1227-pie-selection{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;border:0!important;clip-path:inset(50%)!important;overflow:hidden!important;white-space:nowrap!important;}
+#wordDetailDialog .v1227-stat-bars{display:flex;flex-direction:column;gap:.3em;min-width:0;}
+#wordDetailDialog .v1227-stat-bar-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(3.5em,1.25fr) auto;align-items:center;gap:.35em;min-width:0;line-height:1.5;padding:.15em 0;}
+#wordDetailDialog .v1227-stat-bar-label{min-width:0;overflow-wrap:anywhere;}
+#wordDetailDialog .v1227-stat-bar-track{display:block;height:.5em;border-radius:999px;background:color-mix(in srgb,var(--lecture-border) 70%,transparent);overflow:hidden;}
+#wordDetailDialog .v1227-stat-bar-fill{display:block;height:100%;background:var(--v1227-slice-color);border-radius:inherit;}
+#wordDetailDialog .v1227-stat-bar-value{color:var(--lecture-text);white-space:nowrap;}
+/* The paired bar and pie keep the same category selected until toggled or cleared. */
+#wordDetailDialog .v1227-stat-bar-row[role="button"]{cursor:pointer;outline:none;border-radius:.18em;transition:background .12s,box-shadow .12s;}
+#wordDetailDialog .v1227-stat-bar-row[role="button"]:hover{background:color-mix(in srgb,var(--lecture-primary) 5%,transparent);}
+#wordDetailDialog .v1227-stat-bar-row[role="button"]:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:2px;}
+#wordDetailDialog .v1227-stat-bar-row.is-selected{background:color-mix(in srgb,var(--lecture-primary) 10%,transparent);box-shadow:inset 3px 0 0 var(--lecture-primary);}
+#wordDetailDialog .v1227-stat-bar-row.is-selected .v1227-stat-bar-label,#wordDetailDialog .v1227-stat-bar-row.is-selected .v1227-stat-bar-value{color:var(--lecture-primary);font-weight:700;}
+#wordDetailDialog .v1227-stat-bar-row.is-selected .v1227-stat-bar-fill{background:var(--lecture-primary);filter:brightness(1.08);}
+/* The question-type stack keeps the original blue theme and teaching typography. */
+#wordDetailDialog [data-v1227-exam-view="distribution"]{--v1227-chart-color-0:color-mix(in srgb,var(--lecture-primary) 32%,var(--lecture-panel));--v1227-chart-color-1:color-mix(in srgb,var(--lecture-primary) 28%,var(--lecture-panel));--v1227-chart-color-2:color-mix(in srgb,var(--lecture-primary) 24%,var(--lecture-panel));--v1227-chart-color-3:color-mix(in srgb,var(--lecture-primary) 20%,var(--lecture-panel));--v1227-chart-color-4:color-mix(in srgb,var(--lecture-primary) 17%,var(--lecture-panel));--v1227-chart-color-5:color-mix(in srgb,var(--lecture-primary) 14%,var(--lecture-panel));--v1227-chart-color-6:color-mix(in srgb,var(--lecture-primary) 11%,var(--lecture-panel));}
+#wordDetailDialog .v1227-exam-type-stack{display:flex;align-items:stretch;min-width:0;border:1px solid color-mix(in srgb,var(--lecture-primary) 18%,var(--lecture-border));border-radius:.4em;overflow:hidden;}
+#wordDetailDialog .v1227-exam-type-segment{display:flex;flex-direction:column;justify-content:center;align-items:center;box-sizing:border-box;min-width:0;gap:.15em;padding:.3em .1em;border:0;border-radius:0;background:var(--v1227-slice-color);color:var(--lecture-text);font:inherit;text-align:center;overflow-wrap:anywhere;cursor:pointer;transition:background .12s,box-shadow .12s;}
+#wordDetailDialog .v1227-exam-type-segment+.v1227-exam-type-segment{border-inline-start:1px solid var(--lecture-panel);}
+#wordDetailDialog .v1227-exam-type-segment>span{min-width:0;max-width:100%;}
+#wordDetailDialog .v1227-exam-type-segment:hover{background:color-mix(in srgb,var(--v1227-slice-color) 88%,var(--lecture-primary));}
+#wordDetailDialog .v1227-exam-type-segment.active,#wordDetailDialog .v1227-exam-type-segment:focus-visible{outline:none;box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--lecture-primary) 55%,var(--lecture-panel));}
+#wordDetailDialog .v1238-exam-example-star{display:inline-block;width:.7em;height:.7em;margin-inline-start:.15em;vertical-align:.02em;fill:#f04444;stroke:none;}
+
+/* A selected question type has a solid fill and a distinct inner frame. */
+#wordDetailDialog .v1227-exam-type-segment[aria-selected="true"]{background:var(--lecture-primary);color:#fff;box-shadow:inset 0 0 0 3px color-mix(in srgb,var(--lecture-primary) 76%,#000);}
+#wordDetailDialog .v1227-exam-type-segment[aria-selected="true"]>span{color:inherit;}
+#wordDetailDialog .v1227-exam-type-segment:focus-visible{outline:3px solid var(--lecture-text);outline-offset:-3px;}
+
+/* Narrow content keeps a true-scale strip; its existing filter buttons become a readable grid. */
+#wordDetailDialog .v1263-exam-proportion-strip{display:none;height:.65em;border:1px solid color-mix(in srgb,var(--lecture-primary) 18%,var(--lecture-border));border-radius:.35em;overflow:hidden;pointer-events:none;}
+#wordDetailDialog .v1263-exam-proportion-strip>span{box-sizing:border-box;display:block;min-width:0;background:var(--v1227-slice-color);}
+#wordDetailDialog .v1263-exam-proportion-strip>span+span{border-inline-start:1px solid var(--lecture-panel);}
+#wordDetailDialog .v1263-exam-proportion-strip>span.is-selected{background:var(--lecture-primary);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--lecture-primary) 76%,#000);}
+#wordDetailDialog .v1263-exam-type-narrow .v1263-exam-proportion-strip{display:flex;margin-bottom:.35em;}
+#wordDetailDialog .v1263-exam-type-narrow .v1227-exam-type-stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,4.4em),1fr));gap:.3em;border:0;border-radius:0;overflow:visible;}
+#wordDetailDialog .v1263-exam-type-narrow .v1227-exam-type-segment{padding:.3em;border:1px solid color-mix(in srgb,var(--lecture-primary) 18%,var(--lecture-border));border-radius:.3em;}

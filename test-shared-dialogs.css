@@ -1,0 +1,344 @@
+/* V1.2.8: shared dialogs, adapted only from the current deployed component CSS.
+ * Sources captured 2026-10-12:
+ * ClassManagement-Jba7L4ST.css; LectureContainer-BCanZrwe.css.
+ * Component-scoped selectors map to the legacy Demo IDs. Source values remain
+ * unchanged. Previously approved extra fullscreen controls retain a separate row.
+ */
+
+/* P01 / U14: the lecture student list uses the lecture student theme variables. */
+#fullOptionStudentDialog.app-dialog .full-option-student-panel {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: min(720px, calc(100vw - 48px));
+  min-width: 0;
+  max-width: calc(100vw - 48px);
+  height: auto;
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--lecture-student-border);
+  border-radius: 8px;
+  background: var(--lecture-student-panel);
+  color: var(--lecture-student-text);
+  font-family: var(--font-text);
+  font-size: calc(32px * var(--full-dialog-scale, 1.2));
+  font-weight: 400;
+  line-height: 1.36;
+  box-shadow: 0 24px 64px #0005;
+}
+#fullOptionStudentDialog.app-dialog > .app-dialog-backdrop { background: #060e1b99; }
+#fullOptionStudentDialog.app-dialog .full-option-student-panel > header {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px 14px;
+  border-bottom: 1px solid var(--lecture-student-divider);
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-panel h3 {
+  margin: 0;
+  color: var(--lecture-student-text);
+  font-size: calc(18px * var(--full-dialog-scale, 1.2));
+  font-weight: 400;
+  line-height: 1.36;
+}
+#fullOptionStudentDialog.app-dialog #fullOptionStudentSummary:empty { display: none; }
+#fullOptionStudentDialog.app-dialog .full-option-student-panel .icon-action {
+  display: grid;
+  flex: 0 0 30px;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--lecture-student-close-border);
+  border-radius: 50%;
+  background: var(--lecture-student-close-background);
+  color: var(--lecture-student-close-text);
+  box-shadow: var(--lecture-student-close-shadow);
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-panel .icon-action span,
+#fullOptionStudentDialog.app-dialog .full-option-student-panel .icon-action svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-panel .icon-action svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-list {
+  display: grid;
+  flex: 0 1 auto;
+  min-height: 0;
+  gap: 8px 16px;
+  max-height: min(480px, calc(100dvh - 240px));
+  padding: 18px 24px;
+  overflow: auto;
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-list > .full-option-student-column {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  background: transparent;
+  border: 0;
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-column > span {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1fr);
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--lecture-student-row);
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-list b,
+#fullOptionStudentDialog.app-dialog .full-option-student-list em {
+  overflow: hidden;
+  color: var(--lecture-student-text);
+  font-size: calc(13px * var(--full-dialog-scale, 1.2));
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-panel > footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 14px 24px 20px;
+  border-top: 1px solid var(--lecture-student-divider);
+}
+#fullOptionStudentDialog.app-dialog .full-option-student-panel > footer > button {
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  padding: 8px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #1268f3;
+  color: #fff;
+  font-family: inherit;
+  font-size: calc(14px * var(--full-dialog-scale, 1.2));
+  font-weight: 400;
+  line-height: 1.36;
+}
+@media (max-width: 520px) {
+  #fullOptionStudentDialog.app-dialog .full-option-student-list { grid-template-columns: 1fr !important; }
+}
+
+/* P02 / P03 / P04 / U14: class-management business dialogs remain fully light. */
+#appDialog:has(.password-confirm-panel),
+#passwordResetDialog.app-dialog,
+#studentEditDialog.app-dialog {
+  color: #17263d;
+  color-scheme: light;
+}
+#appDialog:has(.password-confirm-panel) > .app-dialog-backdrop,
+#passwordResetDialog.app-dialog > .app-dialog-backdrop,
+#studentEditDialog.app-dialog > .app-dialog-backdrop { background: #111d306b; }
+#appDialog.app-dialog .app-dialog-panel.password-confirm-panel,
+#passwordResetDialog.app-dialog .password-reset-panel,
+#studentEditDialog.app-dialog .student-edit-panel {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  height: auto;
+  border: 1px solid #dce4ef;
+  border-radius: 8px;
+  background: #fff;
+  color: #17263d;
+  line-height: 1.6;
+  box-shadow: 0 24px 60px #12233c3d;
+  scrollbar-color: #c6d5e8 transparent;
+  scrollbar-width: thin;
+}
+#appDialog.app-dialog .app-dialog-panel.password-confirm-panel,
+#passwordResetDialog.app-dialog .password-reset-panel {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 14px;
+  width: min(420px, calc(100vw - 40px));
+  max-width: calc(100vw - 40px);
+  padding: 22px;
+}
+#passwordResetDialog.app-dialog .password-reset-panel { gap: 0 14px; }
+#appDialog.app-dialog .password-confirm-panel > .app-dialog-icon,
+#passwordResetDialog.app-dialog .password-reset-panel > .app-dialog-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff1f1;
+  color: #d9363e;
+}
+#passwordResetDialog.app-dialog .password-reset-panel > .app-dialog-icon.success {
+  background: #eaf8ef;
+  color: #159447;
+}
+#appDialog.app-dialog .password-confirm-panel > .app-dialog-icon svg,
+#passwordResetDialog.app-dialog .password-reset-panel > .app-dialog-icon svg { width: 22px; height: 22px; }
+#appDialog.app-dialog .password-confirm-panel .app-dialog-copy h3,
+#passwordResetDialog.app-dialog .password-reset-panel .app-dialog-copy h3 {
+  margin: 1px 0 8px;
+  color: #17263d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#appDialog.app-dialog .password-confirm-panel .app-dialog-copy p,
+#passwordResetDialog.app-dialog .password-reset-panel .app-dialog-copy p {
+  margin: 0;
+  color: #66758a;
+  font-size: 14px;
+  line-height: 1.7 !important;
+}
+#appDialog.app-dialog .password-confirm-panel > footer,
+#passwordResetDialog.app-dialog .password-reset-panel > footer {
+  display: flex;
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  gap: 0;
+  margin: 18px 0 0;
+  padding: 0;
+}
+#passwordResetDialog.app-dialog .password-reset-panel > footer { margin-top: 22px; }
+#appDialog.app-dialog .password-confirm-panel > footer button,
+#passwordResetDialog.app-dialog .password-reset-panel > footer button,
+#studentEditDialog.app-dialog .student-edit-panel > footer button {
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 80px;
+  height: 36px;
+  margin: 0;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+#appDialog.app-dialog .password-confirm-panel .ghost-button,
+#passwordResetDialog.app-dialog .ghost-button,
+#studentEditDialog.app-dialog .ghost-button { border: 1px solid #d5dee9; background: #fff; color: #40546e; }
+#appDialog.app-dialog .password-confirm-panel .primary-action,
+#passwordResetDialog.app-dialog .primary-action,
+#studentEditDialog.app-dialog .primary-action { border: 1px solid #176cf2; background: #176cf2; color: #fff; }
+#appDialog.app-dialog .password-confirm-panel .danger-action { border: 1px solid #d9363e; background: #d9363e; color: #fff; }
+#appDialog.app-dialog .password-confirm-panel .danger-action:disabled { cursor: not-allowed; opacity: .65; }
+#passwordResetDialog.app-dialog .password-reset-result {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border: 1px solid #dce5f1;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+#passwordResetDialog.app-dialog .password-reset-result > div { display: grid; grid-template-columns: 86px 1fr; align-items: center; }
+#passwordResetDialog.app-dialog .password-reset-result dt { color: #8492a6; font-size: 12px; }
+#passwordResetDialog.app-dialog .password-reset-result dd { margin: 0; color: #344962; font-size: 13px; font-weight: 700; }
+#passwordResetDialog.app-dialog .password-reset-result code { color: #1268f3; font-family: var(--font-text); font-size: 16px; letter-spacing: .08em; }
+
+#studentEditDialog.app-dialog .student-edit-panel {
+  display: block;
+  width: min(480px, calc(100vw - 48px));
+  max-width: calc(100vw - 48px);
+  padding: 0;
+  overflow: hidden;
+}
+#studentEditDialog.app-dialog .student-edit-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 22px 16px;
+  border-bottom: 1px solid #e3e9f2;
+}
+#studentEditDialog.app-dialog .student-edit-head h3 { margin: 0; color: #233752; font-size: 20px; font-weight: 700; line-height: 1.6 !important; }
+#studentEditDialog.app-dialog .student-edit-head > button:not(.ke-modal-expand) {
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #edf5ff;
+  color: #176bff;
+}
+#studentEditDialog.app-dialog .student-edit-head > button:not(.ke-modal-expand) span,
+#studentEditDialog.app-dialog .student-edit-head > button:not(.ke-modal-expand) svg { width: 16px; height: 16px; }
+#studentEditDialog.app-dialog .student-edit-fields { display: grid; gap: 16px; padding: 20px 22px 8px; }
+#studentEditDialog.app-dialog .student-edit-fields label { display: grid; gap: 8px; color: #53657d; font-size: 12px; font-weight: 700; line-height: 1.6; }
+#studentEditDialog.app-dialog .student-edit-fields input { box-sizing: border-box; width: 100%; height: 42px; padding: 0 12px; border: 1px solid #ccd9e9; border-radius: 8px; background: #fff; color: #233752; font: inherit; }
+#studentEditDialog.app-dialog .student-edit-fields input:focus { border-color: #176bff; outline: none; box-shadow: 0 0 0 3px #176bff1f; }
+#studentEditDialog.app-dialog .student-edit-error { min-height: 18px; margin: -4px 0 0; color: #d92d20; font-size: 11px; line-height: 18px !important; }
+#studentEditDialog.app-dialog .student-edit-panel > footer { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 0; padding: 12px 22px 18px; }
+#studentEditDialog.app-dialog .student-edit-panel > footer button { padding: 0; }
+#studentEditDialog.app-dialog .primary-action:disabled { opacity: .55; cursor: not-allowed; }
+
+/* Extra fullscreen controls are retained without narrowing the source copy. */
+#appDialog.app-dialog .password-confirm-panel:has(> .ke-modal-expand) > .app-dialog-copy,
+#passwordResetDialog.app-dialog .password-reset-panel:has(> .ke-modal-expand) > .app-dialog-copy { padding: 0; }
+#appDialog.app-dialog .password-confirm-panel > .ke-modal-expand,
+#passwordResetDialog.app-dialog .password-reset-panel > .ke-modal-expand {
+  position: static;
+  order: -1;
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin: 0 0 14px;
+}
+#appDialog.app-dialog .password-confirm-panel .ke-modal-expand,
+#passwordResetDialog.app-dialog .ke-modal-expand,
+#studentEditDialog.app-dialog .ke-modal-expand { border-color: #c9daef; background: #f2f7ff; color: #17243b; }
+#studentEditDialog.app-dialog .student-edit-head > .ke-modal-expand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  width: auto;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #c9daef;
+  border-radius: 6px;
+  background: #f2f7ff;
+  color: #17243b;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+#studentEditDialog.app-dialog .student-edit-head > .ke-modal-expand > span {
+  display: inline;
+  width: auto;
+  height: auto;
+  color: inherit;
+  font: inherit;
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  #appDialog.app-dialog .app-dialog-panel.password-confirm-panel,
+  #passwordResetDialog.app-dialog .password-reset-panel,
+  #studentEditDialog.app-dialog .student-edit-panel { width: calc(100vw - 24px); max-width: calc(100vw - 24px); }
+  #appDialog.app-dialog .password-confirm-panel > footer,
+  #passwordResetDialog.app-dialog .password-reset-panel > footer { flex-wrap: wrap; }
+  #appDialog.app-dialog .password-confirm-panel > footer button,
+  #passwordResetDialog.app-dialog .password-reset-panel > footer button { flex: 1; min-width: 0; }
+}
+
+/* Approved fullscreen presentation still fills its own viewport. */
+#fullOptionStudentDialog.app-dialog.ke-expanded .full-option-student-panel,
+#appDialog.app-dialog.ke-expanded .password-confirm-panel,
+#passwordResetDialog.app-dialog.ke-expanded .password-reset-panel,
+#studentEditDialog.app-dialog.ke-expanded .student-edit-panel {
+  height: calc(100dvh - 24px);
+  max-height: calc(100dvh - 24px);
+  max-width: calc(100vw - 24px);
+  overflow: auto;
+}

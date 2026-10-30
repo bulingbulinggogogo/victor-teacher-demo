@@ -1,0 +1,36 @@
+/* Sense-linked content: bilingual text shares one column; sources use real final-line room. */
+.v1222-sense-examples{display:block;position:relative;min-width:0;margin:.3em 0 .15em;padding-inline-start:.55em;border-inline-start:1px solid var(--lecture-border);font-size:1em;font-weight:400;color:var(--lecture-text)}
+.v1222-sense-example{display:block;position:relative;min-width:0;padding:.18em 0 .28em;font-size:1em;font-weight:400}
+.v1223-sense-example-line{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:baseline;column-gap:.35em;row-gap:.02em;min-width:0;font-size:1em;line-height:1.5}
+.v1223-example-kind,.v1223-block-kind{display:inline-block;border:1px solid currentColor;border-radius:.2em;padding:0 .3em;color:var(--lecture-primary);font-size:.65em;font-weight:600;line-height:1.45;vertical-align:.1em;white-space:nowrap}
+.v1223-example-kind{grid-column:1;grid-row:1;align-self:baseline}
+.v1223-example-text{display:block;position:relative;grid-column:2;grid-row:1;min-width:0;max-width:100%;overflow-wrap:anywhere}
+.v1223-example-copy{display:inline;white-space:pre-wrap;overflow-wrap:anywhere}
+.v1223-example-text>[data-resource-audio]{display:inline-flex;margin:0;vertical-align:middle}
+.v1224-source-anchor{display:inline-block;width:0;height:0;padding:0;margin:0;vertical-align:baseline}
+.v1222-sense-example-source{display:inline-block;max-width:100%;color:var(--lecture-primary);font-size:.65em;font-weight:500;font-style:italic;line-height:1.5;text-align:right;white-space:nowrap;vertical-align:baseline}
+.v1222-sense-example-source.is-own-line{display:block;width:100%;margin-inline-start:0;white-space:normal;overflow-wrap:anywhere}
+.v1222-sense-example p,.v1223-sense-block p{margin:.02em 0;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;font-size:1em;font-weight:400}
+.v1223-sense-example-line>.v1222-sense-example-translation{grid-column:2;color:var(--lecture-muted)}
+.v1223-sense-block{display:block;position:relative;min-width:0;padding:.18em 0 .28em}
+.v1223-sense-block-heading .v1223-block-kind{margin-inline-end:.45em}
+.v1223-sense-block-heading>strong{font-weight:700}
+.v1224-block-category{color:var(--lecture-muted);font-size:.65em;margin-inline-end:.45em}
+.v1223-sense-block-usage{color:var(--lecture-muted)}
+.v1223-sense-block>.v1222-sense-example{margin-inline-start:.65em;padding-inline-start:.5em;border-inline-start:1px solid var(--lecture-border)}
+.v1222-sense-examples>.v1222-sense-example::before,.v1222-sense-examples>.v1223-sense-block::before{content:"";position:absolute;inset-inline-start:-.55em;top:1em;width:.4em;border-top:1px solid var(--lecture-border)}
+.v1223-sense-block>.v1222-sense-example::before{content:"";position:absolute;inset-inline-start:0;top:1em;width:.35em;border-top:1px solid var(--lecture-border)}
+#wordDetailDialog .resource-sense-overview>section+section{border-top:1px solid var(--lecture-border);margin-top:.45em;padding-top:.35em}
+#wordDetailDialog .resource-sense-overview .resource-sense-line+.resource-sense-line{border-top:1px solid var(--lecture-border);margin-top:.2em;padding-top:.25em}
+#wordDetailDialog .resource-popover-body .v1222-sense-example p,#wordDetailDialog .resource-popover-body .v1223-sense-block p{font-size:1em!important;line-height:1.5!important}
+
+/* The three standalone example pages use the exact same bilingual rows and source flow. */
+#wordDetailDialog .v1225-example-page>.v1220-example{padding:.18em 0 .28em;border-bottom:0}
+#wordDetailDialog .v1225-example-page>.v1220-example>.v1220-example-topic{margin-inline-start:calc(4.6em * .65);font-size:.75em!important;color:var(--lecture-muted)}
+
+.v1225-example-topic-line{grid-column:2;min-width:0;line-height:1.2;margin:.06em 0 .03em}
+.v1225-example-topic-badge{display:inline-block;max-width:100%;box-sizing:border-box;border:1px solid currentColor;border-radius:.2em;padding:.05em .35em;color:var(--lecture-primary);font-size:.65em;font-weight:500;line-height:1.45;overflow-wrap:anywhere}
+
+/* V1.2.26: example copy uses the same body size as the initial resource popup. */
+#wordDetailDialog .v1222-sense-examples,#wordDetailDialog .v1226-block-groups{font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));}
+#wordDetailDialog .v1226-block-associated>.v1222-sense-example{font-size:1em;}

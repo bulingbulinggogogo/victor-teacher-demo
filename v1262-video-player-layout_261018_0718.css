@@ -1,0 +1,55 @@
+/* V1.2.62: keep the fullscreen player controls on the selected teaching side. */
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls {
+ grid-template-columns:40px max-content max-content minmax(0,1fr);
+ grid-template-areas:"play volume clock space";
+ direction:ltr;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-toggle {
+ grid-area:play;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-volume-control {
+ grid-area:volume;
+ display:flex;
+ align-items:center;
+ gap:0;
+ width:auto;
+ min-width:40px;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-clock {
+ grid-area:clock;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-volume-control > .v18-video-volume {
+ position:static;
+ flex:0 0 auto;
+ width:0;
+ height:24px;
+ margin:0;
+ padding:0;
+ writing-mode:horizontal-tb;
+ direction:ltr;
+ transition:width .12s,opacity .12s;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-volume-control:is(:hover, :focus-within) {
+ gap:8px;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-volume-control:is(:hover, :focus-within) > .v18-video-volume {
+ width:96px;
+}
+#popover .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-seek {
+ direction:ltr;
+}
+#popover[data-classroom-tools-side="right"] .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls {
+ grid-template-columns:minmax(0,1fr) max-content max-content 40px;
+ grid-template-areas:"space clock volume play";
+}
+#popover[data-classroom-tools-side="right"] .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-controls > .v18-video-volume-control {
+ flex-direction:row-reverse;
+}
+#popover[data-classroom-tools-side="right"] .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v15-video-screen-tools {
+ left:auto;
+ right:24px;
+}
+#popover[data-classroom-tools-side="right"] .v15-video-player:is(:fullscreen, .v15-video-fallback) > .v18-video-status {
+ left:auto;
+ right:24px;
+}

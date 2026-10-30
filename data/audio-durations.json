@@ -1,0 +1,274 @@
+[
+  {
+    "path": "assets/audio/welcome-unit/14255-Text01.mp3",
+    "duration": 10.422857,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "a270574feb3d69347dd7aaa076b5b6ad48c7902b5f953750e2adb7b5ee0c147a",
+    "bytes": 167226
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text02.mp3",
+    "duration": 17.031837,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "1b690428433e1932e8849c483775a08dd63da532316a4b17dbe54e3510e1d1df",
+    "bytes": 272970
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text03.mp3",
+    "duration": 15.621224,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "3139f865e1a12d7da8c9efd2ea764f116169de1b312d4bf698283029dbcaaf42",
+    "bytes": 250400
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text04.mp3",
+    "duration": 17.188571,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "808941db557d57cc65c3aa11c07df1e19baf1bd110c7ec03219351042055e5d3",
+    "bytes": 275478
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text05.mp3",
+    "duration": 14.889796,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "35fc72f7ba23d13868f367161c17cad54472709b42c57b2b5cc61cf7782bfe0d",
+    "bytes": 238697
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text06.mp3",
+    "duration": 39.810612,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "35b9b975cc68ef61b045ee6c83fa5dcf8b703e632d5d199fc2999ef3bf125f02",
+    "bytes": 637430
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text07.mp3",
+    "duration": 33.567347,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "d4593263d9bc6b7429b6c411f15b7223fe6fcd00aedd9a2f38d97cf63b1ef200",
+    "bytes": 537538
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text08.mp3",
+    "duration": 50.102857,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "4764b96d6131bedcff586fbbcd97c1b829fd9720ebf9b5aaf2ea03d53e77c586",
+    "bytes": 802106
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text09.mp3",
+    "duration": 69.668571,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "ebd04ac3556c85753a42f55e10c091732d4b085b3d5ffbb2e808559653ff8903",
+    "bytes": 1115158
+  },
+  {
+    "path": "assets/audio/welcome-unit/14255-Text10.mp3",
+    "duration": 69.355102,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "e92ff28e598c37b80ef661118df11d033c75fe60c1bfe908c388a5dbf79ff086",
+    "bytes": 1110142
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text01.mp3",
+    "duration": 11.572245,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "8f39c4a3bf90769f0f49297b1478159610c80534c271064ffa4465863093ebdb",
+    "bytes": 185616
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text02.mp3",
+    "duration": 15.307755,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "c1569f991fb6378383b22dc165ca80cdfce51495eb701e6e57b7947ac214b844",
+    "bytes": 245385
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text03.mp3",
+    "duration": 15.621224,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "be1803e6744091ad817e65109c52697a898c005c728df8ff1a9395a1ac88edd2",
+    "bytes": 250400
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text04.mp3",
+    "duration": 15.281633,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "cf08087184bae51157bcffdb0ff573ba67b9b4313e03656b1679cdf47525610c",
+    "bytes": 244967
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text05.mp3",
+    "duration": 16.927347,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "f402606521fe7e00b7015aaf5c4e3f0ddefef322193115a936fe53fa3c696c83",
+    "bytes": 271298
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text06.mp3",
+    "duration": 29.022041,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "7758efbeaccdb6cde0c98a0d997942b8c0eb7d72d5554942bbb424525995d75f",
+    "bytes": 464813
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text07.mp3",
+    "duration": 33.854694,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "601a51a64d3bd93df3039146630fa4f6fa6f8174d918cb462b6d7acaa6d55315",
+    "bytes": 542136
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text08.mp3",
+    "duration": 60.813061,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "55dd109f77d2ab212935028ad573069f48087b280dff59ae308f4789341993cc",
+    "bytes": 973470
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text09.mp3",
+    "duration": 62.302041,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "dd8ece51ff5a7362210beded8f10fb41b2d43e74838a12c217f8809730f277bf",
+    "bytes": 997293
+  },
+  {
+    "path": "assets/audio/welcome-unit/14256-Text10.mp3",
+    "duration": 84.662857,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "a177c93f0f1ba09779153fdbbb8683785bf223f2e8f9cfb181d78fd1c0dec474",
+    "bytes": 1355066
+  },
+  {
+    "path": "assets/audio/practice/ding.wav",
+    "duration": 3.0,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "c089288d8268f041c091cdcb0503ee4bc15219373aa704556185cb4f099f9116",
+    "bytes": 264680
+  },
+  {
+    "path": "assets/audio/practice/ending-instruction.mp3",
+    "duration": 4.022813,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "4ae1725e0cf6c026145a1a24b60a9a9c1ba43ceffea07639de19aa0d3f3a8684",
+    "bytes": 64536
+  },
+  {
+    "path": "assets/audio/practice/question-1.wav",
+    "duration": 5.368503,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "d1fc5409e1285275a1e573001659a18871efe6b3d925423b2a1b457d38c42197",
+    "bytes": 473582
+  },
+  {
+    "path": "assets/audio/practice/question-2.wav",
+    "duration": 5.0,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "a715cf61c39d4d5e2edfab57868962e3d04de126fe39b7db15ba812794dbb925",
+    "bytes": 441080
+  },
+  {
+    "path": "assets/audio/practice/question-3.wav",
+    "duration": 4.862585,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "a7aabff728ede544b9287a39fd89dbe4d1eaeb862676f3e3550641d6d5b22a29",
+    "bytes": 428960
+  },
+  {
+    "path": "assets/audio/practice/question-4.wav",
+    "duration": 5.609048,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "03fdcd2b7ee48449707cf17acc20d0a94b6f32ccbda099b1692b487331abc36c",
+    "bytes": 494798
+  },
+  {
+    "path": "assets/audio/practice/question-5.wav",
+    "duration": 4.809955,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "5f4ec40e5d88f705cdd37ec24541a620aefb19c69fa9326a4722453c7dcd14cf",
+    "bytes": 424318
+  },
+  {
+    "path": "assets/audio/practice/questions-10-12.wav",
+    "duration": 12.560975,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "864852b1ff51b3230a742042055d7d8353223c3034aed736e93a999fc15f605a",
+    "bytes": 1107958
+  },
+  {
+    "path": "assets/audio/practice/questions-13-16.wav",
+    "duration": 12.794422,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "8e24923f35a5d9414686bcbc3d90a57ee833b7799d8caa83c42cc96724100224",
+    "bytes": 1128548
+  },
+  {
+    "path": "assets/audio/practice/questions-17-20.wav",
+    "duration": 12.499705,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "59544403797f475e6d3f1ff88896ff853fb79a8e8c8b2a0a5c0a92f1bbb628e5",
+    "bytes": 1102554
+  },
+  {
+    "path": "assets/audio/practice/questions-6-7.wav",
+    "duration": 11.712812,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "e4d4903077eafc08751b7696e90aadde0a9241fa0a107defcba69ae1189e5cff",
+    "bytes": 1033150
+  },
+  {
+    "path": "assets/audio/practice/questions-8-9.wav",
+    "duration": 11.591202,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "fdc7c6238bafc1b9281c025435f0fe149d0bfd97e28697390558a8793e2c8a0e",
+    "bytes": 1022424
+  },
+  {
+    "path": "assets/audio/practice/section-1-instruction.mp3",
+    "duration": 38.426125,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "765d3b5090159986843a33ba445692ad7fc145e7a49bb66eeb451fac236d7a22",
+    "bytes": 614818
+  },
+  {
+    "path": "assets/audio/practice/section-2-instruction.mp3",
+    "duration": 34.4555,
+    "source": "macOS afinfo读取实际媒体文件",
+    "browserDurationValidation": "pending",
+    "sha256": "c006f69200f6c5715e3919c4e4b1b831feebb57ad330e5cd0ef354bf06b11cf7",
+    "bytes": 551288
+  }
+]

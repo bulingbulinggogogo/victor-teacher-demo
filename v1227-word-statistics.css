@@ -1,0 +1,26 @@
+/* One chart per dimension: POS/meaning pies, yearly columns, other horizontal bars. */
+#wordDetailDialog .v1227-word-statistics{font:inherit;color:var(--lecture-text);min-width:0;}
+#wordDetailDialog .v1228-exam-flat-distributions{margin-top:.65em;padding-top:.65em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .vside-single-chart-body{min-width:0;}
+#wordDetailDialog .vside-single-chart[data-stat-chart-type="pie"] .v1227-pie-card{max-width:30em;}
+#wordDetailDialog .vside-single-chart .v1227-pie-card>h4,
+#wordDetailDialog .vside-single-chart .v1227-stat-bar-card>h5{display:none;}
+#wordDetailDialog .vside-single-chart .v1227-stat-bars{max-width:100%;}
+#wordDetailDialog .vside-year-chart{--vside-year-height:clamp(230px,13em,360px);position:relative;min-width:0;padding:1.3em 0 0 2.6em;}
+#wordDetailDialog .vside-year-y-axis{position:absolute;left:0;top:1.3em;width:2em;height:var(--vside-year-height);color:var(--lecture-muted);}
+#wordDetailDialog .vside-year-y-axis>span{position:absolute;right:0;transform:translateY(50%);font-size:.8em;line-height:1;}
+#wordDetailDialog .vside-year-scroll{min-width:0;overflow-x:auto;overscroll-behavior-inline:contain;padding-top:1.25em;margin-top:-1.25em;}
+#wordDetailDialog .vside-year-scroll:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:3px;}
+#wordDetailDialog .vside-year-canvas{position:relative;min-width:calc(var(--vside-year-count)*4.8em);}
+#wordDetailDialog .vside-year-grid{position:absolute;inset:0 0 auto;height:var(--vside-year-height);pointer-events:none;}
+#wordDetailDialog .vside-year-grid>i{position:absolute;left:0;right:0;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .vside-year-columns{position:relative;display:grid;grid-template-columns:repeat(var(--vside-year-count),minmax(0,1fr));}
+#wordDetailDialog .vside-year-column{display:flex;flex-direction:column;gap:0;align-items:stretch;padding:0 .25em;min-width:0;text-align:center;background:transparent;}
+#wordDetailDialog .vside-year-column-area{position:relative;display:block;height:var(--vside-year-height);}
+#wordDetailDialog .vside-year-bar{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60%;max-width:72px;border-radius:6px 6px 0 0;background:var(--lecture-primary);}
+#wordDetailDialog .vside-year-value{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);padding-bottom:.2em;color:var(--lecture-text);font-size:.8em;font-weight:600;line-height:1.1;white-space:nowrap;}
+#wordDetailDialog .vside-year-label{display:block;padding-top:.3em;color:var(--lecture-muted);font-size:.8em;line-height:1.5;white-space:nowrap;}
+#wordDetailDialog .vside-year-column:focus-visible{outline-offset:-2px;}
+#wordDetailDialog .vside-year-column.is-selected{box-shadow:none;background:color-mix(in srgb,var(--lecture-primary) 8%,transparent);}
+#wordDetailDialog .vside-year-column.is-selected .vside-year-bar{box-shadow:inset 0 0 0 2px var(--lecture-text);}
+#wordDetailDialog .vside-year-column.is-selected :is(.vside-year-value,.vside-year-label){color:var(--lecture-primary);font-weight:700;}

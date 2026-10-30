@@ -1,0 +1,74 @@
+/* V1.2.26: actual test transcript/global scrollbar, not audio-picker paint.
+ * Verified in the authenticated test lecture on 2026-10-15.
+ * bootstrap-JRWD3Db5.css SHA256:
+ * 40ebb19456e484d8a72a2f2b0853ed237c14308b4609cd1b969393935e25b3d4
+ * Modern browsers use native thin. Only older browsers use the 6px fallback.
+ * Source keeps audio-picker and Element scrollbar widgets as local exceptions.
+ */
+html,body,body * {
+  scrollbar-color:#c6d5e8 transparent!important;
+  scrollbar-width:thin!important;
+}
+/* Undo V1.2.25's unconditional custom WebKit paint. Native standard scrollbar
+ * styling wins in modern engines; these resets also match source pseudo styles.
+ * Do not change display: intentional hidden native toolbars stay hidden. */
+@supports (scrollbar-width:thin) {
+  html::-webkit-scrollbar,body::-webkit-scrollbar,body *::-webkit-scrollbar {
+    width:auto!important;height:auto!important;background:transparent!important;
+  }
+  html::-webkit-scrollbar-track,body::-webkit-scrollbar-track,body *::-webkit-scrollbar-track,
+  html::-webkit-scrollbar-corner,body::-webkit-scrollbar-corner,body *::-webkit-scrollbar-corner {
+    background:transparent!important;border:0!important;border-radius:0!important;
+    box-shadow:none!important;margin:0!important;
+  }
+  html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb,body *::-webkit-scrollbar-thumb,
+  html::-webkit-scrollbar-thumb:hover,body::-webkit-scrollbar-thumb:hover,body *::-webkit-scrollbar-thumb:hover {
+    background:transparent!important;border:0!important;border-radius:0!important;
+    box-shadow:none!important;background-clip:border-box!important;
+  }
+}
+@supports not (scrollbar-width:thin) {
+  html::-webkit-scrollbar,body::-webkit-scrollbar,body *::-webkit-scrollbar {
+    width:6px!important;height:6px!important;background:transparent!important;
+  }
+  html::-webkit-scrollbar-track,body::-webkit-scrollbar-track,body *::-webkit-scrollbar-track,
+  html::-webkit-scrollbar-corner,body::-webkit-scrollbar-corner,body *::-webkit-scrollbar-corner {
+    background:transparent!important;border:0!important;box-shadow:none!important;margin:0!important;
+  }
+  html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb,body *::-webkit-scrollbar-thumb,
+  html::-webkit-scrollbar-thumb:hover,body::-webkit-scrollbar-thumb:hover,body *::-webkit-scrollbar-thumb:hover {
+    background:#c6d5e8!important;border:0!important;border-radius:999px!important;
+    box-shadow:none!important;background-clip:border-box!important;
+  }
+}
+/* The original test sidebar/tool rows intentionally hide native scrollbars. */
+body .question-picker-panel .wrong-nav-items,
+body .v1223-word-dock-owner #classroomDock.v1223-word-dock>.v1223-word-primary,
+body.v1223-word-dock-owner #classroomDock.v1223-word-dock>.v1223-word-primary,
+body .classroom-tools-dialog .classroom-modal-toolstrip,
+body .classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar,
+body .classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-buttons,
+body .el-scrollbar__wrap--hidden-default {scrollbar-width:none!important;}
+body .question-picker-panel .wrong-nav-items::-webkit-scrollbar {width:0!important;height:0!important;}
+/* The test audio picker is a deliberate 12px local exception. The demo draws
+ * a draggable equivalent over a hidden native scrollbar; do not recolor it as
+ * the global transcript scrollbar or alter its existing drag/size behavior. */
+.question-picker-scrollbar {
+  border-color:color-mix(in srgb,var(--lecture-border) 82%,var(--lecture-text))!important;
+  background:color-mix(in srgb,var(--lecture-border) 58%,#101826)!important;
+  box-shadow:inset 0 0 0 1px #101826b8!important;
+}
+.question-picker-scrollbar .question-picker-scroll-thumb {
+  background:color-mix(in srgb,var(--lecture-primary) 82%,#fff)!important;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--lecture-primary) 54%,transparent)!important;
+}
+.question-picker-scrollbar:hover .question-picker-scroll-thumb,
+.question-picker-scrollbar.is-dragging .question-picker-scroll-thumb {
+  background:var(--lecture-primary)!important;
+}
+.question-picker-scrollbar.no-overflow .question-picker-scroll-thumb {
+  background:color-mix(in srgb,var(--lecture-muted) 74%,var(--lecture-border))!important;
+  box-shadow:none!important;
+}
+/* Element Plus owns its custom bars; source library rules (opacity .3/.5,
+ * 6px width and 4px bar radius) are not changed by the native rules above. */

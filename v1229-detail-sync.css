@@ -1,0 +1,3 @@
+/* Polysemy uses the same theme blue for boxes, operators, derivation arrows and branches. */
+#wordDetailDialog .vpi-module[data-graph-kind="polysemy"] :is(.pgi-branches path,.pgi-formation-result-arrow path){stroke:var(--lecture-primary)!important;}
+#wordDetailDialog .vpi-module[data-graph-kind="polysemy"] .pgi-formation-operator{color:var(--lecture-primary)!important;}

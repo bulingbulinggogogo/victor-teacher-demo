@@ -1,0 +1,13 @@
+/* Continuous source-range backgrounds include spaces and wrap naturally. */
+#popover#popover .v142-highlight-grammar .ke-g-word{white-space:normal!important;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+/* Keep the existing toolbar, but reserve its larger side equally on both edges. */
+#popover#popover#popover[data-knowledge-type="语法"].ke-expanded>.resource-popover-body,
+#popover#popover#popover[data-knowledge-type="语法"].ke-expanded>.resource-popover-page>article>.resource-popover-body{
+ margin-inline:max(var(--v106-content-left,0px),var(--v106-content-right,0px))!important;
+ scrollbar-gutter:stable both-edges!important;
+}
+/* Intrinsic width for short copy; a font-relative reading measure for long copy. */
+#popover#popover#popover[data-knowledge-type="语法"].ke-expanded .ke-resource-content{
+ box-sizing:border-box;inline-size:fit-content!important;width:fit-content!important;min-inline-size:0!important;min-width:0!important;
+ max-inline-size:min(100%,44em)!important;max-width:min(100%,44em)!important;margin-inline:auto!important;
+}

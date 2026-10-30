@@ -1,0 +1,125 @@
+/* All ordinary word-detail modules share one reading column. Original visual enclosures remain. */
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) {
+ --v1279-reading-left:112px;--v1279-reading-right:112px;--v1279-reading-edge:0px;
+ --v1279-reading-dock-width:88px;--v1279-reading-inner:24px;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen)>.resource-popover-body {
+ box-sizing:border-box;padding-left:var(--v1279-reading-left)!important;
+ padding-right:max(20px,calc(var(--v1279-reading-right) - var(--v1279-reading-scrollbar,0px)))!important;
+ min-width:0;overflow-x:hidden!important;overflow-y:auto!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1275-reading-layout {
+ display:contents!important;grid-template-columns:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) :is(.vwn-content,.v1270-filter-slot) {
+ grid-column:auto!important;grid-row:auto!important;margin-inline:0!important;min-width:0;max-width:100%;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) :is(.v1270-word-upper,.vwn-main-nav,.v1223-word-subnav,.vwn-content) {
+ box-sizing:border-box;align-self:stretch;max-width:100%;min-width:0;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) :is(.v1270-word-upper,.vwn-content) {
+ padding-inline:var(--v1279-reading-inner);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .vwn-content:has(.vwn-panel[aria-labelledby$="-tab-meanings"]:not([hidden])) {padding-inline:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1227-meaning-group>.resource-sense-list {margin-inline:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1227-meaning-group>.v1227-group-heading {padding-inline:var(--v1279-reading-inner);}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1227-meaning-group .resource-sense-line[data-latest-sense] {padding-inline:var(--v1279-reading-inner);}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs {padding-inline:var(--v1279-reading-inner);}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button:first-child {padding-inline-start:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1223-word-subnav:not([hidden]) {padding-inline:var(--v1279-reading-inner);}
+/* The original shared dock floats in the page margin, independently of the reading flow. */
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock] {
+ position:fixed!important;left:var(--v1279-reading-edge)!important;right:auto!important;
+ top:var(--v1279-reading-dock-top,140px)!important;bottom:auto!important;
+ margin:0!important;transform:none!important;box-sizing:border-box;z-index:60!important;
+ max-height:none!important;min-height:0!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) {
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;
+ width:var(--v1279-reading-dock-width)!important;min-width:var(--v1279-reading-dock-width)!important;max-width:var(--v1279-reading-dock-width)!important;
+ height:auto!important;padding:11px 8px!important;gap:9px!important;overflow:visible!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock].collapsed {
+ width:44px!important;min-width:44px!important;max-width:44px!important;height:auto!important;padding:5px!important;
+}
+/* Generic footer controls stay available on every ordinary tab. */
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) .v1225-word-tree {
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;flex:0 0 auto!important;
+ width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;
+ margin:0!important;padding:0!important;overflow:visible!important;overscroll-behavior:auto;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) .v1225-word-secondary {
+ width:100%!important;min-width:0!important;max-width:100%!important;align-items:stretch!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]) {
+ box-sizing:border-box;width:100%!important;max-width:100%!important;min-width:0!important;
+ margin-inline:0!important;padding:7px 31px 7px 0!important;min-height:34px!important;white-space:normal!important;font-size:12px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+ box-sizing:border-box;width:calc(100% - 4px)!important;max-width:calc(100% - 4px)!important;min-width:0!important;
+ height:auto!important;min-height:28px!important;margin-inline:4px 0!important;padding:5px 0 5px 20px!important;
+ white-space:normal!important;overflow-wrap:anywhere!important;font-size:11px!important;line-height:1.45!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock[data-v1279-reading-dock] .dock-footer-actions {
+ display:flex!important;justify-content:center!important;flex-wrap:wrap;gap:5px!important;flex:0 0 auto!important;width:100%!important;padding-top:8px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock[data-v1279-reading-dock].collapsed .dock-footer-actions {flex-direction:column!important;padding:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1270-word-upper :is(.v1270-word-media,.v1270-media-card,.v1270-media-figure,.resource-guidance-card) {min-width:0;max-width:100%;box-sizing:border-box;}
+@media(max-width:1399px){#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen){--v1279-reading-left:92px;--v1279-reading-right:92px;--v1279-reading-edge:0px;--v1279-reading-dock-width:80px;--v1279-reading-inner:22px;}}
+@media(max-width:1000px){#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen){--v1279-reading-left:86px;--v1279-reading-right:86px;--v1279-reading-edge:0px;--v1279-reading-dock-width:74px;--v1279-reading-inner:18px;}}
+@media(max-width:700px){#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen){--v1279-reading-left:82px;--v1279-reading-right:82px;--v1279-reading-edge:0px;--v1279-reading-dock-width:70px;--v1279-reading-inner:14px;}#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1270-word-upper.v1270-has-media{grid-template-columns:minmax(0,1fr);}}
+
+/* V83: the meaning rail uses its full natural height and no internal scrolling. */
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock[data-v1279-reading-dock]{border-radius:0 12px 12px 0!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) #classroomDock .v1275-display-heading{font-size:11px!important;white-space:nowrap;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]:not(.v1263-interactive-fullscreen) .v1227-meaning-group>.v1227-group-heading{display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout] .v1223-word-subnav [data-vwn-pos]{min-width:46px!important;padding-inline:14px!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDockToggle{display:inline-flex!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1279-reading-layout]>.resource-popover-body{overflow-anchor:none!important;}
+
+/* V82: center both footer controls in the narrow rail and each glyph in its button.
+   Keep the existing floating geometry, saved collapse state and top anchor. */
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock .dock-footer-actions {
+ box-sizing:border-box!important;display:flex!important;flex-direction:row!important;
+ flex-wrap:nowrap!important;align-items:center!important;justify-content:center!important;
+ gap:4px!important;width:100%!important;min-width:0!important;margin-inline:0!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock .dock-footer-actions > :is(#classroomDockToggle,#interfaceSettingsToggle) {
+ box-sizing:border-box!important;display:grid!important;place-items:center!important;
+ align-items:center!important;justify-content:center!important;flex:0 0 28px!important;
+ width:28px!important;min-width:28px!important;max-width:28px!important;
+ height:28px!important;min-height:28px!important;max-height:28px!important;
+ padding:0!important;margin:0!important;line-height:1!important;text-align:center!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock .dock-footer-actions > :is(#classroomDockToggle,#interfaceSettingsToggle) > span {
+ display:grid!important;place-items:center!important;width:18px!important;height:18px!important;
+ margin:0!important;padding:0!important;line-height:1!important;transform:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock .dock-footer-actions > :is(#classroomDockToggle,#interfaceSettingsToggle) svg {
+ display:block!important;width:18px!important;height:18px!important;margin:0!important;
+ padding:0!important;transform:none!important;flex:none!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock.collapsed {place-items:center!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock.collapsed .dock-footer-actions {
+ flex-direction:column!important;gap:0!important;align-items:center!important;justify-content:center!important;padding:0!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock.collapsed .dock-footer-actions > #classroomDockToggle {
+ flex:0 0 32px!important;width:32px!important;min-width:32px!important;max-width:32px!important;
+ height:32px!important;min-height:32px!important;max-height:32px!important;
+}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock.collapsed .dock-footer-actions > #interfaceSettingsToggle {display:grid!important;}
+@media(max-width:1000px){
+ #wordDetailDialog.vwn-dialog.v1220-dialog #classroomDock.v1223-word-dock:not(.collapsed) .dock-footer-actions > :is(#classroomDockToggle,#interfaceSettingsToggle) {
+  flex-basis:24px!important;width:24px!important;min-width:24px!important;max-width:24px!important;
+  height:28px!important;min-height:28px!important;max-height:28px!important;
+ }
+}
+
+/* Every visible checkbox stays in the natural rail flow; the document remains the only scroll area. */
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1223-word-dock-owner[data-v1279-reading-layout][data-v1279-reading-module="meanings"]:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock[data-v1279-reading-dock]:not(.collapsed) :is(.v1225-word-tree,.v1225-word-secondary,.v1220-secondary-tabs,.v1267-block-category-controls) {
+ max-height:none!important;height:auto!important;overflow:visible!important;flex:0 0 auto!important;
+}

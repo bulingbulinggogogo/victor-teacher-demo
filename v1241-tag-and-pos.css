@@ -1,0 +1,78 @@
+/* V1.2.41, checked against the fresh V1.2.39 copy.
+   Restore native POS headings; refresh field colors only. */
+#wordDetailDialog .resource-sense-overview>section.v1227-meaning-group>.v1227-group-heading {
+  font-family:inherit;
+  font-style:normal;
+}
+#wordDetailDialog .resource-sense-overview>section.v1227-meaning-group>.v1227-group-heading .v1227-group-toggle {
+  font-family:inherit;
+  font-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));
+  font-style:normal;
+  font-weight:600;
+  line-height:1.45;
+  color:var(--lecture-text);
+}
+#wordDetailDialog .resource-sense-overview>section.v1227-meaning-group>.v1227-group-heading .v1227-fold-label {
+  color:var(--lecture-text);
+}
+
+/* Frequency/source: blue; learning levels: violet; curriculum: green;
+   POS/usage: teal. Existing field-to-token mapping stays authoritative. */
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) {
+  --v1239-tag-exam:#2367d4;
+  --v1239-tag-frequency:#0b70b7;
+  --v1239-tag-academic:#7350ce;
+  --v1239-tag-spoken:#8846c3;
+  --v1239-tag-written:#5c56ca;
+  --v1239-tag-reading:#a03eb1;
+  --v1239-tag-difficulty:#ae3d95;
+  --v1239-tag-curriculum:#087a55;
+  --v1239-tag-derived:#257d46;
+  --v1239-tag-pos:#087980;
+  --v1239-tag-usage:#0b798d;
+  --v1239-tag-source:#4268c3;
+  --v1239-tag-topic:#2a72a4;
+  --v1241-tag-tint:8%;
+  --v1241-tag-edge:28%;
+}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog)[data-theme-kind="dark"] {
+  --v1239-tag-exam:#92bcff;
+  --v1239-tag-frequency:#80cfff;
+  --v1239-tag-academic:#c6adff;
+  --v1239-tag-spoken:#d7afff;
+  --v1239-tag-written:#bcb7ff;
+  --v1239-tag-reading:#e2aff4;
+  --v1239-tag-difficulty:#efa9db;
+  --v1239-tag-curriculum:#7ddfb0;
+  --v1239-tag-derived:#a1e3ab;
+  --v1239-tag-pos:#79dcd9;
+  --v1239-tag-usage:#7edbea;
+  --v1239-tag-source:#a6bfff;
+  --v1239-tag-topic:#91d1f4;
+  --v1241-tag-tint:12%;
+  --v1241-tag-edge:35%;
+}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is(
+  .v1227-word-tag,.v1228-sense-tag,.v1223-example-kind,.v1223-block-kind,
+  .v1225-example-topic-badge,.v1226-block-category,.v1226-block-subcategory,
+  .v1226-block-field-label,.v1224-block-category,.v1220-field-label,.v1229-example-pos,
+  span[data-word-tag-field],em[data-word-tag-field],small[data-word-tag-field]
+):not(button):not([role="tab"]):not([data-word-module]):not([data-word-feature]),
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) button.v1227-exam-tag,
+#wordDetailDialog button[data-v1241-sense-link] {
+  border-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-source)) var(--v1241-tag-edge),var(--lecture-panel,#fff))!important;
+  background-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-source)) var(--v1241-tag-tint),var(--lecture-panel,#fff))!important;
+}
+/* The four source fields remain distinct fields in the same source family. */
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is(
+  [data-word-tag-field="source-year"],[data-word-tag-field="source-paper"],
+  [data-word-tag-field="source-question-type"],[data-word-tag-field="source-section"]
+) { --v1239-tag-ink:var(--v1239-tag-source); }
+#wordDetailDialog button[data-v1241-sense-link] {
+  cursor:pointer;
+  color:var(--v1239-tag-ink,var(--v1239-tag-usage))!important;
+}
+#wordDetailDialog button[data-v1241-sense-link]:focus-visible {
+  outline:2px solid var(--lecture-primary);
+  outline-offset:3px;
+}

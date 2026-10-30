@@ -1,0 +1,30 @@
+/* V71 #6: only the main definition's own grammar/usage prefix is plain text.
+ * Counts, difficulty, example meaning/source tags, and the first popup are outside
+ * this direct-child scope. Source text and field attributes remain unchanged. */
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-meanings"] [data-latest-sense] > .resource-sense-copy > .resource-sense-meta[data-metadata-scope="sense"] > .v1228-sense-tag[data-sense-tag]{
+  display:inline!important;
+  border:0!important;
+  border-radius:0!important;
+  background:none!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0!important;
+  min-height:0!important;
+  height:auto!important;
+  color:inherit!important;
+  font-weight:400!important;
+  line-height:inherit!important;
+  pointer-events:none;
+}
+/* V71 #8: reuse the native small source-badge treatment and its theme tokens.
+ * Keep the footer in its original disclosure body; no sentence/audio node moves. */
+#wordDetailDialog .v1222-sense-example .v1271-example-sources{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.2em .35em;
+}
+#wordDetailDialog .v1222-sense-example .v1271-example-sources > .v1271-source-chip{
+  max-width:100%;
+  overflow-wrap:anywhere;
+}

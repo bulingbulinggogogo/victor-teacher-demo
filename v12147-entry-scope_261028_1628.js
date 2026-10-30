@@ -1,0 +1,39 @@
+/* V1.2.97: entry choices control existing renderer/reveal state; sources stay mounted. */
+(() => {
+ 'use strict';const history=new WeakMap(),sessions=new WeakMap();let openDialog=null;
+ const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+ function open(detail,id,trigger,options={}){
+  if(openDialog||!detail?.isConnected)return false;
+  const tab=detail.querySelector('[data-word-module="'+id+'"]');if(!options.onEnter&&(!tab||tab.disabled||tab.hidden))return false;
+  const historyHost=options.historyTarget||detail,prior=history.get(historyHost)||{},saved=prior[id],network=id==='illustrations',dialog=make('dialog','v1297-entry-dialog');openDialog=dialog;
+  if(id==='illustrations'||id==='contrast')dialog.dataset.v147Module=id;
+  dialog.setAttribute('aria-labelledby','v1297-entry-title');dialog.setAttribute('aria-describedby','v1297-entry-intro v1297-entry-feedback');
+  const form=make('form','v1297-entry-form'),header=make('header','v12102-entry-header'),heading=make('div'),title=make('h2','',network?'语义网展示设置':'辨析展示设置');title.id='v1297-entry-title';heading.append(title);
+  const intro=make('p','v1297-entry-intro',network?'选择展示内容和文字的初始状态。':'选择辨析提示的初始状态。');intro.id='v1297-entry-intro';heading.append(intro);
+  const dismiss=make('button','v12102-entry-close');dismiss.type='button';dismiss.setAttribute('aria-label','关闭展示设置');dismiss.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>';dismiss.addEventListener('click',close);header.append(heading,dismiss);form.append(header);
+  const content=make('div','v12102-entry-options');form.append(content);
+  const inputs={};
+  function row(key,label,hasMask){
+   const group=make('div','v1297-entry-row'),line=make('label','v1297-row-choice'),check=make('input');check.type='checkbox';check.dataset.v1297Row=key;check.checked=saved?saved[key]?.show??saved[key]:true;const copy=make('span','v12102-row-copy'),name=make('strong','',label),description=make('small','',({derivation:'说明词义怎样引申',meaning:'显示对应的中文释义',images:'显示对应的场景图片'})[key]);copy.append(name,description);line.append(check,copy);group.append(line);inputs[key]={check};
+   if(hasMask){const choices=make('fieldset','v1297-mask-options'),legend=make('legend','',label+'内容');choices.append(legend);for(const [value,text]of [['mask','先遮挡'],['show','直接显示']]){const l=make('label'),r=make('input');r.type='radio';r.name='mask-'+key;r.value=value;r.dataset.v1297Mask=key;r.checked=saved?Boolean(saved[key].mask?(value==='mask'):(value==='show')):value==='mask';l.append(r,make('span','',text));choices.append(l);}group.append(choices);inputs[key].choices=choices;const sync=()=>{choices.disabled=!check.checked;group.classList.toggle('is-off',!check.checked);validate();};check.addEventListener('change',sync);choices.addEventListener('change',validate);choices.disabled=!check.checked;group.classList.toggle('is-off',!check.checked);}
+   check.addEventListener('change',validate);content.append(group);
+  }
+  if(network){row('derivation','语义推导',true);row('meaning','词义答案',true);row('images','配图',false);}
+  else {const group=make('fieldset','v1297-contrast-options'),legend=make('legend','','图片上的辨析提示');group.append(legend);for(const [value,text]of [['mask','先遮挡，点击后揭示'],['show','直接显示']]){const l=make('label'),r=make('input');r.type='radio';r.name='contrast-mask';r.value=value;r.dataset.v1297Contrast=value;r.checked=saved?saved.mask===(value==='mask'):value==='mask';l.append(r,make('span','',text));group.append(l);r.addEventListener('change',validate);}content.append(group);}
+  const error=make('p','v1297-entry-error');error.id='v1297-entry-feedback';error.setAttribute('role','status');const actions=make('footer','v1297-entry-actions'),cancel=make('button','','取消'),start=make('button','v1297-entry-start','进入'+(network?'语义网':'辨析'));cancel.type='button';start.type='submit';actions.append(error,cancel,start);form.append(actions);dialog.append(form);detail.append(dialog);
+  function state(){if(!network){const chosen=form.querySelector('[data-v1297-contrast]:checked');return chosen?{mask:chosen.value==='mask'}:null;}const result={images:inputs.images.check.checked};for(const key of ['derivation','meaning']){const checked=inputs[key].check.checked,choice=inputs[key].choices.querySelector('input:checked');if(checked&&!choice)return null;result[key]={show:checked,mask:choice?.value==='mask'};}return result;}
+  function validate(){if(!start)return;const any=!network||Object.values(inputs).some(v=>v.check.checked),settings=state();start.disabled=!any||!settings;const message=!any?'至少选择一项展示内容。':!settings?(network?'请选择文字的初始状态。':'请选择提示的初始状态。'):(network?(inputs.derivation.check.checked||inputs.meaning.check.checked?'进入后仍可点击文字切换遮挡。':'仅展示配图，可随时返回调整。'):'进入后仍可点击提示切换遮挡。');error.classList.toggle('is-error',!any||!settings);if(error.textContent!==message)error.textContent=message;}
+  function close(){dialog.close();dialog.remove();openDialog=null;if(trigger?.isConnected)trigger.focus({preventScroll:true});}
+  cancel.addEventListener('click',close);dialog.addEventListener('click',event=>event.stopPropagation());dialog.addEventListener('cancel',event=>{event.preventDefault();event.stopPropagation();close();});dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close();}});
+  form.addEventListener('submit',event=>{event.preventDefault();validate();if(start.disabled)return;const settings=state();prior[id]=settings;history.set(historyHost,prior);if(options.onEnter){close();options.onEnter(settings);return;}const selected=detail.querySelector('[data-word-module][aria-selected="true"]')?.dataset.wordModule||'meanings',body=detail.querySelector(':scope>.resource-popover-body');const session={id,selected,trigger,scroll:body?.scrollTop||0,entered:false};close();sessions.set(detail,session);
+   if(network)window.V1213Illustrations?.configure?.(detail,settings);else window.V1283Contrast?.setAll?.(detail,!settings.mask);
+   tab.click();requestAnimationFrame(()=>{session.entered=detail.classList.contains('v1263-interactive-fullscreen');window.V1288Network?.refresh();window.V1247PolysemyControls?.refresh();});
+  });validate();dialog.showModal();(network?inputs.derivation.check:form.querySelector('[data-v1297-contrast]:checked')).focus({preventScroll:true});return true;
+ }
+ let frame=0;
+ function sync(){frame=0;const d=document.querySelector('#wordDetailDialog');if(!d)return;const content=d.querySelector('.vwn-content');if(content&&!d.classList.contains('v1263-interactive-fullscreen')){const nav=d.querySelector('.v1223-word-subnav:not([hidden])')||d.querySelector('.vwn-main-nav'),r=content.getBoundingClientRect(),edge=nav?.getBoundingClientRect().bottom||0,value=Math.max(0,Math.min(r.height-24,edge+8-r.top)).toFixed(1)+'px';if(content.style.getPropertyValue('--v1297-frame-top')!==value)content.style.setProperty('--v1297-frame-top',value);}const s=sessions.get(d);if(!s)return;const full=d.classList.contains('v1263-interactive-fullscreen');if(full)s.entered=true;else if(s.entered){sessions.delete(d);window.WordDetailNavigation?.select?.(d,s.selected);requestAnimationFrame(()=>{const body=d.querySelector(':scope>.resource-popover-body');if(body)body.scrollTop=s.scroll;if(s.trigger?.isConnected)s.trigger.focus({preventScroll:true});});}}
+ function schedule(){if(!frame)frame=requestAnimationFrame(sync);}
+ document.addEventListener('scroll',schedule,true);window.addEventListener('resize',schedule);
+ new MutationObserver(schedule).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','data-v1263-interactive-module']});
+ window.V1297EntrySettings=Object.freeze({open});
+})();

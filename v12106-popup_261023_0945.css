@@ -1,0 +1,130 @@
+/* V1.2.106: shared classroom control metrics, source-bound word content. */
+#popover{--v105-blue:#2362f5;--v105-text:#203451;--v105-muted:#6c809b;--v105-line:#dce5f1;--v105-soft:#f6f8fc;--v105-surface:#fff;--v106-chip-height:28px;}
+#popover.dark-mode{--v105-blue:#82b5ff;--v105-text:#e2eee8;--v105-muted:#a6c4b7;--v105-line:#405e51;--v105-soft:#1b2b25;--v105-surface:#22342e;}
+#popover#popover#popover:not(.hidden){overflow:visible!important;}
+#popover#popover#popover .resource-popover-head>div,#popover#popover#popover .resource-popover-head>div>span{color:var(--v105-blue)!important;font-size:clamp(22px,1.6vw,28px)!important;font-weight:700!important;line-height:1.4!important;}
+#popover#popover#popover .v105-promoted-title,#popover#popover#popover .v15-media-title-row:has(>.v105-promoted-title){display:none!important;}
+#popover#popover#popover>.resource-popover-body,#popover#popover#popover>.resource-popover-page>article>.resource-popover-body{margin-inline-start:var(--v106-content-left,0px)!important;margin-inline-end:var(--v106-content-right,0px)!important;width:auto!important;box-sizing:border-box!important;padding:18px 28px!important;min-height:0!important;justify-content:flex-start!important;align-content:start!important;}
+#popover#popover#popover .resource-detail-copy>:first-child,#popover#popover#popover .resource-popover-body>.ke-resource-content:first-child{margin-top:0!important;}
+#popover#popover#popover .resource-detail-layout.has-media:not(.ke-vocabulary-mother-layout){display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:18px!important;}
+#popover#popover#popover .resource-detail-layout.has-media>.resource-media-panel{order:-1!important;flex:none!important;width:min(420px,100%)!important;max-width:100%!important;align-self:flex-start!important;margin:0!important;}
+#popover#popover#popover .resource-detail-layout.has-media>.resource-detail-copy{width:100%!important;max-width:none!important;}
+#popover#popover#popover .resource-media-panel:not(:has(img,.resource-image-frame,video)){display:none!important;}
+/* The word card follows its content; short notes no longer reserve a fixed panel. */
+#popover#popover#popover.v105-vocabulary:not(.ke-expanded){position:fixed!important;left:max(80px,calc((100vw - 1120px)/2))!important;top:32px!important;right:auto!important;bottom:auto!important;transform:none!important;width:min(1120px,calc(100vw - 160px))!important;max-width:calc(100vw - 160px)!important;height:auto!important;min-height:0!important;max-height:calc(100dvh - 64px)!important;display:flex!important;flex-direction:column!important;}
+#popover#popover#popover.v105-vocabulary.hidden{display:none!important;}
+#popover#popover#popover.v105-vocabulary>.resource-popover-head,#popover#popover#popover.v105-vocabulary>.classroom-modal-tools{flex:none!important;}
+#popover#popover#popover.v105-vocabulary>.resource-popover-body{flex:0 1 auto!important;padding:0!important;margin:0!important;min-height:0!important;height:auto!important;max-height:calc(100dvh - 192px)!important;overflow:auto!important;}
+#popover#popover#popover.v105-vocabulary .ke-resource-content,#popover#popover#popover [data-v105-vocabulary]{padding:0!important;margin:0!important;min-height:0!important;border:0!important;background:none!important;}
+#popover#popover#popover.v105-vocabulary .ke-vocabulary-mother-layout,#popover#popover#popover.v105-vocabulary .ke-vocabulary-mother-layout>.resource-detail-copy{display:block!important;width:100%!important;max-width:none!important;padding:0!important;margin:0!important;}
+#popover#popover#popover .v105-word-header,#popover#popover#popover .v105-current-sense,#popover#popover#popover .v105-notes{position:relative;padding:20px 28px!important;margin:0!important;min-height:0!important;border:0!important;}
+#popover#popover#popover .v105-current-sense:before,#popover#popover#popover .v105-notes:before{content:'';position:absolute;left:28px;right:28px;top:0;height:1px;background:var(--v105-line);opacity:.65;}
+#popover#popover#popover .v105-tags{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:0 0 10px;}
+#popover#popover#popover .v105-tag{font-size:13px;line-height:1.5;font-weight:600;padding:1px 6px;background:var(--v105-soft);border-radius:4px;color:var(--v105-muted);}
+#popover#popover#popover .v105-tag-academic,#popover#popover#popover .v105-tag-level{color:#8471bb;}
+#popover#popover#popover .v105-tag-reading,#popover#popover#popover .v105-tag-key{color:#bb5c9d;}
+#popover#popover#popover .v105-tag-curriculum{color:#2c8b79;}
+#popover#popover#popover .v105-word-headline{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;}
+#popover#popover#popover .v105-word-headline .knowledge-word{font-size:clamp(38px,calc(var(--full-font-size,48px)*1.08),58px)!important;line-height:1.08!important;font-weight:750!important;color:var(--v105-blue)!important;letter-spacing:-.025em;}
+#popover#popover#popover .v105-word-features{margin-left:auto;display:flex;gap:8px;margin-bottom:3px;}
+#popover#popover#popover .v105-signal,#popover#popover#popover .ke-exam-frequency{margin:0 0 3px!important;flex:none!important;}
+#popover#popover#popover .v105-signal{display:inline-flex;box-sizing:border-box;height:var(--v106-chip-height)!important;width:34px;align-items:flex-end;justify-content:center;gap:2px;padding:4px 2px!important;border:0!important;border-radius:0!important;background:transparent!important;}
+#popover#popover#popover .v105-signal i{display:block;width:3px;border-radius:1px;background:var(--v105-line);height:5px!important;}
+#popover#popover#popover .v105-signal i:nth-child(2){height:8px!important;}#popover#popover#popover .v105-signal i:nth-child(3){height:11px!important;}#popover#popover#popover .v105-signal i:nth-child(4){height:14px!important;}#popover#popover#popover .v105-signal i:nth-child(5){height:18px!important;}
+#popover#popover#popover .v105-signal i.filled{background:#1588b5;}
+#popover#popover#popover .ke-exam-frequency,#popover#popover#popover .v105-primary,#popover#popover#popover .v105-contrast,#popover#popover#popover .v105-sense-heading .ke-word-more{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:none!important;height:var(--v106-chip-height)!important;min-height:var(--v106-chip-height)!important;padding:0 10px!important;font-family:inherit!important;font-size:14px!important;font-weight:600!important;line-height:1.4!important;white-space:nowrap!important;border:1px solid var(--v105-blue)!important;border-radius:5px!important;box-shadow:none!important;position:static!important;}
+#popover#popover#popover .ke-exam-frequency,#popover#popover#popover .v105-sense-heading .ke-word-more{background:transparent!important;color:var(--v105-blue)!important;}
+#popover#popover#popover .v105-primary,#popover#popover#popover .v105-contrast{background:var(--v105-blue)!important;color:var(--v105-surface)!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-groups{padding:0!important;margin:12px 0 0!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-row{margin:0!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciations{gap:24px!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-item{gap:8px!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-item,#popover#popover#popover .v105-word-header .resource-pronunciation-item b,#popover#popover#popover .v105-word-header .resource-pronunciation-item em{font-size:18px!important;line-height:1.5!important;}
+#popover#popover#popover .v105-word-header .resource-inline-audio{width:26px!important;height:26px!important;min-width:26px!important;min-height:26px!important;padding:3px!important;}
+#popover#popover#popover .v105-sense-heading{display:flex;align-items:center;flex-wrap:wrap;gap:12px;}
+#popover#popover#popover .v105-sense-heading .resource-current-copy,#popover#popover#popover .v105-sense-heading .resource-sense-copy{display:flex!important;align-items:baseline!important;gap:10px!important;flex-wrap:wrap!important;}
+#popover#popover#popover .v105-sense-heading .resource-sense-line{display:flex!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important;background:none!important;}
+#popover#popover#popover .v105-sense-heading .resource-sense-meaning{font-size:clamp(21px,calc(var(--full-font-size,48px)*.52),32px)!important;line-height:1.4!important;font-weight:700!important;color:var(--v105-text)!important;}
+#popover#popover#popover .v105-sense-heading .resource-sense-meta,#popover#popover#popover .v105-sense-heading .resource-sense-meta span,#popover#popover#popover .v105-sense-heading .resource-collapsed-pos{font-size:16px!important;color:var(--v105-muted)!important;}
+#popover#popover#popover .v105-sense-heading .resource-current-copy:has(.resource-sense-meta)>.resource-collapsed-pos,#popover#popover#popover .v105-sense-heading .resource-sense-line>b{display:none!important;}
+#popover#popover#popover .v105-sense-heading .ke-word-more{margin-left:auto!important;}
+/* Same square label/value structure as the word detail dictionary badges. */
+#popover#popover#popover .v105-relation.v1296-dictionary-badge{display:inline-flex!important;align-items:stretch!important;box-sizing:border-box!important;height:var(--v106-chip-height)!important;gap:0!important;border:1px solid var(--v105-blue)!important;border-radius:0!important;padding:0!important;background:transparent!important;color:var(--v105-blue)!important;font-family:inherit!important;font-size:14px!important;font-weight:400!important;font-style:normal!important;line-height:26px!important;white-space:nowrap!important;}
+#popover#popover#popover .v105-relation>*{font-size:inherit!important;font-weight:inherit!important;font-style:normal!important;line-height:inherit!important;}
+#popover#popover#popover .v1296-badge-label{display:inline-block!important;padding:0 4px!important;background:var(--v105-blue)!important;color:var(--v105-surface)!important;}
+#popover#popover#popover .v1296-badge-value{display:inline-block!important;padding:0 5px!important;color:var(--v105-blue)!important;}
+#popover#popover#popover .v105-example{margin:14px 0 0!important;padding:0!important;}
+#popover#popover#popover .v105-example p{margin:0!important;text-align:left!important;line-height:1.6!important;}
+#popover#popover#popover .v105-example-en{font-size:clamp(18px,calc(var(--full-font-size,48px)*.46),29px)!important;color:var(--v105-text)!important;}
+#popover#popover#popover .v105-example-zh{font-size:clamp(15px,calc(var(--full-font-size,48px)*.34),21px)!important;color:var(--v105-muted)!important;padding-top:5px!important;}
+#popover#popover#popover .v105-example strong{color:var(--v105-blue)!important;font-weight:650!important;}
+#popover#popover#popover .v105-note-tabs{display:flex;gap:22px;overflow:auto;border:0!important;margin:0 0 13px!important;padding:0!important;}
+#popover#popover#popover .v105-note-tabs button{flex-shrink:0;position:relative;padding:0!important;min-height:28px!important;border:0!important;border-radius:0!important;background:none!important;color:var(--v105-muted)!important;font-size:16px!important;line-height:1.5!important;}
+#popover#popover#popover .v105-note-tabs button[aria-selected=true]{color:var(--v105-blue)!important;font-weight:700!important;}
+#popover#popover#popover .v105-note-tabs button:after{display:none!important;}
+#popover#popover#popover .v105-note-card{font-size:clamp(16px,calc(var(--full-font-size,48px)*.375),24px)!important;line-height:1.7;color:var(--v105-text);}
+#popover#popover#popover .v105-note-card+.v105-note-card{border-top:1px solid var(--v105-line);margin-top:14px;padding-top:14px;}
+#popover#popover#popover .v105-note-card p{font-size:inherit!important;line-height:inherit!important;margin:0!important;text-align:left!important;}
+#popover#popover#popover [role=tabpanel][hidden]{display:none!important;}
+#popover#popover#popover button:focus-visible{outline:3px solid var(--v105-blue)!important;outline-offset:3px;}
+/* Popup dock uses measured metrics from the actual fullscreen lecture dock. */
+#popover#popover#popover .v105-popup-dock{position:fixed;left:0;bottom:74px;z-index:70;width:calc(var(--v106-tool-width,64px) + 16px)!important;padding:7px;box-sizing:border-box;border:1px solid var(--v106-tool-border,var(--v105-line));border-radius:10px;background:var(--v105-surface);box-shadow:none!important;color:var(--v106-tool-color,var(--v105-text));}
+#popover#popover#popover[data-classroom-tools-side=right] .v105-popup-dock{left:auto;right:0;}
+#popover#popover#popover .v105-dock-body,#popover#popover#popover .v105-dock-actions,#popover#popover#popover .v105-dock-extras,#popover#popover#popover .v105-popup-dock .classroom-modal-actions{display:flex!important;flex-direction:column!important;gap:6px!important;width:100%!important;overflow:visible!important;}
+#popover#popover#popover .v105-dock-body[hidden],#popover#popover#popover .v105-dock-settings[hidden]{display:none!important;}
+#popover#popover#popover .v105-dock-actions:empty,#popover#popover#popover .v105-dock-extras:empty,#popover#popover#popover .v105-popup-dock .classroom-modal-actions:empty{display:none!important;}
+#popover#popover#popover .v105-popup-dock button,#popover#popover#popover .classroom-tools-floating button,#popover#popover#popover .classroom-tools-all{box-sizing:border-box!important;width:var(--v106-tool-width,64px)!important;height:var(--v106-tool-height,40px)!important;min-height:var(--v106-tool-height,40px)!important;font-family:var(--v106-tool-family,inherit)!important;font-size:var(--v106-tool-font,12px)!important;font-weight:var(--v106-tool-weight,600)!important;line-height:1.4!important;padding:0 4px!important;white-space:normal!important;border:1px solid var(--v106-tool-border,var(--v105-line))!important;border-radius:var(--v106-tool-radius,6px)!important;background:var(--v106-tool-bg,var(--v105-surface))!important;color:var(--v106-tool-color,var(--v105-text))!important;box-shadow:none!important;}
+#popover#popover#popover .classroom-tools-floating{z-index:90!important;}
+#popover#popover#popover .classroom-tools-all[aria-pressed=true],#popover#popover#popover .classroom-tools-floating button[aria-pressed=true]{background:var(--lecture-play-background,#1268f3)!important;border-color:var(--lecture-play-background,#1268f3)!important;color:#fff!important;}
+#popover#popover#popover .v105-dock-extras>[data-classroom-tool-kind=topic-direction]{order:10!important;}
+#popover#popover#popover .v105-dock-extras>[data-classroom-tool-kind=all]{order:20!important;}
+#popover#popover#popover .v105-dock-extras>[data-classroom-tool-kind=topic-actions]{order:30!important;}
+#popover#popover#popover .v105-popup-dock .tc-actions,#popover#popover#popover .v105-popup-dock .ke-topic-frozen-toolbar,#popover#popover#popover .ke-g-toolbar.classroom-tools-floating,#popover#popover#popover .ke-g-toolbar.classroom-tools-floating .ke-g-buttons{display:flex!important;flex-direction:column!important;align-items:stretch!important;width:var(--v106-tool-width,64px)!important;max-width:var(--v106-tool-width,64px)!important;height:auto!important;min-height:0!important;gap:6px!important;margin:0!important;padding:0!important;overflow:visible!important;}
+#popover#popover#popover .v105-popup-dock .classroom-tools-reservation{width:var(--v106-tool-width,64px)!important;flex:none!important;}
+#popover#popover#popover .v105-popup-dock [data-classroom-tool-kind=grammar]{height:var(--v105-tool-height,86px)!important;min-height:var(--v105-tool-height,86px)!important;}
+#popover#popover#popover .v106-dock-controls{display:flex;gap:4px;margin-top:8px;border-top:1px solid var(--v105-line);padding-top:8px;}
+#popover#popover#popover .v106-dock-controls button{width:calc((var(--v106-tool-width,64px) - 4px)/2)!important;height:30px!important;min-height:30px!important;padding:4px!important;}
+#popover#popover#popover .v106-dock-controls svg{width:19px!important;height:19px!important;display:block;margin:auto;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+#popover#popover#popover .v105-popup-dock.is-collapsed{width:46px!important;}
+#popover#popover#popover .v105-popup-dock.is-collapsed .v106-dock-controls{margin:0;padding:0;border:0;}
+#popover#popover#popover .v105-popup-dock.is-collapsed .v106-dock-setting{display:none!important;}
+#popover#popover#popover .v105-popup-dock.is-collapsed .v105-dock-collapse svg{transform:rotate(180deg);}
+#popover#popover#popover.v105-tools-collapsed .classroom-tools-floating{visibility:hidden!important;}
+#popover#popover#popover .v105-dock-settings{position:absolute;left:calc(100% + 8px);bottom:0;width:210px;padding:16px;background:var(--v105-surface);border:1px solid var(--v105-line);border-radius:10px;box-shadow:0 10px 32px #10284222;}
+#popover#popover#popover[data-classroom-tools-side=right] .v105-dock-settings{left:auto;right:calc(100% + 8px);}
+#popover#popover#popover .v106-settings-title{display:block;margin-bottom:12px;font-size:14px;}
+#popover#popover#popover .v106-font-row{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:10px;}
+#popover#popover#popover .v106-font-row>span{margin-right:auto;}
+#popover#popover#popover .v106-font-row button{width:44px!important;height:32px!important;min-height:32px!important;}
+/* Text-only segmented theme switch; no theme swatch stripes. */
+#themeSegment,#popover#popover#popover .v106-theme-segment{display:flex!important;gap:4px!important;padding:4px!important;border:1px solid var(--lecture-border,#cbdaf0)!important;border-radius:8px!important;background:var(--lecture-panel,#fff)!important;box-sizing:border-box;}
+#themeSegment [data-theme-choice],#popover#popover#popover .v106-theme-segment [data-theme-choice]{flex:1!important;min-width:0!important;width:auto!important;height:34px!important;min-height:34px!important;margin:0!important;padding:0 8px!important;border:0!important;border-radius:6px!important;font-family:inherit!important;font-size:12px!important;font-weight:600!important;line-height:1.4!important;color:var(--lecture-muted,#6c809b)!important;background:transparent!important;box-shadow:none!important;}
+#themeSegment [data-theme-choice=pine]{order:0;}#themeSegment [data-theme-choice=light]{order:1;}
+#themeSegment [data-theme-choice]:before,#themeSegment [data-theme-choice]:after{display:none!important;}
+#themeSegment [data-theme-choice][aria-checked=true],#popover#popover#popover .v106-theme-segment [aria-checked=true]{background:var(--lecture-segment-selected-background,#dce8ff)!important;color:var(--lecture-text,#203451)!important;box-shadow:0 1px 4px #18375b18!important;}
+/* Back and real page navigation remain below the content. */
+#popover#popover#popover>.classroom-modal-tools{display:flex!important;flex-direction:row!important;justify-content:space-between!important;min-height:52px!important;padding:8px 18px!important;border-radius:0 0 14px 14px;}
+#popover#popover#popover>.classroom-modal-tools>.classroom-modal-expand-host{position:static!important;display:flex!important;margin:0!important;order:0!important;}
+#popover#popover#popover>.classroom-modal-tools>.classroom-modal-toolstrip{position:static!important;flex:none!important;margin-left:auto!important;order:1!important;}
+#popover#popover#popover .resource-popover-pager button{width:auto!important;min-width:68px!important;font-size:14px!important;}
+#popover#popover#popover .v15-video-fullscreen-button{display:none!important;}
+/* Collapsible video rail keeps its source page and never invokes fullscreen. */
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-card{position:absolute!important;right:20px!important;bottom:64px!important;width:min(320px,calc(100% - 120px))!important;z-index:80;background:var(--v105-surface,var(--lecture-panel,#fff));border:1px solid var(--v105-line,var(--lecture-border,#dce5f1));border-radius:10px;overflow:hidden;box-shadow:0 10px 32px #10284222;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-card[hidden],:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-body[hidden],:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-player[hidden]{display:none!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-heading{display:flex;align-items:center;gap:10px;padding:9px 12px;color:var(--v105-text,var(--lecture-text,#203451));font-size:13px;line-height:1.4;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-heading>span{flex:1;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-heading button{font-size:12px;white-space:nowrap;color:var(--v105-blue,#2362f5);border:0;background:var(--v105-soft,#f5f8fd);padding:7px 9px;border-radius:6px;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-player video{display:block!important;width:100%!important;height:180px!important;object-fit:contain;background:#101916;margin:0!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog) .v105-video-error{font-size:14px;color:var(--v105-muted,#6c809b);padding:8px;}
+.v105-relocated-video{position:absolute!important;width:0!important;height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;pointer-events:none!important;}
+@media(max-width:760px){#popover#popover#popover.v105-vocabulary:not(.ke-expanded){left:96px!important;width:calc(100vw - 108px)!important;max-width:calc(100vw - 108px)!important;}#popover#popover#popover .v105-word-header,#popover#popover#popover .v105-current-sense,#popover#popover#popover .v105-notes{padding:18px!important;}#popover#popover#popover .v105-word-headline{gap:8px;}#popover#popover#popover .v105-word-features{margin-left:0;}#popover#popover#popover .v105-sense-heading .ke-word-more{margin-left:0!important;}}
+
+#popover#popover#popover [data-v105-vocabulary]{display:block!important;gap:0!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-groups,#popover#popover#popover .v105-word-header .resource-pronunciation-row,#popover#popover#popover .v105-word-header .resource-pronunciations{font-size:18px!important;line-height:1.5!important;min-height:0!important;}
+#popover#popover#popover .v105-word-header .resource-pronunciation-item{display:inline-flex!important;align-items:center!important;}
+#popover#popover#popover .v105-word-header .resource-inline-audio svg{width:20px!important;height:20px!important;}
+
+#popover#popover#popover#popover .v105-word-header .resource-inline-audio{flex:0 0 26px!important;max-width:26px!important;max-height:26px!important;place-items:center!important;line-height:0!important;}
+#popover#popover#popover#popover .v105-word-header .resource-inline-audio span,#popover#popover#popover#popover .v105-word-header .resource-inline-audio svg{display:block!important;width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;line-height:0!important;}
+
+#popover#popover#popover.v105-vocabulary.ke-expanded>.resource-popover-body{margin-inline-start:var(--v106-content-left,0px)!important;margin-inline-end:var(--v106-content-right,0px)!important;}

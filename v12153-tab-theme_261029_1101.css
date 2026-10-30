@@ -1,0 +1,3 @@
+/* Solo has no background rail behind its curved shoulder. The contour follows the active theme. */
+body:has(#fullscreenPage:not(.hidden)) #popover#popover#popover#popover#popover#popover#popover#popover.v148-vocabulary[data-knowledge-type="词汇"]:not(.ke-expanded):not(.v1263-interactive-fullscreen):not(.hidden):not([hidden]) .v151-notes[data-v148-note-count="1"]>.v151-backdrop>path:first-child{fill:none!important}
+body:has(#fullscreenPage:not(.hidden)) #popover#popover#popover#popover#popover#popover#popover#popover.v148-vocabulary[data-knowledge-type="词汇"]:not(.ke-expanded):not(.v1263-interactive-fullscreen):not(.hidden):not([hidden]) .v151-notes>.v151-outline>path{stroke:var(--lecture-border)!important}

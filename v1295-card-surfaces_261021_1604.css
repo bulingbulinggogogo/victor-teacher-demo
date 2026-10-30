@@ -1,0 +1,28 @@
+/* V1.2.95: four annotated fixes. Ordinary word-detail only.
+   Preserve all business owners, dimensions, type roles, controls and fullscreen views. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] {
+ --v1295-page:var(--lecture-page-background,var(--lecture-bg,#f5f9ff));
+ --v1295-surface:var(--lecture-panel,#fff);
+ --v1295-soft:var(--lecture-panel-deep,#f7f9fd);
+ --v1275-wash:var(--v1295-soft)!important;
+ background:var(--v1295-page)!important;
+}
+/* Match the native fullscreen lecture's page background for every palette. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] > .resource-popover-body {background:var(--v1295-page)!important;}
+/* Other ordinary modules use the same structural edge token as the upper card.
+   State borders, diagram branches, content fonts and spacing keep their owners. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] .vwn-content {--v1275-edge:var(--v1294-line)!important;border-color:var(--v1294-line)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] :is(.v1282-topic-block,.v1282-topic-head,.v1278-meanings-chart) {border-color:var(--v1294-line)!important;}
+/* One surface owns the whole meaning card. Descendant fills must not conceal its edge. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] .v1227-meaning-group {
+ position:relative;outline:none!important;background:var(--v1295-surface)!important;
+ border-radius:12px!important;
+}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] .v1227-meaning-group::before {
+ content:"";position:absolute;inset:0;box-sizing:border-box;
+ border:1px solid var(--v1294-line);border-radius:inherit;
+ pointer-events:none;z-index:2;
+}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette] .v1227-meaning-group :is(.resource-sense-list,.resource-sense-line[data-latest-sense],.resource-sense-copy) {
+ background:transparent!important;
+}

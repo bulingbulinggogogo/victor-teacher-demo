@@ -1,0 +1,24 @@
+/* Near/antonym rows inherit dictionary reading alignment, regardless of media elsewhere in the panel. */
+#wordDetailDialog [data-sense-feature="synonyms"],#wordDetailDialog [data-sense-feature="antonyms"],
+#wordDetailDialog [data-sense-feature="synonyms"] p,#wordDetailDialog [data-sense-feature="antonyms"] p,
+#wordDetailDialog [data-v1244-block-relation-content]{text-align:left!important;align-items:flex-start;justify-content:flex-start;}
+#wordDetailDialog .v1268-sense-blocks>.v1268-idiom-card{margin-top:.5em;}
+#wordDetailDialog .v1268-idiom-card .v1226-block-unit-head{position:relative;text-align:left;justify-content:flex-start;}
+#wordDetailDialog .v1268-idiom-card .v1226-block-unit-head h4{margin:0;}
+#wordDetailDialog .v1268-idiom-card .v1226-block-unit{padding-block:.15em;border-bottom:0;}
+#wordDetailDialog .v1268-guide-heading{position:relative;}
+#wordDetailDialog .v1268-guide-heading>.v1266-branch-toggle{top:var(--v1268-guide-y,.8em);}
+#wordDetailDialog .v1222-sense-examples>.v1222-sense-example::before,
+#wordDetailDialog .v1222-sense-examples>.v1223-sense-block::before,
+#wordDetailDialog .v1266-block-children>.v1222-sense-example::before,
+#wordDetailDialog .v1226-block-unit::before,
+#wordDetailDialog .v1226-block-associated>.v1226-block-field::before,
+#wordDetailDialog .v1226-block-associated>.v1222-sense-example::before,
+#wordDetailDialog .v1228-example-group::before,
+#wordDetailDialog .v1228-example-group-body>.v1220-example::before,
+#wordDetailDialog .v1222-family-tree .vft-children>.vft-node::before{top:var(--v1268-guide-y,.95em);}
+#wordDetailDialog [data-v1227-fold-body][hidden]{display:none!important;}
+#wordDetailDialog .v1268-family-body{padding-inline-start:22px;min-width:0;}
+#wordDetailDialog .v1268-family-body>.vft-children{margin-inline-start:0;}
+#wordDetailDialog .vft-word>.v1268-branch-toggle{font-size:12px;}
+#wordDetailDialog .v1228-example-group-heading>.v1268-branch-toggle{inset-inline-start:-22px;}

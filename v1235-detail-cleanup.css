@@ -1,0 +1,80 @@
+/* Morphology keeps its existing outer three/two/one-column grid. Only the
+   shared label rail and the label/value gap change inside each pair. */
+#wordDetailDialog .v1227-inflection{
+ grid-template-columns:minmax(0,min(var(--v1235-form-label-width,10em),62%)) minmax(0,1fr);
+ column-gap:.175em;
+}
+/* The contrast copies inherited a blue color on otherwise transparent source
+   borders. Keep that border's space so the text/image geometry does not move. */
+#wordDetailDialog .vpi-module[data-graph-key="hit"][data-graph-kind="contrast"] .pgi-contrast-grid .pgi-copy{border-color:transparent!important;}
+/* Appending the PPT scene after the note made that note cease to be :last-child,
+   exposing the generic note separator between two centered formation copies. */
+#wordDetailDialog .vwn-panel[aria-labelledby$="-tab-formation"] .v1220-note[data-v1224-word-note="deep-fry"]{border-top:0!important;border-bottom:0!important;}
+
+/* Stable field colors for existing word tags. Values never select a color;
+   typography, sizing, tabs, control buttons and copy remain owned by their components. */
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog){
+ --v1239-tag-exam:#225ca8;
+ --v1239-tag-frequency:#336b9d;
+ --v1239-tag-academic:#704fa0;
+ --v1239-tag-spoken:#7b50a4;
+ --v1239-tag-written:#655ca5;
+ --v1239-tag-reading:#805493;
+ --v1239-tag-difficulty:#884e90;
+ --v1239-tag-curriculum:#28734b;
+ --v1239-tag-derived:#3a784e;
+ --v1239-tag-pos:#176f79;
+ --v1239-tag-usage:#237281;
+ --v1239-tag-source:#516a82;
+ --v1239-tag-topic:#596d85;
+}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog)[data-theme-kind="dark"]{
+ --v1239-tag-exam:#94bdf4;
+ --v1239-tag-frequency:#9abce0;
+ --v1239-tag-academic:#c7b1ee;
+ --v1239-tag-spoken:#ceb4ef;
+ --v1239-tag-written:#bcb8f0;
+ --v1239-tag-reading:#d3b3e3;
+ --v1239-tag-difficulty:#dbaee2;
+ --v1239-tag-curriculum:#a4d5b8;
+ --v1239-tag-derived:#b2d3ad;
+ --v1239-tag-pos:#95d5db;
+ --v1239-tag-usage:#9ccfd8;
+ --v1239-tag-source:#b2bfce;
+ --v1239-tag-topic:#bcc8d8;
+}
+/* Class fallbacks cover existing source renderers; explicit field attributes below win. */
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is(.v1228-sense-tag,.v1223-block-kind,.v1224-block-category,.v1226-block-category,.v1226-block-subcategory,.v1226-block-field-label,.v1220-field-label){--v1239-tag-ink:var(--v1239-tag-usage);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) .v1223-example-kind{--v1239-tag-ink:var(--v1239-tag-source);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) .v1225-example-topic-badge{--v1239-tag-ink:var(--v1239-tag-topic);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) .v1229-example-pos{--v1239-tag-ink:var(--v1239-tag-pos);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="exam-frequency"],[data-word-tag="pos-exam"],[data-word-tag="sense-exam"],[data-word-tag-field="exam-count"],[data-word-tag-field="exam-frequency"]){--v1239-tag-ink:var(--v1239-tag-exam);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="source-frequency"],[data-word-tag-field="word-frequency"],[data-word-tag-field="source-frequency"]){--v1239-tag-ink:var(--v1239-tag-frequency);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="academic"],[data-word-tag-field="academic"]){--v1239-tag-ink:var(--v1239-tag-academic);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="spoken-level"],[data-word-tag-field="spoken-level"]){--v1239-tag-ink:var(--v1239-tag-spoken);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="written-level"],[data-word-tag-field="written-level"]){--v1239-tag-ink:var(--v1239-tag-written);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="reading-level"],[data-word-tag-field="reading-level"]){--v1239-tag-ink:var(--v1239-tag-reading);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="key-difficulty"],[data-word-tag-field="difficulty"],[data-word-tag-field="key-difficulty"]){--v1239-tag-ink:var(--v1239-tag-difficulty);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="curriculum"],[data-word-tag-field="curriculum"]){--v1239-tag-ink:var(--v1239-tag-curriculum);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="derived-status"],[data-word-tag-field="derived-status"]){--v1239-tag-ink:var(--v1239-tag-derived);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag-field="pos"],[data-word-tag-field="part-of-speech"]){--v1239-tag-ink:var(--v1239-tag-pos);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is([data-word-tag="exam-meaning"],[data-word-tag-field="usage"],[data-word-tag-field="meaning"],[data-word-tag-field="category"]){--v1239-tag-ink:var(--v1239-tag-usage);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) [data-word-tag-field="source"]{--v1239-tag-ink:var(--v1239-tag-source);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) [data-word-tag-field="topic"]{--v1239-tag-ink:var(--v1239-tag-topic);}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) :is(
+ .v1227-word-tag,.v1228-sense-tag,.v1223-example-kind,.v1223-block-kind,
+ .v1225-example-topic-badge,.v1226-block-category,.v1226-block-subcategory,
+ .v1226-block-field-label,.v1224-block-category,.v1220-field-label,.v1229-example-pos,
+ span[data-word-tag-field],em[data-word-tag-field],small[data-word-tag-field]
+):not(button):not([role="tab"]):not([data-word-module]):not([data-word-feature]),
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) button.v1227-exam-tag{
+ color:var(--v1239-tag-ink,var(--v1239-tag-source))!important;
+ border-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-source)) 35%,var(--lecture-panel,#fff))!important;
+ background-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-source)) 10%,var(--lecture-panel,#fff))!important;
+}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) .v1227-word-tag > .v1227-exam-number{color:inherit!important;}
+:where(#popover,#wordDetailDialog,#lexicalChunkDialog) .v1227-word-tag .v1227-frequency-bar.is-on{background-color:var(--v1239-tag-ink,var(--v1239-tag-frequency));}
+
+/* Existing bold teaching content keeps its weight and gains the lecture red. */
+#wordDetailDialog .vwn-panel :is(strong,b,.resource-sense-meaning):not([data-word-tag-field]):not([data-word-tag-field] *){color:var(--lecture-rich-color,#eb0042)!important;}
+#wordDetailDialog .v1227-meaning-group>.v1227-group-heading .v1227-fold-label{color:var(--lecture-rich-color,#eb0042);}

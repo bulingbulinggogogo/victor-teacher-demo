@@ -1,0 +1,69 @@
+/* V1.2.96: confirmed 17-item presentation, scoped to ordinary word detail. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) {
+ --v1296-blue:var(--lecture-primary,#2864ed);
+ --v1296-definition:var(--lecture-text,#202020);
+ --lecture-hot:var(--v1296-blue)!important;--demo-red:var(--v1296-blue)!important;
+}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-theme-kind="light"] {--v1296-definition:#202020;}
+/* Main word + labels, pronunciation + native fullscreen shortcuts: a 2:1 grid. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-word-upper .knowledge-entry {display:grid!important;grid-template-columns:minmax(0,2fr) minmax(0,1fr);column-gap:18px;row-gap:20px;align-items:center;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .knowledge-term.v1227-has-metadata {display:contents!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .knowledge-term>.knowledge-word {grid-column:1;grid-row:1;min-width:0;justify-self:start;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .knowledge-term>.v1227-word-labels {grid-column:2;grid-row:1;display:flex!important;flex-wrap:wrap!important;gap:5px 4px!important;position:static!important;align-items:center;align-content:start;min-width:0;max-width:100%;margin:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-word-labels>.v1227-level-group {display:contents!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-word-labels .v1227-word-tag {flex:0 0 auto!important;white-space:nowrap!important;word-break:keep-all!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .knowledge-entry>.resource-pronunciation-groups {grid-column:1;grid-row:2;min-width:0;margin:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-pronunciations {flex-wrap:wrap;gap:8px 16px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .knowledge-entry>:is(.resource-guidance-card,.v1270-folds) {grid-column:1/-1;margin-top:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-shortcuts {grid-row:2;grid-column:2;display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-start;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-shortcuts button {font:inherit;font-size:var(--v1275-font-13,13px);font-weight:600;padding:7px 10px;border:1px solid var(--v1296-blue);border-radius:5px;background:var(--v1296-blue);color:#fff;cursor:pointer;white-space:nowrap;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-shortcuts button:disabled {opacity:.5;cursor:default;}
+/* A square signal formed from the existing five bars. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1227-frequency-signal {display:inline-flex!important;align-items:flex-end!important;width:14px!important;height:14px!important;flex:0 0 14px!important;gap:1px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1227-frequency-bar {width:auto!important;min-width:0!important;max-width:none!important;flex:1 1 0!important;height:calc(20% * var(--signal-step))!important;}
+/* Reference-style rectangular badges: solid key, outlined value, no italics. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-dictionary-badge {display:inline-flex!important;align-items:stretch!important;gap:0!important;border:1px solid var(--v1296-blue)!important;border-radius:0!important;padding:0!important;background:transparent!important;color:var(--v1296-blue)!important;font-family:inherit!important;font-size:var(--v1275-font-14,14px)!important;font-weight:400!important;font-style:normal!important;line-height:1.4!important;white-space:nowrap!important;vertical-align:middle;max-width:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-dictionary-badge>* {font-size:inherit!important;font-weight:inherit!important;font-style:normal!important;line-height:inherit!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-badge-label {display:inline-block;padding:0 4px;background:var(--v1296-blue);color:#fff!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1296-badge-value {display:inline-block;padding:0 5px;color:var(--v1296-blue)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1278-meaning-relations {display:inline-flex!important;flex-wrap:wrap;align-items:center;gap:6px;margin-inline-start:10px!important;font-style:normal!important;vertical-align:middle;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1296-red-ink] {color:var(--v1296-blue)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.resource-sense-meta,.resource-sense-meaning,.resource-sense-chunk),
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.resource-sense-meta,.resource-sense-meaning,.resource-sense-chunk) * {color:var(--v1296-definition)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1220-english-definition {color:var(--v1296-blue)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-sense-difficulty] {display:none!important;}
+/* Circle numbering by exam count; difficulty view displays full CEFR instead. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1296-sense-sort="frequency"] .v1220-sense-number {display:inline-flex!important;align-items:center;justify-content:center;width:calc(26px * var(--v1275-scale,1))!important;height:calc(26px * var(--v1275-scale,1))!important;min-width:calc(26px * var(--v1275-scale,1))!important;padding:0!important;border:0!important;border-radius:50%!important;color:#fff!important;font-family:Arial,sans-serif!important;font-size:calc(16px * var(--v1275-scale,1))!important;font-weight:400!important;line-height:1!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1296-sense-sort="frequency"] [data-v1296-frequency="high"] {background:#6b6d70!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog[data-v1296-sense-sort="frequency"] [data-v1296-frequency="low"] {background:#a8aaad!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1296-sense-sort="difficulty"] .v1220-sense-number {display:inline-flex!important;align-items:center;justify-content:center;min-width:calc(26px * var(--v1275-scale,1))!important;width:auto!important;height:calc(26px * var(--v1275-scale,1))!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:var(--v1296-definition)!important;font-size:var(--v1275-font-14,14px)!important;font-weight:600!important;white-space:nowrap;}
+/* Only the main definition illustration: no caption and align the unchanged image left. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning :is(.pgi-single-body-copy,.pgi-static-copy) {display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning .pgi-scene-single {width:100%!important;max-width:none!important;align-items:flex-start!important;justify-content:flex-start!important;margin-inline:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning .pgi-single-image {margin-inline:0!important;align-self:flex-start!important;}
+/* Phrase type follows its translation; idioms share the phrase layout. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1223-block-kind {display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1223-sense-block-heading>.v1224-block-category {margin-inline:8px 0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1268-idiom-card {border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1268-idiom-card>h4 {display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1268-idiom-card .v1264-sense-card-body {border:0!important;background:transparent!important;padding:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1226-block-unit-head.v1223-sense-block-heading {display:block!important;font-size:var(--v1229-copy-font,18px)!important;font-weight:400!important;margin:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1268-idiom-card .v1272-idiom-source-example {margin:14px 0 0!important;}
+/* Native secondary tabs; no weighted colored strip or repeated module title. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1296-exam-tabs:not([hidden]) {display:flex!important;flex-wrap:wrap;align-items:center;gap:5px!important;min-width:0;max-width:100%;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1296-exam-tabs>button {flex:0 0 auto!important;min-height:34px;margin:0;padding:6px 13px;border:1px solid transparent!important;border-radius:5px;background:transparent!important;color:var(--lecture-text)!important;font-family:inherit;font-size:var(--v1275-font-13,13px);font-weight:500;line-height:1.5;white-space:nowrap;cursor:pointer;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1296-exam-tabs>button[aria-selected="true"] {background:var(--v1296-blue)!important;color:#fff!important;border-color:var(--v1296-blue)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-stat-summary {display:flex;align-items:center;justify-content:flex-end;gap:10px;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-stat-summary .v1288-clear-filters {font:inherit;font-size:var(--v1275-font-12,12px);padding:3px 7px;border:1px solid var(--v1294-line);border-radius:4px;background:var(--lecture-panel);color:var(--lecture-text);cursor:pointer;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1278-kind="textbookExamples"]>.v1278-panel-heading {justify-content:flex-end;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-textbook-summary {justify-content:flex-end;text-align:right;}
+/* A shared right edge aligns frequency badges across every tree level. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .v1222-family-tree :is(.vft-stage,.vft-nodes,.vft-children,.vft-node) {width:100%!important;max-width:100%!important;box-sizing:border-box!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-family-content .vft-word {display:grid!important;grid-template-columns:max-content max-content minmax(0,1fr) max-content!important;align-items:baseline!important;width:100%!important;max-width:100%!important;gap:8px!important;white-space:normal!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .vft-word>.v1296-family-meaning {display:block!important;width:auto!important;min-width:0!important;max-width:100%!important;white-space:normal!important;font-weight:400!important;margin:0!important;line-height:inherit!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .vft-word>.v1278-family-frequency {grid-column:4;justify-self:end;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .vft-word :is(strong,strong>span:not(.vft-affix)) {color:var(--lecture-text)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .vft-word .vft-affix {color:var(--v1296-blue)!important;}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning{margin-inline:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog .v1278-single-meaning .pgi-single-image{object-position:left center!important;}

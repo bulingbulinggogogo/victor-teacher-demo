@@ -1,0 +1,5 @@
+/* Original source line breaks are significant; ordinary prose keeps natural wrapping. */
+#v115ListeningDialog#v115ListeningDialog .v115-case-en,
+#v115ListeningDialog#v115ListeningDialog .v115-case-zh {
+  white-space:pre-line;
+}

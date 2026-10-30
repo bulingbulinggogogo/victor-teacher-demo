@@ -1,0 +1,202 @@
+[
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 1,
+    "sourceFile": "690_WU一T01_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text01.mp3",
+    "duration": 10.423,
+    "segmentCount": 2,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 2,
+    "sourceFile": "690_WU一T02_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text02.mp3",
+    "duration": 17.032,
+    "segmentCount": 6,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 3,
+    "sourceFile": "690_WU一T03_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text03.mp3",
+    "duration": 15.621,
+    "segmentCount": 4,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 4,
+    "sourceFile": "690_WU一T04_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text04.mp3",
+    "duration": 17.189,
+    "segmentCount": 3,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 5,
+    "sourceFile": "690_WU一T05_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text05.mp3",
+    "duration": 14.89,
+    "segmentCount": 7,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 6,
+    "sourceFile": "690_WU一T06_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text06.mp3",
+    "duration": 39.811,
+    "segmentCount": 15,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 7,
+    "sourceFile": "690_WU一T07_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text07.mp3",
+    "duration": 33.567,
+    "segmentCount": 9,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 8,
+    "sourceFile": "690_WU一T08_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text08.mp3",
+    "duration": 50.103,
+    "segmentCount": 16,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 9,
+    "sourceFile": "690_WU一T09_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text09.mp3",
+    "duration": 69.669,
+    "segmentCount": 24,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14255,
+    "setName": "Welcome Unit 听力训练（一）",
+    "textNo": 10,
+    "sourceFile": "690_WU一T10_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14255-Text10.mp3",
+    "duration": 69.355,
+    "segmentCount": 19,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 1,
+    "sourceFile": "690_WU二T01_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text01.mp3",
+    "duration": 11.572,
+    "segmentCount": 5,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 2,
+    "sourceFile": "690_WU二T02_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text02.mp3",
+    "duration": 15.308,
+    "segmentCount": 5,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 3,
+    "sourceFile": "690_WU二T03_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text03.mp3",
+    "duration": 15.621,
+    "segmentCount": 4,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 4,
+    "sourceFile": "690_WU二T04_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text04.mp3",
+    "duration": 15.282,
+    "segmentCount": 3,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 5,
+    "sourceFile": "690_WU二T05_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text05.mp3",
+    "duration": 16.927,
+    "segmentCount": 4,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 6,
+    "sourceFile": "690_WU二T06_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text06.mp3",
+    "duration": 29.022,
+    "segmentCount": 13,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 7,
+    "sourceFile": "690_WU二T07_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text07.mp3",
+    "duration": 33.855,
+    "segmentCount": 11,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 8,
+    "sourceFile": "690_WU二T08_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text08.mp3",
+    "duration": 60.813,
+    "segmentCount": 21,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 9,
+    "sourceFile": "690_WU二T09_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text09.mp3",
+    "duration": 62.302,
+    "segmentCount": 13,
+    "timingSource": "【测试】录音稿拆分"
+  },
+  {
+    "setId": 14256,
+    "setName": "Welcome Unit 听力训练（二）",
+    "textNo": 10,
+    "sourceFile": "690_WU二T10_YM.mp3",
+    "audioPath": "prototype/assets/audio/welcome-unit/14256-Text10.mp3",
+    "duration": 84.663,
+    "segmentCount": 18,
+    "timingSource": "【测试】录音稿拆分"
+  }
+]

@@ -1,0 +1,33 @@
+/* Exact source placement and segmented controls from the latest captured
+ * LectureContainer-BQObm4ej.css (2026-10-15); no metric values are invented. */
+.fullscreen[data-mode="similar"] .full-stem {display:block;}
+.fullscreen[data-mode="similar"] .gaokao-question-source {
+  color:var(--lecture-muted);white-space:nowrap;margin-left:12px;
+  font-size:max(13px,.5625em);font-weight:400;display:inline;position:relative;top:-2px;
+}
+.fullscreen[data-mode="similar"] .similar-source-switch {
+  flex:none;display:inline-flex;align-items:center;gap:6px;height:36px;
+}
+.fullscreen[data-mode="similar"] .similar-source-label {
+  color:var(--lecture-muted);white-space:nowrap;font-size:12px;font-weight:700;
+}
+.fullscreen[data-mode="similar"] .similar-source-options {
+  border:1px solid var(--lecture-border);background:var(--lecture-panel-deep);
+  border-radius:6px;align-items:center;padding:3px;display:inline-flex;
+}
+.fullscreen[data-mode="similar"] .similar-source-options button {
+  min-width:48px;height:28px;color:var(--lecture-muted);cursor:pointer;background:transparent;
+  border:0;border-radius:4px;padding:0 8px;font-size:12px;font-weight:700;
+}
+.fullscreen[data-mode="similar"] .similar-source-options button.active {background:var(--lecture-primary);color:#fff;}
+.fullscreen[data-mode="similar"] .similar-source-options button:focus-visible {outline:2px solid var(--lecture-focus-ring);outline-offset:2px;}
+.v1225-similar-empty .question-meta,
+.v1225-similar-empty #similarQuestionStamp,
+.v1225-similar-empty #swapSimilarQuestion,
+.v1225-similar-empty #questionPanelCollapse {display:none!important;}
+.v1225-similar-empty #fullQuestion {grid-column:1/-1;align-self:center;}
+.v1225-similar-empty-message {padding:48px 24px;text-align:center;color:var(--lecture-text);}
+.v1225-similar-empty-message strong {font-size:clamp(22px,calc(var(--full-font,42px) * .55),36px);font-weight:700;}
+.v1225-similar-empty-message p {font-size:clamp(16px,calc(var(--full-font,42px) * .38),24px);color:var(--lecture-muted);margin:16px 0 0;}
+
+.v1225-similar-empty #playPause,.v1225-similar-empty #audioSeek {opacity:.45;cursor:default;}

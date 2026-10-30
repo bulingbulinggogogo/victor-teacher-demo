@@ -1,0 +1,21 @@
+/* Inline content labels follow the neighboring body copy, without the old tall badge padding. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .resource-popover-body :is(.v1223-block-kind,.v1224-block-category,.v1226-block-category,.v1226-block-subcategory,.v1226-block-field-label,.v1220-field-label,.v1223-example-kind){
+ font-family:inherit!important;font-size:inherit!important;font-weight:400!important;
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ box-sizing:border-box!important;height:1.5em!important;min-height:0!important;
+ padding:0 .28em!important;line-height:1!important;border-width:1px!important;border-radius:3px!important;
+ vertical-align:middle!important;margin-block:0!important;
+}
+/* Keep the existing 14px button plus its 8px hit slop; only the drawn +/- box is smaller and quieter. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1266-branch-toggle{
+ width:14px!important;height:14px!important;border:0!important;background:transparent!important;
+ color:var(--lecture-muted,#6f819b)!important;font-size:9px!important;font-weight:400!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1266-branch-toggle::before{
+ display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+ width:10px;height:10px;border:1px solid color-mix(in srgb,var(--lecture-muted,#6f819b) 35%,transparent);
+ border-radius:1px;background:var(--lecture-panel,#fff);color:inherit;font:500 9px/1 sans-serif;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1266-branch-toggle:is(:hover,:focus-visible)::before{
+ border-color:var(--lecture-muted,#6f819b);color:var(--lecture-primary,#2563eb);
+}

@@ -1,0 +1,20 @@
+/* V1.2.24: compact only the actual word-detail scaffolding. Typography,
+ * themes, source figures and the shared classroom dock retain their owners. */
+#wordDetailDialog.vwn-dialog.v1223-word-dock-owner > .resource-popover-body,
+#lexicalChunkDialog.vwn-dialog.v1223-word-dock-owner > .resource-popover-body {
+  padding-block:16px!important;gap:10px!important;
+}
+#wordDetailDialog.vwn-dialog .vwn-word-intro > .knowledge-entry,
+#lexicalChunkDialog.vwn-dialog .vwn-word-intro > .knowledge-entry {gap:10px!important;}
+#wordDetailDialog.vwn-dialog .vwn-word-intro .resource-pronunciation-groups,
+#lexicalChunkDialog.vwn-dialog .vwn-word-intro .resource-pronunciation-groups {gap:6px;}
+#wordDetailDialog.vwn-dialog .vwn-word-intro > .knowledge-entry > .resource-pronunciations,
+#wordDetailDialog.vwn-dialog .vwn-word-intro > .knowledge-entry > .resource-pronunciation-groups,
+#lexicalChunkDialog.vwn-dialog .vwn-word-intro > .knowledge-entry > .resource-pronunciations,
+#lexicalChunkDialog.vwn-dialog .vwn-word-intro > .knowledge-entry > .resource-pronunciation-groups {margin-bottom:0!important;}
+#wordDetailDialog.vwn-dialog .v1223-word-subnav,
+#lexicalChunkDialog.vwn-dialog .v1223-word-subnav {margin:0;padding:0;}
+#wordDetailDialog.vwn-dialog .vwn-panel,
+#lexicalChunkDialog.vwn-dialog .vwn-panel {gap:8px;}
+#wordDetailDialog.vwn-dialog .vwn-panel-title,
+#lexicalChunkDialog.vwn-dialog .vwn-panel-title {padding-block:0;}

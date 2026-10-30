@@ -1,0 +1,110 @@
+/* Labels use the established lecture palette and dialog font scale. */
+#popover .knowledge-term.v1227-has-metadata,
+#wordDetailDialog .knowledge-term.v1227-has-metadata {
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 20px;
+}
+#popover .v1227-word-labels,
+#wordDetailDialog .v1227-word-labels {
+  display:flex; flex:1 1 320px; min-width:0; flex-wrap:wrap; align-items:center; gap:7px;
+}
+#popover .v1227-word-labels[hidden],
+#wordDetailDialog .v1227-word-labels[hidden],
+.v1227-syllable-content[hidden] {display:none!important;}
+#popover .v1227-word-tag,
+#wordDetailDialog .v1227-word-tag {
+  display:inline-flex; align-items:center; justify-content:center; gap:.35em;
+  padding:.27em .52em; margin:0; border:1px solid var(--lecture-border);
+  border-radius:5px; color:var(--lecture-primary); background:var(--lecture-panel-deep);
+  font-family:inherit; font-size:var(--v1229-tag-font,calc(15px * var(--full-dialog-scale,1))); font-weight:600;
+  line-height:1.35; white-space:nowrap; vertical-align:middle; box-sizing:border-box;
+}
+#popover button.v1227-exam-tag,
+#wordDetailDialog button.v1227-exam-tag {gap:0; cursor:pointer;}
+.v1227-exam-number {color:var(--demo-red,var(--lecture-mark,#e7455d));}
+#popover .v1227-word-tag > .v1227-exam-number,
+#wordDetailDialog .v1227-word-tag > .v1227-exam-number,
+#popover .v1227-word-tag > .v1227-frequency-signal,
+#wordDetailDialog .v1227-word-tag > .v1227-frequency-signal,
+#popover .v1227-frequency-signal > .v1227-frequency-bar,
+#wordDetailDialog .v1227-frequency-signal > .v1227-frequency-bar,
+#popover .v1227-syllable-toggle > span,
+#wordDetailDialog .v1227-syllable-toggle > span {font:inherit!important;}
+.v1227-frequency-signal {display:inline-flex; align-items:flex-end; gap:2px; height:1em;}
+.v1227-frequency-bar {
+  display:block; width:3px; height:calc(.3em + var(--signal-step) * .14em);
+  border-radius:1px; background:var(--lecture-border); flex:none;
+}
+.v1227-frequency-bar.is-on {background:var(--lecture-primary);}
+.v1227-level-group {display:inline-flex; flex-wrap:nowrap; align-items:center; gap:5px;}
+#popover .v1227-level-pos,#wordDetailDialog .v1227-level-pos {
+  color:var(--lecture-muted); font-size:calc(13px * var(--full-dialog-scale,1));
+  line-height:1.3; white-space:nowrap;
+}
+#popover .v1227-syllable-disclosure,
+#wordDetailDialog .v1227-syllable-disclosure {margin:8px 0 12px;}
+#popover .v1227-syllable-toggle,
+#wordDetailDialog .v1227-syllable-toggle {
+  display:inline-flex; align-items:center; gap:.45em; padding:.25em .5em;
+  border:1px solid var(--lecture-border); border-radius:5px; background:var(--lecture-panel-deep);
+  color:var(--lecture-primary); font-family:inherit; font-size:calc(16px * var(--full-dialog-scale,1));
+  font-weight:600; line-height:1.35; cursor:pointer; white-space:nowrap;
+}
+.v1227-syllable-chevron {display:inline-block; transform-origin:center;}
+.v1227-syllable-toggle[aria-expanded="true"] .v1227-syllable-chevron {transform:rotate(180deg);}
+.v1227-syllable-toggle:focus-visible,.v1227-exam-tag:focus-visible {
+  outline:2px solid var(--lecture-primary); outline-offset:3px;
+}
+.v1227-syllable-content {margin-top:7px; padding:6px 12px; border-left:2px solid var(--lecture-border);}
+.v1227-syllable-row {display:flex; align-items:baseline; flex-wrap:wrap; gap:.7em;}
+#popover .v1227-syllable-pos,#wordDetailDialog .v1227-syllable-pos {color:var(--lecture-muted); font-size:calc(16px * var(--full-dialog-scale,1))!important;}
+#popover .v1227-syllable-text,#wordDetailDialog .v1227-syllable-text {color:var(--lecture-text); font-size:calc(24px * var(--full-dialog-scale,1))!important; font-weight:400; line-height:1.45; white-space:pre-wrap;}
+@media(max-width:650px) {
+  #popover .v1227-word-labels,#wordDetailDialog .v1227-word-labels {flex-basis:100%;}
+  .v1227-level-group {flex-wrap:wrap;}
+}
+/* V1.2.28: POS-specific labels travel with their POS group, never the word header. */
+#popover .v1228-pos-levels,#wordDetailDialog .v1228-pos-levels {
+  display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:.25em .5em;
+  color:var(--lecture-text); font-family:inherit;
+  font-size:var(--v1229-tag-font,calc(15px * var(--full-dialog-scale,1)))!important;
+  font-weight:400; line-height:1.35!important;
+}
+#popover .v1228-mother-pos-levels {display:flex;padding:.35em .55em 0;margin:0;}
+#popover .v1228-pos-levels .v1227-level-group,
+#wordDetailDialog .v1228-pos-levels .v1227-level-group {display:inline-flex;flex-wrap:wrap;gap:.25em;align-items:baseline;font:inherit!important;}
+#popover .v1228-pos-levels .v1227-word-tag,
+#wordDetailDialog .v1228-pos-levels .v1227-word-tag {
+  font-family:inherit!important;font-size:var(--v1229-tag-font,calc(15px * var(--full-dialog-scale,1)))!important;padding:.27em .52em;line-height:1.35!important;
+}
+#popover .v1228-pos-levels .v1227-level-pos,
+#wordDetailDialog .v1228-pos-levels .v1227-level-pos {font:inherit!important;line-height:1.3!important;}
+#popover .resource-sense-meta[data-metadata-scope="sense"],
+#wordDetailDialog .resource-sense-meta[data-metadata-scope="sense"] {flex-wrap:wrap;gap:.15em .35em;vertical-align:baseline;}
+#popover .v1228-sense-tag,#wordDetailDialog .v1228-sense-tag {
+  display:inline-block;padding:.05em .25em;border:1px solid var(--lecture-border);
+  border-radius:5px;color:var(--lecture-muted);font-family:inherit!important;font-size:var(--v1229-tag-font,calc(15px * var(--full-dialog-scale,1)))!important;line-height:1.35!important;
+  white-space:nowrap;vertical-align:baseline;
+}
+/* The existing word title owns the syllable action; its typography is unchanged. */
+#wordDetailDialog .knowledge-word[data-word-syllable-control]{cursor:pointer;}
+#wordDetailDialog .knowledge-word[data-word-syllable-control]:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:3px;}
+
+/* Explanations reuse the original resource-word-note typography and padding. */
+#wordDetailDialog [data-word-tag-explanation]{position:absolute;z-index:10;max-width:50%;background:var(--lecture-panel);}
+#wordDetailDialog [data-word-label-states]{flex-wrap:wrap;min-width:0;}
+
+/* Header fields use the available width, with natural labels and unchanged type. */
+#wordDetailDialog .v1227-meaning-group dl[data-word-variants].v1227-inflections{
+ grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:row dense;
+ gap:0 .4em;margin:0;padding:0;
+}
+#wordDetailDialog .v1227-meaning-group [data-word-variants] .v1227-inflection{
+ grid-template-columns:fit-content(58%) minmax(0,1fr);column-gap:.15em;row-gap:0;
+}
+#wordDetailDialog .v1227-meaning-group [data-word-variants] .v1227-inflection[data-word-header-wide]{grid-column:1/-1;}
+@media(max-width:1000px){
+ #wordDetailDialog .v1227-meaning-group dl[data-word-variants].v1227-inflections{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:650px){
+ #wordDetailDialog .v1227-meaning-group dl[data-word-variants].v1227-inflections{grid-template-columns:minmax(0,1fr);}
+}

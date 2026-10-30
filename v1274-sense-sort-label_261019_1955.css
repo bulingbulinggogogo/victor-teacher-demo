@@ -1,0 +1,7 @@
+/* Preserve the native sort slot's location/visibility; its two original options keep their existing rules. */
+#wordDetailDialog [data-word-sense-sort][data-v1274-sort-label-ready]{gap:10px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#wordDetailDialog [data-word-sense-sort][data-v1274-sort-label-ready][hidden]{display:none!important}
+#wordDetailDialog [data-word-sense-sort]>.v1274-sense-sort-label{display:inline;flex:0 0 auto;margin:0;padding:0;border:0;background:none;font-family:inherit;font-size:12px;font-weight:500;line-height:1.4;color:var(--lecture-muted);white-space:nowrap}
+#wordDetailDialog [data-word-sense-sort]>.v1274-sense-sort-segments{display:inline-flex;align-items:center;flex:0 0 auto;min-height:32px;gap:0;margin:0;padding:2px;border:1px solid #cfd9e6;border-radius:8px;background:#fff}
+#wordDetailDialog[data-theme-kind="dark"] [data-word-sense-sort]>.v1274-sense-sort-segments{background-color:var(--lecture-segment-background);border-color:var(--lecture-border)}
+

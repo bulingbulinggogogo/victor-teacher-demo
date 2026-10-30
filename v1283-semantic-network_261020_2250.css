@@ -1,0 +1,54 @@
+/* Three font levels follow the existing lecture scale in normal and full-screen views. */
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] {
+ --v1279-network-scale:var(--full-dialog-scale,1);
+ --v1279-network-base:calc(32px * var(--v1279-network-scale));
+ --v1279-network-derivation:calc(24px * var(--v1279-network-scale));
+ --v1279-network-meaning:calc(26px * var(--v1279-network-scale));
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-base {margin:0 auto 8px;}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-scene .pgi-basic-node>p {
+ font-size:var(--v1279-network-meaning)!important;line-height:1.45!important;font-weight:500!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-scene .pgi-basic-node>p .v1279-basic-meaning {
+ color:var(--lecture-primary,#2563eb)!important;font-size:var(--v1279-network-base)!important;font-weight:750!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-copy-row[data-pgi-row="derivation"] .pgi-copy {
+ font-size:var(--v1279-network-derivation)!important;line-height:1.5!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-copy-row[data-pgi-row="meaning"] .pgi-copy {
+ font-size:var(--v1279-network-meaning)!important;line-height:1.5!important;font-weight:550!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-copy>span {
+ font-size:inherit!important;line-height:inherit!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-scene .pgi-copy .v1279-derivation-key {
+ color:var(--lecture-primary,#2563eb)!important;font-size:inherit!important;font-weight:750!important;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] :is(.pgi-connectors,.pgi-branches) {
+ flex-basis:calc(72px * var(--v1279-network-scale));height:calc(72px * var(--v1279-network-scale));min-height:calc(72px * var(--v1279-network-scale));width:100%;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog,#popover) .vpi-module[data-v1279-semantic-network] .pgi-copy-row {
+ align-items:stretch;margin-top:9px;
+}
+
+/* Functional views retain the shared compact dock, floating at the original
+   viewport edge. Its disclosure changes only the rail, never the reading area. */
+/* The floating rail overlays the viewport without consuming flow width.
+   Equal safety margins protect both outer columns and keep page center fixed. */
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen[data-v1263-interactive-module="illustrations"] {
+ --v1283-network-page-edge:clamp(88px,6.5vw,104px);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen.v1223-word-dock-owner[data-v1263-interactive-module="illustrations"]>.resource-popover-body {
+ padding-left:var(--v1283-network-page-edge)!important;padding-right:var(--v1283-network-page-edge)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen[data-v1263-interactive-module="illustrations"]>.v1281-fullscreen-heading {
+ padding-left:var(--v1283-network-page-edge)!important;padding-right:var(--v1283-network-page-edge)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen #classroomDock.v1223-word-dock {
+ position:fixed!important;bottom:60px!important;top:auto!important;
+ width:80px!important;max-width:80px!important;min-height:0!important;
+ margin:0!important;transform:none!important;z-index:32!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen.dock-left-layout #classroomDock.v1223-word-dock {left:0!important;right:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen.dock-right-layout #classroomDock.v1223-word-dock {right:0!important;left:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen #classroomDock.v1223-word-dock.collapsed {width:44px!important;max-width:44px!important;}

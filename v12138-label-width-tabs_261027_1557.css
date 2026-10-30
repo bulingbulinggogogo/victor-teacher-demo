@@ -1,0 +1,46 @@
+/* Approved 10: fit-label, low raised tabs. Scope: mother vocabulary popup only. */
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs {
+ --v129-rail:#edf0f3; --v129-active:#eaf2ff; --v129-active-ink:#1268f3;
+ --v129-idle-ink:#667487; --v129-radius:.85em; --v129-rise:.44em; --v129-idle-height:2.92em;
+ display:flex !important; flex-wrap:nowrap !important; align-items:flex-end !important;
+ gap:0 !important; width:100% !important; min-width:0 !important;
+ font-size:calc(24px * var(--v113-scale,1)) !important;
+ height:calc(var(--v129-idle-height) + var(--v129-rise)) !important;
+ min-height:0 !important; margin:0 !important; padding:0 !important; border:0 !important;
+ background:linear-gradient(to bottom,transparent 0 var(--v129-rise),var(--v129-rail) var(--v129-rise)) !important;
+ border-radius:1em 1em 0 0 !important; overflow-x:auto !important; overflow-y:hidden !important; scrollbar-width:none !important; box-sizing:border-box !important;
+}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button,
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button:hover {
+ flex:0 0 auto !important; min-width:0 !important; width:auto !important;
+ height:var(--v129-idle-height) !important; min-height:0 !important; max-height:none !important;
+ margin:0 !important; padding:.45em 1em !important; border:0 !important; border-radius:0 !important;
+ background:transparent !important; color:var(--v129-idle-ink) !important;
+ font-weight:600 !important; white-space:nowrap !important; text-align:center !important;
+ box-shadow:none !important; background-image:none !important; box-sizing:border-box !important;
+}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button[aria-selected="true"],
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button[aria-selected="true"]:hover {
+ position:relative !important; z-index:1 !important;
+ height:calc(var(--v129-idle-height) + var(--v129-rise)) !important;
+ background:var(--v129-active) !important; color:var(--v129-active-ink) !important;
+ border-radius:var(--v129-radius) var(--v129-radius) 0 0 !important;
+ box-shadow:none !important; background-image:none !important;
+}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button[aria-selected="true"]:first-child {border-top-left-radius:1em !important;}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button[aria-selected="true"]:last-child {border-top-right-radius:1em !important;}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs::before, #popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs::after,
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button::before, #popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs > button::after {
+ content:none !important; display:none !important; box-shadow:none !important;
+}
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-panels {
+ --v105-muted:#263c5a; --v105-text:#263c5a;
+ margin-top:0 !important; padding:.69em .8em !important; background:#fff !important;
+ border:1px solid #e0e5ec !important; border-top:0 !important;
+ border-radius:0 0 .82em .82em !important; box-shadow:none !important; box-sizing:border-box !important;
+}
+
+#popover#popover#popover#popover#popover.v105-vocabulary .v105-note-tabs::-webkit-scrollbar{display:none!important;}
+
+/* Approved light palette; dark mode retains the V134 classroom palette. */
+#popover#popover#popover#popover#popover#popover#popover.v105-vocabulary.light-mode .v105-note-tabs{--v129-active-ink:#1268f3;}

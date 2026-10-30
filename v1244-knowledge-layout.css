@@ -1,0 +1,8 @@
+/* Topic terms keep their source order, size and media rail. A video poster is
+   not an independent body image: only the native image frame selects 2 columns. */
+#popover.tc-topic-dialog .tc-grid {
+  --tc-columns:3;
+}
+#popover.tc-topic-dialog :is(.ke-topic-layout,.resource-detail-layout):has(> .resource-media-panel .resource-image-frame img[src]:not([src=""])) .tc-grid {
+  --tc-columns:2;
+}

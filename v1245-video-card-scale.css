@@ -1,0 +1,5 @@
+/* Scale the complete approved D card, including cover and footer, together.
+   CSS zoom participates in layout; the original button and player stay intact. */
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card {
+  zoom:0.5;
+}

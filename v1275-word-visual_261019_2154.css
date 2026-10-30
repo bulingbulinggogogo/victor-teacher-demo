@@ -1,0 +1,336 @@
+/* V1.2.75: approved 07 frames and typography, based on V1.2.74.
+   Source text, data, media and native feature states are preserved; V75 owns presentation and card disclosure.
+   All selectors stay inside the ordinary word-detail page; functional full-screen pages keep their owners. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) {
+ --v1275-scale:calc(var(--full-dialog-scale,1.125) / 1.125);
+ --v1275-font-11:calc(11px * var(--v1275-scale));
+ --v1275-font-12:calc(12px * var(--v1275-scale));
+ --v1275-font-13:calc(13px * var(--v1275-scale));
+ --v1275-font-14:calc(14px * var(--v1275-scale));
+ --v1275-font-15:calc(15px * var(--v1275-scale));
+ --v1275-font-18:calc(18px * var(--v1275-scale));
+ --v1275-font-22:calc(22px * var(--v1275-scale));
+ --v1275-blue:var(--lecture-resource-primary,#2563eb);
+ --v1275-edge:color-mix(in srgb,var(--v1275-blue) 40%,var(--lecture-panel,#fff));
+ --v1275-wash:color-mix(in srgb,var(--v1275-blue) 8%,var(--lecture-panel,#fff));
+ --v1275-shadow:0 5px 15px color-mix(in srgb,var(--v1275-blue) 6%,transparent),0 1px 2px color-mix(in srgb,var(--v1275-blue) 3%,transparent);
+ --v1242-content-title-size:var(--v1275-font-22);
+ --v1242-content-body-size:var(--v1275-font-18);
+ --v1229-copy-font:var(--v1275-font-18);
+ --v1226-body-font:var(--v1275-font-18);
+ --v1242-stat-tag-size:var(--v1275-font-11);
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif!important;
+}
+/* The two original content regions gain frames; their DOM and layout stay in place. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)>.resource-popover-body {background:color-mix(in srgb,var(--v1275-blue) 5%,var(--lecture-panel,#fff));}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-word-upper {
+ box-sizing:border-box;border:1.5px solid var(--v1275-edge);border-radius:14px;
+ padding:24px 26px;background:var(--lecture-panel,#fff);box-shadow:var(--v1275-shadow);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-content {
+ box-sizing:border-box;border:1.5px solid var(--v1275-edge);border-radius:14px;
+ padding:22px 25px;background:var(--lecture-panel,#fff);box-shadow:var(--v1275-shadow);
+}
+/* 07 type roles. Native bold, emphasis colors, labels and source strings survive. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-word-intro .knowledge-word {
+ font-family:Arial,sans-serif!important;font-size:calc(58px * var(--v1275-scale))!important;
+ font-weight:750!important;line-height:1.05!important;letter-spacing:-2px;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-pronunciation-item :is(b,em),
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-pronunciation-pos {font-size:var(--v1275-font-15)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-guidance-profile :is(strong,b) {font-size:var(--v1275-font-15)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-guidance-profile :is(span,small),
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-guidance-player time {font-size:var(--v1275-font-12)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-folds {--v1270-fold-base:calc(27px * var(--v1275-scale));}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-fold-title {color:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-media-caption {font-size:var(--v1275-font-12)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1271-media-demo-tools {font-size:var(--v1275-font-11)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-meta[data-metadata-scope="sense"] {font-size:var(--v1275-font-13)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-meaning {font-size:var(--v1275-font-22)!important;font-weight:650!important;line-height:1.55!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1220-english-definition {font-family:Arial,sans-serif!important;font-size:var(--v1275-font-18)!important;line-height:1.7!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-popover-body :is(.v1222-sense-example-translation,.v1220-example-translation,.ke-case-translation) {font-size:var(--v1275-font-14)!important;line-height:1.85!important;}
+/* Main tabs and categorical tabs keep their native order and selection behavior. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs {
+ box-sizing:border-box;align-self:stretch!important;width:100%;max-width:100%;
+ border:1.5px solid var(--v1275-edge);border-radius:12px;background:var(--lecture-panel,#fff);
+ box-shadow:var(--v1275-shadow);padding:0 16px;margin-top:10px;gap:8px;min-height:54px;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button {
+ min-height:54px;font-family:inherit!important;font-size:var(--v1275-font-14)!important;
+ font-weight:500!important;padding:0 16px;border-radius:0;background:transparent!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button.active {font-weight:650!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button.active::after {height:3px;border-radius:3px 3px 0 0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1223-word-subnav:not([hidden]) {
+ box-sizing:border-box;width:100%;border:1.5px solid var(--v1275-edge);border-radius:12px;
+ padding:10px 18px;background:var(--v1275-wash);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-secondary-tools {width:100%;padding-bottom:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-secondary-tools>.book-unit-options>button {
+ font-family:inherit!important;font-size:var(--v1275-font-13)!important;font-weight:500!important;
+ min-height:34px;padding:6px 15px;border:1px solid transparent;border-radius:5px;
+ background:transparent!important;box-shadow:none;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-secondary-tools>.book-unit-options>button:is(.active,[aria-selected="true"]) {
+ background:var(--v1275-blue)!important;border-color:var(--v1275-blue)!important;color:#fff!important;
+ font-weight:600!important;box-shadow:0 2px 5px color-mix(in srgb,var(--v1275-blue) 14%,transparent);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-word-sense-sort] {border-color:var(--v1275-edge);border-radius:6px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-word-sense-sort] label {font-family:inherit!important;font-size:var(--v1275-font-12)!important;border-radius:4px;}
+/* Existing filters/result toolbar receive the same frame grammar, with no new options. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-controls {border:1.5px solid var(--v1275-edge);border-radius:14px;background:var(--lecture-panel,#fff);padding:20px 24px;box-shadow:var(--v1275-shadow);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.v1270-example-controls,.v1270-example-browser) {
+ --v1270-type-base:calc(27px * var(--v1275-scale));
+ --v1270-font-12:var(--v1275-font-12);--v1270-font-13:var(--v1275-font-13);
+ --v1270-font-14:var(--v1275-font-14);--v1270-font-15:var(--v1275-font-15);
+ --v1270-font-18:var(--v1275-font-15);--v1270-font-20:var(--v1275-font-18);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-filter-options>button {
+ border:1px solid var(--v1275-edge);border-radius:5px;background:var(--lecture-panel,#fff);
+ font-family:inherit!important;font-size:var(--v1275-font-13)!important;font-weight:400;min-height:32px;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-filter-options>button[aria-pressed="true"] {color:var(--v1275-blue);border-color:var(--v1275-blue);background:var(--v1275-wash);box-shadow:inset 0 -1px color-mix(in srgb,var(--v1275-blue) 45%,var(--lecture-panel,#fff));font-weight:500;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-keyword-row input {border-color:var(--v1275-edge);border-radius:6px;background:var(--lecture-panel,#fff);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions {border:1px solid var(--v1275-edge);border-radius:9px;background:var(--v1275-wash);padding:12px 14px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions>button {border-color:var(--v1275-edge);border-radius:5px;font-family:inherit!important;font-size:var(--v1275-font-13)!important;}
+/* The native narrow desktop dock is retained; only its enclosure and buttons are painted. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock {
+ border:1.5px solid var(--v1275-edge)!important;border-radius:11px!important;
+ background:var(--lecture-panel,#fff)!important;box-shadow:0 4px 13px color-mix(in srgb,var(--v1275-blue) 8%,transparent)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen).v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]) {
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif!important;
+ font-size:var(--v1275-font-13)!important;font-weight:500!important;line-height:1.4!important;
+ border:1px solid var(--v1275-edge)!important;border-radius:6px!important;background:var(--lecture-panel,#fff)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen).v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]):is(.active,[aria-pressed="true"]) {
+ background:var(--v1275-blue)!important;border-color:var(--v1275-blue)!important;color:#fff!important;font-weight:600!important;
+ box-shadow:0 2px 5px color-mix(in srgb,var(--v1275-blue) 14%,transparent)!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen).v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+ font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif!important;
+ font-size:var(--v1275-font-12)!important;border-radius:5px!important;font-weight:400!important;
+}
+
+/* Rich-text descendants follow the role above while retaining their original color and weight. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-popover-body :is(.resource-sense-meaning,.v1220-english-definition,.v1222-sense-example-translation,.v1220-example-translation,.ke-case-translation) :is(span,strong,b,em,i,u) {font-size:inherit!important;line-height:inherit!important;}
+
+/* Requested completion: switch rows, sticky navigation, sense cards and example cards. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) {--v1275-dock-width:188px;--v1275-nav-height:54px;--v1275-subnav-height:56px;--v1275-text:var(--lecture-resource-text,#17243b);--v1275-muted:var(--lecture-resource-muted,#64748b);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)>.resource-popover-body {padding-inline:24px!important;scroll-padding-top:calc(var(--v1275-nav-height) + var(--v1275-subnav-height) + 20px);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs {position:sticky!important;top:0!important;z-index:24;flex-shrink:0;margin-top:10px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1223-word-subnav:not([hidden]) {position:sticky!important;top:var(--v1275-nav-height)!important;z-index:23;flex-shrink:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-module="meanings"] .vwn-main-nav.book-question-mode-tabs {border-radius:12px 12px 0 0;margin-bottom:-10px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-module="meanings"] .v1223-word-subnav {border-radius:0 0 12px 12px;border-top:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-contact {display:contents!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-contact .v1270-filter-slot {margin-top:0;}
+/* Only native control appearance changes; all original nodes/listeners/states remain. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-left-layout .vwn-content {margin-inline-start:208px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-right-layout .vwn-content {margin-inline-end:208px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock.v1223-word-dock:not(.collapsed) {
+ position:fixed!important;top:var(--v1275-dock-top,130px)!important;bottom:auto!important;
+ width:var(--v1275-dock-width)!important;min-width:var(--v1275-dock-width)!important;
+ max-height:var(--v1275-dock-room,500px)!important;padding:16px!important;gap:12px!important;
+ border:1.5px solid var(--v1275-edge)!important;border-radius:11px!important;
+ align-items:stretch;backdrop-filter:none;z-index:25;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-left-layout #classroomDock.v1223-word-dock {left:24px!important;right:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-right-layout #classroomDock.v1223-word-dock {right:24px!important;left:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .v1225-word-tree {
+ display:flex!important;width:100%!important;max-width:100%;align-items:stretch!important;
+ max-height:calc(var(--v1275-dock-room,500px) - 82px)!important;overflow:auto!important;
+ scrollbar-width:thin;gap:0!important;flex:0 1 auto;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) #classroomDock .v1275-display-heading {font-family:inherit;font-size:var(--v1275-font-13);font-weight:650;color:var(--v1275-blue);margin:0 0 10px;padding:0;line-height:1.5;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .v1225-word-secondary {width:100%!important;gap:0!important;align-items:stretch!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]) {
+ display:block!important;position:relative;box-sizing:border-box;align-self:stretch;
+ width:100%!important;max-width:100%!important;height:auto!important;min-height:36px!important;
+ padding:8px 37px 8px 0!important;margin:0!important;text-align:left!important;
+ font-size:var(--v1275-font-13)!important;font-weight:400!important;white-space:normal!important;
+ border:0!important;background:transparent!important;box-shadow:none!important;color:var(--v1275-text)!important;border-radius:6px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden])::before {
+ content:'';position:absolute;right:0;left:auto;top:50%;transform:translateY(-50%);width:28px;height:16px;background:var(--v1275-switch-off,#d6e5ff);border:0;border-radius:10px;pointer-events:none;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden])::after {
+ content:'';position:absolute;right:15px;left:auto;top:50%;transform:translateY(-50%);width:12px;height:12px;background:white;border-radius:50%;box-shadow:0 1px 2px #2563eb12;pointer-events:none;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden])[aria-pressed="true"]::before {background:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden])[aria-pressed="true"]::after {right:2px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden])[aria-pressed="mixed"]::before {background:var(--v1275-switch-off,#d6e5ff);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]):hover {background:var(--v1275-wash)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+ position:relative;width:calc(100% - 10px)!important;max-width:none!important;min-height:28px!important;
+ height:auto!important;padding:6px 1px 6px 24px!important;margin-inline:10px 0!important;
+ border:0!important;border-radius:4px!important;background:transparent!important;
+ text-align:left!important;color:var(--v1275-muted)!important;font-weight:400!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool)::before {
+ content:'';position:absolute;left:3px;right:auto;top:50%;bottom:auto;transform:translateY(-50%);box-sizing:border-box;
+ width:12px;height:12px;border:1px solid var(--v1275-edge);border-radius:2px;background:white;pointer-events:none;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):is([aria-pressed="true"],[data-v1271-category-displayed="true"]) {color:var(--v1275-blue)!important;font-weight:600!important;background:transparent!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):is([aria-pressed="true"],[data-v1271-category-displayed="true"])::before {border-color:var(--v1275-blue);background:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):is([aria-pressed="true"],[data-v1271-category-displayed="true"])::after {content:'';position:absolute;left:7px;right:auto;top:calc(50% - 4px);width:3px;height:6px;border-right:1.5px solid white;border-bottom:1.5px solid white;transform:rotate(45deg);pointer-events:none;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .dock-footer-actions {width:100%;padding-top:10px;border-top:1px solid var(--v1275-edge);}
+/* The current POS and each original meaning become the reference's label/card pair. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-content:has(.vwn-panel[aria-labelledby$="-tab-meanings"]:not([hidden])) {padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group>.v1227-group-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 12px;padding:0 3px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group>.v1227-group-heading .v1227-group-toggle {width:auto;flex:1;min-width:0;justify-content:flex-start;font-size:var(--v1275-font-15)!important;font-weight:600!important;line-height:1.6!important;color:var(--v1275-blue)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-group-heading .v1227-fold-label {color:var(--v1275-blue)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-total {flex:0 0 auto;white-space:nowrap;font-size:var(--v1275-font-12);line-height:1.5;font-weight:400;color:var(--v1275-muted);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group .resource-sense-line[data-latest-sense] {
+ position:relative;display:grid!important;grid-template-columns:25px minmax(0,1fr);align-items:baseline;gap:13px;
+ margin:0 0 20px;padding:17px 25px 24px;box-sizing:border-box;
+ border:1.5px solid var(--v1275-edge);border-radius:14px;box-shadow:var(--v1275-shadow);
+ background:linear-gradient(to bottom,var(--v1275-wash) 0,var(--v1275-wash) var(--v1275-sense-head,68px),var(--lecture-panel,#fff) var(--v1275-sense-head,68px),var(--lecture-panel,#fff) 100%);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group .resource-sense-line[data-latest-sense]::after {content:'';position:absolute;top:var(--v1275-sense-head,68px);left:0;right:0;height:1px;background:var(--v1275-edge);pointer-events:none;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group .v1220-sense-number {display:inline-grid;place-items:center;align-self:start;margin-top:4px;padding:0;width:25px;height:25px;border:1px solid var(--v1275-edge);border-radius:6px;background:var(--lecture-panel,#fff);font-size:var(--v1275-font-13)!important;line-height:1!important;font-weight:600;color:var(--v1275-blue);box-shadow:0 2px 4px #2563eb10;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group .resource-sense-copy {min-width:0;display:block;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-popover-body .resource-sense-meaning {color:var(--v1275-blue)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-meta[data-metadata-scope="sense"],#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-meta[data-metadata-scope="sense"]>span {font-size:var(--v1275-font-13)!important;line-height:1.5!important;color:var(--v1275-muted)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-copy>.v1220-english-definition {margin-top:30px!important;margin-bottom:16px;color:var(--v1275-text)!important;}
+/* Reference filter, summary and individual record enclosures; original row nodes survive. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-panel .vwn-panel-scroll {margin-top:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-content:has(.v1270-example-panel:not([hidden])) {padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-filter-heading {margin:0 0 16px;font-size:calc(16px * var(--v1275-scale));font-weight:600;line-height:1.5;color:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-controls {padding:21px 24px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-keyword-row {border-top:1px solid var(--v1275-edge);padding-top:17px;margin-top:17px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame {border:1px solid var(--v1275-edge);border-radius:9px;background:var(--v1275-wash);box-shadow:0 3px 10px #2563eb09;padding:13px 18px;margin:0 0 18px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame .v1270-result-summary {margin:0 0 10px;font-size:var(--v1275-font-13);color:var(--v1275-muted);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame .v1270-result-summary b {font-size:var(--v1275-font-15);color:var(--v1275-blue)!important;font-weight:650;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame .v1270-example-actions {padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions .v1270-export {border-color:var(--v1275-edge);background:var(--lecture-panel,#fff);color:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions .v1270-export[data-v1270-action="export-selected"] {background:var(--v1275-blue);border-color:var(--v1275-blue);color:white;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-list {display:flex;flex-direction:column;gap:15px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-row {border:1.5px solid var(--v1275-edge);border-radius:12px;box-shadow:0 4px 11px #2563eb0c;background:var(--lecture-panel,#fff);padding:23px 26px;gap:14px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-row:has(input:checked) {border-color:var(--v1275-blue);box-shadow:inset 3px 0 var(--v1275-blue),0 4px 11px #2563eb0c;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-popover-body .v1270-example-browser .v1270-native-example .v1223-example-copy {font-family:Arial,"PingFang SC",sans-serif!important;font-size:var(--v1275-font-18)!important;line-height:1.8!important;color:var(--v1275-text);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-popover-body .v1270-example-browser .v1270-native-example .v1222-sense-example-translation {font-size:var(--v1275-font-15)!important;line-height:1.85!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-row .v1270-source-tag {font-size:var(--v1275-font-11)!important;font-weight:400!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 9px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame .v1270-result-summary {flex:1 1 400px;margin:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame>.v1270-export {flex:0 0 auto;min-height:34px;padding:7px 12px;border:1px solid var(--v1275-edge);border-radius:5px;font-family:inherit;font-size:var(--v1275-font-13);font-weight:500;line-height:1.4;background:var(--lecture-panel,#fff);color:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-result-frame>.v1270-export[data-v1270-action="export-selected"] {background:var(--v1275-blue);border-color:var(--v1275-blue);color:white;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions {margin:0 0 14px;border:0;border-radius:0;box-shadow:none;background:transparent;padding:0 4px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions>label {order:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions>.v1270-action-spacer {order:1;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-example-actions>[data-v1270-action="clear"] {order:2;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1222-sense-example :is(.v1223-example-kind,.v1271-source-chip) {font-family:inherit!important;font-size:var(--v1275-font-11)!important;line-height:1.5!important;padding:2px 6px!important;min-height:0!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)>.resource-popover-body {padding-top:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-word-upper {margin-top:16px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) #classroomDock .v1275-display-heading {display:none;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .v1275-display-heading {display:block;position:sticky;top:0;z-index:2;flex-shrink:0;margin:0;padding:0 0 10px;background:var(--lecture-panel,#fff);}
+
+#wordDetailDialog.v1263-interactive-fullscreen .v1275-display-heading {display:none!important;}
+
+/* The complete native control panel participates in the reading layout.
+   Its natural height never grows as the page is scrolled. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-reading-layout {display:contents;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] .v1275-reading-layout {
+ display:grid;grid-template-columns:var(--v1275-dock-width) minmax(0,1fr);gap:20px;align-items:start;flex:0 0 auto;min-width:0;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] .v1275-reading-layout>.vwn-content {grid-column:2;grid-row:1;margin-inline:0!important;min-width:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] .v1275-reading-layout>#classroomDock.v1223-word-dock:not(.collapsed) {
+ position:sticky!important;grid-column:1;grid-row:1;align-self:start;
+ top:calc(var(--v1275-nav-height) + var(--v1275-subnav-height) + 18px)!important;
+ left:auto!important;right:auto!important;bottom:auto!important;
+ height:max-content!important;max-height:none!important;margin:0!important;overflow:visible!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-right-layout .v1275-reading-layout {grid-template-columns:minmax(0,1fr) var(--v1275-dock-width);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-right-layout .v1275-reading-layout>.vwn-content {grid-column:1;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"].dock-right-layout .v1275-reading-layout>#classroomDock.v1223-word-dock:not(.collapsed) {grid-column:2;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .v1225-word-tree {height:auto!important;max-height:none!important;overflow:visible!important;flex:none;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-long-controls="true"] .v1275-reading-layout>#classroomDock.v1223-word-dock:not(.collapsed) {position:relative!important;top:0!important;}
+/* Bright Demo blue remains the single accent; secondary reading text is neutral. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)>.resource-popover-body {background:var(--v1275-canvas,#f1f6ff);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button {color:var(--v1275-text);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav.book-question-mode-tabs>button.active {color:var(--v1275-blue);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-filter-options>button {color:var(--v1275-text);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-filter-options>button[aria-pressed="true"] {color:var(--v1275-blue);}
+
+/* Dark appearance follows the existing Demo palette rather than forcing white panels. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-theme-kind="dark"] {
+ --v1275-canvas:var(--lecture-background,#10151e);
+ --v1275-switch-off:color-mix(in srgb,var(--v1275-blue) 26%,var(--lecture-panel,#1b2230));
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-word-sense-sort]>.v1274-sense-sort-label {font-size:var(--v1275-font-12);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-word-sense-sort]>.v1274-sense-sort-segments {background:var(--lecture-panel,#fff);border-color:var(--v1275-edge);}
+
+/* Preserve V74's original clearance for the compact native dock in other modules. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="false"].dock-left-layout :is(.vwn-content,.v1270-filter-slot) {margin-inline-start:80px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="false"].dock-right-layout :is(.vwn-content,.v1270-filter-slot) {margin-inline-end:80px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="false"].v1223-word-dock-collapsed.dock-left-layout :is(.vwn-content,.v1270-filter-slot) {margin-inline-start:40px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="false"].v1223-word-dock-collapsed.dock-right-layout :is(.vwn-content,.v1270-filter-slot) {margin-inline-end:40px;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-filter-slot {width:auto!important;align-self:stretch;min-width:0;}
+
+/* Updated side-panel contract: stable viewport limit, always pinned below both frozen tab rows.
+   A long control list scrolls inside its own area; the frame no longer grows with page scrolling. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] .v1275-reading-layout>#classroomDock.v1223-word-dock:not(.collapsed) {
+ display:flex!important;flex-direction:column!important;position:sticky!important;
+ top:calc(var(--v1275-nav-height) + var(--v1275-subnav-height) + 18px)!important;
+ height:auto!important;min-height:0!important;max-height:var(--v1275-panel-limit,520px)!important;
+ box-sizing:border-box;z-index:22!important;overflow:hidden!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .v1225-word-tree {
+ flex:1 1 auto!important;min-height:0!important;height:auto!important;max-height:none!important;overflow:auto!important;overscroll-behavior:contain;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] #classroomDock .dock-footer-actions {flex:0 0 auto!important;}
+/* Every categorical second row has the same enclosure and tab geometry as POS. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-categories="true"] .vwn-main-nav.book-question-mode-tabs {border-radius:12px 12px 0 0;margin-bottom:-10px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-categories="true"] .v1223-word-subnav {border-radius:0 0 12px 12px;border-top:0;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1223-word-subnav [role="tablist"]>button {
+ min-height:34px!important;padding:6px 15px!important;border:1px solid transparent!important;border-radius:5px!important;
+ font-family:inherit!important;font-size:var(--v1275-font-13)!important;line-height:1.4!important;font-weight:500!important;
+ color:var(--v1275-text)!important;background:transparent!important;box-shadow:none;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1223-word-subnav [role="tablist"]>button[aria-selected="true"] {
+ background:var(--v1275-blue)!important;border-color:var(--v1275-blue)!important;color:white!important;
+ font-weight:600!important;box-shadow:0 2px 5px color-mix(in srgb,var(--v1275-blue) 14%,transparent);
+}
+/* English definition is a secondary, italic part of the same meaning header. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-copy>.v1220-english-definition {
+ display:inline!important;font-size:calc(16px * var(--v1275-scale))!important;line-height:1.65!important;font-weight:400!important;font-style:italic!important;
+ color:var(--v1275-muted)!important;margin:0 0 0 12px!important;vertical-align:baseline;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-body {display:flow-root;margin-top:24px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-body[hidden] {display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-toggle {
+ position:absolute;top:0;left:0;right:0;width:100%;height:var(--v1275-sense-head,68px);padding:0;margin:0;border:0;border-radius:14px 14px 0 0;
+ background:transparent;cursor:pointer;z-index:1;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-toggle::after {
+ content:'';position:absolute;right:18px;top:calc(50% - 5px);width:7px;height:7px;border-right:1.5px solid var(--v1275-blue);border-bottom:1.5px solid var(--v1275-blue);transform:rotate(45deg);
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-toggle[aria-expanded="false"]::after {transform:rotate(-45deg);}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1275-sense-toggle:focus-visible {outline:2px solid var(--v1275-blue);outline-offset:-3px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-copy {padding-right:18px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1275-sense-open="false"],
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1275-sense-details="false"] {
+ background:var(--v1275-wash)!important;padding-bottom:17px!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1275-sense-open="false"]::after,
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1275-sense-details="false"]::after {display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-v1275-sense-details="false"]>.resource-sense-copy>.v1275-sense-body {margin-top:0;}
+/* Diagram content uses natural height, including its source image row. No fixed 420px frame. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-panel[aria-labelledby$="-tab-illustrations"] .pgi-module {
+ height:auto!important;min-height:0!important;
+}
+/* Body typography is shared across statistics, polysemy and contrast, also in the functional view. */
+#wordDetailDialog.vwn-dialog.v1220-dialog {
+ --v1275-scale:calc(var(--full-dialog-scale,1.125) / 1.125);
+ --v1275-font-18:calc(18px * var(--v1275-scale));--v1275-font-22:calc(22px * var(--v1275-scale));
+ --v1226-diagram-body-font:var(--v1275-font-18);
+}
+#wordDetailDialog .vwn-panel:is([aria-labelledby$="-tab-illustrations"],[aria-labelledby$="-tab-contrast"]) .vpi-module {font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif!important;}
+#wordDetailDialog .vwn-panel:is([aria-labelledby$="-tab-illustrations"],[aria-labelledby$="-tab-contrast"]) :is(.pgi-copy,.pgi-basic-node,.pgi-basic-node>p,.pgi-card-label,.pgi-formation-box,.pgi-formation-box>span,.pgi-formation-box>strong) {font-size:var(--v1275-font-18)!important;line-height:1.5!important;}
+#wordDetailDialog .v1227-word-statistics {font-family:inherit;font-size:var(--v1275-font-18)!important;line-height:1.65;}
+#wordDetailDialog .v1227-word-statistics :is(h3,h4,h5) {font-size:var(--v1275-font-22)!important;font-weight:650;}
+
+/* Keep the original metadata help targets above the header's disclosure hit area. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) [data-latest-sense]>.resource-sense-copy>:is(.resource-sense-meta,[data-word-tag-field]) {position:relative;z-index:2;}

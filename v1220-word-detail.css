@@ -1,0 +1,65 @@
+.v1220-source-red{color:var(--demo-red,var(--lecture-mark,#e7455d))}
+.v1220-module{color:var(--lecture-text);font:inherit}
+.v1220-module h4{margin:0 0 .55em;font-size:1em;font-weight:650}
+.v1220-module p{margin:.45em 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.v1220-module>.v1220-note,.v1220-block,.v1220-example{padding:.7em 0;border-bottom:1px solid var(--lecture-border)}
+.v1220-module>.v1220-note:last-child,.v1220-block:last-child,.v1220-example:last-child{border-bottom:0}
+.v1220-sense-number{width:1.5em;flex:0 0 1.5em;color:var(--lecture-muted);font-size:.8em;padding-top:.1em}
+.v1220-module .resource-sense-line{justify-content:flex-start;align-items:baseline;flex-wrap:nowrap}
+.v1220-module .resource-sense-copy{display:block;flex:1 1 auto;min-width:0}
+.v1220-module .resource-sense-meta{margin-right:.5em;line-height:inherit}
+.v1220-module .resource-sense-meta:empty{display:none}
+.v1220-module .resource-sense-chunk{display:block;margin-top:.25em}
+.v1220-dialog .v1220-english-definition{display:block;margin-top:.25em;color:var(--lecture-muted);font-size:.8em;font-weight:400}
+.v1220-block-labels{display:flex;flex-wrap:wrap;gap:.35em .8em;font-size:.68em;color:var(--lecture-muted);margin-bottom:.4em}
+.v1220-block h4>span{margin-left:.4em}
+.v1220-field-label,.v1220-example-topic{font-size:.75em;color:var(--lecture-muted)}
+.v1220-example-translation{color:var(--lecture-muted)}
+.v1220-related-link{font-family:inherit;font-size:.72em!important;color:var(--lecture-primary);background:transparent;border:1px solid var(--lecture-border);border-radius:8px;padding:.3em .6em}
+.v1220-related-link:hover{color:var(--lecture-primary);border-color:var(--lecture-primary)}
+.v1220-family{margin:.4em 0;display:flex;flex-direction:column;gap:.4em}
+.v1220-family figcaption{font-size:1em;font-weight:650}
+.v1220-family img{width:100%;height:auto;max-height:calc(100vh - 290px);object-fit:contain;object-position:top left}
+.v1220-prose-and-figure .vwn-panel-scroll.is-visual{overflow-y:auto;display:block;scrollbar-gutter:stable}
+.v1220-prose-and-figure .vwn-panel-scroll.is-visual>section{display:block}
+.v1220-prose-and-figure .pgi-module{min-height:420px;height:calc(100vh - 330px)}
+.v1220-secondary-tabs{display:flex;align-items:center;gap:8px;flex:0 0 auto;min-width:max-content}
+.v1220-secondary-tabs[hidden]{display:none!important}
+.v1220-secondary-tabs button{font-family:inherit!important;font-size:12px!important;font-weight:600!important;line-height:1.3!important;height:40px;min-height:40px;padding:0 14px;border:1px solid var(--lecture-border);border-radius:8px;color:var(--lecture-text);background:var(--lecture-panel);white-space:nowrap}
+.v1220-secondary-tabs [aria-selected="true"]{color:var(--lecture-primary);border-color:var(--lecture-primary);background:var(--lecture-soft)}
+.v1220-secondary-tabs button:focus-visible,.v1220-related-link:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:2px}
+.v1224-marked-word-note p{white-space:pre-wrap;overflow-wrap:anywhere}
+.v1224-marked-word-note.resource-word-note>h4{color:var(--lecture-primary);font-size:1em;font-weight:650;margin:0 0 .4em}
+.v1224-marked-word-note.knowledge-explanation.is-unlabeled{border:0;background:none;padding:0;margin:.5em 0}
+
+/* V1.2.36 content disclosure uses the original component type scale. */
+#wordDetailDialog.v1220-dialog [hidden]{display:none!important;}
+/* Original question-order segmented radio control, including its source dimensions. */
+#wordDetailDialog [data-word-sense-sort]{display:inline-flex;min-height:32px;align-items:center;flex-wrap:nowrap;gap:0;padding:2px;border:1px solid #cfd9e6;border-radius:8px;background:#fff;}
+#wordDetailDialog [data-word-sense-sort] label{display:inline-flex;min-height:28px;align-items:center;gap:6px;padding:0 10px;border-radius:6px;color:#17233a;cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap;}
+#wordDetailDialog [data-word-sense-sort] input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+#wordDetailDialog [data-word-sense-sort] label:has(input:checked){background:#1268f3;color:#fff;}
+
+/* User-approved radial network: original pgi font and reveal fields, six source relationships. */
+#wordDetailDialog .v1237-network-panel .vwn-panel-scroll{display:block;min-height:0;overflow:visible;}
+#wordDetailDialog .v1237-word-network{display:block;flex:0 0 auto;width:max-content;height:auto;min-width:max-content;}
+#wordDetailDialog .vpi-module .pgi-scene.v1237-network-scene{position:relative;display:block;width:46em;height:21em;min-width:46em;min-height:21em;flex:0 0 auto;margin:0 auto;font-size:var(--pgi-copy-font);}
+#wordDetailDialog .v1237-network-links{position:absolute;inset:0;width:100%;height:100%;}
+#wordDetailDialog .v1237-network-center,#wordDetailDialog .v1237-network-node{position:absolute;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:translate(-50%,-50%);border:1px solid var(--lecture-border);border-radius:50%;background:var(--lecture-panel-deep);gap:0;}
+#wordDetailDialog .v1237-network-center{left:50%;top:50%;width:8.5em;height:8.5em;padding:.5em;}
+#wordDetailDialog .v1237-network-node{width:8.5em;height:8.5em;padding:.05em;}
+#wordDetailDialog .v1237-network-node .pgi-copy{flex:0 0 auto;width:100%;padding:0;border:0;border-radius:0;white-space:normal;background:transparent;}
+
+#wordDetailDialog .v1237-network-links path{stroke:var(--lecture-primary);}
+
+#wordDetailDialog .v1237-network-node .v1237-network-phrase{display:inline-block;white-space:nowrap;}
+
+/* Compact vertical rhythm only; the original body, term and phonetic type scales remain. */
+#wordDetailDialog .vwn-word-intro .knowledge-entry{row-gap:8px;}
+#wordDetailDialog .vwn-word-intro :is(.resource-pronunciation-groups,.resource-pronunciations){margin-block:.15em;row-gap:.15em;}
+#wordDetailDialog .vwn-word-intro .v1227-inflections{margin-block:.15em;padding-block:.15em;}
+#wordDetailDialog :is(.ke-all-meanings,.ke-exam-cases){padding-top:12px;}
+#wordDetailDialog .resource-sense-overview{padding-top:8px;}
+#wordDetailDialog .resource-sense-overview>section{padding-block:8px;}
+#wordDetailDialog .v1220-module>.v1220-note{padding-block:.35em;}
+#wordDetailDialog .v1220-module p{margin-block:.2em;}

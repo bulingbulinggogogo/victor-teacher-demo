@@ -1,0 +1,19 @@
+#wordDetailDialog .v1247-polysemy-controls,
+#lexicalChunkDialog .v1247-polysemy-controls,
+#popover .v1247-polysemy-controls{
+ display:flex;flex:0 0 auto;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:10px;
+ margin:0;padding:0;border:0;white-space:nowrap;
+}
+.v1247-polysemy-controls[hidden]{display:none!important;}
+#wordDetailDialog.classroom-tools-dialog .v1247-polysemy-source-all[hidden],
+#lexicalChunkDialog.classroom-tools-dialog .v1247-polysemy-source-all[hidden],
+#popover.classroom-tools-dialog .v1247-polysemy-source-all[hidden]{display:none!important;}
+.v1247-polysemy-controls button{
+ min-height:44px;padding:9px 14px;border:1px solid var(--lecture-border);border-radius:7px;
+ background:var(--lecture-panel-deep);color:var(--lecture-text);cursor:pointer;
+ font-family:var(--v16-popup-tool-font-family,inherit);font-size:var(--v16-popup-tool-font-size,12px);
+ font-weight:var(--v16-popup-tool-font-weight,600);line-height:var(--v16-popup-tool-line-height,normal);
+}
+.v1247-polysemy-controls button:disabled{opacity:.45;cursor:default;}
+.v1247-polysemy-controls button:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:2px;}
+.v1247-polysemy-progress{font:inherit;font-size:var(--v16-popup-tool-font-size,12px);color:var(--lecture-text);}

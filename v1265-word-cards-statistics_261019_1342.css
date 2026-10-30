@@ -1,0 +1,44 @@
+/* Source figures and prose in sense cards share the left edge. */
+#wordDetailDialog [data-v1264-sense-card] :is(.pgi-scene-single,.pgi-copy,.pgi-single-body-copy,.v1220-note p){text-align:left!important;}
+#wordDetailDialog [data-v1264-sense-card] .pgi-scene-single{align-items:flex-start;}
+#wordDetailDialog [data-v1264-sense-card] .pgi-single-image{align-self:flex-start;object-position:left center;max-width:100%;}
+#wordDetailDialog [data-v1264-sense-card] .pgi-single-body-copy{align-self:flex-start;margin:0;}
+/* A card per dimension fills the available width without changing counts/types. */
+#wordDetailDialog .v1227-word-statistics .v1227-exam-distribution{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(480px,24em)),1fr));
+ gap:.75em;align-items:start;
+}
+#wordDetailDialog .v1227-word-statistics .vside-single-chart{
+ box-sizing:border-box;min-width:0;margin:0;padding:.65em .75em;
+ border:1px solid var(--lecture-border);border-radius:12px;background:var(--lecture-panel);
+}
+#wordDetailDialog .v1227-word-statistics .vside-single-chart+.vside-single-chart{padding-top:.65em;}
+#wordDetailDialog .v1227-word-statistics .v1228-chart-heading{gap:.1em .45em;margin-bottom:.45em;}
+#wordDetailDialog .v1227-word-statistics .v1228-chart-source-count{font-size:.72em;}
+#wordDetailDialog .v1227-word-statistics .vside-single-chart .v1227-pie-card{max-width:none;}
+#wordDetailDialog .v1227-word-statistics .v1227-pie{font-size:.85em!important;margin:0;}
+#wordDetailDialog .v1265-pie-with-legend{display:grid;grid-template-columns:minmax(90px,.8fr) minmax(0,1.4fr);gap:.6em;align-items:start;}
+#wordDetailDialog .v1265-pie-legend{display:flex;flex-direction:column;gap:.22em;min-width:0;}
+#wordDetailDialog .v1265-pie-legend-item{
+ display:grid;grid-template-columns:.55em minmax(0,1fr) auto;align-items:start;gap:.35em;
+ border:0;border-radius:4px;background:transparent;padding:.14em .1em;
+ color:var(--lecture-text);font:inherit;font-size:.85em;line-height:1.4;text-align:left;cursor:pointer;min-width:0;
+}
+#wordDetailDialog .v1265-pie-legend-item:hover,
+#wordDetailDialog .v1265-pie-legend-item.is-selected{background:color-mix(in srgb,var(--lecture-primary) 10%,transparent);}
+#wordDetailDialog .v1265-pie-legend-item:focus-visible{outline:2px solid var(--lecture-primary);outline-offset:2px;}
+#wordDetailDialog .v1265-pie-key{display:block;width:.55em;height:.55em;margin-top:.4em;border-radius:2px;background:var(--v1227-slice-color);}
+#wordDetailDialog .v1265-pie-name{min-width:0;overflow-wrap:anywhere;}
+#wordDetailDialog .v1265-pie-numbers{display:flex;flex-direction:row;gap:.4em;align-items:baseline;white-space:nowrap;color:var(--lecture-muted);}
+#wordDetailDialog .v1227-word-statistics .v1227-stat-bars{gap:.18em;}
+#wordDetailDialog .v1227-word-statistics .v1227-stat-bar-row:not(.vside-year-column){
+ grid-template-columns:minmax(4.5em,1fr) minmax(3em,1.15fr) auto;gap:.3em;padding:.12em 0;
+}
+#wordDetailDialog .v1227-word-statistics .vside-year-chart{--vside-year-height:clamp(160px,8em,260px);padding-inline-start:2em;}
+#wordDetailDialog .v1227-word-statistics .vside-year-y-axis{width:1.5em;}
+#wordDetailDialog .v1227-word-statistics .vside-year-canvas{min-width:calc(var(--vside-year-count)*3.2em);}
+#wordDetailDialog .v1227-word-statistics .vside-year-bar{width:65%;max-width:60px;}
+
+#wordDetailDialog .v1265-pie-legend-item.is-missing{--v1227-slice-color:var(--lecture-muted)!important;}
+
+#wordDetailDialog [data-v1264-sense-card] :is(.pgi-scene-slot,.pgi-scene){background:transparent;}

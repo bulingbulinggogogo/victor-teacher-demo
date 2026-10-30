@@ -1,0 +1,6 @@
+/* A labelled source example inside the existing idiom teaching card. */
+#wordDetailDialog .v1268-idiom-card .v1272-idiom-source-example{box-sizing:border-box;min-width:0;max-width:100%;margin:.75em 0 0;padding:.65em 0 0;border:0;border-top:1px dashed var(--lecture-border);background:transparent}
+#wordDetailDialog .v1272-idiom-example-caption{display:flex;align-items:baseline;flex-wrap:wrap;gap:.2em;min-width:0;margin:0 0 .5em;padding:0;color:var(--lecture-muted);font:inherit;font-size:calc(var(--v1242-content-body-size,27px) * .6666666667);line-height:1.4}
+#wordDetailDialog .v1272-idiom-example-caption strong{font:inherit;font-weight:700;color:var(--lecture-text)}
+#wordDetailDialog .v1272-idiom-source-example>img{display:block;width:min(100%,440px);max-width:100%;height:auto;max-height:none;margin:0;padding:0;border:0;border-radius:4px;object-fit:contain;aspect-ratio:auto}
+

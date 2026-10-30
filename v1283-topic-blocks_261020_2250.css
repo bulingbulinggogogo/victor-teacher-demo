@@ -1,0 +1,34 @@
+/* Entry blocks share the meaning cards' border, heading and reading rhythm. */
+#wordDetailDialog .v1282-topic-list{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:22px!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;}
+#wordDetailDialog .v1282-topic-list .v1281-formation-examples{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:22px!important;}
+#wordDetailDialog .v1282-topic-block{display:block!important;width:100%!important;min-width:0;box-sizing:border-box;margin:0!important;padding:0 28px 24px!important;border:1px solid var(--v1275-edge,#b6ccfa)!important;border-radius:13px!important;background:var(--lecture-panel,#fff)!important;box-shadow:none!important;overflow:hidden!important;}
+#wordDetailDialog .v1282-topic-head{display:flex!important;align-items:center;justify-content:space-between;gap:20px;margin:0 -28px 22px!important;padding:17px 28px!important;border-bottom:1px solid var(--v1275-edge,#cbdaf7);background:var(--v1275-wash,#eef4ff);}
+#wordDetailDialog .v1282-topic-title{display:block!important;margin:0!important;line-height:1.4!important;font-size:22px!important;font-weight:700!important;color:var(--lecture-primary,#2864f0)!important;}
+#wordDetailDialog .v1282-topic-subtitle{font-size:14px;color:var(--lecture-muted,#657791);white-space:nowrap;}
+#wordDetailDialog .v1282-formation-flow{display:flex;align-items:center;justify-content:center;gap:clamp(18px,2.8vw,46px);padding:30px 20px 36px;margin:0 0 22px;border-radius:9px;background:#eef5ff;}
+#wordDetailDialog .v1282-formation-part{flex:0 1 auto;min-width:0;text-align:center;}
+#wordDetailDialog .v1282-formation-part>strong{display:block!important;color:#2864f0!important;font-size:clamp(32px,3vw,48px)!important;font-weight:750!important;line-height:1.2!important;white-space:nowrap;}
+#wordDetailDialog .v1282-formation-part>span{display:block;margin-top:14px;font-size:20px;color:#657791;line-height:1.6;}
+#wordDetailDialog .v1282-formation-operator{font-size:36px;font-weight:500;color:#9cb1d1;flex:none;}
+#wordDetailDialog .v1282-topic-block :is(.v1281-formation-source-copy,.v1220-note,.v1267-construction-card){font-size:var(--v1242-content-body-size,19px)!important;line-height:1.8!important;color:var(--lecture-text,#21314a)!important;margin:14px 0!important;padding:0!important;border:0!important;box-shadow:none!important;background:transparent!important;}
+#wordDetailDialog .v1282-topic-block .v1267-construction-card h4{display:none!important;}
+#wordDetailDialog .v1282-topic-block :is([data-v1264-source-module="formation"],.pgi-module,.pgi-scene-slot,.pgi-scene-single){height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;}
+#wordDetailDialog .v1282-topic-block .pgi-scene-single{display:flex!important;flex-direction:column!important;align-items:center!important;gap:18px!important;}
+#wordDetailDialog .v1282-topic-block .pgi-static-copy{display:none!important;}
+#wordDetailDialog .v1282-topic-block .pgi-single-image{display:block!important;width:min(460px,100%)!important;height:auto!important;max-height:340px!important;object-fit:contain!important;margin:20px auto 0!important;}
+#wordDetailDialog .v1282-topic-block .v1281-formation-source-figure{margin:20px auto 0!important;max-width:460px;}
+#wordDetailDialog .v1282-story-body{font-size:var(--v1242-content-body-size,20px);line-height:1.9;color:var(--lecture-text,#21314a);}
+#wordDetailDialog .v1282-story-body p{margin:0;}
+#wordDetailDialog .v1282-story-sources{margin-top:18px;font-size:14px;}
+#wordDetailDialog .v1282-story-sources a{color:var(--lecture-primary,#2864f0);}
+@media(max-width:1100px){#wordDetailDialog .v1282-formation-flow{gap:18px;padding:24px 12px;}#wordDetailDialog .v1282-formation-part>strong{font-size:32px!important;}#wordDetailDialog .v1282-formation-part>span{font-size:17px;}}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block .v1282-formation-part>strong{color:#2864f0!important;font-size:clamp(32px,3vw,48px)!important;font-weight:750!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block :is(.v1220-note,.v1220-note p,.v1267-construction-card,.v1267-construction-card p){text-align:left!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-list{border:0!important;background:transparent!important;box-shadow:none!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block .v1282-formation-flow.v1283-deep-complete{display:block!important;text-align:left!important;padding:28px 30px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1282-topic-word="deep-fry"] .v1283-full-deep-equation{display:block!important;font-size:24px!important;line-height:1.9!important;margin:0!important;color:#657791!important;white-space:normal!important;overflow:visible!important;text-align:left!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1282-topic-word="deep-fry"] .v1283-full-deep-equation strong{font-size:1.22em!important;font-weight:750!important;color:#2864f0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1282-topic-word="deep-fry"] .v1283-full-deep-equation em{font-size:inherit!important;font-style:italic!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1282-topic-word="deep-fry"] [data-v1224-word-note]:empty{display:none!important;}

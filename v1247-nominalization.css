@@ -1,0 +1,144 @@
+/* A three-part reasoning diagram; source images, text tokens, themes and
+   native illustration control appearance keep their existing owners. */
+#wordDetailDialog .v1247-nominalization,
+#wordDetailDialog .v1247-nominalization .v1247-reasoning-scene {
+  --v1247-reasoning-image-height:clamp(64px,calc((100dvh - 580px) * .65),200px);
+  height:auto;
+  min-height:0;
+  width:100%;
+  min-width:0;
+  color:var(--lecture-text);
+  font-size:var(--v1242-content-body-size,var(--v1226-diagram-body-font,30px));
+  line-height:1.5;
+}
+#wordDetailDialog [data-case-module="nominalization"]:has(> .v1247-nominalization) > .v1246-source-example {
+  margin:0 0 8px;
+  font-size:14px;
+  line-height:1.5;
+}
+#wordDetailDialog .v1247-nominalization [hidden] {display:none!important;}
+#wordDetailDialog .v1247-reasoning-grid {
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.1fr) minmax(0,1.6fr);
+  align-items:center;
+  gap:8px;
+  width:100%;
+  min-width:0;
+  padding:6px 0;
+  box-sizing:border-box;
+}
+#wordDetailDialog .v1247-reasoning-grid figure {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin:0;
+  min-width:0;
+  text-align:center;
+}
+#wordDetailDialog .v1247-reasoning-grid img {
+  display:block;
+  width:100%;
+  height:var(--v1247-reasoning-image-height);
+  max-height:var(--v1247-reasoning-image-height);
+  object-fit:contain;
+  object-position:center;
+}
+#wordDetailDialog .v1247-reasoning-result-copy {width:100%;min-width:0;}
+#wordDetailDialog .v1247-conversion-label {
+  margin:0;
+  padding:0;
+  font:inherit;
+  line-height:1.2;
+  font-weight:600;
+  color:var(--lecture-text);
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+#wordDetailDialog .v1247-conversion-label i {
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:inherit;
+  font-weight:600;
+  font-style:italic;
+  color:var(--demo-red,var(--lecture-mark,#ef4444));
+  margin-right:.12em;
+}
+#wordDetailDialog .v1247-reasoning-bridge,
+#wordDetailDialog .v1247-reasoning-result-prompt {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+  min-height:44px;
+  padding:6px 8px;
+  border:1px dashed var(--lecture-border);
+  border-radius:6px;
+  background:var(--lecture-panel-deep);
+  font:inherit;
+  line-height:1.5;
+  color:var(--lecture-text);
+  white-space:normal;
+  overflow-wrap:anywhere;
+  text-align:center;
+  cursor:pointer;
+}
+#wordDetailDialog .v1247-reasoning-bridge:disabled {
+  cursor:default;
+  opacity:1;
+}
+#wordDetailDialog .v1247-reasoning-bridge[aria-expanded="true"] {
+  border-color:transparent;
+  background:transparent;
+}
+#wordDetailDialog .v1247-reasoning-bridge-copy {font-weight:600;}
+#wordDetailDialog .v1247-reasoning-arrow {
+  display:block;
+  width:100%;
+  height:32px;
+  flex:0 0 32px;
+  overflow:visible;
+  color:var(--lecture-text);
+  fill:none;
+  stroke:var(--lecture-text);
+  stroke-width:5;
+}
+#wordDetailDialog .v1247-reasoning-arrow path {
+  fill:none;
+  stroke:var(--lecture-text);
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+#wordDetailDialog .v1247-reasoning-result-prompt {
+  min-height:calc(var(--v1247-reasoning-image-height) + 45px);
+  border-style:dashed;
+}
+#wordDetailDialog .v1247-reasoning-result-prompt > span:first-child {
+  font-size:1.6em;
+  line-height:1;
+  font-weight:600;
+}
+#wordDetailDialog .v1247-reasoning-result-prompt > span:last-child {
+  font-size:14px;
+  line-height:1.5;
+}
+#wordDetailDialog .v1247-reasoning-result-prompt:disabled {cursor:default;opacity:1;}
+#wordDetailDialog .v1247-reasoning-controls {justify-content:flex-start;flex:0 0 auto;flex-wrap:nowrap;margin:0;padding:0;border:0;white-space:nowrap;}
+#wordDetailDialog .v1247-reasoning-controls[hidden] {display:none!important;}
+#wordDetailDialog .v1247-reasoning-controls button {min-height:44px;}
+#wordDetailDialog .v1247-nominalization button:focus-visible {
+  outline:3px solid var(--lecture-primary);
+  outline-offset:3px;
+}
+#wordDetailDialog .v1247-nominalization[data-v1247-reasoning-direction="forward"] :is([data-v1247-bridge-reveal],[data-v1247-result-reveal]):not([hidden]) {
+  animation:v1247ReasonReveal .18s ease-out both;
+}
+@keyframes v1247ReasonReveal {from{opacity:.25;}to{opacity:1;}}
+@media (prefers-reduced-motion:reduce) {
+  #wordDetailDialog .v1247-nominalization :is([data-v1247-bridge-reveal],[data-v1247-result-reveal]) {animation:none!important;}
+}

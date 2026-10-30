@@ -1,0 +1,31 @@
+/* Approved: 01 hierarchy + 04 gray separators + bottom reveal masks.
+   All selectors are local to .contrast-reference. */
+.contrast-reference{--blue:#2864ef;--ink:#17263e;--muted:#687b95;--line:#d9e3f4;--wash:#eff5ff;background:#fff;color:var(--ink);font-family:Inter,"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;font-synthesis:none;color-scheme:light}
+.contrast-reference *{box-sizing:border-box}
+.contrast-reference button{font:inherit;cursor:pointer}
+.contrast-reference button:focus-visible{outline:3px solid #2864ef;outline-offset:4px}
+.contrast-reference .lecture{max-width:1760px;margin:auto;padding:32px 50px 28px}
+.contrast-reference .lesson-title{margin:0 0 28px;font-size:clamp(27px,2.25vw,38px);line-height:1.25;font-weight:730;text-align:center;letter-spacing:-.025em}
+.contrast-reference .columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.contrast-reference .word-card{min-width:0;position:relative}
+.contrast-reference .word-card:not(:last-child)::after{content:"";position:absolute;top:0;bottom:0;right:-18px;width:1px;background:#dbe3ef;pointer-events:none}
+.contrast-reference .word{font-size:clamp(68px,6.2vw,94px);line-height:1.03;letter-spacing:-.035em;font-weight:800;color:var(--blue);margin:0 0 9px;display:block;visibility:visible;opacity:1}
+.contrast-reference .definition{display:flex;gap:9px;align-items:baseline;min-height:42px;font-size:23px;line-height:1.5;font-weight:500;margin:0 0 24px}
+.contrast-reference .pos{font-size:.78em;font-weight:500;color:var(--muted);white-space:nowrap}
+.contrast-reference .image-panel{position:relative;margin:0 0 20px;height:320px;background:#f8faff;overflow:hidden;border-radius:7px}
+.contrast-reference .image-panel img{display:block;width:100%;height:100%;object-fit:contain;user-select:none}
+.contrast-reference .hint-toggle{position:absolute;top:auto;bottom:14px;left:14px;right:14px;min-height:44px;border:1px solid #b8ceff;border-radius:6px;padding:8px 12px;background:#edf3ff;color:#2864ef;font-size:clamp(17px,1.6vw,25px);font-weight:700;line-height:1.3;display:grid;place-items:center;isolation:isolate;transition:background .15s ease}
+.contrast-reference .hint-text,.contrast-reference .hint-cover{grid-area:1/1}
+.contrast-reference .hint-cover{font-size:15px;font-weight:600;letter-spacing:.01em;color:#5778b8;display:inline-flex;align-items:center;gap:8px}
+.contrast-reference .hint-text{visibility:hidden}
+.contrast-reference .hint-toggle[aria-expanded=true]{background:#fffffff2}
+.contrast-reference .hint-toggle[aria-expanded=true] .hint-text{visibility:visible}
+.contrast-reference .hint-toggle[aria-expanded=true] .hint-cover{visibility:hidden}
+.contrast-reference .hint-cover svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7}
+.contrast-reference .english{font-size:25px;line-height:1.48;min-height:80px;margin:0 0 10px;font-weight:500;letter-spacing:-.025em;overflow-wrap:normal}
+.contrast-reference .english strong{color:#ee064b;font-weight:750}
+.contrast-reference .translation{font-size:19px;line-height:1.6;margin:0;color:var(--muted);font-weight:400}
+.contrast-reference .word-card>*:last-child{margin-bottom:0}
+@media(max-width:1250px){.contrast-reference .lecture{padding:24px 34px}.contrast-reference .columns{gap:24px}.contrast-reference .image-panel{height:290px}.contrast-reference .word-card:not(:last-child)::after{right:-12px}}
+@media(max-width:760px){.contrast-reference .lecture{padding:24px}.contrast-reference .columns{grid-template-columns:1fr;gap:42px}.contrast-reference .lesson-title{font-size:27px;margin-bottom:30px}.contrast-reference .word-card{padding:0;border:0}.contrast-reference .word-card:not(:last-child)::after{display:none}.contrast-reference .word{font-size:64px}.contrast-reference .definition{font-size:24px}.contrast-reference .image-panel{height:auto;aspect-ratio:4/3}.contrast-reference .english{min-height:0;font-size:24px}.contrast-reference .translation{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.contrast-reference *{transition:none!important}}

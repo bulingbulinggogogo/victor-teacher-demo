@@ -1,0 +1,126 @@
+/* The complete D card keeps its 400:280 ratio at the original 114 CSS px height.
+   Every rule stays inside the marked V15 entry; the player and media rail are untouched. */
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:91.607142857px 22.392857143px;
+  flex:0 0 162.857142857px;
+  box-sizing:border-box;
+  width:162.857142857px;
+  min-width:162.857142857px;
+  max-width:162.857142857px;
+  height:114px;
+  min-height:114px;
+  max-height:114px;
+  padding:0;
+  gap:0;
+  border:0;
+  border-radius:6px;
+  background:#fff;
+  box-shadow:0 3px 12px -8px #426fa52b,inset 0 0 0 1px #e5edf9;
+  overflow:hidden;
+  text-align:left;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card[hidden] {
+  display:none!important;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-preview {
+  display:block;
+  grid-column:1;
+  grid-row:1;
+  flex:none;
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  height:91.607142857px;
+  min-height:91.607142857px;
+  max-height:91.607142857px;
+  aspect-ratio:16/9;
+  padding:0;
+  border-radius:6px 6px 0 0;
+  background:#fff;
+  overflow:hidden;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-preview > :is(img,video) {
+  display:block;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info {
+  display:grid;
+  grid-template-columns:12px minmax(0,1fr) 18px;
+  grid-template-rows:minmax(0,1fr);
+  grid-column:1;
+  grid-row:2;
+  align-items:center;
+  align-self:stretch;
+  justify-content:normal;
+  flex:none;
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  height:22.392857143px;
+  min-height:22.392857143px;
+  max-height:22.392857143px;
+  padding:0 6px;
+  gap:5px;
+  background:#fff;
+  color:#7990ad;
+  white-space:nowrap;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info > strong {
+  display:none;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info > time {
+  grid-column:2;
+  grid-row:1;
+  margin:0;
+  font-family:inherit;
+  font-size:12px;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:.025em;
+  font-variant-numeric:tabular-nums;
+  color:#5e7da6;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card .v1242-video-clock {
+  display:block;
+  grid-column:1;
+  grid-row:1;
+  width:12px;
+  height:12px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.35;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info > .v15-video-play-icon {
+  position:static;
+  inset:auto;
+  display:grid;
+  grid-column:3;
+  grid-row:1;
+  place-items:center;
+  width:18px;
+  height:18px;
+  padding:0;
+  border-radius:50%;
+  background:#ecf4ff;
+  color:#3778d5;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info > .v15-video-play-icon > svg {
+  display:block;
+  width:8px;
+  height:8px;
+  fill:currentColor;
+  filter:none;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:focus-visible {
+  outline:3px solid var(--lecture-primary);
+  outline-offset:3px;
+}
+

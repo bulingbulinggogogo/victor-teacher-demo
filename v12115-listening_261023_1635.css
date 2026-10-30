@@ -1,0 +1,61 @@
+/* V1.2.115: shared vocabulary title and source-owned listening examples dialog. */
+#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-sense-meta,
+#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-sense-meta span,
+#popover#popover#popover.v105-vocabulary .v105-sense-heading .resource-collapsed-pos,
+#popover#popover#popover.v105-vocabulary .v105-example .v105-example-en,
+#popover#popover#popover.v105-vocabulary .v105-example .v105-example-en strong{color:var(--v105-text)!important;}
+#popover#popover#popover.v105-vocabulary .resource-popover-head>div,
+#popover#popover#popover.v105-vocabulary .resource-popover-head>div>span{font-family:"Teacher Han Sans SC",sans-serif!important;font-size:clamp(22px,1.6vw,28px)!important;font-weight:700!important;line-height:1.4!important;letter-spacing:normal!important;}
+.v115-exam-dialog{box-sizing:border-box;width:min(1420px,calc(100vw - 64px));max-width:none;max-height:calc(100dvh - 64px);margin:auto;padding:0;border:1px solid var(--v105-line,#dce5f1);border-radius:14px;background:var(--v105-surface,#fff);color:var(--v105-text,#203451);font-family:"Teacher Han Sans SC",sans-serif;box-shadow:0 20px 64px #10284233;overflow:hidden;--v115-body:clamp(16px,calc(var(--full-font-size,48px)*.4),22px);}
+.v115-exam-dialog::backdrop{background:#0007;}
+.v115-exam-dialog .v115-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 24px;border-bottom:1px solid var(--v105-line);}
+.v115-exam-dialog .v115-head h2{margin:0;color:var(--v105-blue);font:700 clamp(22px,1.6vw,28px)/1.4 "Teacher Han Sans SC",sans-serif;}
+.v115-exam-dialog .v115-close{display:grid;place-items:center;flex:none;width:34px;height:34px;padding:0;border:1px solid var(--v105-line);border-radius:50%;background:transparent;color:var(--v105-text);font:24px/1 sans-serif;cursor:pointer;}
+.v115-exam-dialog .v115-layout{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(410px,.92fr);height:min(680px,calc(100dvh - 150px));}
+.v115-exam-dialog .v115-examples{min-width:0;overflow:auto;padding:22px 26px;scrollbar-gutter:stable;}
+.v115-exam-dialog .v115-list-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 6px;font-size:17px;}
+.v115-exam-dialog h3{margin:0;font-size:19px;line-height:1.5;font-weight:650;}
+.v115-exam-dialog .v115-result{font-size:15px;color:var(--v105-muted);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.v115-exam-dialog .v115-case{display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:14px;padding:18px 0;border-bottom:1px solid var(--v105-line);}
+.v115-exam-dialog .v115-case:last-child{border-bottom:0;}
+.v115-exam-dialog .v115-number{padding-top:5px;font-size:14px;line-height:1.5;color:var(--v105-muted);font-variant-numeric:tabular-nums;}
+.v115-exam-dialog .v115-case-en{margin:0;font-size:var(--v115-body);line-height:1.6;font-weight:400;overflow-wrap:anywhere;}
+.v115-exam-dialog .v115-case-zh{margin:8px 0 0;font-size:calc(var(--v115-body)*.84);line-height:1.6;color:var(--v105-muted);overflow-wrap:anywhere;}
+.v115-exam-dialog .v115-case strong{color:var(--v105-blue);font-weight:700;}
+.v115-exam-dialog .v115-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;font-size:13px;line-height:1.5;}
+.v115-exam-dialog .v115-tags span{padding:3px 8px;border:1px solid var(--v105-line);border-radius:4px;color:var(--v105-muted);background:var(--v105-soft);}
+.v115-exam-dialog .v115-tags .v115-sense{color:var(--v105-blue);border-color:color-mix(in srgb,var(--v105-blue) 30%,transparent);background:color-mix(in srgb,var(--v105-blue) 6%,var(--v105-surface));}
+.v115-exam-dialog .v115-statistics{min-width:0;overflow:auto;padding:22px 24px;border-left:1px solid var(--v105-line);}
+.v115-exam-dialog .v115-stat-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;}
+.v115-exam-dialog .v115-clear{border:1px solid var(--v105-line);border-radius:5px;background:transparent;color:var(--v105-muted);padding:6px 10px;font-family:inherit;font-size:14px;line-height:1.5;cursor:pointer;}
+.v115-exam-dialog .v115-clear:disabled{opacity:.4;cursor:default;}
+.v115-exam-dialog .v115-chart-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:16px;}
+.v115-exam-dialog table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.6;font-variant-numeric:tabular-nums;}
+.v115-exam-dialog th{text-align:left;padding:12px 7px;border-bottom:1px solid var(--v105-line);color:var(--v105-muted);background:var(--v105-soft);white-space:nowrap;font-weight:550;}
+.v115-exam-dialog td{padding:17px 7px;border-bottom:1px solid var(--v105-line);vertical-align:top;}
+.v115-exam-dialog th:nth-last-child(-n+2),.v115-exam-dialog td:nth-last-child(-n+2){text-align:right;white-space:nowrap;}
+.v115-exam-dialog tbody tr{cursor:pointer;}
+.v115-exam-dialog tr.is-selected{background:color-mix(in srgb,var(--v105-blue) 9%,transparent);}
+.v115-exam-dialog td button{border:0;padding:0;background:none;color:var(--v105-text);font:inherit;cursor:pointer;white-space:nowrap;}
+.v115-exam-dialog .v115-key{display:inline-block;width:9px;height:9px;margin-right:6px;border-radius:3px;background:var(--slice);}
+.v115-exam-dialog .v115-ring{display:block;width:220px;height:220px;overflow:visible;}
+.v115-exam-dialog .v115-ring [data-group]{fill:var(--slice);stroke:var(--v105-surface);stroke-width:1.5;cursor:pointer;}
+.v115-exam-dialog .v115-ring [data-group][aria-pressed=true]{filter:brightness(1.1);stroke:var(--v105-text);stroke-width:2;}
+.v115-exam-dialog .v115-ring-total{font:700 30px "Teacher Han Sans SC",sans-serif;fill:var(--v105-text);}
+.v115-exam-dialog .v115-ring-label{font:14px "Teacher Han Sans SC",sans-serif;fill:var(--v105-muted);}
+.v115-exam-dialog .v115-help{margin:24px 0 0;font-size:14px;line-height:1.7;color:var(--v105-muted);}
+.v115-exam-dialog button:focus-visible,.v115-exam-dialog [tabindex]:focus-visible{outline:2px solid var(--v105-blue);outline-offset:3px;}
+.v115-exam-dialog .v115-empty{color:var(--v105-muted);font-size:17px;line-height:1.7;}
+@media(max-width:1350px){.v115-exam-dialog .v115-chart-grid{grid-template-columns:minmax(0,1fr);}.v115-exam-dialog .v115-ring{margin:18px auto 0;}}
+@media(max-width:950px){.v115-exam-dialog{width:calc(100vw - 32px);max-height:calc(100dvh - 32px);}.v115-exam-dialog .v115-layout{grid-template-columns:minmax(0,1fr);height:auto;max-height:calc(100dvh - 130px);overflow:auto;}.v115-exam-dialog .v115-examples,.v115-exam-dialog .v115-statistics{overflow:visible;}.v115-exam-dialog .v115-statistics{border-left:0;border-top:1px solid var(--v105-line);}}
+
+/* Isolate the compact table from the workbench's wide tables and lecture-size buttons. */
+#popover .v115-exam-dialog table{display:table!important;width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important;border-spacing:0!important;}
+#popover .v115-exam-dialog :is(th,td){min-width:0!important;max-width:none!important;width:auto!important;font-size:14px!important;line-height:1.6!important;color:var(--v105-text)!important;white-space:normal!important;overflow-wrap:anywhere;}
+#popover .v115-exam-dialog th{color:var(--v105-muted)!important;}
+#popover .v115-exam-dialog th:first-child,#popover .v115-exam-dialog td:first-child{width:15%!important;}
+#popover .v115-exam-dialog th:nth-child(2),#popover .v115-exam-dialog td:nth-child(2){width:53%!important;}
+#popover .v115-exam-dialog th:nth-child(3),#popover .v115-exam-dialog td:nth-child(3){width:15%!important;}
+#popover .v115-exam-dialog th:nth-child(4),#popover .v115-exam-dialog td:nth-child(4){width:17%!important;}
+#popover .v115-exam-dialog .v115-clear{width:auto!important;min-width:0!important;min-height:0!important;height:auto!important;font-family:inherit!important;font-size:14px!important;font-weight:500!important;line-height:1.5!important;padding:6px 10px!important;}
+#popover .v115-exam-dialog .v115-ring-full{fill:none!important;stroke:var(--slice)!important;stroke-width:32!important;}

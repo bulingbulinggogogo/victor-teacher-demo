@@ -1,0 +1,186 @@
+/* V1.2.2 · Test-deployment layout equivalence for teacher lecture only.
+ * Source: LectureContainer-kbOsVtb2.css, SHA256 a9f11df8fe837cf2c447827d3161e933dcc4117695c4e886ea6ae9afcbfc689f.
+ * User changes (font 50 / 33–60, answers and tools) remain separate. */
+#fullscreenPage.fullscreen {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-height: 100dvh;
+  --full-font-boost: 1.2;
+  --full-font-scale: calc(var(--full-font, 48px) / 48px);
+  --full-ui-scale: calc(var(--full-font-boost) * var(--full-font-scale));
+  --lecture-transcript-padding: 92px;
+}
+#fullscreenPage > .full-header {
+  flex: 0 0 auto;
+  min-height: calc(52px * var(--full-ui-scale));
+  padding: calc(12px * var(--full-ui-scale)) 24px;
+  box-sizing: border-box;
+}
+#fullscreenPage > .full-header h2 {
+  width: fit-content;
+  max-width: 100%;
+  font-size: calc(20px * var(--full-ui-scale));
+  line-height: calc(28px * var(--full-ui-scale));
+}
+#fullscreenPage.audio-only-mode > .full-header h2 { font-size: 20px; }
+#fullscreenPage > .full-grid {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-height: 0;
+  gap: 8px;
+  padding: 0 12px 8px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+#fullscreenPage:not(.multi-question-mode) .question-panel {
+  flex: 0 0 auto;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  grid-template-rows: auto;
+  gap: 12px 16px;
+  padding: 22px 28px;
+  overflow: visible;
+  line-height: 1.36;
+}
+#fullscreenPage:not(.multi-question-mode) .question-panel:has(#questionPanelCollapse:not(.hidden)) { padding-bottom: 38px; }
+#fullscreenPage[data-mode="similar"] .question-panel {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 330px;
+  padding-bottom: 58px;
+}
+#fullscreenPage.analysis-open:not(.multi-question-mode) .question-panel { padding-inline: var(--lecture-transcript-padding); }
+#fullscreenPage:not(.multi-question-mode) #fullQuestion { grid-row: auto; overflow: visible; }
+#fullscreenPage .question-meta { width: auto; min-width: 0; line-height: normal; padding-top: 0; gap: calc(18px * var(--full-ui-scale)); font-size: calc(14px * var(--full-ui-scale)); }
+#fullscreenPage .exam-point-line { min-height: calc(40px * var(--full-ui-scale)); gap: calc(6px * var(--full-ui-scale)); color: var(--lecture-knowledge-text); }
+#fullscreenPage .exam-point-line svg { width: calc(20px * var(--full-ui-scale)); height: calc(20px * var(--full-ui-scale)); }
+#fullscreenPage .exam-point-line strong, #fullscreenPage .exam-point-line b { font-size: calc(14px * var(--full-ui-scale)); line-height: calc(20px * var(--full-ui-scale)); font-weight: 600; }
+#fullscreenPage .line-translation { font-size: clamp(16px, calc(var(--full-font, 48px) - 10px), 30px); line-height: 1.45; }
+#fullscreenPage .transcript-panel { display: flex; flex: 1 1 0; flex-direction: column; min-height: 0; margin: 0; }
+#fullscreenPage .transcript-scroll {
+  flex: 1 1 0;
+  min-height: 0;
+  padding: 24px var(--lecture-transcript-padding) 32px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+#fullscreenPage .transcript-paragraph { line-height: 1.56; }
+#fullscreenPage .sentence + .sentence { margin-left: .24em; }
+#fullscreenPage.question-panel-collapsed .question-panel { min-height: 0; padding-top: 17px; padding-bottom: 34px; }
+#fullscreenPage.multi-question-mode > .full-grid { display: block; padding: 12px 20px 28px; }
+#fullscreenPage.multi-question-mode.dock-left-layout > .full-grid { padding-left: 100px; }
+#fullscreenPage.multi-question-mode.dock-right-layout > .full-grid { padding-right: 100px; }
+#fullscreenPage.multi-question-mode .question-panel { min-height: 0; }
+/* The deployed list has transparent options, a 32px circle, and font-scaled letters. */
+#fullscreenPage.audio-only-mode .full-question-list { gap: 24px; }
+#fullscreenPage.audio-only-mode .full-question-item {
+  min-height: 0;
+  padding: 14px 20px;
+  border: 1px solid var(--lecture-border);
+  border-radius: 8px;
+  background: var(--lecture-question-panel-background);
+  transition: opacity .16s;
+}
+#fullscreenPage.audio-only-mode .full-question-body { display: block; min-height: 0; }
+#fullscreenPage.audio-only-mode .full-question-copy { display: grid; gap: 24px; }
+#fullscreenPage.audio-only-mode .full-stem { font-size: var(--full-font, 48px); font-weight: 800; line-height: 1.36; gap: 12px; margin: 0; }
+#fullscreenPage.audio-only-mode .practice-question-stem, #fullscreenPage.audio-only-mode .practice-question-number { font-weight: 800; }
+#fullscreenPage.audio-only-mode .practice-option-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+#fullscreenPage.audio-only-mode .practice-option-row.stacked-options { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+#fullscreenPage.audio-only-mode .practice-option-row .full-option {
+  min-width: 0;
+  font-size: max(18px, calc(var(--full-font, 48px) - 6px));
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  margin: 0;
+  padding: 6px 14px;
+  font-weight: 400;
+  line-height: 1.34;
+}
+#fullscreenPage.audio-only-mode .practice-option-row .option-copy { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 12px; }
+#fullscreenPage.audio-only-mode .practice-option-row .option-copy-main { min-width: 0; color: var(--lecture-text); font-weight: 400; line-height: 1.32; overflow-wrap: anywhere; }
+#fullscreenPage.audio-only-mode .practice-option-row:not(.stacked-options) .option-copy-main > span:first-child { white-space: nowrap; }
+#fullscreenPage.audio-only-mode .practice-option-row.stacked-options .option-copy-main > span:first-child { white-space: normal !important; }
+#fullscreenPage.audio-only-mode .practice-option-key {
+  width: 32px; height: 32px; flex: 0 0 32px;
+  background: color-mix(in srgb, var(--lecture-primary) 16%, transparent);
+  color: color-mix(in srgb, var(--lecture-primary) 82%, #fff);
+  font-size: max(14px, calc(var(--full-font, 48px) * 17 / 32));
+  font-weight: 400;
+  line-height: 1;
+}
+#fullscreenPage.audio-only-mode .demo-current-audio {
+  opacity: 1; filter: none; border-width: 4px; border-color: var(--lecture-primary);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--lecture-primary) 40%, transparent);
+}
+#fullscreenPage.audio-only-mode .demo-dim-audio { opacity: .3; filter: grayscale(.35); }
+#fullscreenPage.demo-answer-check .full-question-item { opacity: 1; filter: none; }
+#fullscreenPage.demo-answer-check .practice-option-row .full-option.correct {
+  color: #0eaa51;
+  background: color-mix(in srgb, #0eaa51 7%, var(--lecture-panel));
+}
+#fullscreenPage.demo-answer-check .practice-option-row .full-option.correct .option-copy-main { color: #0eaa51; }
+#fullscreenPage.demo-answer-check .practice-option-row .full-option.correct .practice-option-key {
+  background: #0eaa51; color: #fff; box-shadow: 0 0 0 3px color-mix(in srgb, #0eaa51 14%, transparent);
+}
+#fullscreenPage > .full-toolbar { flex: 0 0 60px; height: 60px; min-height: 60px; flex-wrap: nowrap; gap: 8px; padding: 8px 10px; overflow-x: auto; overflow-y: hidden; }
+/* Floating menus remain outside the toolbar scroll clipping area. */
+#fullscreenPage .question-picker-panel { position: fixed; bottom: 72px; }
+#fullscreenPage #speedMenu { position: fixed; }
+#fullscreenPage .footer-control-group { flex: 0 0 auto; }
+#fullscreenPage .footer-question-nav { gap: 6px; padding-inline: 6px; }
+#fullscreenPage .footer-playback { flex: 0 0 auto; gap: 10px; }
+#fullscreenPage .audio-progress-float { flex: 0 0 clamp(320px, 32vw, 520px); width: clamp(320px, 32vw, 520px); }
+#fullscreenPage .audio-duration { flex: 0 0 15ch; width: 15ch; text-align: center; font-variant-numeric: tabular-nums; font-size: 12px; white-space: nowrap; }
+#fullscreenPage .footer-play, #fullscreenPage .footer-play:hover, #fullscreenPage .footer-play.playing {
+  color: var(--lecture-play-text, #fff);
+  border-color: var(--lecture-play-border, #7eb0ff);
+  background: var(--lecture-play-background, #1268f3);
+  box-shadow: var(--lecture-play-shadow, 0 6px 14px #1268f338);
+}
+#fullscreenPage .footer-play:hover { background: var(--lecture-play-hover, #0f5bea); }
+@media (max-width: 1360px) {
+  #fullscreenPage .audio-progress-float { flex-basis: clamp(220px, 25vw, 340px); width: clamp(220px, 25vw, 340px); }
+}
+@media (max-width: 700px) {
+  #fullscreenPage { --lecture-transcript-padding: 16px; }
+  #fullscreenPage:not(.multi-question-mode) .question-panel { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  #fullscreenPage .question-meta { width: 100%; }
+  #fullscreenPage > .full-toolbar { overflow-x: auto; overflow-y: hidden; }
+}
+
+/* Native track rendering follows deployed footer-progress, including disabled instructions. */
+#fullscreenPage .audio-progress-float input[type="range"] {
+  appearance: none;
+  background: linear-gradient(to right, var(--lecture-play-background) 0 var(--progress, 0%), var(--lecture-progress-track) var(--progress, 0%) 100%);
+  border: 0; border-radius: 8px; min-width: 0; height: 8px; padding: 0; opacity: 1;
+}
+#fullscreenPage .audio-progress-float input[type="range"]:disabled { opacity: 1; }
+#fullscreenPage .audio-progress-float input[type="range"]::-webkit-slider-runnable-track { background: transparent; border: 0; height: 8px; }
+#fullscreenPage .audio-progress-float input[type="range"]::-webkit-slider-thumb {
+  appearance: none; background: var(--lecture-play-background); border: 0; border-radius: 50%; width: 16px; height: 16px; margin-top: -4px;
+}
+#fullscreenPage .audio-progress-float input[type="range"]::-moz-range-track { background: transparent; border: 0; height: 8px; }
+#fullscreenPage .audio-progress-float input[type="range"]::-moz-range-thumb { background: var(--lecture-play-background); border: 0; border-radius: 50%; width: 16px; height: 16px; }
+
+/* The deployed single-question statistics scale with the same UI multiplier. */
+#fullscreenPage .question-metrics > div { box-sizing: border-box; min-height: calc(42px * var(--full-ui-scale)); gap: calc(12px * var(--full-ui-scale)); padding: calc(8px * var(--full-ui-scale)) calc(4px * var(--full-ui-scale)); }
+#fullscreenPage .question-metrics span { font-size: calc(13px * var(--full-ui-scale)); font-weight: 500; }
+#fullscreenPage .question-metrics b { font-size: calc(20px * var(--full-ui-scale)); font-weight: 700; }
+
+/* Deployed status dimensions: the visible-question badge must fit its pause suffix. */
+#fullscreenPage .practice-playback-status { max-width: 425px; }
+#fullscreenPage.audio-only-mode:not(.audio-only-questions-hidden) .practice-playback-status:not(.hidden) { max-width: none; }
+#fullscreenPage.audio-only-questions-hidden .practice-playback-status:not(.hidden) {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  max-width: none; gap: 100px; padding: 0 96px;
+  font-size: clamp(48px, 5.5vw, 72px); font-weight: 800; line-height: 1.2;
+  white-space: normal; text-align: center;
+}
+#fullscreenPage.audio-only-questions-hidden .practice-playback-status.paused::after {
+  display: block; width: 100%; margin: 0 0 0 -4%; content: "· 已暂停";
+  color: color-mix(in srgb, var(--lecture-primary) 72%, var(--lecture-text));
+  text-align: center; font-size: clamp(34px, 3.2vw, 52px); font-weight: 800; line-height: 3;
+}

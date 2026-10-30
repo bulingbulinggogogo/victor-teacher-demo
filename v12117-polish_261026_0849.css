@@ -1,0 +1,19 @@
+/* Stable navigation across classroom side layouts. */
+#popover#popover#popover .classroom-modal-tools:has(.resource-popover-pager){display:block!important;padding:10px 16px!important;}
+#popover#popover#popover .classroom-modal-toolstrip:has(.resource-popover-pager),
+#popover#popover#popover .classroom-modal-navigation:has(.resource-popover-pager){display:block!important;width:100%!important;max-width:none!important;flex:1 1 100%!important;}
+#popover#popover#popover .resource-popover-pager{display:grid!important;grid-template-columns:1fr auto 1fr!important;align-items:center!important;gap:12px!important;width:100%!important;max-width:none!important;margin:0!important;direction:ltr!important;}
+#popover#popover#popover .resource-popover-pager [data-resource-page-prev]{justify-self:start!important;}
+#popover#popover#popover .resource-popover-pager [data-resource-page-next]{justify-self:end!important;}
+#popover#popover#popover .resource-popover-pager button{min-width:92px!important;min-height:38px!important;padding:6px 12px!important;}
+#popover#popover#popover .resource-popover-pager [data-resource-page-prev]:before{content:'←';margin-right:8px;}
+#popover#popover#popover .resource-popover-pager [data-resource-page-next]:after{content:'→';margin-left:8px;}
+#popover#popover#popover.v105-vocabulary .ke-exam-frequency{display:inline-flex!important;align-items:center!important;background:#fff!important;color:#2362f5!important;border:2px solid #2362f5!important;border-radius:5px!important;cursor:pointer!important;}
+#popover#popover#popover.v105-vocabulary .ke-exam-frequency:after{content:'›';display:inline-block;margin-left:.5em;font-size:1.16em;line-height:.7;}
+#popover#popover#popover.v105-vocabulary .v105-word-header .resource-pronunciation-item b{font-size:calc(24px * var(--v113-scale))!important;line-height:1.4!important;font-weight:400!important;}
+#fullscreenPage .question-meta .demo-ability-line{margin-top:-8px!important;}
+
+#popover#popover#popover .classroom-modal-expand-host:has(.resource-popover-pager){display:block!important;width:100%!important;max-width:none!important;flex:1 1 100%!important;}
+#popover#popover#popover .resource-popover-pager button svg{display:none!important}
+
+#popover#popover#popover .resource-popover-pager button > span{display:inline!important;font-size:inherit!important;line-height:inherit!important;white-space:nowrap!important;}

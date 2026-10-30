@@ -1,0 +1,2 @@
+/* Dark selected tab is the exact note-panel surface. */
+body:has(#fullscreenPage:not(.hidden)) #popover#popover#popover#popover#popover#popover#popover#popover.v148-vocabulary[data-knowledge-type="词汇"]:not(.ke-expanded):not(.v1263-interactive-fullscreen):not(.hidden):not([hidden]).dark-mode {--v157-tab-fill:var(--v148-panel-bg)}

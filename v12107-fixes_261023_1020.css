@@ -1,0 +1,44 @@
+/* V1.2.107: centered cards and direct functional layers. */
+#popover#popover#popover.v105-vocabulary:not(.ke-expanded){inset:0!important;margin:auto!important;transform:none!important;height:max-content!important;max-height:calc(100dvh - 64px)!important;}
+#popover#popover#popover .v105-current-sense:before,#popover#popover#popover .v105-notes:before{height:0!important;border-top:1px dashed var(--lecture-border)!important;background:none!important;opacity:1!important;}
+#popover#popover#popover .v105-note-card+.v105-note-card{border-top:1px dashed var(--lecture-border)!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog,#fullOptionStudentDialog) .classroom-modal-back{display:none!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog,#fullOptionStudentDialog)>.classroom-modal-tools.v107-empty-footer{display:none!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog,#fullOptionStudentDialog)>.v107-modal-close{position:fixed!important;top:16px!important;right:18px!important;z-index:240!important;display:grid;place-items:center;width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;padding:8px!important;border:1px solid var(--lecture-border,#dce5f1)!important;border-radius:50%!important;background:var(--lecture-panel,#fff)!important;color:var(--lecture-muted,#6c809b)!important;cursor:pointer;box-shadow:none!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog,#fullOptionStudentDialog)>.v107-modal-close[hidden]{display:none!important;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog,#fullOptionStudentDialog)>.v107-modal-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;}
+#wordDetailDialog.v107-direct-pending{visibility:hidden!important;pointer-events:none!important;}
+/* The collapsed control uses the same toolbox glyph and 32px target as the native dock. */
+#popover#popover#popover .v105-popup-dock.is-collapsed{width:46px!important;padding:6px!important;}
+#popover#popover#popover .v105-popup-dock.is-collapsed .v105-dock-collapse{width:32px!important;height:32px!important;min-height:32px!important;padding:0!important;}
+#popover#popover#popover .v105-popup-dock.is-collapsed .v105-dock-collapse svg{width:18px!important;height:18px!important;transform:none!important;}
+#popover#popover#popover .v106-dock-controls button:hover,#popover#popover#popover .v106-dock-controls button:focus-visible{border-color:var(--lecture-button-hover-border)!important;color:var(--lecture-button-hover-text)!important;background:var(--lecture-button-background)!important;}
+/* Preserve the settings dialog appearance when opened over a mother vocabulary card. */
+#popover#popover dialog.v1297-entry-dialog{width:min(620px,calc(100vw - 32px));padding:0;border-radius:12px;font:16px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-height:calc(100dvh - 32px);box-shadow:var(--lecture-resource-shadow,0 18px 48px #0003);}
+/* Small detail tags sit above the word; frequency remains beside it. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .knowledge-entry:has(>.v107-detail-tags){display:block!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-detail-tags{position:static!important;inset:auto!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:7px!important;width:auto!important;max-width:none!important;height:auto!important;margin:0 0 10px!important;padding:0!important;order:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-detail-tags[hidden]{display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-detail-tags .v1227-word-tag{font-size:13px!important;line-height:1.5!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-detail-tags .v1227-level-group{display:inline-flex!important;align-items:center!important;gap:7px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .knowledge-term:has(.v107-detail-metrics){display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:12px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .knowledge-term>.v107-detail-metrics{position:static!important;inset:auto!important;display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;width:auto!important;max-width:none!important;height:auto!important;margin:0!important;padding:0!important;order:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .knowledge-term>.v107-detail-metrics[hidden]{display:none!important;}
+
+#popover#popover#popover>.classroom-modal-tools.v107-empty-footer,#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog>.classroom-modal-tools.v107-empty-footer,#lexicalChunkDialog#lexicalChunkDialog#lexicalChunkDialog>.classroom-modal-tools.v107-empty-footer{display:none!important;}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast{max-width:1100px!important;width:calc(100% - 48px)!important;margin:0 auto!important;display:grid!important;gap:24px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-contrast-note{padding:24px!important;border:1px solid var(--lecture-border);border-radius:10px;background:var(--lecture-panel);}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-contrast-note h3{margin:0 0 18px;font-size:30px;color:var(--lecture-primary);}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast .hint-toggle{position:static!important;display:block!important;width:100%!important;min-height:64px!important;height:auto!important;white-space:normal!important;padding:18px!important;border:1px solid var(--lecture-border)!important;border-radius:6px!important;background:var(--lecture-panel-deep)!important;color:var(--lecture-text)!important;font-family:inherit;font-size:22px;line-height:1.7;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast .hint-text{position:static!important;display:none!important;font-size:22px!important;line-height:1.7!important;white-space:normal!important;text-align:left!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast .hint-cover{position:static!important;display:block!important;color:var(--lecture-muted);font-size:18px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast .hint-toggle[aria-expanded=true] .hint-text{display:block!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast .hint-toggle[aria-expanded=true] .hint-cover{display:none!important;}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-owned-contrast{height:auto!important;min-height:0!important;grid-auto-rows:max-content!important;align-content:start!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog .v107-contrast-note{height:auto!important;min-height:0!important;align-self:start!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog>.v107-modal-close,#popover#popover#popover>.v107-modal-close,#lexicalChunkDialog#lexicalChunkDialog#lexicalChunkDialog>.v107-modal-close{position:fixed!important;right:18px!important;top:16px!important;z-index:10000!important;width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;}
+
+#popover#popover#popover .classroom-modal-back,#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .classroom-modal-back,#lexicalChunkDialog#lexicalChunkDialog#lexicalChunkDialog .classroom-modal-back,#fullOptionStudentDialog#fullOptionStudentDialog#fullOptionStudentDialog .classroom-modal-back{display:none!important;}
+#fullOptionStudentDialog#fullOptionStudentDialog#fullOptionStudentDialog .full-option-student-panel>.classroom-modal-tools.v107-empty-footer{display:none!important;}

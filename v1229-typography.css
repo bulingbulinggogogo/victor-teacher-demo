@@ -1,0 +1,54 @@
+/* Content typography only: navigation, pronunciation, headword and module titles
+   keep their established rules. All units follow the current lecture font scale. */
+:is(#popover,#wordDetailDialog) {
+  --v1229-tag-font:calc(15px * var(--full-dialog-scale,1));
+  --v1229-copy-font:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));
+}
+:is(#popover,#wordDetailDialog) .resource-popover-body :is(
+ .v1227-word-tag,.v1228-sense-tag,.v1223-example-kind,.v1223-block-kind,
+ .v1225-example-topic-badge,.v1226-block-category,.v1226-block-subcategory,
+ .v1226-block-field-label,.v1224-block-category,.v1220-field-label,.v1229-example-pos
+) {
+  display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+  font-family:inherit!important;font-size:var(--v1229-tag-font)!important;
+  font-weight:600;line-height:1.35!important;vertical-align:baseline;
+  padding:.27em .52em!important;min-height:calc(var(--v1229-tag-font) * 1.89 + 2px);
+  height:auto;margin-block:0;border-width:1px;border-style:solid;border-radius:5px;
+}
+:is(#popover,#wordDetailDialog) .resource-popover-body :is(
+ .v1227-word-tag,.v1228-sense-tag,.v1223-example-kind,.v1223-block-kind,
+ .v1225-example-topic-badge,.v1226-block-category,.v1226-block-subcategory,
+ .v1226-block-field-label,.v1224-block-category,.v1220-field-label,.v1229-example-pos
+) > :is(span,strong) {font-family:inherit!important;font-size:inherit!important;line-height:inherit!important;}
+:is(#popover,#wordDetailDialog) .v1228-pos-levels,
+:is(#popover,#wordDetailDialog) .v1228-pos-levels .v1227-level-pos {
+ font-family:inherit!important;font-size:var(--v1229-tag-font)!important;line-height:1.35!important;
+}
+#wordDetailDialog .v1229-example-labels {
+ display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em;grid-column:1;grid-row:1;align-self:baseline;
+}
+#wordDetailDialog .v1229-example-pos {
+ color:var(--lecture-muted);border-color:var(--lecture-border);background:var(--lecture-panel-deep);white-space:nowrap;
+}
+/* Primary copy: definition Chinese/English and example English share one body face. */
+:is(#popover,#wordDetailDialog) .resource-popover-body :is(
+ .resource-sense-meaning,.v1220-english-definition,.resource-sense-chunk,
+ .v1223-example-copy,.v1226-block-unit h4,.v1223-sense-block-heading
+) {
+ font-family:inherit!important;font-size:var(--v1229-copy-font)!important;line-height:1.5!important;color:var(--lecture-text);
+}
+/* Translation, additional explanation and morphology use that same face in gray. */
+:is(#popover,#wordDetailDialog) .resource-popover-body :is(
+ .v1222-sense-example-translation,.v1220-example-translation,.ke-case-translation,
+ .v1223-block-meaning,.v1226-block-chinese,.v1223-sense-block-usage,
+ .v1226-block-field > span:last-child,.v1220-note p,.resource-word-note p,
+ .knowledge-explanation p,.vft-meaning,.vft-note,
+ .v1227-inflections,.v1227-inflection dt,.v1227-inflection dd
+) {
+ font-family:inherit!important;font-size:var(--v1229-copy-font)!important;
+ line-height:1.5!important;color:var(--lecture-muted);font-weight:400;
+}
+/* The POS disclosure stays above morphology without an extra rule between them.
+   Morphology's existing lower separator still divides it from the definitions. */
+#wordDetailDialog .v1227-meaning-group > .v1227-group-heading .v1227-group-toggle {border-bottom:0;}
+#wordDetailDialog .v1227-inflections {border-top:0;}

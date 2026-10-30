@@ -1,0 +1,16 @@
+/* V1.2.31: keep POS boundaries and hierarchy guides; remove internal rules. */
+#wordDetailDialog .v1227-inflections { border-block:0; }
+#wordDetailDialog .resource-sense-overview .resource-sense-line + .resource-sense-line { border-top:0; }
+/* Formation emphasis uses the same red as highlighted learning content. */
+:is(#wordDetailDialog,#popover) .vpi-module .pgi-formation-box { border-color:var(--demo-red,var(--lecture-mark,#ef4444)); }
+:is(#wordDetailDialog,#popover) .vpi-module .pgi-formation-operator { color:var(--demo-red,var(--lecture-mark,#ef4444)); }
+:is(#wordDetailDialog,#popover) .vpi-module .pgi-formation-result-arrow path { stroke:var(--demo-red,var(--lecture-mark,#ef4444)); }
+#wordDetailDialog .v1222-family-tree { --vft-accent:var(--demo-red,var(--lecture-mark,#ef4444)); }
+/* Compact only vocabulary note cards, preserving the existing text scale. */
+#popover[data-knowledge-type="词汇"] .resource-word-note { margin-top:14px; padding:12px 18px; gap:4px; }
+#popover[data-knowledge-type="词汇"] .resource-word-note-copy { gap:4px; }
+#popover[data-knowledge-type="词汇"] .resource-word-note h4,
+#popover[data-knowledge-type="词汇"] .resource-word-note p { margin:0; }
+/* A single-meaning term is copy, not an extra bold artwork title. */
+#wordDetailDialog .pgi-single-body-copy { margin:0 0 .35em; padding:0; font:inherit; font-size:var(--v1229-copy-font,var(--v1226-body-font)); font-weight:400; line-height:1.5; color:var(--lecture-muted); text-align:start; align-self:stretch; width:100%; }
+#wordDetailDialog .vpi-module[data-graph-key="come to light"] .pgi-copy { border:0!important; box-shadow:none; background:transparent; }

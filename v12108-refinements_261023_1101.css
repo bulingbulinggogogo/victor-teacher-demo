@@ -1,0 +1,41 @@
+/* V1.2.108 — fullscreen presentations and ordinary popups have separate exits. */
+#popover#popover#popover[data-v108-presentation=fullscreen] .classroom-modal-back,
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog[data-v108-presentation=fullscreen] .classroom-modal-back,
+#lexicalChunkDialog#lexicalChunkDialog#lexicalChunkDialog[data-v108-presentation=fullscreen] .classroom-modal-back{display:inline-flex!important;align-items:center;gap:6px;}
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog)[data-v108-presentation=fullscreen]>.v107-modal-close,
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog)[data-v108-presentation=fullscreen]>.resource-popover-head [data-close-resource-popover],
+:is(#popover,#wordDetailDialog,#lexicalChunkDialog)[data-v108-presentation=fullscreen]>.resource-popover-head [data-word-detail-close]{display:none!important;}
+#popover#popover#popover[data-v108-presentation=fullscreen]>.classroom-modal-tools,
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog[data-v108-presentation=fullscreen]>.classroom-modal-tools,
+#lexicalChunkDialog#lexicalChunkDialog#lexicalChunkDialog[data-v108-presentation=fullscreen]>.classroom-modal-tools{display:flex!important;min-height:52px!important;}
+/* The same live settings panel is temporarily hosted next to the popup dock. */
+#popover#popover#popover .v105-popup-dock>#interfaceSettingsPanel[data-v108-shared]{position:absolute!important;inset:auto auto 0 calc(100% + 10px)!important;z-index:200!important;font-size:16px;line-height:normal;color:var(--lecture-text);background:var(--lecture-settings-background);border-color:var(--lecture-settings-border);box-shadow:var(--lecture-settings-shadow);}
+#popover#popover#popover[data-classroom-tools-side=right] .v105-popup-dock>#interfaceSettingsPanel[data-v108-shared]{left:auto!important;right:calc(100% + 10px)!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] .interface-settings-head button{background:transparent!important;border-color:transparent!important;color:var(--lecture-muted)!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] button{width:auto!important;min-width:0!important;height:auto!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:var(--lecture-text)!important;font-family:inherit!important;font-size:12px!important;font-weight:700!important;line-height:normal!important;box-shadow:none!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] .interface-settings-head{min-height:26px!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] #closeInterfaceSettings{display:grid!important;place-items:center!important;width:24px!important;height:24px!important;border:1px solid transparent!important;border-radius:50%!important;color:var(--lecture-muted)!important;font-size:0!important;line-height:0!important;font-weight:400!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] .font-setting-controls{border-color:var(--lecture-border)!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] .font-setting-controls button{display:grid!important;place-items:center!important;width:34px!important;height:32px!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] #themeSegment{border-color:var(--lecture-border)!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] #themeSegment button{height:34px!important;min-height:34px!important;padding:0 8px!important;border-radius:6px!important;color:var(--lecture-muted)!important;font-weight:600!important;}
+#popover#popover#popover #interfaceSettingsPanel[data-v108-shared] #themeSegment button[aria-checked=true]{background:var(--lecture-segment-selected-background)!important;color:var(--lecture-text)!important;box-shadow:0 1px 4px #18375b18!important;}
+/* Video is a separate screen-edge surface. Only the cover and play button are visible initially. */
+.v108-edge-video{position:fixed;bottom:80px;display:flex;align-items:center;isolation:isolate;max-width:calc(100vw - 24px);filter:drop-shadow(0 6px 18px #0003);}
+.v108-edge-video[data-side=left]{left:0;flex-direction:row-reverse;}
+.v108-edge-video[data-side=right]{right:0;flex-direction:row;}
+.v108-edge-video[hidden],.v108-edge-video [hidden]{display:none!important;}
+.v108-edge-video .v108-video-content{width:320px;max-width:calc(100vw - 56px);overflow:hidden;background:var(--lecture-panel,#fff);border:1px solid var(--lecture-border,#d3def0);}
+.v108-edge-video[data-side=right] .v108-video-content{border-right:0;}
+.v108-edge-video[data-side=left] .v108-video-content{border-left:0;}
+.v108-edge-video .v108-video-handle{display:grid;place-items:center;flex:none;width:28px;height:72px;min-width:28px;padding:4px;border:1px solid #0b63ee;background:linear-gradient(180deg,#318cff,#0863ee);color:white;cursor:pointer;box-shadow:none;}
+.v108-edge-video[data-side=right] .v108-video-handle{border-radius:12px 0 0 12px;}
+.v108-edge-video[data-side=left] .v108-video-handle{border-radius:0 12px 12px 0;}
+.v108-edge-video .v108-video-handle svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.v108-edge-video .v108-video-player{position:relative;aspect-ratio:16/9;background:#101917;}
+.v108-edge-video video{display:block!important;width:100%!important;height:100%!important;object-fit:contain;max-height:none!important;margin:0!important;border:0!important;border-radius:0!important;background:#101917;}
+.v108-edge-video .v108-video-play{position:absolute;inset:0;margin:auto;display:grid;place-items:center;width:52px;height:52px;border:1px solid #fff9;border-radius:50%;background:#075feedd;color:#fff;cursor:pointer;box-shadow:0 3px 16px #0003;}
+.v108-edge-video .v108-video-play svg{width:24px;height:24px;fill:currentColor;stroke:none;}
+.v108-edge-video button:focus-visible{outline:3px solid #fff;outline-offset:-4px;}
+.v108-edge-video .v108-video-error{position:absolute;inset:auto 0 0;margin:0;padding:8px;background:#172327e8;color:#fff;font:13px/1.5 sans-serif;text-align:center;}
+@media(max-width:700px){.v108-edge-video{bottom:72px;}.v108-edge-video .v108-video-content{width:240px;}}

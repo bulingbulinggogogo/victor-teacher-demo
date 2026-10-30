@@ -1,0 +1,7 @@
+#popover#popover#popover#popover.v105-vocabulary .ke-exam-frequency[hidden]{display:none!important;}
+/* Fullscreen return, paging and layout controls share one visible row. */
+#popover#popover#popover#popover#popover.ke-expanded:has(.resource-popover-pager)>.classroom-modal-tools{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important;height:auto!important;min-height:60px!important;max-height:none!important;box-sizing:border-box!important;padding:10px 16px!important;}
+#popover#popover#popover#popover#popover.ke-expanded:has(.resource-popover-pager)>.classroom-modal-tools>.classroom-modal-toolstrip:not(:has(button,input,select)){display:none!important;}
+#popover#popover#popover#popover#popover.ke-expanded:has(.resource-popover-pager) .classroom-modal-expand-host{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;align-items:center!important;gap:12px!important;width:100%!important;min-width:0!important;grid-column:1!important;grid-row:1!important;}
+#popover#popover#popover#popover#popover.ke-expanded:has(.resource-popover-pager) .resource-popover-pager{width:100%!important;min-width:0!important;grid-column:2!important;}
+#popover#popover#popover#popover#popover.ke-expanded:has(.resource-popover-pager) .v1224-knowledge-layout-host{grid-column:2!important;grid-row:1!important;width:auto!important;position:static!important;}

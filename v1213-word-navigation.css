@@ -1,0 +1,49 @@
+/* C1.2 source contents remain intact; only navigation position and levels change. */
+#wordDetailDialog.vwn-dialog,#lexicalChunkDialog.vwn-dialog{display:flex;flex-direction:column;min-height:0}
+#wordDetailDialog.vwn-dialog.ke-expanded,#lexicalChunkDialog.vwn-dialog.ke-expanded{height:calc(100dvh - 24px);max-height:calc(100dvh - 24px)!important}
+#wordDetailDialog.vwn-dialog:not(.ke-expanded),#lexicalChunkDialog.vwn-dialog:not(.ke-expanded){height:min(960px,calc(100dvh - 48px));max-height:calc(100dvh - 48px)!important;width:min(1560px,calc(100vw - 64px));max-width:calc(100vw - 64px)}
+#wordDetailDialog.vwn-dialog>.resource-popover-body,#lexicalChunkDialog.vwn-dialog>.resource-popover-body{display:flex!important;flex-direction:column;gap:10px;padding:12px 24px;flex:1 1 auto;min-height:0;min-width:0;max-height:none!important;overflow:auto!important}
+.vwn-word-intro{flex:0 0 auto;min-width:0}.vwn-word-intro .knowledge-term{margin:0;line-height:1.1}
+.vwn-content{display:block;flex:0 0 auto;min-width:0;min-height:0;overflow:visible}
+.vwn-panel{display:block;flex:0 0 auto;min-width:0;min-height:0;overflow:visible}
+.vwn-panel[hidden],.vwn-pos-tabs[hidden],.vwn-secondary-tools>[hidden],.vwn-panel-scroll [hidden]{display:none!important}
+.vwn-panel-title{flex:0 0 auto;margin:0!important;font-size:calc(22px * var(--full-dialog-scale,1));line-height:1.35;color:var(--lecture-text)}
+.vwn-panel-scroll{display:block;flex:0 0 auto;min-height:0;min-width:0;height:auto;max-height:none;margin-top:8px;overflow:visible;padding:0;}
+.vwn-panel-scroll.is-visual{display:block;padding:0;overflow:visible;scrollbar-gutter:auto}
+.vwn-panel-scroll.is-visual>section{display:block;min-width:0;min-height:0;}
+.vwn-panel-scroll>.ke-all-meanings>h3,.vwn-panel-scroll>section>.ke-all-meanings>h3,.vwn-panel-scroll>[data-case-module]>h3,.vwn-panel-scroll>.wdc-meanings-module>.wdc-module-heading,.vwn-panel-scroll>section>.ke-exam-cases>.ke-section-title{display:none}
+.vwn-footer{flex:0 0 auto;display:flex;flex-direction:column;min-width:0;gap:0;border-top:1px solid var(--lecture-border);padding:8px 24px 10px;background:var(--lecture-panel);color:var(--lecture-text)}
+.vwn-secondary-tools{display:flex;align-items:center;justify-content:flex-start;gap:10px;min-width:0;flex:0 0 auto;min-height:0;padding:0 0 8px;max-width:100%;flex-wrap:wrap}
+.vwn-pos-tabs:not(.book-unit-options),.vwn-main-nav:not(.book-question-mode-tabs){display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-start;gap:7px;min-width:0;max-width:100%;white-space:nowrap}
+.vwn-main-nav{flex:0 0 auto;margin:0;}
+.vwn-main-nav:not(.book-question-mode-tabs)>button,.vwn-pos-tabs:not(.book-unit-options)>button{display:flex;align-items:center;justify-content:center;gap:8px;flex:0 0 auto;min-height:44px;text-align:left;padding:10px 12px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--lecture-muted);font:inherit;font-size:var(--vwn-nav-size,calc(15px * var(--full-dialog-scale,1)));line-height:1.4;cursor:pointer;white-space:nowrap}
+.vwn-pos-tabs:not(.book-unit-options)>button{padding:8px 14px;border-color:var(--lecture-border);background:var(--lecture-panel-deep);font-size:var(--vwn-nav-size,calc(16px * var(--full-dialog-scale,1)))}
+.vwn-main-nav:not(.book-question-mode-tabs)>[aria-selected="true"]{color:var(--lecture-primary);background:color-mix(in srgb,var(--lecture-primary) 9%,var(--lecture-panel));border-color:color-mix(in srgb,var(--lecture-primary) 40%,var(--lecture-border));font-weight:600}
+.vwn-pos-tabs:not(.book-unit-options)>[aria-selected="true"]{border-color:var(--lecture-context,var(--lecture-primary));color:var(--lecture-context,var(--lecture-primary));background:color-mix(in srgb,var(--lecture-context,var(--lecture-primary)) 9%,var(--lecture-panel));font-weight:600}
+.vwn-count{font-size:.72em;line-height:1;flex:none;padding:.3em .5em;border-radius:12px;background:var(--lecture-panel-deep)}
+.vwn-dialog .wdc-mode-switch,.vwn-dialog .wdc-context-tag,.vwn-dialog .pgi-context-label{display:none!important}
+.vwn-dialog .resource-sense-line.is-context{background:transparent}.vwn-dialog .resource-sense-line>b{display:none}
+.vwn-main-nav button:focus-visible,.vwn-pos-tabs button:focus-visible,.vwn-panel:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:-3px}
+.vwn-dialog[data-classroom-tools-side="right"] .vwn-main-nav,.vwn-dialog[data-classroom-tools-side="right"] .vwn-secondary-tools{justify-content:flex-end;align-self:flex-end}
+.vwn-dialog[data-classroom-tools-side="left"] .vwn-main-nav,.vwn-dialog[data-classroom-tools-side="left"] .vwn-secondary-tools{justify-content:flex-start;align-self:flex-start}
+.vwn-dialog>.resource-popover-head>[data-word-detail-close],.vwn-dialog>.resource-popover-head>[data-lexical-chunk-close]{margin-left:auto}
+
+/* V1.2.14: one source POS heading per group; original sense nodes remain intact. */
+.vwn-grouped-senses .wdc-sense-header>.resource-sense-pos[hidden]{display:none!important}
+.vwn-grouped-senses .wdc-sense{border-top:0}
+.vwn-grouped-senses .resource-sense-list{gap:2px}
+.vwn-word-intro>.knowledge-entry{min-width:0}
+
+/* The approved source's book-unit-options rules also apply inside original PPT tools. */
+.v1223-word-subnav .vpi-tools .book-unit-options button{min-height:36px;padding:0 14px;border:1px solid transparent;border-radius:8px;background:transparent;color:#445873;font-size:13px;font-weight:700;transition:border-color .18s ease,background .18s ease,color .18s ease;}
+.v1223-word-subnav .vpi-tools .book-unit-options button:not(:disabled):hover{border-color:#bfd5f4;background:#f3f8ff;color:#1268f3;}
+.v1223-word-subnav .vpi-tools .book-unit-options button.active{border-color:#a9c8f5;background:#eaf3ff;color:#1268f3;}
+
+/* Keep the source's 36px tabs outside the content flex-shrink calculation. */
+#wordDetailDialog>.resource-popover-body>.vwn-main-nav.book-question-mode-tabs{flex:0 0 auto!important;min-height:36px!important;height:auto!important;overflow:visible;}
+#wordDetailDialog>.resource-popover-body>.vwn-main-nav.book-question-mode-tabs>button{flex:0 0 auto;min-height:36px;}
+
+/* One document scrollbar moves the common header, navigation and current module together. */
+#wordDetailDialog.vwn-dialog>.resource-popover-body{overflow:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable;}
+#wordDetailDialog :is(.vwn-content,.vwn-panel,.vwn-panel-scroll,.resource-sense-overview,.resource-sense-list){height:auto;max-height:none;overflow:visible!important;}
+#wordDetailDialog .vwn-panel-scroll.is-visual .pgi-module{height:max(420px,calc(100dvh - 300px));}

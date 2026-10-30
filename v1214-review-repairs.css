@@ -1,0 +1,23 @@
+/* Preserve the native book columns even when no source cover is available. */
+.school-book-card[data-book-key="test-single-book"] .school-book-copy { grid-column:2; }
+.book-workbench-identity-card[data-book-key="test-single-book"] .book-workbench-identity-copy { grid-column:2; }
+/* Answer text, card and spacing respond to the existing lecture-font setting. */
+#fullscreenPage.demo-all-answers .demo-answer-sheet { gap:calc(var(--full-font,50px)*.16); }
+#fullscreenPage.demo-all-answers .demo-answer-group h3 { font-size:calc(var(--full-font,50px)*.4);line-height:1.2;margin-bottom:calc(var(--full-font,50px)*.12); }
+#fullscreenPage.demo-all-answers .demo-answer-tiles { gap:calc(var(--full-font,50px)*.2); }
+#fullscreenPage.demo-all-answers .demo-answer-tile { width:max(60px,calc(var(--full-font,50px)*1.68));min-height:max(44px,calc(var(--full-font,50px)*1.24)); }
+#fullscreenPage.demo-all-answers .demo-answer-tile span { font-size:calc(var(--full-font,50px)*.3);line-height:1.27; }
+#fullscreenPage.demo-all-answers .demo-answer-tile b { font-size:calc(var(--full-font,50px)*.56);line-height:1.14; }
+
+/* Only U+2019 uses a narrow Western face; source strings and other glyphs stay intact. */
+@font-face{font-family:"Teacher Curly Apostrophe";src:local("Arial");font-weight:100 900;font-style:normal;unicode-range:U+2019}
+#fullscreenPage[data-real-source="true"] .full-stem,
+#fullscreenPage[data-real-source="true"] .full-option,
+#fullscreenPage[data-real-source="true"] .transcript-paragraph,
+#popover[data-real-source="true"] .ke-g-diagram,
+#popover[data-real-source="true"] .ke-g-sentence,
+#popover[data-real-source="true"] .ke-g-token,
+#popover[data-real-source="true"] .resource-grammar-sentence,
+#wordDetailDialog[data-real-source="true"] .ke-case-sentence {
+ font-family:"Teacher Curly Apostrophe","Teacher Han Sans SC",sans-serif;
+}

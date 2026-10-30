@@ -1,0 +1,91 @@
+/* V1.2.94: approved 18-option visual migration from V1.2.93.
+   Paint only; no review tools, business changes, typography or geometry changes.
+   Exact native light palette receives 01 colors. Other palettes keep original tokens. */
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen){--v1294-line:var(--lecture-border);--v1294-nav-line:var(--lecture-border);--v1294-dock-line:var(--lecture-dock-border,var(--lecture-border));--v1294-media-line:var(--lecture-resource-border,var(--lecture-border));--v1294-english:var(--lecture-resource-muted,var(--lecture-muted));}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"]{--v1294-line:#e1e7ef;--v1294-nav-line:#e2e8f2;--v1294-dock-line:#e7ecf4;--v1294-media-line:#cfdef6;--v1294-english:#69758a;}
+
+/* V01 顶部浅灰蓝细框 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-word-upper{border-color:var(--v1294-line)!important;}
+
+
+/* V02 导航仅留浅色底线 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-main-nav{border-color:transparent!important;border-bottom-color:var(--v1294-nav-line)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1223-word-subnav{border-color:transparent!important;}
+
+
+/* V03 释义整体细线轮廓 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-line[data-latest-sense]{border-color:transparent!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-meaning-group{outline:1px solid var(--v1294-line)!important;outline-offset:-1px!important;border-radius:12px!important;}
+
+
+/* V04 释义内横线隐去 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-line[data-latest-sense]::after{background-color:transparent!important;}
+
+
+/* V05 两行分隔线隐去 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-fold{border-color:transparent!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-fold-fields{border-color:transparent!important;}
+
+
+/* V06 侧边栏保留淡细框 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) #classroomDock{border-color:var(--v1294-dock-line)!important;}
+
+
+/* V07 媒体保留淡蓝叠框 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-media-card{border-color:var(--v1294-media-line)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-media-card::before{border-color:var(--v1294-media-line)!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1270-media-card::after{border-color:var(--v1294-media-line)!important;}
+
+
+/* V08 主要区域去阴影 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.v1270-word-upper,.vwn-main-nav,.vwn-content,.resource-sense-line[data-latest-sense],.v1270-media-card,#classroomDock){box-shadow:none!important;}
+
+
+/* V09 01白底配色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"],#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] #classroomDock{--lecture-panel:#fff!important;--lecture-resource-panel:#fff!important;--lecture-resource-panel-deep:#f7f9fd!important;--lecture-panel-deep:#f7f9fd!important;--lecture-text:#233653!important;--lecture-resource-text:#233653!important;--lecture-muted:#697b94!important;--lecture-resource-muted:#697b94!important;--lecture-translation:#697b94!important;--lecture-knowledge-text:#52647e!important;--lecture-primary:#2864ed!important;--lecture-resource-primary:#2864ed!important;--lecture-border:#e1e7ef!important;--lecture-resource-border:#e1e7ef!important;--lecture-dock-background:#fff!important;--lecture-dock-border:#e1e7ef!important;--lecture-toolbar-background:#fff!important;--lecture-button-background:#fff!important;--lecture-button-hover-text:#2864ed!important;--lecture-action-text:#233653!important;--lecture-action-background:#fff!important;--lecture-action-hover-background:#f4f7fc!important;--lecture-action-hover-text:#2864ed!important;--lecture-select-background:#fff!important;--lecture-select-text:#233653!important;--lecture-segment-background:#f4f7fc!important;--lecture-segment-selected-background:#eaf1ff!important;--lecture-student-panel:#fff!important;--lecture-student-text:#233653!important;--lecture-student-close-background:#f4f7fc!important;--lecture-student-close-text:#233653!important;--lecture-header-text:#233653!important;--lecture-resource-background:#fff!important;color:#233653!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] >.resource-popover-body{background-color:#fff!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="word-frequency"]{color:#337aaf!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="academic"]{color:#8062b8!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="spoken-level"]{color:#8062b8!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="written-level"]{color:#8062b8!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="reading-level"]{color:#b24e9a!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="curriculum"]{color:#2b8268!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-demo-palette="light"] .v1227-word-labels [data-word-tag-field="teaching-priority"]{color:#ad4f8e!important;}
+
+
+/* V10 导航统一纯底色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.vwn-main-nav,.v1223-word-subnav){background:var(--lecture-panel,#fff)!important;}
+
+
+/* V11 释义改纯底色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-sense-line[data-latest-sense]{background:var(--lecture-panel,#fff)!important;}
+
+
+/* V12 语音区浅底色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-guidance-card{background:color-mix(in srgb,var(--lecture-resource-primary,#2864ed) 2%,var(--lecture-panel,#fff))!important;}
+
+
+/* V16 英文释义灰色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1220-english-definition{color:var(--v1294-english)!important;}
+
+
+/* V21 出处标签弱化 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1278-provenance-chip{background:color-mix(in srgb,var(--lecture-muted,#697b94) 6%,var(--lecture-panel,#fff))!important;border-color:color-mix(in srgb,var(--lecture-muted,#697b94) 20%,var(--lecture-panel,#fff))!important;color:var(--lecture-muted,#697b94)!important;}
+
+
+/* V22 词头标签浅底色 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1227-word-labels .v1227-word-tag{background-color:color-mix(in srgb,currentColor 7%,var(--lecture-panel,#fff))!important;border-color:transparent!important;}
+
+
+/* V23 义项编号去小框 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .v1220-sense-number{background:transparent!important;border-color:transparent!important;box-shadow:none!important;color:var(--lecture-muted,#697b94)!important;}
+
+
+/* V24 大区域圆角统一 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) :is(.v1270-word-upper,.resource-sense-line[data-latest-sense]){border-radius:12px!important;}
+
+
+/* V25 语音区保留淡细框 */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .resource-guidance-card{border-color:var(--v1294-dock-line)!important;}

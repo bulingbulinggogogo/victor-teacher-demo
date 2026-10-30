@@ -1,0 +1,16 @@
+/* Module focus is a view of the already-mounted word detail. The original
+   diagram typography, source-image sizing, controls and left/right dock rules
+   keep their existing owners. */
+#wordDetailDialog.v1263-interactive-fullscreen > .resource-popover-body > :is(.vwn-word-intro,.vwn-main-nav) {
+  display:none!important;
+}
+#wordDetailDialog.v1263-interactive-fullscreen > .resource-popover-body > .vwn-content {
+  flex:1 0 auto;
+  min-width:0;
+}
+#wordDetailDialog.v1263-interactive-fullscreen > .resource-popover-body > .vwn-content > .vwn-panel:not([hidden]) {
+  min-height:100%;
+}
+#wordDetailDialog.v1263-interactive-fullscreen .vwn-panel-scroll {
+  margin-top:0;
+}

@@ -1,0 +1,202 @@
+/* V42 word-detail type roles. The existing lecture face, colors, emphasis,
+   headword, phonetics, navigation and media controls retain their owners. */
+#wordDetailDialog {
+  --v1242-content-title-size:var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1)));
+  --v1242-content-body-size:var(--v1229-copy-font,var(--v1226-body-font,calc(24px * var(--full-dialog-scale,1))));
+  --v1242-content-title-weight:600;
+  --v1242-content-title-leading:1.45;
+  --v1242-content-body-leading:1.5;
+  --v1242-stat-tag-size:calc(11px * var(--full-dialog-scale,1));
+}
+
+/* Content headings use the present POS disclosure scale. These selectors do
+   not include module tabs, chart values, playback captions or headwords. */
+#wordDetailDialog :is(
+  .vwn-panel-title,
+  .v1220-module > h3,
+  .v1227-meaning-group > .v1227-group-heading .v1227-group-toggle,
+  .v1226-block-group-heading .v1227-group-toggle,
+  .resource-word-note > h4,
+  .resource-word-note-copy > h4,
+  .knowledge-explanation > h4,
+  .v1220-note > h4,
+  .v1235-note-subtitle,
+  .v1228-example-group-heading,
+  .v1228-chart-heading > h4,
+  .v1227-pie-card > h4,
+  .v1227-stat-bar-card > h5,
+  .v1222-family-tree > figcaption,
+  .pgi-module-head > h3
+) {
+  font-family:inherit!important;
+  font-size:var(--v1242-content-title-size)!important;
+  font-style:normal;
+  font-weight:var(--v1242-content-title-weight)!important;
+  line-height:var(--v1242-content-title-leading)!important;
+}
+
+/* Text nodes share the existing Chinese/English definition size. Child rich
+   text retains its own bold/italic emphasis; no color or weight is reset. */
+#wordDetailDialog .resource-popover-body :is(
+  .resource-sense-meaning,
+  .v1220-english-definition,
+  .resource-sense-chunk,
+  .v1223-example-copy,
+  .v1222-sense-example-translation,
+  .v1220-example-translation,
+  .ke-case-translation,
+  .v1223-sense-block-heading,
+  .v1223-block-meaning,
+  .v1226-block-chinese,
+  .v1223-sense-block-usage,
+  .v1226-block-unit h4,
+  .v1226-block-field > span:last-child,
+  .v1235-block-source-context,
+  .v1220-note p,
+  .resource-word-note p,
+  .knowledge-explanation p,
+  .v1235-source-note p,
+  .vft-meaning,
+  .vft-note,
+  .v1227-inflections,
+  .v1227-inflection dt,
+  .v1227-inflection dd
+) {
+  font-family:inherit!important;
+  font-size:var(--v1242-content-body-size)!important;
+  line-height:var(--v1242-content-body-leading)!important;
+}
+
+/* Statistics and word-library labels are annotations, rather than body copy.
+   Source/topic/usage/example-category labels keep their existing size. */
+#wordDetailDialog .v1227-word-labels .v1227-word-tag,
+#wordDetailDialog :is(.v1227-word-tag,.v1228-sense-tag):is(
+  [data-word-tag-field="exam-count"],
+  [data-word-tag-field="exam-frequency"],
+  [data-word-tag-field="word-frequency"],
+  [data-word-tag-field="source-frequency"],
+  [data-word-tag-field="academic"],
+  [data-word-tag-field="spoken-level"],
+  [data-word-tag-field="written-level"],
+  [data-word-tag-field="reading-level"],
+  [data-word-tag-field="curriculum"],
+  [data-word-tag-field="derived-status"],
+  [data-word-tag-field="difficulty"],
+  [data-word-tag-field="key-difficulty"]
+) {
+  font-family:inherit!important;
+  font-size:var(--v1242-stat-tag-size)!important;
+  line-height:1.2!important;
+  min-height:0!important;
+  height:auto;
+  padding:.13em .35em!important;
+  margin-block:0;
+  vertical-align:super;
+  align-self:flex-start;
+}
+#wordDetailDialog .knowledge-term.v1227-has-metadata {
+  align-items:flex-start;
+  column-gap:8px;
+}
+#wordDetailDialog .v1227-word-labels {
+  flex:0 1 auto;
+  align-self:flex-start;
+  align-items:flex-start;
+  gap:4px;
+  margin-block-start:.15em;
+  font-size:var(--v1242-stat-tag-size);
+  line-height:1.2;
+}
+#wordDetailDialog .v1227-fold-label:has(> [data-word-tag="pos-exam"]) {
+  column-gap:.22em;
+}
+#wordDetailDialog .resource-sense-copy > [data-word-tag="sense-exam"] {
+  margin-inline-start:.18em;
+}
+
+/* Countability, transitivity, register and emphasis belong to the meaning.
+   Difficulty tags have no data-sense-tag and stay in the annotation role. */
+#wordDetailDialog .resource-sense-meta[data-metadata-scope="sense"] > .v1228-sense-tag[data-sense-tag] {
+  font-family:inherit!important;
+  font-size:var(--v1242-content-body-size)!important;
+  line-height:1.2!important;
+  min-height:0!important;
+  height:auto;
+  padding:.05em .22em!important;
+  vertical-align:baseline;
+}
+
+/* A copied block-source POS is the same field as a meaning's POS label.
+   Its existing field color stays; add the missing physical label enclosure. */
+#wordDetailDialog [data-case-module="collocations"] .v1226-block-pos[data-word-tag-field="pos"] {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  flex:0 0 auto;
+  border:1px solid color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-pos)) var(--v1241-tag-edge,28%),var(--lecture-panel,#fff))!important;
+  border-radius:5px;
+  background-color:color-mix(in srgb,var(--v1239-tag-ink,var(--v1239-tag-pos)) var(--v1241-tag-tint,8%),var(--lecture-panel,#fff))!important;
+  color:var(--v1239-tag-ink,var(--v1239-tag-pos))!important;
+  font-family:inherit;
+  font-size:var(--v1242-content-body-size);
+  font-weight:600;
+  line-height:1.2;
+  min-height:0;
+  padding:.05em .22em;
+  vertical-align:baseline;
+}
+
+/* Named explanation/usage owners are ordinary content, not translations.
+   Keep their child tags and source emphasis under their existing color rules. */
+#wordDetailDialog .resource-popover-body :is(
+  .v1220-note:not([data-sense-feature="difficulty"]),
+  .resource-word-note,
+  .knowledge-explanation,
+  .v1235-source-note
+) p:not(:is(.v1222-sense-example-translation,.v1220-example-translation,.ke-case-translation)),
+#wordDetailDialog .resource-popover-body :is(
+  .resource-word-note > h4,
+  .resource-word-note-copy > h4,
+  .knowledge-explanation > h4,
+  .v1220-note > h4,
+  .v1235-note-subtitle,
+  .v1226-block-field > span:last-child,
+  .v1235-block-source-context,
+  .v1223-sense-block-usage,
+  .v1223-block-meaning,
+  .v1226-block-chinese,
+  .v1226-block-parent-meaning,
+  .v1227-inflections,
+  .v1227-inflection dt,
+  .v1227-inflection dd,
+  .vft-meaning,
+  .vft-note
+) {
+  color:var(--lecture-text)!important;
+}
+
+/* Only full example-sentence translations use the muted reading color. */
+#wordDetailDialog .resource-popover-body :is(
+  .v1222-sense-example-translation,
+  .v1220-example-translation,
+  .ke-case-translation
+) {
+  color:var(--lecture-muted)!important;
+}
+
+/* Compact only the mounted semantic cue inside its real gift sense. The
+   inherited grid gap and paragraph margin previously added two separate gaps. */
+#wordDetailDialog [data-latest-sense] .resource-word-note:is([data-v1241-semantic-note="present-gift"],.v1264-sense-card) {
+  padding:12px 16px;
+  gap:0;
+}
+#wordDetailDialog [data-latest-sense] .resource-word-note:is([data-v1241-semantic-note="present-gift"],.v1264-sense-card) > h4 {
+  margin:0 0 8px;
+}
+#wordDetailDialog [data-latest-sense] .resource-word-note:is([data-v1241-semantic-note="present-gift"],.v1264-sense-card) > p {
+  margin:0;
+}
+#wordDetailDialog [data-latest-sense] .resource-word-note:is([data-v1241-semantic-note="present-gift"],.v1264-sense-card) > p + p {
+  margin-top:6px;
+}

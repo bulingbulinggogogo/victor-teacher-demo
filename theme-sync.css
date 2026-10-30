@@ -1,0 +1,218 @@
+/* V1.2.2 · Explicit legacy component color mapping.
+ * Vue component scopes are NEVER stripped into global tag selectors.
+ * Only named lecture controls and resource dialog descendants are targeted.
+ * Geometry, fonts and media sizes remain owned by their respective modules. */
+/* Legacy DOM equivalents: these keep every surface bound to its intended role. */
+#fullscreenPage[data-demo-palette] {
+  background: var(--lecture-page-background);
+  color: var(--lecture-text);
+}
+#fullscreenPage[data-demo-palette] > .full-header { background: var(--lecture-header-background); }
+#fullscreenPage[data-demo-palette] > .full-header h2 { color: var(--lecture-header-text); }
+#fullscreenPage[data-demo-palette] #questionPanel,
+#fullscreenPage[data-demo-palette] #transcriptPanel,
+#fullscreenPage[data-demo-palette] #transcriptPanel .transcript-scroll {
+  background: var(--lecture-question-panel-background);
+  border-color: var(--lecture-border);
+}
+#fullscreenPage[data-demo-palette].multi-question-mode #questionPanel,
+#fullscreenPage[data-demo-palette].demo-all-answers #questionPanel { background: transparent; border-color: transparent; }
+#fullscreenPage[data-demo-palette] .full-question-item { background: var(--lecture-question-panel-background); }
+#fullscreenPage[data-demo-palette] .full-stem,
+#fullscreenPage[data-demo-palette] .full-option,
+#fullscreenPage[data-demo-palette] .transcript-paragraph,
+#fullscreenPage[data-demo-palette] .practice-question-stem { color: var(--lecture-text); }
+#fullscreenPage[data-demo-palette] .full-option.correct,
+#fullscreenPage[data-demo-palette] .full-option.correct .option-copy,
+#fullscreenPage[data-demo-palette] .full-option.correct .option-copy-main,
+#fullscreenPage[data-demo-palette] .full-option.correct .line-translation,
+#fullscreenPage[data-demo-palette] .full-option.correct .option-stat { color: #0eaa51; }
+#fullscreenPage[data-demo-palette] .full-option.correct .option-bar span { background: #0eaa51; }
+#fullscreenPage[data-demo-palette] .line-translation,
+#fullscreenPage[data-demo-palette] .turn-translation { color: var(--lecture-translation); }
+#fullscreenPage[data-demo-palette] .exam-point-line { color: var(--lecture-knowledge-text); }
+#fullscreenPage[data-demo-palette] .question-metrics { border-color: var(--lecture-border); }
+#fullscreenPage[data-demo-palette] .question-metrics > div { color: var(--lecture-muted); border-color: var(--lecture-border); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock {
+  background: var(--lecture-dock-background); border-color: var(--lecture-dock-border); box-shadow: var(--lecture-dock-shadow);
+}
+#fullscreenPage[data-demo-palette] .full-toolbar {
+  background: var(--lecture-toolbar-background); border-top-color: var(--lecture-toolbar-border); box-shadow: var(--lecture-toolbar-shadow);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .interface-settings-panel {
+  background: var(--lecture-settings-background); border-color: var(--lecture-settings-border); box-shadow: var(--lecture-settings-shadow);
+}
+#fullscreenPage[data-demo-palette] .speed-menu {
+  background: var(--lecture-speed-menu-background); border-color: var(--lecture-border); box-shadow: var(--lecture-speed-menu-shadow);
+}
+#fullscreenPage[data-demo-palette] .question-picker-panel {
+  background: var(--lecture-picker-background); border-color: var(--lecture-picker-border); box-shadow: var(--lecture-picker-shadow);
+}
+#fullscreenPage[data-demo-palette] .lecture-select > summary {
+  background: var(--lecture-select-background); border-color: var(--lecture-select-border); color: var(--lecture-select-text);
+}
+#fullscreenPage[data-demo-palette] .lecture-select-menu {
+  background: var(--lecture-select-menu-background); box-shadow: var(--lecture-select-menu-shadow); border-color: var(--lecture-select-border);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .round-tool,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-text-action,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-expand,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-layout-switch,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-icon-action,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .footer-edge-actions button {
+  background: var(--lecture-action-background); border-color: var(--lecture-action-border); color: var(--lecture-action-text);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .round-tool:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-text-action:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-expand:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-layout-switch:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-icon-action:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .footer-edge-actions button:hover {
+  background: var(--lecture-action-hover-background); border-color: var(--lecture-action-hover-border); color: var(--lecture-action-hover-text);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-text-action.active,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-text-action.active:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-knowledge button.active {
+  color: #fff; background: var(--lecture-play-background); border-color: var(--lecture-play-background);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-knowledge button { color: var(--lecture-muted); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .theme-segment { background: var(--lecture-segment-background); border-color: var(--lecture-border); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .font-setting-controls { background: transparent; border-color: var(--lecture-border); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .theme-segment button { color: var(--lecture-muted); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .theme-segment button.selected { background: var(--lecture-segment-selected-background); color: var(--lecture-text); box-shadow: var(--lecture-segment-selected-shadow); }
+#fullscreenPage[data-demo-palette] .speaker.m { color: var(--lecture-speaker-man-text); background: var(--lecture-speaker-man-background); border-color: var(--lecture-speaker-man-border); box-shadow: var(--lecture-speaker-man-shadow); }
+#fullscreenPage[data-demo-palette] .speaker.w { color: var(--lecture-speaker-woman-text); background: var(--lecture-speaker-woman-background); border-color: var(--lecture-speaker-woman-border); box-shadow: var(--lecture-speaker-woman-shadow); }
+#fullscreenPage[data-demo-palette] .sentence.playing:not(.transcript-masked),
+#fullscreenPage[data-demo-palette] .sentence.clue.playing:not(.transcript-masked) { color: var(--lecture-playing-text); background: var(--lecture-playing-background); box-shadow: var(--lecture-playing-shadow); }
+#fullscreenPage[data-demo-palette] .resource-highlight { color: var(--lecture-rich-color); }
+#fullscreenPage[data-demo-palette][data-theme-kind="light"] .resource-highlight:hover { color: #ff1f5c; }
+#fullscreenPage[data-demo-palette][data-theme-kind="dark"] .resource-highlight:hover { color: #ff6f7d; }
+#fullscreenPage[data-demo-palette] .practice-option-key {
+  background: color-mix(in srgb, var(--lecture-primary) 16%, transparent);
+  color: color-mix(in srgb, var(--lecture-primary) 82%, #fff);
+}
+#fullscreenPage[data-demo-palette] .full-option.correct .practice-option-key { background: #0eaa51; color: #fff; }
+#fullscreenPage[data-demo-palette] .audio-progress-float input[type="range"] { accent-color: var(--lecture-play-background); }
+#fullscreenPage[data-demo-palette] .audio-progress-float input[type="range"]::-webkit-slider-runnable-track { background-color: transparent; border-color: transparent; }
+#fullscreenPage[data-demo-palette] .audio-progress-float input[type="range"]::-webkit-slider-thumb { background-color: var(--lecture-play-background); }
+#fullscreenPage[data-demo-palette] .footer-play,
+#fullscreenPage[data-demo-palette] .footer-play.playing { color: var(--lecture-play-text); background: var(--lecture-play-background); border-color: var(--lecture-play-border); box-shadow: var(--lecture-play-shadow); }
+#fullscreenPage[data-demo-palette] .footer-play:hover { background: var(--lecture-play-hover); }
+#fullscreenPage[data-demo-palette] .audio-duration,
+#fullscreenPage[data-demo-palette] .demo-audio-time,
+#fullscreenPage[data-demo-palette] .demo-suite-estimate { color: var(--lecture-muted); }
+
+/* Resource popovers and their child detail windows live outside the main element. */
+.resource-popover[data-demo-palette] {
+  background: var(--lecture-resource-background); color: var(--lecture-resource-text);
+  border-color: var(--lecture-resource-dialog-border); box-shadow: var(--lecture-resource-shadow);
+}
+.resource-popover[data-demo-palette] .resource-popover-head,
+.resource-popover[data-demo-palette] .resource-popover-body { color: var(--lecture-resource-text); border-color: var(--lecture-resource-border); }
+.resource-popover[data-demo-palette] .resource-popover-head span { color: var(--lecture-resource-text); }
+.resource-popover[data-demo-palette] .resource-popover-head small { color: var(--lecture-resource-muted); }
+.resource-popover[data-demo-palette] .resource-popover-head > button {
+  color: var(--lecture-resource-muted); background: var(--lecture-resource-panel-deep); border-color: var(--lecture-resource-border);
+}
+.resource-popover[data-demo-palette] .ke-original-word-content,
+.resource-popover[data-demo-palette] .ke-exam-case { color: var(--lecture-resource-text); border-color: var(--lecture-resource-border); }
+.resource-popover[data-demo-palette] .resource-mark-red,
+.resource-popover[data-demo-palette] .resource-pronunciation-mark,
+.resource-popover[data-demo-palette] .resource-linking-mark { color: var(--lecture-rich-color) !important; }
+.resource-popover[data-demo-palette] .ke-case-source,
+.resource-popover[data-demo-palette] .ke-case-translation,
+.resource-popover[data-demo-palette] .resource-pronunciation-pos { color: var(--lecture-resource-muted); }
+.resource-popover[data-demo-palette] .ke-modal-expand { color: var(--lecture-resource-text); background: var(--lecture-resource-panel-deep); border-color: var(--lecture-resource-border); }
+.app-dialog[data-demo-palette] .app-dialog-panel,
+.app-dialog[data-demo-palette] .student-edit-panel { background: var(--lecture-resource-panel); color: var(--lecture-resource-text); border-color: var(--lecture-resource-dialog-border); box-shadow: var(--lecture-resource-shadow); }
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-panel { background: var(--lecture-student-panel); border-color: var(--lecture-student-border); color: var(--lecture-student-text); }
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-list > div { background: var(--lecture-student-row); border-color: var(--lecture-student-divider); }
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-panel h3,
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-list b,
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-list em { color: var(--lecture-student-text); }
+#fullOptionStudentDialog[data-demo-palette] .full-option-student-panel .icon-action { background: var(--lecture-student-close-background); color: var(--lecture-student-close-text); border-color: var(--lecture-student-close-border); box-shadow: var(--lecture-student-close-shadow); }
+#onlinePage[data-demo-palette] { background: var(--lecture-page-background); color: var(--lecture-text); }
+#onlinePage[data-demo-palette] .online-card,
+#onlinePage[data-demo-palette] .online-transcript-panel,
+#onlinePage[data-demo-palette] .online-question-panel { background: var(--lecture-question-panel-background); border-color: var(--lecture-border); color: var(--lecture-text); }
+#onlinePage[data-demo-palette] .online-toolbar { background: var(--lecture-toolbar-background); border-color: var(--lecture-toolbar-border); }
+/* Inline legacy phonetic accents may otherwise keep a red from the old dark styles. */
+[data-demo-palette][data-theme-kind="dark"] .resource-mark-red,
+[data-demo-palette][data-theme-kind="dark"] .resource-pronunciation-mark,
+[data-demo-palette][data-theme-kind="dark"] .resource-linking-mark,
+[data-demo-palette][data-theme-kind="dark"] .hotword,
+[data-demo-palette][data-theme-kind="dark"] .translation-clue { color: #ff6f7d !important; }
+
+
+/* Named legacy equivalents of scoped deployed toolbar and picker controls. */
+#fullscreenPage[data-demo-palette] .footer-nav-arrow,
+#fullscreenPage[data-demo-palette] .speed-menu-toggle,
+#fullscreenPage[data-demo-palette] .footer-layout-switch,
+#fullscreenPage[data-demo-palette] .dock-collapse-toggle {
+  background: var(--lecture-button-background); color: var(--lecture-text); border-color: var(--lecture-border);
+}
+#fullscreenPage[data-demo-palette] .footer-nav-arrow:hover,
+#fullscreenPage[data-demo-palette] .speed-menu-toggle:hover,
+#fullscreenPage[data-demo-palette] .footer-layout-switch:hover,
+#fullscreenPage[data-demo-palette] .dock-collapse-toggle:hover {
+  color: var(--lecture-button-hover-text); border-color: var(--lecture-button-hover-border);
+}
+#fullscreenPage[data-demo-palette] .footer-current-question {
+  background: var(--lecture-question-background); border-color: var(--lecture-question-border); color: var(--lecture-button-hover-text);
+}
+#fullscreenPage[data-demo-palette] .footer-question-nav { border-color: var(--lecture-border); }
+#fullscreenPage[data-demo-palette] .speed-menu button { color: var(--lecture-text); background: transparent; border-color: transparent; }
+#fullscreenPage[data-demo-palette] .speed-menu button:hover,
+#fullscreenPage[data-demo-palette] .speed-menu button.selected {
+  background: color-mix(in srgb, var(--lecture-primary) 15%, var(--lecture-panel)); color: var(--lecture-primary);
+}
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .interface-settings-head button { color: var(--lecture-muted); background: transparent; border-color: transparent; }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .font-setting-controls button { color: var(--lecture-text); background: transparent; border-color: var(--lecture-border); }
+#fullscreenPage[data-demo-palette] .option-bar { background: color-mix(in srgb, var(--lecture-muted) 16%, transparent); border-color: var(--lecture-border); }
+#fullscreenPage[data-demo-palette] .option-bar span { background: var(--lecture-option-fill); }
+#fullscreenPage[data-demo-palette] .full-option.correct .option-bar span { background: #0eaa51; }
+#fullscreenPage[data-demo-palette] .lecture-select-menu button { color: var(--lecture-select-text); background: transparent; border-color: transparent; }
+#fullscreenPage[data-demo-palette] .lecture-select-menu button:hover { background: var(--lecture-select-option-hover); }
+#fullscreenPage[data-demo-palette] .lecture-select-menu button.active { background: var(--lecture-select-option-active); color: var(--lecture-button-hover-text); }
+#fullscreenPage[data-demo-palette] .similar-source-label { color: var(--lecture-muted); }
+#fullscreenPage[data-demo-palette] .similar-source-options { border-color: var(--lecture-border); background: var(--lecture-panel-deep); }
+#fullscreenPage[data-demo-palette] .similar-source-options button { color: var(--lecture-muted); background: transparent; border-color: transparent; }
+#fullscreenPage[data-demo-palette] .similar-source-options button.active { background: var(--lecture-primary); color: #fff; }
+#fullscreenPage[data-demo-palette] .question-picker-head button { color: var(--lecture-muted); border-color: var(--lecture-border); background: transparent; }
+#fullscreenPage[data-demo-palette][data-theme-kind="dark"] #questionPanelCollapse { color: #e6e6e6; border-color: #e6e6e62e; background: #e6e6e61a; box-shadow: 0 2px 8px #0003; }
+#fullscreenPage[data-demo-palette][data-theme-kind="dark"] #questionPanelCollapse:hover { border-color: #e6e6e657; background: #e6e6e62b; }
+#fullscreenPage[data-demo-palette][data-theme-kind="light"] #questionPanelCollapse { color: var(--lecture-primary); border-color: color-mix(in srgb, var(--lecture-primary) 20%, transparent); background: color-mix(in srgb, var(--lecture-primary) 8%, var(--lecture-panel-deep)); box-shadow: 0 2px 8px color-mix(in srgb, var(--lecture-primary) 10%, transparent); }
+#fullscreenPage[data-demo-palette][data-theme-kind="light"] #questionPanelCollapse:hover { border-color: color-mix(in srgb, var(--lecture-primary) 38%, transparent); background: color-mix(in srgb, var(--lecture-primary) 16%, var(--lecture-panel-deep)); box-shadow: 0 3px 10px color-mix(in srgb, var(--lecture-primary) 16%, transparent); }
+
+/* Picker rings use the same separate center, track and selected-role tokens. */
+#fullscreenPage[data-demo-palette] .question-picker-panel .nav-dot {
+  background: radial-gradient(circle at center, var(--lecture-ring-center) 0 61%, transparent 62%), conic-gradient(var(--ring, var(--lecture-primary)) var(--rate, 0deg), var(--lecture-ring-track) 0);
+  color: var(--lecture-text); box-shadow: var(--lecture-ring-shadow);
+}
+#fullscreenPage[data-demo-palette] .question-picker-panel .nav-dot.current {
+  background: radial-gradient(circle at center, var(--lecture-ring-selected-center) 0 61%, transparent 62%), conic-gradient(var(--ring, var(--lecture-primary)) var(--rate, 0deg), var(--lecture-ring-track) 0);
+  box-shadow: var(--lecture-ring-selected-shadow);
+}
+#fullscreenPage[data-demo-palette] .question-picker-panel .nav-number { color: var(--lecture-text); }
+#fullscreenPage[data-demo-palette] .question-picker-panel .nav-rate { color: var(--lecture-muted); }
+#fullscreenPage[data-demo-palette] .question-picker-panel .similar-nav-dot { background: var(--lecture-ring-center); }
+#fullscreenPage[data-demo-palette] .question-picker-panel .similar-nav-dot.current { background: var(--lecture-ring-selected-center); }
+
+/* Distinct state colors from the deployed dock (not a blanket button rule). */
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-icon-action { color: var(--lecture-muted); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-icon-action:hover { background: var(--lecture-icon-active-background); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-icon-action.active { color: var(--lecture-primary); background: var(--lecture-icon-active-background); border-color: var(--lecture-primary); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-text-action.active:hover { background: #0f5bea; border-color: #0f5bea; color: #fff; }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-practice-tools .dock-text-action { color: var(--lecture-muted); background: transparent; border-color: transparent; }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .dock-practice-tools .dock-text-action:hover:not(.active) { color: var(--lecture-text); }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-practice-tools .dock-text-action.active,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-knowledge button.active { background: #1268f3d1; border-color: #1268f3e0; color: #fff; }
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-practice-tools .dock-text-action.active:hover,
+:is(#fullscreenPage,.v1223-word-dock-owner)[data-demo-palette] .classroom-dock .dock-knowledge button.active:hover { background: #0f5beae6; border-color: #0f5beaf5; color: #fff; }
+#fullscreenPage[data-demo-palette] .dock-knowledge button:hover:not(.active) { border-color: color-mix(in srgb, var(--lecture-primary) 54%, var(--lecture-border)); background: color-mix(in srgb, var(--lecture-primary) 10%, transparent); color: color-mix(in srgb, var(--lecture-primary) 78%, #fff); }
+
+/* Masking keeps text invisible while the surface adopts each palette. */
+#fullscreenPage[data-demo-palette] .sentence.transcript-masked,
+#fullscreenPage[data-demo-palette] .sentence.transcript-masked.clue,
+#fullscreenPage[data-demo-palette] .sentence.transcript-masked.playing { color: transparent; background: var(--demo-mask-background); box-shadow: inset 0 0 0 1px #aebdd026, inset 0 -2px #0003; }
+#fullscreenPage[data-demo-palette] .sentence.transcript-masked * { color: transparent !important; background: transparent !important; text-decoration-color: transparent !important; }

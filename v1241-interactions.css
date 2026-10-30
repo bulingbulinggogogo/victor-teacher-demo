@@ -1,0 +1,32 @@
+/* Native unavailable/closed child controls must leave no sidebar slot. */
+#wordDetailDialog [data-word-feature][hidden],
+#wordDetailDialog #classroomDock [data-word-feature][hidden] {
+  display:none!important;
+}
+
+/* Reuse the native sort control beside the POS row, aligned to its right. */
+#wordDetailDialog .vwn-secondary-tools:has(>[data-v1241-sort-slot]:not([hidden])) {
+  width:100%;
+  max-width:100%;
+  flex:1 1 auto;
+  align-items:center;
+}
+#wordDetailDialog .vwn-secondary-tools:has(>[data-v1241-sort-slot]:not([hidden])) > .vwn-pos-tabs {
+  width:auto;
+  flex:0 1 auto;
+}
+#wordDetailDialog [data-v1241-sort-slot] {
+  margin-inline-start:auto;
+  flex:0 0 auto;
+}
+#wordDetailDialog .vwn-secondary-tools > [data-v1241-sort-slot][hidden] {
+  display:none!important;
+}
+@media(max-width:650px) {
+  #wordDetailDialog .vwn-secondary-tools:has(>[data-v1241-sort-slot]:not([hidden])) {
+    row-gap:8px;
+  }
+  #wordDetailDialog [data-v1241-sort-slot] {
+    margin-inline-start:0;
+  }
+}

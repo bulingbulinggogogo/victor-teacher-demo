@@ -1,0 +1,43 @@
+/* Video entries outside word details: source cover and duration, original text across full width. */
+#popover .v15-media-title-row{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 20px;flex:0 0 auto;}
+#popover .v15-media-title-row>.ke-wiki-name,#popover .v15-media-title-row>.resource-detail-title{margin:0;min-width:0;flex:1 1 auto;}
+#popover .v15-video-thumbnail{display:flex;align-items:center;gap:10px;flex:0 0 auto;max-width:38%;padding:0;border:0;background:transparent;color:var(--lecture-text);font:inherit;cursor:pointer;text-align:left;}
+#popover .v15-video-preview{width:100px;height:60px;position:relative;display:block;overflow:hidden;border-radius:6px;flex:0 0 100px;background:var(--lecture-panel-deep);}
+#popover .v15-video-preview>img,#popover .v15-video-preview>video{width:100%!important;height:100%!important;object-fit:contain;}
+#popover .v15-video-play-icon{position:absolute;inset:0;display:grid;place-items:center;color:white;}
+#popover .v15-video-play-icon svg{width:24px;height:24px;fill:currentColor;filter:drop-shadow(0 1px 4px #333);}
+#popover .v15-video-info{display:flex;flex-direction:column;gap:3px;font-size:calc(12px * var(--full-dialog-scale,1));line-height:1.3;max-width:200px;}
+#popover .v15-video-info strong{font-size:inherit;font-weight:600;}
+#popover .v15-video-info time{font-size:inherit;color:var(--lecture-muted);}
+#popover .v15-video-copy-layout{grid-template-columns:minmax(0,1fr)!important;display:block!important;}
+#popover .v15-video-player{position:absolute;width:1px!important;height:1px!important;overflow:hidden;clip-path:inset(50%);background:black;}
+#popover .v15-video-player:fullscreen,#popover .v15-video-player.v15-video-fallback{position:fixed!important;inset:0!important;display:block;width:100vw!important;height:100dvh!important;overflow:hidden;clip-path:none;border:0!important;border-radius:0;box-shadow:none!important;outline:none!important;z-index:10050;}
+#popover .v15-video-player:fullscreen>video,#popover .v15-video-player.v15-video-fallback>video{display:block;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain;border-radius:0!important;}
+#popover .v15-video-screen-tools{display:none;}
+#popover .v15-video-player:fullscreen>.v15-video-screen-tools,#popover .v15-video-player.v15-video-fallback>.v15-video-screen-tools{display:flex;position:absolute;left:24px;bottom:80px;gap:10px;}
+#popover .v15-video-screen-tools button{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;height:var(--v15-tool-height,50px);padding:0 15px;border:1px solid #667080;border-radius:7px;background:#18202dd9;color:white;font-family:inherit;font-size:var(--v15-tool-size,18px);font-weight:600;line-height:1.4;cursor:pointer;}
+#popover .v15-video-screen-tools button svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;}
+#popover .v15-video-fullscreen-button{border-color:var(--lecture-border);background:var(--lecture-panel-deep);color:var(--lecture-text);cursor:pointer;}
+
+
+/* V1.2.18: scoped playback controls; only sound remains on the right. */
+#popover .v18-video-controls{display:none;}
+#popover .v15-video-player:fullscreen>.v18-video-controls,#popover .v15-video-player.v15-video-fallback>.v18-video-controls{position:absolute;inset:auto 0 0;display:grid;grid-template-columns:40px max-content 1fr 40px;align-items:center;gap:8px;padding:30px 24px 22px;background:linear-gradient(transparent,#000b);color:white;box-sizing:border-box;font-family:inherit;font-size:14px;line-height:1.2;}
+#popover .v18-video-controls button{display:grid;place-items:center;box-sizing:border-box;width:40px;height:40px;margin:0;padding:8px;border:0;border-radius:4px;background:transparent;color:white;cursor:pointer;}
+#popover .v18-video-controls button:hover{background:#ffffff20;}
+#popover .v18-video-controls button:focus-visible,#popover .v18-video-seek:focus-visible{outline:2px solid #74b9ff;outline-offset:2px;}
+#popover .v18-video-toggle svg{width:24px;height:24px;fill:currentColor;stroke:none;}
+#popover .v18-video-volume-control{position:relative;grid-column:4;}
+#popover .v18-video-volume{position:absolute;bottom:40px;right:8px;box-sizing:border-box;width:24px;height:100px;margin:0;accent-color:white;writing-mode:vertical-lr;direction:rtl;opacity:0;pointer-events:none;transition:opacity .12s;}
+#popover .v18-video-volume-control:hover>.v18-video-volume,#popover .v18-video-volume-control:focus-within>.v18-video-volume{opacity:1;pointer-events:auto;}
+#popover .v18-video-sound svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+#popover .v18-video-clock{white-space:nowrap;font:inherit;font-variant-numeric:tabular-nums;}
+#popover .v18-video-seek{position:absolute;left:24px;right:24px;bottom:7px;box-sizing:border-box;width:calc(100% - 48px);height:8px;padding:0;margin:0;accent-color:white;cursor:pointer;}
+#popover .v18-video-status{position:absolute;bottom:120px;left:24px;max-width:calc(100% - 48px);padding:10px 14px;border-radius:5px;background:#000c;color:white;font-size:16px;}
+#popover .v18-video-status[hidden]{display:none;}
+
+/* Restored original video action shares toolbar metrics and theme colors. */
+#popover .v15-video-fullscreen-button > svg {
+ width:18px;height:18px;flex:0 0 18px;
+ fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;
+}

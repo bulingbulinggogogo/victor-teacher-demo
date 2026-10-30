@@ -1,0 +1,37 @@
+/* V1.2.76: scoped presentation corrections for horizontal statistics and contrast. */
+/* Equal color: bar length and the original label/count express the value. */
+#wordDetailDialog .v1227-word-statistics [data-stat-chart-type="bars"] .v1227-stat-bar-fill {
+ background:var(--v1275-blue,var(--lecture-primary))!important;filter:none!important;opacity:1!important;
+}
+/* Match the three-card statistics row; the last odd card must not span the row. */
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="bars"] {
+ grid-template-columns:repeat(3,minmax(0,1fr));
+}
+#wordDetailDialog .v1227-word-statistics [data-v1272-stat-layout] [data-v1266-chart-type="bars"]>.vside-single-chart {
+ grid-column:auto;
+}
+#wordDetailDialog .v1227-word-statistics [data-stat-chart-type="bars"] .v1227-stat-bar-row {
+ grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) auto;
+}
+/* The ordinary contrast panel grows from its actual text and images, not the viewport. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) .vwn-panel[aria-labelledby$="-tab-contrast"] .pgi-module {
+ height:auto!important;min-height:0!important;
+}
+
+/* Shared tools sit above both frozen navigation rows; only their list scrolls. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen) #classroomDock.v1223-word-dock,
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1275-controls="true"] .v1275-reading-layout>#classroomDock.v1223-word-dock:not(.collapsed) {
+ z-index:60!important;overflow:visible!important;
+}
+/* No content switches: the native compact dock floats without reserving a column. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1276-empty-dock="true"] :is(.vwn-content,.v1270-filter-slot) {
+ margin-inline:0!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen)[data-v1276-empty-dock="true"] #classroomDock .v1225-word-tree {
+ display:none!important;
+}
+/* The single original settings panel is portalled within its active dialog. */
+#wordDetailDialog>.interface-settings-panel[data-v1276-popup="true"] {
+ position:fixed!important;bottom:auto!important;right:auto!important;z-index:100!important;
+ overflow:auto;overscroll-behavior:contain;box-sizing:border-box;
+}

@@ -1,0 +1,47 @@
+/* The question is its own top row; it reduces the existing content viewport
+   without covering media or displacing the original Back/settings controls. */
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen > .v1281-fullscreen-heading {
+ display:flex!important;align-items:center;justify-content:center;flex:0 0 auto;
+ box-sizing:border-box;min-width:0;width:100%;padding:26px 24px 14px 104px;
+ color:var(--lecture-text);background:var(--lecture-resource-background,var(--lecture-panel));
+}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen.dock-right-layout > .v1281-fullscreen-heading {padding-inline:24px 104px;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen > .v1281-fullscreen-heading h2 {
+ margin:0;max-width:100%;font-family:inherit;font-weight:700;font-size:calc(30px * var(--full-dialog-scale,1));line-height:1.4;
+ text-align:center;overflow-wrap:anywhere;color:inherit;
+}
+#wordDetailDialog > .v1281-fullscreen-heading[hidden] {display:none!important;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen > .resource-popover-body {min-height:0!important;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen .vwn-panel:not([hidden]):has([data-v1279-semantic-network]) {
+ display:flex!important;flex-direction:column;min-height:0!important;height:100%!important;
+}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen .vwn-panel:not([hidden]):has([data-v1279-semantic-network]) > .vwn-panel-scroll {
+ display:flex!important;flex-direction:column;justify-content:safe center;flex:1 1 auto;min-height:0;height:100%;overflow:auto!important;
+}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen .vwn-panel:not([hidden]) [data-v1279-semantic-network] {
+ flex:0 0 auto!important;width:100%;height:auto!important;margin-block:auto;
+}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] .pgi-basic-node>img {
+ height:var(--v1281-network-base-image,210px)!important;min-height:var(--v1281-network-base-image,210px)!important;max-height:var(--v1281-network-base-image,210px)!important;
+}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] .pgi-base {margin-bottom:14px;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] .pgi-copy-row {margin-top:12px;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] .pgi-copy {padding:10px 6px;}
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] .pgi-visual-row {margin-top:14px;}
+/* These are the same controls moved from the footer, using the same source API. */
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock > .v1281-network-rail {
+ display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:6px;
+ width:100%;max-width:100%;min-width:0;margin:0;padding:0;
+}
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock > .v1281-network-rail[hidden],
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock.collapsed > .v1281-network-rail {display:none!important;}
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock > .v1281-network-rail button {
+ box-sizing:border-box;width:100%;min-width:0;min-height:40px;padding:5px 3px;font-size:12px;line-height:1.35;
+ white-space:normal;overflow-wrap:anywhere;
+}
+@media(max-height:940px){
+ #wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen [data-v1279-semantic-network] {--v1281-network-base-image:180px;}
+ #wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen > .v1281-fullscreen-heading {padding-top:20px;padding-bottom:10px;}
+}
+
+#wordDetailDialog.vwn-dialog.v1263-interactive-fullscreen > .resource-popover-body > .vwn-content:has([data-v1279-semantic-network]) {flex:1 1 auto!important;min-height:0!important;height:100%;}

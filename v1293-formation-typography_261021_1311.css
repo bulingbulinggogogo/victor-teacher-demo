@@ -1,0 +1,22 @@
+/* Confirmed content-role typography. All values follow the native font setting; base setting is 33. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"]{
+ --v1293-word-size:calc(36px * var(--full-dialog-scale,1.03125) / 1.03125);
+ --v1293-note-size:calc(18px * var(--full-dialog-scale,1.03125) / 1.03125);
+ --v1293-body-size:calc(20px * var(--full-dialog-scale,1.03125) / 1.03125);
+ --v1293-title-size:calc(22px * var(--full-dialog-scale,1.03125) / 1.03125);
+ --v1293-type-size:calc(14px * var(--full-dialog-scale,1.03125) / 1.03125);
+ --v1293-note-gap:calc(8px * var(--full-dialog-scale,1.03125) / 1.03125);
+ font-family:inherit!important;
+}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1282-topic-title{font-family:inherit!important;font-size:var(--v1293-title-size)!important;font-weight:600!important;color:var(--lecture-primary,#2864f0)!important;line-height:1.4!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1282-topic-subtitle{font-family:inherit!important;font-size:var(--v1293-type-size)!important;font-weight:400!important;color:var(--lecture-muted,#657791)!important;line-height:1.5!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] :is(.v1287-term-head,.v1282-formation-part>strong){font-family:inherit!important;font-size:var(--v1293-word-size)!important;font-weight:700!important;font-style:normal!important;line-height:1.2!important;color:var(--lecture-primary,#2864f0)!important;white-space:nowrap!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] :is(.v1287-term-meaning,.v1282-formation-part>span){font-family:inherit!important;font-size:var(--v1293-note-size)!important;font-weight:400!important;font-style:normal!important;line-height:1.5!important;color:var(--lecture-muted,#657791)!important;margin-top:var(--v1293-note-gap)!important;white-space:nowrap!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1287-term-meaning em{font:inherit!important;font-style:italic!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1287-equation-term:not(:has(>.v1287-term-meaning))::after{content:"";display:block;height:calc(var(--v1293-note-size) * 1.5);margin-top:var(--v1293-note-gap);}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1287-derivation-stage{font-family:inherit!important;font-size:var(--v1293-body-size)!important;font-weight:400!important;line-height:1.5!important;color:var(--lecture-text,#21314a)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] :is(.v1287-final-stage,.v1287-result){font-family:inherit!important;font-size:var(--v1293-body-size)!important;font-weight:700!important;line-height:1.5!important;color:var(--lecture-primary,#2864f0)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1287-result-detail{font-family:inherit!important;font-size:var(--v1293-body-size)!important;font-weight:400!important;line-height:1.5!important;color:var(--lecture-text,#21314a)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] .v1287-compound-note{font-family:inherit!important;font-size:var(--v1293-note-size)!important;font-weight:400!important;line-height:1.5!important;color:var(--lecture-muted,#657791)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] :is(.v1287-compound-note strong,.v1287-compound-note span){font:inherit!important;color:inherit!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block[data-v1282-topic-kind="构词解析"] :is(.v1287-operator,.v1282-formation-operator){font-family:inherit!important;font-size:var(--v1293-body-size)!important;font-weight:400!important;line-height:1.5!important;padding:0!important;color:var(--lecture-diagram-line,#9cb1d1)!important;align-self:center!important;}

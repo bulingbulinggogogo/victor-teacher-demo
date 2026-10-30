@@ -1,0 +1,10 @@
+/* Anchor the indicator to its label, not the asymmetric button box. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .vwn-main-nav > button.active::after {left:var(--v12104-label-center,50%)!important;}
+/* Empty sense cards have one balanced header row, without inline baseline struts. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] {display:flex!important;align-items:center!important;gap:12px!important;padding-block:20px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .v1220-sense-number {margin:0!important;flex-shrink:0;align-self:center!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .resource-sense-copy {display:flex!important;align-items:center!important;flex-wrap:wrap;flex:1;gap:8px 12px;line-height:1.4!important;padding:0!important;min-width:0;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .resource-sense-copy > .resource-sense-meaning {line-height:1.4!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .resource-sense-copy > :is(.resource-sense-meta,.v1220-english-definition) {margin:0!important;}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .v1227-meaning-group .resource-sense-list > .resource-sense-line:last-child {margin-bottom:0!important;}

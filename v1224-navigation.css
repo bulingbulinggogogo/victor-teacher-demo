@@ -1,0 +1,4 @@
+/* Navigation typography comes from the actual shared lecture dock. */
+.v1224-listening-count {color:var(--demo-red,#ef4444)!important;font-size:inherit!important;font-weight:inherit;}
+.v1223-word-dock-owner #classroomDock .v1225-listening-sidebar {display:flex!important;flex-direction:column;align-items:center;justify-content:center;white-space:normal!important;}
+.v1223-word-dock-owner #classroomDock .v1225-listening-sidebar > span {display:block!important;white-space:nowrap!important;}

@@ -1,0 +1,40 @@
+/* Mirror the real lecture's two levels: 64px parent, 52px indented child. */
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary [data-v1267-dock-level="2"]:not(.classroom-tools-floating):not(.v16-icon-tool){
+ font-family:var(--v1267-child-normal-font-family)!important;
+ font-size:var(--v1267-child-normal-font-size)!important;
+ font-weight:var(--v1267-child-normal-font-weight)!important;
+ font-style:var(--v1267-child-normal-font-style)!important;
+ line-height:var(--v1267-child-normal-line-height)!important;
+ letter-spacing:var(--v1267-child-normal-letter-spacing)!important;
+ width:var(--v1267-child-normal-width)!important;
+ height:var(--v1267-child-normal-height)!important;
+ min-height:var(--v1267-child-normal-min-height)!important;
+ padding:var(--v1267-child-normal-padding)!important;
+ border-width:var(--v1267-child-normal-border-width)!important;
+ border-style:var(--v1267-child-normal-border-style)!important;
+ border-radius:var(--v1267-child-normal-border-radius)!important;
+ border-color:var(--v1267-child-normal-border-color)!important;
+ background-color:var(--v1267-child-normal-background-color)!important;
+ color:var(--v1267-child-normal-color)!important;
+ text-align:var(--v1267-child-normal-text-align)!important;
+ white-space:var(--v1267-child-normal-white-space)!important;
+ box-shadow:var(--v1267-child-normal-box-shadow)!important;
+ max-width:var(--v1267-child-normal-width)!important;margin-inline-start:12px;margin-inline-end:0;
+}
+.v1223-word-dock-owner.dock-right-layout #classroomDock .v1225-word-secondary [data-v1267-dock-level="2"]{margin-inline-start:0;margin-inline-end:12px;}
+.v1223-word-dock-owner #classroomDock .v1225-word-secondary [data-v1267-dock-level="2"].active:not(.classroom-tools-floating):not(.v16-icon-tool){
+ color:var(--v1267-child-active-color)!important;background-color:var(--v1267-child-active-background-color)!important;border-color:var(--v1267-child-active-border-color)!important;
+}
+.v1223-word-dock-owner #classroomDock .v1267-block-category-controls{display:flex!important;flex-direction:column;gap:4px;align-items:center;}
+.v1223-word-dock-owner #classroomDock .v1267-block-category-controls[hidden]{display:none!important;}
+.v1223-word-dock-owner #classroomDock [data-word-block-category]:disabled{opacity:.42;cursor:default;}
+#wordDetailDialog [data-sense-feature="synonyms"],#wordDetailDialog [data-sense-feature="antonyms"]{border:0;border-radius:0;background:transparent;padding:0;margin:.15em 0;}
+#wordDetailDialog .v1267-word-block-heading{font:inherit;font-weight:700;margin:.3em 0;}
+#wordDetailDialog .v1267-word-blocks[hidden],#wordDetailDialog [data-v1267-word-block-group][hidden]{display:none!important;}
+#wordDetailDialog .v1267-example-export{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;border-bottom:1px solid var(--lecture-border);padding:0 0 .55em;margin-bottom:.55em;font-size:.75em;}
+#wordDetailDialog .v1267-example-export button{font:inherit;min-height:36px;padding:6px 12px;border:1px solid var(--lecture-primary);border-radius:6px;background:var(--lecture-primary);color:white;cursor:pointer;}
+#wordDetailDialog .v1267-example-export button:disabled{opacity:.45;cursor:default;}
+#wordDetailDialog .v1267-example-export button:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:3px;}
+#wordDetailDialog [data-v1267-export-status]{color:var(--lecture-muted);}
+
+#wordDetailDialog .v1267-example-export select{font:inherit;color:var(--lecture-text);background:var(--lecture-panel);border:1px solid var(--lecture-border);border-radius:6px;padding:6px;min-height:36px;max-width:100%;}

@@ -1,0 +1,67 @@
+/* Selected stack C. Geometry below is doubled because the original whole card
+   still uses zoom:.5. No trigger, source media, duration or player is replaced. */
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card {
+  --v1260-paper:#f6f9fd;
+  --v1260-paper-far:#e7eff9;
+  --v1260-paper-edge:#b9cadd;
+  --v1260-paper-glint:#fff;
+  --v1260-shadow:40,56,79;
+  position:relative;
+  isolation:isolate;
+  overflow:visible;
+  box-shadow:0 1.2px 2.6px rgba(var(--v1260-shadow),.22),0 8px 14px -2px rgba(var(--v1260-shadow),.24),0 0 0 .9px #c4d1e3;
+}
+#popover.resource-popover.dark-mode[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card {
+  --v1260-paper:#2d3c50;
+  --v1260-paper-far:#223043;
+  --v1260-paper-edge:#5f7694;
+  --v1260-paper-glint:#8a9db7;
+  --v1260-shadow:0,0,0;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::before,
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:6px;
+  pointer-events:none;
+  transform-origin:50% 100%;
+  box-shadow:inset 0 1px 0 var(--v1260-paper-glint),0 0 0 1.1px var(--v1260-paper-edge),0 3px 4.6px rgba(var(--v1260-shadow),.23),0 8px 10px -4px rgba(var(--v1260-shadow),.18);
+  transition:transform .23s ease,box-shadow .2s ease;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::before {
+  z-index:-2;
+  background:var(--v1260-paper-far);
+  transform:translate(6px,-4px) rotate(7deg);
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::after {
+  z-index:-1;
+  background:var(--v1260-paper);
+  transform:translate(-6px,-4px) rotate(-7deg);
+}
+/* The two opaque original rows stay above both decorative cards. */
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > :is(.v15-video-preview,.v15-video-info) {
+  position:relative;
+  z-index:1;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card > .v15-video-info {
+  border-radius:0 0 6px 6px;
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):is(:hover,:focus-visible) {
+  outline:none;
+  box-shadow:0 0 0 2px var(--lecture-primary),0 4px 6px rgba(var(--v1260-shadow),.25),0 14px 22px -4px rgba(var(--v1260-shadow),.38);
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):is(:hover,:focus-visible)::before {
+  transform:translate(8px,-6px) rotate(9deg);
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):is(:hover,:focus-visible)::after {
+  transform:translate(-8px,-6px) rotate(-9deg);
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):focus-visible {
+  outline:2px solid var(--lecture-primary);
+  outline-offset:12px;
+}
+@media(prefers-reduced-motion:reduce) {
+  #popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::before,
+  #popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card::after {transition:none;}
+}

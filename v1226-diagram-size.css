@@ -1,0 +1,84 @@
+/* V1.2.26: source diagrams remain complete; a shared image height and the
+ * live resource-popup body size replace per-column text shrinking. Artwork aspect ratios set column widths. */
+:is(#wordDetailDialog,#lexicalChunkDialog) {
+  --v1226-diagram-body-font:calc(24px * var(--full-dialog-scale,1));
+  --v1226-diagram-image-height:200px;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vwn-panel-scroll.is-visual {
+  display:block;overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vwn-panel-scroll.is-visual>section {
+  display:block;height:auto;min-height:0;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module {
+  display:flex;flex:0 0 auto;height:auto;min-height:0;
+  font-size:var(--v1226-diagram-body-font);line-height:1.5;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-scene-slot {
+  flex:0 0 auto;height:auto;min-height:0;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-scene {
+  height:auto;min-height:0;
+  --pgi-copy-font:var(--v1226-diagram-body-font);
+  --pgi-image-height:var(--v1226-diagram-image-height);
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module :is(.pgi-copy,.pgi-basic-node,.pgi-card-label,.pgi-module-head h3) {
+  font-size:var(--v1226-diagram-body-font);line-height:1.5;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-copy {
+  white-space:normal;overflow-wrap:anywhere;word-break:normal;
+  padding:5px 7px;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-copy :is(span,[data-pgi-line]) {
+  white-space:normal;overflow-wrap:anywhere;font:inherit;line-height:inherit;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-copy-row {
+  align-items:stretch;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-visual-row {
+  flex:0 0 var(--v1226-diagram-image-height);height:var(--v1226-diagram-image-height);
+  align-items:stretch;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-card>img,
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-single-image {
+  box-sizing:border-box;display:block;width:auto;max-width:none;height:var(--v1226-diagram-image-height);
+  min-height:var(--v1226-diagram-image-height);max-height:var(--v1226-diagram-image-height);
+  object-fit:contain;object-position:center;background:var(--lecture-panel);
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-contrast-grid {
+  grid-template-rows:auto var(--v1226-diagram-image-height);align-items:start;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-basic-node>img {
+  flex:0 0 auto;width:auto;max-width:none;
+  height:var(--v1226-diagram-image-height);
+  min-height:var(--v1226-diagram-image-height);max-height:var(--v1226-diagram-image-height);
+  object-fit:contain;object-position:center;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-basic-node>p {
+  font-size:var(--v1226-diagram-body-font);line-height:1.5;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-present-root {
+  width:min(1100px,100%);max-width:100%;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-formation-row {
+  grid-template-columns:minmax(0,1fr) 1em minmax(0,1fr) 1em minmax(0,1.4fr);
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-formation-box {
+  min-width:0;white-space:normal;overflow-wrap:anywhere;padding:6px 8px;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-formation-box span {
+  white-space:normal;overflow-wrap:anywhere;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .v1222-family-tree {
+  font-size:var(--v1226-diagram-body-font);line-height:1.5;
+}
+:is(#wordDetailDialog,#lexicalChunkDialog) .v1222-family-tree :is(.vft-word,.vft-meaning,.vft-note) {
+  font-size:var(--v1226-diagram-body-font)!important;line-height:1.5;
+  overflow-wrap:anywhere;
+}
+
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-card {align-items:center;}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-basic-node {flex-wrap:wrap;}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-basic-node>p {flex:0 1 auto;}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-single-image {align-self:center;}
+:is(#wordDetailDialog,#lexicalChunkDialog) .vpi-module .pgi-contrast-grid .pgi-card>img {justify-self:center;}

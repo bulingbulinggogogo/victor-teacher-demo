@@ -1,0 +1,5 @@
+/* V1.2.77: a manually collapsed meaning dock floats, without a reserved column.
+ * The expanded reading grid, source selection and fullscreen modules retain their existing rules. */
+#wordDetailDialog.vwn-dialog.v1220-dialog:not(.v1263-interactive-fullscreen).v1223-word-dock-collapsed[data-v1275-controls="false"] :is(.vwn-content,.v1270-filter-slot) {
+ margin-inline:0!important;
+}

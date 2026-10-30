@@ -1,0 +1,13 @@
+/* Source labels are content subheadings, never extra sidebar tabs. */
+#wordDetailDialog .v1235-source-note {
+  color:var(--lecture-text);font-family:inherit;
+  font-size:var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1)));line-height:1.5;
+}
+#wordDetailDialog .v1235-source-note > .v1235-note-subtitle {
+  margin:.35em 0 .25em;font:inherit;font-weight:600;color:var(--lecture-text);
+}
+#wordDetailDialog .v1235-source-note p {
+  font:inherit;font-weight:400;line-height:1.5;margin:.15em 0 .4em;
+  white-space:pre-wrap;overflow-wrap:anywhere;
+}
+#popover[data-knowledge-type="词汇"] .v1235-mother-note :is(h3,h4) {display:none;}

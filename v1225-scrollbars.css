@@ -1,0 +1,64 @@
+/* V1.2.25: reuse the captured test lecture scrollbar colors throughout the app.
+ * Source: 测试站全屏讲解样式_20261010.css, .picker-grid--audio.
+ * SHA-256 cb52990eac4665c85e837b11f07fd75033537df3d348c40d67d3f5a0b2b778aa.
+ * Only color/paint changes: original sizes, overflow, hidden tool scrollbars,
+ * scroll positions and the custom picker's drag handlers remain unchanged.
+ * --lecture-panel is the existing themed surface; the former custom picker
+ * referenced --lecture-surface, which is absent from the captured theme model.
+ */
+html,
+body,
+body * {
+  --v1225-scroll-thumb:color-mix(in srgb,var(--lecture-primary,#246bfd) 82%,#fff);
+  --v1225-scroll-thumb-hover:var(--lecture-primary,#246bfd);
+  --v1225-scroll-track:color-mix(in srgb,var(--lecture-border,#d7e4f5) 58%,var(--lecture-panel,#fff));
+  --v1225-scroll-track-border:color-mix(in srgb,var(--lecture-border,#d7e4f5) 82%,var(--lecture-text,#17243b));
+  --v1225-scroll-track-shadow:inset 0 0 0 1px color-mix(in srgb,var(--lecture-panel,#fff) 72%,transparent);
+  --v1225-scroll-thumb-shadow:0 0 0 1px color-mix(in srgb,var(--lecture-primary,#246bfd) 54%,transparent);
+  scrollbar-color:var(--v1225-scroll-thumb) var(--v1225-scroll-track)!important;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+body *::-webkit-scrollbar {background-color:var(--v1225-scroll-track)!important;}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+body *::-webkit-scrollbar-track {
+  background:var(--v1225-scroll-track)!important;
+  border-color:var(--v1225-scroll-track-border)!important;
+  box-shadow:var(--v1225-scroll-track-shadow)!important;
+  border-radius:999px;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+body *::-webkit-scrollbar-thumb {
+  background:var(--v1225-scroll-thumb)!important;
+  border-color:transparent!important;
+  border-radius:999px;
+  box-shadow:var(--v1225-scroll-thumb-shadow)!important;
+  background-clip:content-box!important;
+}
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+body *::-webkit-scrollbar-thumb:hover {
+  background-color:var(--v1225-scroll-thumb-hover)!important;
+}
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+body *::-webkit-scrollbar-corner {background:var(--v1225-scroll-track)!important;}
+
+/* The question picker intentionally hides its native scrollbar and draws one
+ * draggable thumb. Match its paint to the same native scrollbar tokens. */
+.question-picker-scrollbar {
+  border-color:var(--v1225-scroll-track-border)!important;
+  background:var(--v1225-scroll-track)!important;
+  box-shadow:var(--v1225-scroll-track-shadow)!important;
+}
+.question-picker-scrollbar .question-picker-scroll-thumb,
+.question-picker-scrollbar.no-overflow .question-picker-scroll-thumb {
+  background:var(--v1225-scroll-thumb)!important;
+  box-shadow:var(--v1225-scroll-thumb-shadow)!important;
+}
+.question-picker-scrollbar:hover .question-picker-scroll-thumb,
+.question-picker-scrollbar.is-dragging .question-picker-scroll-thumb {
+  background:var(--v1225-scroll-thumb-hover)!important;
+}

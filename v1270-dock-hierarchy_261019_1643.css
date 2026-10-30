@@ -1,0 +1,86 @@
+/* V69 review transfer: paint the existing word-detail feature hierarchy only.
+ * Original feature/category nodes, data fields, hidden state, event delegates,
+ * shared dock placement, collapse and theme owners remain unchanged. */
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]) {
+  border-color:var(--lecture-border)!important;
+  border-radius:7px!important;
+  background-color:var(--lecture-panel)!important;
+  color:var(--lecture-text)!important;
+  box-shadow:none!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]):hover {
+  border-color:var(--lecture-primary)!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 7%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]):is(.active,[aria-pressed="true"]) {
+  border-color:var(--lecture-primary)!important;
+  background-color:var(--lecture-primary)!important;
+  color:#fff!important;
+  font-weight:600!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-word-feature][data-v1267-dock-level="1"]:not([hidden]):is(.active,[aria-pressed="true"]):hover {
+  border-color:color-mix(in srgb,var(--lecture-primary) 90%,#000)!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 90%,#000)!important;
+  color:#fff!important;
+}
+
+/* The formal hierarchy already supplies the 52px child width and 12px inset.
+ * Each child draws only its own guide segment, so unavailable or closed items
+ * create neither a button slot nor a detached guide. No wrapper is rebuilt. */
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+  position:relative;
+  margin-inline-start:12px!important;
+  margin-inline-end:0!important;
+  height:auto!important;
+  min-height:25px!important;
+  padding:4px 1px!important;
+  border:0!important;
+  border-radius:5px!important;
+  background-color:transparent!important;
+  color:var(--lecture-muted)!important;
+  font-size:11px!important;
+  line-height:1.35!important;
+  font-weight:500!important;
+  white-space:normal!important;
+  box-shadow:none!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool)::before {
+  content:"";
+  position:absolute;
+  inset-inline-start:-7px;
+  top:-3px;
+  bottom:-3px;
+  width:2px;
+  border-radius:1px;
+  background:color-mix(in srgb,var(--lecture-primary) 18%,var(--lecture-panel));
+  pointer-events:none;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1267-block-category-controls [data-v1267-dock-level="2"]:not([hidden])::before {
+  top:-2px;
+  bottom:-2px;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):hover {
+  border-color:transparent!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 8%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):is(.active,[aria-pressed="true"]) {
+  border-color:transparent!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 15%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+  font-weight:600!important;
+}
+#wordDetailDialog.v1223-word-dock-owner #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool):is(.active,[aria-pressed="true"]):hover {
+  border-color:transparent!important;
+  background-color:color-mix(in srgb,var(--lecture-primary) 20%,var(--lecture-panel))!important;
+  color:var(--lecture-primary)!important;
+}
+#wordDetailDialog.v1223-word-dock-owner.dock-right-layout #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool) {
+  margin-inline-start:0!important;
+  margin-inline-end:12px!important;
+}
+#wordDetailDialog.v1223-word-dock-owner.dock-right-layout #classroomDock.v1223-word-dock:not(.collapsed) .v1225-word-secondary [data-v1267-dock-level="2"]:not([hidden]):not(.classroom-tools-floating):not(.v16-icon-tool)::before {
+  inset-inline-start:auto;
+  inset-inline-end:-7px;
+}

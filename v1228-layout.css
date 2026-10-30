@@ -1,0 +1,13 @@
+/* Default overview uses one reading surface; selected modules retain their original panes. */
+#wordDetailDialog[data-v1228-view="all"]>.resource-popover-body{overflow-y:auto!important;overflow-x:hidden!important;display:block!important;scrollbar-gutter:stable;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-content{display:block!important;overflow:visible!important;flex:none!important;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-panel{display:block!important;overflow:visible!important;flex:none!important;margin:0 0 1em;min-height:0;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-panel-scroll{display:block!important;overflow:visible!important;flex:none!important;max-height:none!important;min-height:0;padding:0;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-word-intro{margin-bottom:.65em;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-panel-title{padding-top:.45em;border-top:1px solid var(--lecture-border);margin-bottom:.35em!important;}
+#wordDetailDialog[data-v1228-view="all"] .vwn-panel-scroll.is-visual>section{display:block;flex:none;}
+#wordDetailDialog[data-v1228-view="all"] .pgi-scene-slot{height:auto!important;min-height:300px;overflow:visible!important;}
+#wordDetailDialog .v1228-block-category-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 .5em;}
+#wordDetailDialog .v1228-block-category-tabs[hidden]{display:none!important;}
+/* Blue boxes leave source text emphasis untouched. */
+#wordDetailDialog .pgi-present-root .pgi-formation-box,#popover .pgi-present-root .pgi-formation-box,#wordDetailDialog .pgi-scene .pgi-copy,#popover .pgi-scene .pgi-copy{border-color:var(--lecture-primary)!important;}

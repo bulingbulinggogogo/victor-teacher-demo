@@ -1,0 +1,15 @@
+/* Follow the existing short-dialogue playing ring and blue audio glow.
+   The whole entry is zoomed to .5: these 4px / 6px outlines display at 2px / 3px.
+   An inside outline remains visible when an ancestor clips the outer halo. */
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):is(:hover,:focus-visible) {
+  outline:4px solid var(--lecture-primary);
+  outline-offset:-4px;
+  box-shadow:
+    var(--lecture-playing-shadow,inset 0 0 0 1px var(--lecture-border)),
+    0 0 0 4px color-mix(in srgb,var(--lecture-primary) 28%,transparent),
+    0 10px 28px color-mix(in srgb,var(--lecture-primary) 38%,transparent);
+}
+#popover.resource-popover[data-knowledge-type] button.v15-video-thumbnail.v1242-video-card:not([hidden]):not(:disabled):focus-visible {
+  outline-width:6px;
+  outline-offset:-6px;
+}

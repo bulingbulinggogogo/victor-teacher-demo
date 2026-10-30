@@ -1,0 +1,24 @@
+/* One source block per compact unit; the source POS and meaning form its parent. */
+#wordDetailDialog .v1226-block-groups{display:block;min-width:0;color:var(--lecture-text);font-family:inherit;font-weight:400;line-height:1.5;}
+#wordDetailDialog .v1226-block-group{min-width:0;}
+#wordDetailDialog .v1226-block-group+.v1226-block-group{margin-top:.55em;padding-top:.4em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .v1226-block-group-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:.35em .65em;margin:0 0 .22em;color:var(--lecture-muted);font-size:.78em;line-height:1.45;}
+#wordDetailDialog .v1226-block-pos{color:var(--lecture-primary);font-weight:600;}
+#wordDetailDialog .v1226-block-parent-meaning{font-weight:500;}
+#wordDetailDialog .v1226-block-units{padding-inline-start:.55em;border-inline-start:1px solid var(--lecture-border);min-width:0;}
+#wordDetailDialog .v1226-block-unit{position:relative;min-width:0;padding:.18em 0 .26em .4em;border:0;margin:0;}
+#wordDetailDialog .v1226-block-unit+.v1226-block-unit{margin-top:.12em;padding-top:.32em;border-top:1px solid color-mix(in srgb,var(--lecture-border) 65%,transparent);}
+#wordDetailDialog .v1226-block-unit::before{content:"";position:absolute;inset-inline-start:-.55em;top:1em;width:.7em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .v1226-block-unit-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:.16em .4em;min-width:0;}
+#wordDetailDialog .v1226-block-category,#wordDetailDialog .v1226-block-subcategory,#wordDetailDialog .v1226-block-field-label{display:inline-block;flex:0 0 auto;border:1px solid currentColor;border-radius:.2em;padding:0 .3em;color:var(--lecture-primary);font-size:.65em;font-weight:600;line-height:1.45;white-space:nowrap;}
+#wordDetailDialog .v1226-block-subcategory{color:var(--lecture-muted);font-weight:500;}
+#wordDetailDialog .v1226-block-unit h4{flex:1 1 16em;min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .5em;font-size:1em!important;line-height:1.5;margin:0;font-weight:400;overflow-wrap:anywhere;}
+#wordDetailDialog .v1226-block-unit h4 strong{font-weight:700;}
+#wordDetailDialog .v1226-block-unit .v1226-block-chinese{margin:0;font-size:1em;color:var(--lecture-text);font-weight:400;}
+#wordDetailDialog .v1226-block-associated{position:relative;min-width:0;margin:.14em 0 0 .6em;padding-inline-start:.55em;border-inline-start:1px solid var(--lecture-border);}
+#wordDetailDialog .v1226-block-associated>.v1226-block-field,#wordDetailDialog .v1226-block-associated>.v1222-sense-example{position:relative;}
+#wordDetailDialog .v1226-block-associated>.v1226-block-field::before,#wordDetailDialog .v1226-block-associated>.v1222-sense-example::before{content:"";position:absolute;inset-inline-start:-.55em;top:.92em;width:.4em;border-top:1px solid var(--lecture-border);}
+#wordDetailDialog .resource-popover-body .v1226-block-field{display:flex;flex-wrap:wrap;align-items:baseline;gap:.18em .4em;font-size:1em!important;line-height:1.5!important;margin:.03em 0;}
+#wordDetailDialog .v1226-block-field>span:last-child{flex:1 1 12em;min-width:0;overflow-wrap:anywhere;}
+#wordDetailDialog .v1226-block-associated .v1222-sense-example{margin:0;padding:.12em 0 .14em;}
+#wordDetailDialog .v1226-block-unit>.v1220-related-link{margin:.2em 0 0;}

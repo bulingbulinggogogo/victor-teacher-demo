@@ -1,0 +1,381 @@
+.classroom-tools-dialog { overflow:hidden!important; }
+.classroom-tools-dialog > .resource-popover-page {
+  display:flex; flex-direction:column; flex:1 1 auto!important; min-height:0; overflow:hidden;
+}
+.classroom-tools-dialog > .resource-popover-page > article {
+  display:flex; flex-direction:column; flex:1 1 auto; min-height:0; overflow:hidden;
+}
+.classroom-tools-dialog .resource-popover-body {
+  min-height:0; flex:1 1 auto; max-height:var(--classroom-body-budget,calc(100dvh - 180px))!important;
+}
+.classroom-tools-dialog > .classroom-modal-tools,
+.classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {
+  position:relative; flex:0 0 auto; display:flex; flex-direction:column; gap:0;
+  min-width:0; width:100%; margin:0; padding:12px 24px;
+  border-top:1px solid var(--lecture-border); background:var(--lecture-panel); z-index:3;
+}
+.classroom-modal-actions,.classroom-modal-navigation {
+  display:flex; align-items:center; justify-content:flex-start; flex-wrap:wrap; gap:10px;
+  width:100%; min-width:0; max-height:38dvh; overflow-x:hidden; overflow-y:auto;
+}
+.classroom-modal-actions { order:1; }
+.classroom-modal-navigation { order:2; }
+.classroom-modal-actions:empty,.classroom-modal-navigation:empty { display:none; }
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-actions,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-navigation { justify-content:flex-end; }
+.classroom-modal-actions > .resource-popover-pager {
+  display:flex; flex:0 1 auto; align-items:center; gap:16px;
+  position:static; margin:0; padding:0; border:0; background:transparent;
+}
+.classroom-modal-actions > .resource-popover-pager > span { flex:0 0 auto; }
+.classroom-modal-actions > .ke-topic-frozen-toolbar,
+.classroom-modal-actions > .ke-topic-toolbar {
+  width:auto!important; max-width:100%!important; margin:0!important; padding:0!important; flex:0 1 auto;
+}
+.classroom-modal-actions > .ke-topic-frozen-toolbar .ke-topic-directions { flex-wrap:wrap; }
+.classroom-modal-actions > footer:not([data-classroom-footer]) { margin:0; padding:0; border:0; }
+.classroom-tools-reservation { flex:0 0 auto; min-width:0; }
+.classroom-tools-reservation[data-classroom-tool-kind="grammar"] { flex:1 0 100%; width:100%; }
+.classroom-tools-floating {
+  position:fixed!important; inset:auto!important;
+  left:var(--classroom-tool-left,0px)!important; top:var(--classroom-tool-top,0px)!important;
+  width:var(--classroom-tool-width,auto)!important; max-width:var(--classroom-tool-width,100%)!important;
+  margin:0!important; z-index:5;
+}
+.classroom-tools-floating.ke-g-toolbar { padding:0!important; background:var(--lecture-panel); }
+.classroom-tools-floating.ke-modal-expand { min-width:0; }
+@media(max-width:720px) {
+  .classroom-tools-dialog > .classroom-modal-tools { padding:10px 16px; }
+}
+
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar { justify-content:flex-start; }
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-buttons { flex:0 1 auto; }
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-tools-floating.ke-g-toolbar,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-tools-floating.ke-g-toolbar .ke-g-buttons { justify-content:flex-end; }
+.classroom-tools-dialog.ke-expanded > .classroom-modal-tools,
+.classroom-tools-dialog.ke-expanded .full-option-student-panel > .classroom-modal-tools { margin-top:auto!important; }
+
+/* V1.2.14: fullscreen is always the dialog's bottom-left action. */
+.classroom-tools-dialog > .classroom-modal-tools,
+.classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {
+ display:grid!important; grid-template-columns:max-content minmax(0,1fr); grid-template-rows:auto auto; column-gap:12px;
+}
+.classroom-modal-actions { grid-column:1 / -1; grid-row:1; }
+.classroom-modal-navigation { grid-column:2; grid-row:2; align-self:end; }
+.classroom-modal-expand-host { grid-column:1; grid-row:2; align-self:end; justify-self:start; display:flex; gap:8px; min-width:0; }
+.classroom-tools-dialog .classroom-modal-navigation:empty { display:none; }
+.classroom-tools-dialog .vwn-main-nav { width:auto; max-width:100%; }
+.classroom-modal-expand-host > .classroom-image-expand { position:static;inset:auto;margin:0;align-self:end;width:auto;height:36px;padding:7px 10px;border:1px solid var(--lecture-border);border-radius:7px;background:var(--lecture-panel-deep);color:var(--lecture-text);font-size:13px;font-weight:600;line-height:1.4; }
+
+/* V1.2.15: shared dimensions for footer tools only; original main dock and inline controls stay intact. */
+.classroom-tools-dialog { --v15-tool-size:var(--v16-popup-tool-font-size,12px); --v15-tool-height:var(--v16-popup-tool-height,40px); }
+.classroom-tools-dialog .classroom-modal-tools button,
+.classroom-tools-dialog > .ke-modal-expand,
+.classroom-tools-dialog .full-option-student-panel > .ke-modal-expand,
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar button {
+ display:inline-flex!important;align-items:center;justify-content:center;gap:6px;
+ box-sizing:border-box!important;flex:0 0 auto;min-height:var(--v15-tool-height)!important;height:var(--v15-tool-height)!important;
+ padding:0 12px!important;margin:0;min-width:64px;
+ border-width:1px!important;border-style:solid!important;border-radius:7px!important;
+ font-family:var(--v16-popup-tool-font-family,inherit)!important;font-size:var(--v15-tool-size)!important;line-height:var(--v16-popup-tool-line-height,normal)!important;font-weight:var(--v16-popup-tool-font-weight,600)!important;white-space:nowrap;
+}
+.classroom-tools-dialog .classroom-modal-tools button svg,
+.classroom-tools-dialog > .ke-modal-expand svg,
+.classroom-tools-dialog .full-option-student-panel > .ke-modal-expand svg {width:18px;height:18px;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;}
+.classroom-tools-dialog .classroom-modal-back {color:var(--lecture-text);background:var(--lecture-panel-deep);border-color:var(--lecture-border);cursor:pointer;}
+.classroom-tools-dialog .classroom-modal-more {color:var(--lecture-text);background:var(--lecture-panel-deep);border-color:var(--lecture-border);cursor:pointer;}
+.classroom-tools-dialog .classroom-modal-back[hidden],
+.classroom-tools-dialog .classroom-modal-tools button[hidden],
+.classroom-tools-dialog .classroom-modal-tools [hidden] {display:none!important}
+.classroom-tools-dialog .classroom-modal-expand-host {align-items:center;align-self:center;flex-wrap:nowrap;}
+.classroom-tools-dialog .classroom-modal-navigation {align-self:center;max-height:none;overflow:visible;gap:10px;}
+.classroom-tools-dialog .classroom-modal-navigation > .resource-popover-pager {display:flex;align-items:center;gap:12px;flex:0 0 auto;border:0;padding:0;margin:0;background:transparent}
+.classroom-tools-dialog .classroom-modal-navigation > .resource-popover-pager > span {font-size:var(--v15-tool-size);line-height:1.4;flex:0 0 auto;}
+.classroom-tools-dialog .vwn-main-nav {min-width:0;max-width:100%;flex:0 1 auto;overflow:auto hidden;flex-wrap:nowrap!important;border-top:0;padding:0;margin:0;}
+.classroom-tools-dialog .vwn-secondary-tools {padding:0 0 8px;max-width:100%;}
+.classroom-tools-dialog .classroom-modal-actions:empty {display:none;}
+.classroom-tools-dialog .classroom-modal-tools button:focus-visible {outline:3px solid var(--lecture-primary);outline-offset:2px;}
+
+/* V1.2.16: change the teaching-dialog shell only; keep body words and inner cards. */
+#popover.classroom-tools-dialog.ke-expanded[data-classroom-tools-side],
+#wordDetailDialog.classroom-tools-dialog.ke-expanded[data-classroom-tools-side],
+#lexicalChunkDialog.classroom-tools-dialog.ke-expanded[data-classroom-tools-side] {
+ inset:0!important; width:100vw!important; max-width:100vw!important;
+ height:100dvh!important; max-height:100dvh!important; margin:0!important; transform:none!important;
+ border:0!important; border-radius:0!important; box-shadow:none!important;
+}
+.classroom-tools-dialog.ke-expanded > .resource-popover-head,
+.classroom-tools-dialog.ke-expanded > header,
+.classroom-tools-dialog.ke-expanded .full-option-student-panel > header {display:none!important;}
+#fullOptionStudentDialog.classroom-tools-dialog.ke-expanded .full-option-student-panel {
+ width:100vw!important;max-width:100vw!important;height:100dvh!important;max-height:100dvh!important;
+ margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;
+}
+.classroom-tools-dialog > .classroom-modal-tools,
+.classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {row-gap:10px;}
+.classroom-tools-dialog .classroom-modal-tools .v16-icon-tool,
+.classroom-tools-dialog > .ke-modal-expand.v16-icon-tool,
+.classroom-tools-dialog .full-option-student-panel > .ke-modal-expand.v16-icon-tool,
+.classroom-tools-dialog .resource-image-fullscreen.v16-icon-tool {
+ min-width:var(--v15-tool-height,40px)!important;width:var(--v15-tool-height,40px)!important;
+ padding:0!important;gap:0!important;
+}
+.classroom-tools-dialog .v16-icon-tool > span {display:none!important;}
+.classroom-tools-dialog .resource-image-fullscreen.v16-icon-tool {
+ min-height:var(--v15-tool-height,40px)!important;height:var(--v15-tool-height,40px)!important;box-sizing:border-box!important;
+ border-radius:7px!important;font-size:var(--v15-tool-size,12px)!important;
+ font-weight:var(--v16-popup-tool-font-weight,600)!important;
+}
+.classroom-tools-dialog .v16-icon-tool > svg {width:18px!important;height:18px!important;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.classroom-tools-dialog > .ke-modal-expand[hidden],
+.classroom-tools-dialog .classroom-tools-reservation[hidden] {display:none!important;}
+.v15-video-screen-tools button {
+ min-height:var(--v16-popup-tool-height,40px)!important;height:var(--v16-popup-tool-height,40px)!important;
+ padding:0 12px!important;gap:6px!important;border-width:1px!important;border-radius:7px!important;
+ font-family:var(--v16-popup-tool-font-family,inherit)!important;
+ font-size:var(--v16-popup-tool-font-size,12px)!important;
+ font-weight:var(--v16-popup-tool-font-weight,600)!important;
+ line-height:var(--v16-popup-tool-line-height,normal)!important;
+}
+.v15-video-screen-tools button svg {width:18px!important;height:18px!important;}
+.v15-video-screen-tools .v16-native-video-expand {min-width:40px!important;width:40px!important;padding:0!important;gap:0!important;}
+.v15-video-screen-tools .v16-native-video-expand > span {display:none!important;}
+
+/* V1.2.17: one centered tool row. Fullscreen and close remain at the left;
+   the remaining groups scroll horizontally when their actual width exceeds it. */
+.classroom-tools-dialog > .classroom-modal-tools,
+.classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {
+ display:grid!important;grid-template-columns:max-content minmax(0,1fr)!important;
+ grid-template-rows:var(--v15-tool-height,40px)!important;align-items:center!important;
+ min-height:calc(var(--v15-tool-height,40px) + 17px)!important;max-height:calc(var(--v15-tool-height,40px) + 17px)!important;
+ box-sizing:border-box!important;padding:8px 24px!important;column-gap:12px!important;row-gap:0!important;
+}
+.classroom-tools-dialog .classroom-modal-expand-host {
+ grid-column:1!important;grid-row:1!important;align-self:center!important;align-items:center!important;
+ height:var(--v15-tool-height,40px);gap:8px;flex-wrap:nowrap!important;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip {
+ grid-column:2;grid-row:1;display:flex;align-items:center;gap:12px;min-width:0;
+ height:var(--v15-tool-height,40px);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip::-webkit-scrollbar {display:none;}
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-actions,
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-navigation {
+ display:flex;flex:0 0 auto;width:auto!important;max-width:none!important;min-width:0;
+ height:var(--v15-tool-height,40px);max-height:none!important;align-self:center!important;align-items:center!important;
+ padding:0!important;margin:0;flex-wrap:nowrap!important;overflow:visible!important;gap:8px!important;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-actions:empty,
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-navigation:empty {display:none!important;}
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-toolstrip > .classroom-modal-actions {margin-left:auto;}
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-toolstrip > .classroom-modal-actions:empty + .classroom-modal-navigation {margin-left:auto;}
+.classroom-tools-dialog .classroom-modal-toolstrip .vwn-main-nav,
+.classroom-tools-dialog .classroom-modal-toolstrip .vwn-secondary-tools,
+.classroom-tools-dialog .classroom-modal-toolstrip .vwn-pos-tabs,
+.classroom-tools-dialog .classroom-modal-toolstrip .vpi-tools,
+.classroom-tools-dialog .classroom-modal-toolstrip .vpi-pos-tabs,
+.classroom-tools-dialog .classroom-modal-toolstrip .ke-topic-frozen-toolbar,
+.classroom-tools-dialog .classroom-modal-toolstrip .ke-topic-toolbar,
+.classroom-tools-dialog .classroom-modal-toolstrip .ke-topic-directions {
+ flex:0 0 auto!important;width:auto!important;max-width:none!important;min-width:0;
+ padding:0!important;margin:0!important;flex-wrap:nowrap!important;align-items:center!important;
+ overflow:visible!important;gap:8px!important;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip .vwn-main-nav {border:0!important;}
+.classroom-tools-dialog .classroom-modal-toolstrip .vwn-main-nav {
+ border-left:1px solid var(--lecture-border)!important;padding-left:12px!important;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip .resource-popover-pager {
+ height:var(--v15-tool-height,40px);display:flex;align-items:center;gap:8px!important;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip .resource-popover-pager > span {
+ display:inline-flex;align-items:center;justify-content:center;align-self:center;min-width:48px;
+ height:var(--v15-tool-height,40px);font-family:var(--v16-popup-tool-font-family,inherit)!important;
+ font-size:var(--v16-popup-tool-font-size,12px)!important;font-weight:var(--v16-popup-tool-font-weight,600)!important;line-height:var(--v16-popup-tool-line-height,normal)!important;font-variant-numeric:tabular-nums;
+}
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-actions:has(> .classroom-tools-reservation[data-classroom-tool-kind="grammar"]) {
+ flex:1 1 auto!important;width:100%!important;
+}
+.classroom-tools-dialog .classroom-tools-reservation[data-classroom-tool-kind="grammar"] {
+ flex:1 1 auto!important;width:100%!important;height:var(--v15-tool-height,40px)!important;
+}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar {
+ display:flex!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:nowrap!important;
+ height:var(--v15-tool-height,40px)!important;gap:8px!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none;
+}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar::-webkit-scrollbar {display:none;}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-buttons {
+ flex:0 0 auto!important;align-items:center!important;flex-wrap:nowrap!important;gap:8px!important;
+}
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-tools-floating.ke-g-toolbar .ke-g-buttons {margin-left:auto;}
+.classroom-tools-dialog .resource-image-fullscreen.v16-icon-tool,
+.classroom-tools-dialog .v16-icon-tool {
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ padding:0!important;gap:0!important;text-indent:0!important;line-height:1!important;overflow:visible!important;
+}
+.classroom-tools-dialog .v16-icon-tool > svg {
+ display:block!important;flex:0 0 18px!important;margin:0!important;max-width:none!important;
+ transform:none!important;position:static!important;overflow:visible!important;
+}
+@media(max-width:720px) {
+ .classroom-tools-dialog > .classroom-modal-tools,
+ .classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {padding-inline:16px!important;column-gap:8px!important;}
+}
+
+/* V1.2.18: the meanings POS group sits above its module, rather than
+   preceding the module strip. Other modules retain the one-row footer. */
+#wordDetailDialog.classroom-tools-dialog > .classroom-modal-tools.classroom-word-pos-above {
+ grid-template-rows:repeat(2,var(--v15-tool-height,40px))!important;
+ row-gap:8px!important;min-height:calc(2 * var(--v15-tool-height,40px) + 25px)!important;
+ max-height:calc(2 * var(--v15-tool-height,40px) + 25px)!important;
+}
+#wordDetailDialog.classroom-tools-dialog > .classroom-word-pos-above > .classroom-modal-expand-host {grid-row:2!important;}
+#wordDetailDialog.classroom-tools-dialog > .classroom-word-pos-above > .classroom-modal-toolstrip {
+ grid-row:1 / 3;height:calc(2 * var(--v15-tool-height,40px) + 8px)!important;align-items:center;
+}
+#wordDetailDialog .classroom-word-pos-stack {
+ display:grid;grid-template-rows:repeat(2,var(--v15-tool-height,40px));gap:8px;
+ flex:0 0 auto;width:max-content;min-width:0;height:calc(2 * var(--v15-tool-height,40px) + 8px);
+}
+#wordDetailDialog[data-classroom-tools-side="right"] .classroom-word-pos-stack {margin-left:auto;}
+#wordDetailDialog .classroom-word-pos-stack > .classroom-modal-actions,
+#wordDetailDialog .classroom-word-pos-stack > .classroom-modal-navigation {
+ display:flex!important;justify-content:flex-start!important;align-items:center!important;align-self:center!important;
+ grid-column:1!important;
+ flex-wrap:nowrap!important;gap:8px!important;width:auto!important;max-width:none!important;min-width:0;
+ height:var(--v15-tool-height,40px)!important;max-height:none!important;
+ padding:0!important;margin:0!important;overflow:visible!important;
+}
+#wordDetailDialog .classroom-word-pos-stack > .classroom-modal-actions {grid-row:1;}
+#wordDetailDialog .classroom-word-pos-stack > .classroom-modal-actions {padding-left:var(--classroom-subnav-offset,0px)!important;box-sizing:border-box;}
+#wordDetailDialog .classroom-word-pos-stack > .classroom-modal-navigation {grid-row:2;}
+#wordDetailDialog .classroom-word-pos-stack .vwn-main-nav {
+ border:0!important;padding:0!important;justify-content:flex-start!important;
+}
+
+/* Keep the all-structures action reachable; only the role group scrolls. */
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar {overflow:visible!important;}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-buttons {
+ flex:1 1 auto!important;min-width:0!important;height:var(--v15-tool-height,40px)!important;
+ overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none;
+}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-buttons::-webkit-scrollbar {display:none;}
+.classroom-tools-dialog .classroom-tools-floating.ke-g-toolbar .ke-g-all {flex:0 0 auto!important;margin-left:0!important;}
+
+
+/* V1.2.21: keep the complete footer group on the selected classroom side.
+   The source all-show buttons retain their event parents and use a footer slot.
+   Only long module/role lists scroll; body content keeps its original width. */
+.classroom-tools-dialog > .classroom-modal-tools,
+.classroom-tools-dialog .full-option-student-panel > .classroom-modal-tools {
+ display:flex!important;flex-direction:row!important;align-items:center!important;
+ justify-content:flex-start!important;gap:12px!important;
+}
+.classroom-tools-dialog[data-classroom-tools-side="right"] > .classroom-modal-tools,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .full-option-student-panel > .classroom-modal-tools {
+ justify-content:flex-end!important;
+}
+.classroom-tools-dialog .classroom-modal-expand-host {flex:0 0 auto!important;order:1;}
+.classroom-tools-dialog .classroom-modal-toolstrip {flex:0 1 auto!important;order:2;width:max-content!important;max-width:100%;}
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-actions,
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-navigation,
+#wordDetailDialog[data-classroom-tools-side="right"] .classroom-word-pos-stack {margin-left:0!important;}
+.classroom-tools-dialog .classroom-modal-toolstrip > .classroom-modal-actions:has(> .classroom-tools-reservation[data-classroom-tool-kind="grammar"]) {
+ flex:0 0 auto!important;width:auto!important;
+}
+.classroom-tools-dialog .classroom-tools-reservation[data-classroom-tool-kind="grammar"] {flex:0 0 auto!important;width:var(--classroom-grammar-width,80px)!important;}
+.classroom-tools-dialog .classroom-tools-floating.classroom-tools-all {
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ box-sizing:border-box!important;min-height:var(--v15-tool-height,40px)!important;height:var(--v15-tool-height,40px)!important;
+ flex:0 0 auto!important;min-width:64px!important;padding:0 12px!important;margin:0!important;gap:6px;
+ border:1px solid var(--lecture-border)!important;border-radius:7px!important;
+ background:var(--lecture-panel-deep)!important;color:var(--lecture-text)!important;
+ font-family:var(--v16-popup-tool-font-family,inherit)!important;
+ font-size:var(--v15-tool-size,12px)!important;font-weight:var(--v16-popup-tool-font-weight,600)!important;
+ line-height:var(--v16-popup-tool-line-height,normal)!important;white-space:nowrap;cursor:pointer;
+}
+.classroom-tools-dialog .classroom-tools-floating.classroom-tools-all[aria-pressed="true"] {border-color:var(--lecture-primary)!important;color:var(--lecture-primary)!important;}
+.classroom-tools-dialog .classroom-tools-floating.classroom-tools-all:focus-visible {outline:3px solid var(--lecture-primary);outline-offset:2px;}
+#wordDetailDialog.classroom-tools-dialog > .classroom-modal-tools.classroom-word-pos-above {align-items:flex-end!important;}
+#wordDetailDialog.classroom-tools-dialog > .classroom-word-pos-above > .classroom-modal-expand-host {align-self:flex-end!important;}
+
+
+/* V1.2.22: mirror the actual order of each footer level. Captions and
+   diagrams remain left-to-right; only their control groups change direction. */
+.classroom-tools-dialog[data-classroom-tools-side="right"] > .classroom-modal-tools,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .full-option-student-panel > .classroom-modal-tools {
+ flex-direction:row-reverse!important;justify-content:flex-start!important;
+}
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-expand-host,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-toolstrip,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-actions,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-navigation,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .vwn-main-nav,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .vwn-pos-tabs,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .vpi-tools,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .vpi-pos-tabs,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .v1220-secondary-tabs,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .ke-topic-frozen-toolbar,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .ke-topic-toolbar,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .ke-topic-directions,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .tc-actions,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .tc-stages,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .tc-directions,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-tools-floating.ke-g-toolbar,
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-tools-floating.ke-g-toolbar .ke-g-buttons {
+ flex-direction:row-reverse!important;justify-content:flex-start!important;
+}
+.classroom-tools-dialog[data-classroom-tools-side="right"] .classroom-modal-toolstrip .vwn-main-nav {
+ border-left:0!important;padding-left:0!important;
+ border-right:1px solid var(--lecture-border)!important;padding-right:12px!important;
+}
+#wordDetailDialog[data-classroom-tools-side="right"] .classroom-word-pos-stack > .classroom-modal-actions {
+ padding-left:0!important;padding-right:var(--classroom-subnav-offset,0px)!important;
+}
+#wordDetailDialog[data-classroom-tools-side="right"] .classroom-word-pos-stack .vwn-main-nav {
+ border-right:0!important;padding-right:0!important;justify-content:flex-start!important;
+}
+.classroom-tools-dialog .classroom-tools-floating.classroom-tools-all.v16-icon-tool {
+ min-width:var(--v15-tool-height,40px)!important;width:var(--v15-tool-height,40px)!important;
+ max-width:var(--v15-tool-height,40px)!important;padding:0!important;gap:0!important;
+}
+.classroom-tools-dialog .classroom-tools-floating.classroom-tools-all.v16-icon-tool > svg {
+ width:18px!important;height:18px!important;flex:0 0 18px!important;
+ display:block!important;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;
+}
+/* The existing all-show control now has a text caption; its native toolbar
+   font, height and spacing remain unchanged. Its slot follows natural width. */
+.classroom-tools-dialog .classroom-tools-all {
+ width:auto!important;min-width:0!important;padding:0 12px!important;
+}
+.classroom-tools-dialog .classroom-tools-all > span {display:inline!important;}
+
+/* Vocabulary uses the original in-body detail entry and resource pager.
+   Its footer has no separator, including when the pager is empty. */
+#popover[data-knowledge-type="词汇"] > .classroom-modal-tools {
+ border-top:0!important;
+}
+
+/* All navigation/tool captions sample the original lecture text-action font. */
+.classroom-tools-dialog .classroom-modal-tools button,
+.classroom-tools-dialog .resource-image-fullscreen.v16-icon-tool,
+.classroom-tools-dialog .v16-icon-tool,
+#returnToLecture,#returnToLecture>b,#dockLayoutSwitch,#dockLayoutSwitch>b{
+ font-family:var(--v16-popup-tool-font-family,inherit)!important;
+ font-size:var(--v16-popup-tool-font-size,12px)!important;
+ font-weight:var(--v16-popup-tool-font-weight,600)!important;
+ line-height:var(--v16-popup-tool-line-height,normal)!important;
+ font-style:var(--v16-popup-tool-font-style,normal)!important;
+ letter-spacing:var(--v16-popup-tool-letter-spacing,normal)!important;
+}
+.classroom-tools-dialog .classroom-modal-tools button :is(span,b,strong):not([data-icon]){
+ font-family:inherit!important;font-size:inherit!important;font-weight:inherit!important;line-height:inherit!important;font-style:inherit!important;letter-spacing:inherit!important;
+}
+.classroom-tools-dialog .classroom-modal-expand-host>.tc-directions{display:flex;flex:0 0 auto;gap:0;}
+
+/* Ordinary knowledge cards without controls have no footer row or divider.
+   A real control restores the original toolbar dimensions and appearance. */
+#popover:not(.ke-expanded)>.classroom-modal-tools[data-classroom-tools-empty="true"]{
+ display:none!important;flex:0 0 0!important;min-height:0!important;max-height:0!important;height:0!important;
+ margin:0!important;padding:0!important;border:0!important;gap:0!important;
+}

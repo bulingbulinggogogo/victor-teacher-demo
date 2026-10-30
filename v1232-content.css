@@ -1,0 +1,19 @@
+/* V1.2.32: PPT single-scene copy shares the image center; module titles stay in place. */
+#wordDetailDialog .pgi-scene-single > :is(.pgi-copy,.pgi-single-body-copy) { text-align:center; }
+#wordDetailDialog .vwn-panel:has(.vpi-module[data-graph-key="deep-fry"]) .v1220-note p { text-align:center; }
+/* Source emphasis retains its weight without a separate red text color. */
+#wordDetailDialog :is(.v1220-source-red,.resource-mark-red,.pgi-source-red),
+#wordDetailDialog .vpi-module .pgi-formation-operator,
+#wordDetailDialog .v1222-family-tree .vft-affix { color:inherit!important; }
+/* Single-scene formulas and captions are body copy, not framed headings. */
+#wordDetailDialog .pgi-scene-single > .pgi-copy {
+ border:0!important; box-shadow:none; background:transparent; padding:0;
+ font-family:inherit; font-size:var(--v1229-copy-font,var(--v1226-body-font))!important;
+ font-weight:400; line-height:1.5; color:var(--lecture-muted);
+}
+/* Vocabulary mother-popup notes return to plain explanation paragraphs. */
+#popover[data-knowledge-type="词汇"] .resource-word-note {
+ border:0; border-radius:0; background:transparent; box-shadow:none;
+ padding:0; margin-top:14px;
+}
+#popover[data-knowledge-type="词汇"] .resource-word-note h4 { display:none; }

@@ -1,0 +1,386 @@
+/* Scoped knowledge dialog additions; original lecture/UI styles are retained. */
+.ke-formal-modal{line-height:1.56}
+.ke-formal-modal p{line-height:1.56!important}
+.resource-popover.ke-formal-modal{background:var(--lecture-panel,#15181e)}
+.resource-popover-head .ke-modal-expand,.ke-modal-expand{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:auto;height:36px;padding:7px 10px;border:1px solid var(--lecture-border,#c9daef);border-radius:7px;background:var(--lecture-panel-deep,#f2f7ff);color:var(--lecture-text,#17243b);font-family:inherit;font-weight:600;font-size:13px;line-height:1.4;white-space:nowrap;cursor:pointer}
+.ke-modal-expand svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
+.ke-formal-modal .resource-popover-head{gap:12px}
+.ke-formal-modal .resource-popover-head>div{margin-right:auto}
+.ke-formal-modal .publish-dialog-panel,.ke-formal-modal .add-material-panel,.ke-formal-modal .app-dialog-panel{position:relative}
+.ke-formal-modal .app-dialog-panel>.ke-modal-expand{position:absolute;right:18px;top:14px}
+.ke-formal-modal .app-dialog-panel:has(>.ke-modal-expand)>.app-dialog-copy{padding-right:120px}
+.ke-expanded.resource-popover{inset:12px;width:calc(100vw - 24px)!important;height:calc(100vh - 24px);max-height:calc(100vh - 24px)!important;max-width:none;transform:none;border-radius:12px}
+.ke-expanded .publish-dialog-panel,.ke-expanded .add-material-panel,.ke-expanded .app-dialog-panel{width:calc(100vw - 24px)!important;max-width:none!important;height:calc(100vh - 24px);max-height:calc(100vh - 24px)!important;overflow:auto;margin:0;border-radius:12px}
+.ke-word-detail-backdrop{position:fixed;inset:0;z-index:419;background:rgba(0,0,0,.32)}
+.ke-word-detail{z-index:420}
+.ke-word-detail .resource-popover-body{scroll-behavior:smooth}
+.ke-resource-content,.ke-extra-explanation{min-width:0}
+.ke-formal-modal .resource-popover-body p,.ke-grammar-description p,.ke-resource-content .resource-markup-copy{line-height:1.56}
+.ke-vocabulary .knowledge-entry,.ke-vocabulary .knowledge-entry p,.ke-vocabulary .knowledge-entry span,.ke-vocabulary .resource-sense-meaning,.ke-vocabulary .resource-sense-copy,.ke-vocabulary .resource-examples small,.ke-vocabulary .resource-word-note p{line-height:1!important}
+.ke-vocabulary .resource-pronunciation-item em{font-size:calc(19.2px * var(--full-dialog-scale,1.5625))!important;line-height:1!important}
+.ke-vocabulary .resource-pronunciation-groups{margin-bottom:14px}
+.ke-vocabulary .resource-pronunciations{margin-bottom:30px}
+.ke-vocabulary .resource-pronunciation-groups .resource-pronunciations{margin-bottom:0}
+.ke-vocabulary .knowledge-entry{gap:16px}
+.ke-exam-frequency{margin-left:auto;padding:8px 12px;border:1px solid var(--lecture-border);border-radius:20px;color:var(--lecture-primary);background:var(--lecture-panel-deep);font-size:18px;font-weight:700;cursor:pointer}
+.ke-current-meaning{display:block}
+.ke-current-meaning .resource-current-summary{flex-wrap:wrap}
+.ke-current-meaning .resource-current-summary .resource-sense-line{min-width:180px}
+.ke-current-meaning .ke-single-summary .resource-sense-line{margin:0}
+.resource-meanings.ke-current-meaning.is-single.has-part-pronunciations{padding:0}
+.ke-word-more{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;min-height:36px;padding:0 12px;border:1px solid color-mix(in srgb,var(--lecture-primary) 36%,var(--lecture-border));border-radius:18px;background:transparent;color:var(--lecture-primary);font-family:inherit;font-weight:500;font-size:calc(15px * var(--full-dialog-scale,1));line-height:1.3;white-space:nowrap;cursor:pointer}
+.ke-all-meanings,.ke-exam-cases{padding-top:24px;border-top:1px solid var(--lecture-border)}
+.ke-all-meanings>h3,.ke-section-title h3{font-size:24px;margin:0 0 18px}
+.ke-section-title{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.ke-demo-label{padding:4px 8px;border:1px solid var(--lecture-border);border-radius:5px;color:var(--lecture-muted);font-size:13px;white-space:nowrap}
+.ke-exam-cases,.ke-exam-case{line-height:1.56}
+.ke-exam-case{padding:22px 0;border-top:1px dashed var(--lecture-border)}
+.ke-case-source{display:flex;align-items:center;gap:10px;color:var(--lecture-muted);font-size:15px;line-height:1.56;margin-bottom:15px}
+.ke-case-source b{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;color:var(--lecture-primary);background:var(--lecture-panel-deep)}
+.ke-case-source small{margin-left:auto;font-size:12px}
+.ke-vocabulary .ke-exam-case p{margin:12px 0!important;font-size:24px;line-height:1.56!important}
+.ke-vocabulary .ke-exam-case .ke-case-translation{color:var(--lecture-muted);font-size:20px;line-height:1.56!important}
+.ke-missing-media{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border:1px dashed var(--lecture-border);border-radius:8px;color:var(--lecture-muted);background:var(--lecture-panel-deep);font-size:15px;cursor:default}
+.ke-missing-media:disabled{opacity:.75}
+.ke-topic-modal{width:min(1200px,calc(100vw - 48px))}
+.ke-topic-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}
+.ke-topic-layout.has-media{grid-template-columns:minmax(849px,1fr) 190px}
+.ke-topic-layout .resource-media-panel{width:190px;min-width:190px}
+.ke-topic-toolbar{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px}
+.ke-topic-directions{display:flex;gap:8px}
+.ke-topic-toolbar button{padding:10px 16px;border:1px solid var(--lecture-border);border-radius:8px;background:var(--lecture-panel-deep);color:var(--lecture-text);font-size:17px;font-weight:700;cursor:pointer}
+.ke-topic-toolbar button.active{color:#fff;background:var(--lecture-primary);border-color:var(--lecture-primary)}
+.ke-topic-group h3{margin:22px 0 12px;font-size:25px}
+.ke-topic-term{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;width:100%;padding:12px 14px;border:0;border-bottom:1px dashed var(--lecture-border);border-radius:6px;text-align:left;background:transparent;color:var(--lecture-text);font-size:26px;line-height:1.56;cursor:pointer}
+.ke-topic-term:hover{background:var(--lecture-panel-deep)}
+.ke-topic-term strong{font-weight:600;color:var(--lecture-primary);animation:ke-reveal .24s ease-out}
+.ke-topic-term .ke-topic-emphasis{color:var(--demo-red,#f04444)}
+.ke-encyclopedia-modal{width:min(1280px,calc(100vw - 48px))}
+.ke-grammar-modal{width:min(1280px,calc(100vw - 48px))}
+.ke-encyclopedia-modal .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) 532px}
+.ke-encyclopedia-modal .resource-detail-layout.media-only .resource-media-panel{width:784px;max-width:none}
+.ke-encyclopedia-modal .resource-media-panel,.ke-topic-modal .resource-media-panel{width:var(--ke-media-width);min-width:var(--ke-media-width);max-width:none}
+.ke-encyclopedia-modal .resource-media-panel img,.ke-encyclopedia-modal .resource-media-panel video,.ke-topic-modal .resource-media-panel img,.ke-topic-modal .resource-media-panel video{max-height:none;max-width:none;object-fit:contain}
+.ke-encyclopedia-modal .resource-media-panel,.ke-topic-modal .resource-media-panel{overflow:visible;background:transparent;border-radius:0}
+.ke-media-slot{display:flex;justify-content:center;align-items:flex-start;background:transparent;border:0}
+.ke-media-slot img,.ke-media-slot video{border-radius:12px;aspect-ratio:auto}
+.ke-media-slot .resource-image-frame{flex:0 0 auto;overflow:hidden;border-radius:12px}
+.ke-media-slot .resource-image-frame:fullscreen{width:100vw!important;height:100vh!important;overflow:visible;border-radius:0}
+.ke-encyclopedia-modal .resource-image-frame:fullscreen img,.ke-topic-modal .resource-image-frame:fullscreen img{width:100vw!important;height:100vh!important;max-height:100vh}
+.ke-g-diagram{position:relative;min-width:0;font-size:clamp(28px,3vw,44px);line-height:1.5;color:var(--lecture-text)}
+.ke-g-sentence{position:relative;padding-right:28px}
+.ke-g-measure{position:absolute;left:0;right:28px;top:0;visibility:hidden;pointer-events:none;line-height:1.5}
+.ke-g-measure-word,.ke-g-measure-unit{white-space:nowrap}
+.ke-g-line{position:relative;box-sizing:border-box}
+.ke-g-line-words{position:relative;z-index:1;white-space:nowrap;line-height:1.5}
+.ke-g-word{position:relative;font:inherit;white-space:nowrap;color:var(--lecture-text);transition:color .24s ease}
+.ke-g-diagram [data-role="0"],.ke-g-structure[data-role="0"]{--ke-role-color:#98c2ff;--ke-role-fill:#243550}
+.ke-g-diagram [data-role="1"],.ke-g-structure[data-role="1"]{--ke-role-color:#ffca86;--ke-role-fill:#3e301e}
+.ke-g-diagram [data-role="2"],.ke-g-structure[data-role="2"]{--ke-role-color:#8bd7ac;--ke-role-fill:#20392c}
+.ke-g-diagram [data-role="3"],.ke-g-structure[data-role="3"]{--ke-role-color:#c5b1fa;--ke-role-fill:#342b44}
+.ke-g-diagram [data-role="4"],.ke-g-structure[data-role="4"]{--ke-role-color:#ff9eb2;--ke-role-fill:#442937}
+.ke-g-diagram [data-role="5"],.ke-g-structure[data-role="5"]{--ke-role-color:#92ddd8;--ke-role-fill:#203b3b}
+.ke-g-diagram [data-role="6"],.ke-g-structure[data-role="6"]{--ke-role-color:#d5d496;--ke-role-fill:#393920}
+.light-mode .ke-g-diagram [data-role="0"],.light-mode .ke-g-structure[data-role="0"]{--ke-role-color:#2463b4;--ke-role-fill:#edf4ff}
+.light-mode .ke-g-diagram [data-role="1"],.light-mode .ke-g-structure[data-role="1"]{--ke-role-color:#a56013;--ke-role-fill:#fff6e9}
+.light-mode .ke-g-diagram [data-role="2"],.light-mode .ke-g-structure[data-role="2"]{--ke-role-color:#157646;--ke-role-fill:#edf8f1}
+.light-mode .ke-g-diagram [data-role="3"],.light-mode .ke-g-structure[data-role="3"]{--ke-role-color:#7851b1;--ke-role-fill:#f5efff}
+.light-mode .ke-g-diagram [data-role="4"],.light-mode .ke-g-structure[data-role="4"]{--ke-role-color:#be456a;--ke-role-fill:#fff0f4}
+.light-mode .ke-g-diagram [data-role="5"],.light-mode .ke-g-structure[data-role="5"]{--ke-role-color:#197c79;--ke-role-fill:#e9f8f7}
+.light-mode .ke-g-diagram [data-role="6"],.light-mode .ke-g-structure[data-role="6"]{--ke-role-color:#787725;--ke-role-fill:#f6f6e8}
+.ke-g-word.is-active{color:var(--ke-role-color)}
+.ke-g-role{position:absolute;z-index:2;padding:6px 9px;border:1px solid color-mix(in srgb,var(--ke-role-color) 45%,var(--lecture-border));border-radius:8px;background:var(--ke-role-fill);color:var(--ke-role-color);font-size:16px;line-height:1.5;white-space:nowrap}
+.ke-g-brackets,.ke-g-links{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
+.ke-g-bracket-group,.ke-g-relation-group{stroke:var(--ke-role-color);fill:none}
+.ke-g-highlight{fill:var(--ke-role-fill);stroke:none;transform-box:fill-box;transform-origin:left center}
+.ke-g-bracket{stroke-width:2.7;stroke-linejoin:round}
+.ke-g-leader{stroke-width:1;opacity:.65}
+.ke-g-relation-path,.ke-g-arrowhead{stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ke-g-arrival{stroke:none;fill:var(--ke-role-color);opacity:0;transform-box:fill-box;transform-origin:center}
+.ke-g-arrow-tracer{fill:var(--ke-role-color);stroke:none;opacity:0;transform-origin:0 0}
+.ke-g-relation-label{position:absolute;padding:3px 7px;color:var(--ke-role-color);background:var(--lecture-panel);font-size:15px;line-height:1.5;white-space:nowrap}
+.ke-g-toolbar{display:flex;align-items:flex-start;gap:12px;padding:14px 0 24px;margin-top:10px}
+.ke-g-buttons{display:flex;flex:1;gap:8px;flex-wrap:wrap}
+.ke-g-structure,.ke-g-all{padding:9px 13px;border:1px solid var(--lecture-border);border-radius:7px;background:var(--lecture-panel);color:var(--lecture-text);font-size:15px;line-height:1.4;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s}
+.ke-g-structure.is-active{color:var(--ke-role-color);background:var(--ke-role-fill);border-color:color-mix(in srgb,var(--ke-role-color) 55%,var(--lecture-border))}
+.ke-g-all{background:var(--lecture-primary);color:#fff;border-color:var(--lecture-primary);white-space:nowrap}
+.ke-g-all[aria-pressed="true"]{background:transparent;color:var(--lecture-primary)}
+.ke-grammar-description{border-top:1px solid var(--lecture-border);padding-top:20px}
+.ke-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.ke-resource-content button:focus-visible,.ke-word-detail button:focus-visible,.ke-modal-expand:focus-visible{outline:3px solid var(--lecture-primary);outline-offset:3px}
+@keyframes ke-reveal{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1150px){.ke-topic-layout.has-media{grid-template-columns:minmax(0,1fr)}.ke-topic-practice{min-width:849px}.ke-topic-modal .resource-popover-body{overflow:auto}.ke-encyclopedia-modal .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:650px){.ke-formal-modal .resource-popover-head{padding:16px;gap:8px}.resource-popover-head .ke-modal-expand{padding:7px;font-size:12px}.ke-g-toolbar{flex-wrap:wrap}.ke-g-buttons{flex-basis:100%}.ke-g-role{font-size:13px;padding:5px 7px}.ke-g-structure{font-size:13px}.ke-exam-frequency{font-size:15px}.ke-current-meaning{align-items:flex-start}.ke-formal-modal .app-dialog-panel:has(>.ke-modal-expand)>.app-dialog-copy{padding-right:0;padding-top:28px}}
+@media(prefers-reduced-motion:reduce){.ke-g-word,.ke-g-structure,.ke-g-all{transition:none}.ke-topic-term strong{animation:none}.ke-word-detail .resource-popover-body{scroll-behavior:auto}}
+
+/* 2026-10-10 user-confirmed test deployment alignment.
+   Component source: LectureContainer-kbOsVtb2.css; root supplies dialog scale
+   = 1.5 * fullFont / 48 and UI scale = 1.2 * fullFont / 48.
+   Only dictionary line-height/IPA size and the 30px IPA gap override the test. */
+#popover.resource-popover,.resource-popover.ke-word-detail{font-size:calc(20px * var(--full-dialog-scale,1));line-height:1.56;max-height:min(820px,calc(100dvh - 64px))}
+#popover .resource-popover-head,.ke-word-detail .resource-popover-head{flex-shrink:0;gap:16px;font-size:calc(24px * var(--full-dialog-scale,1));padding:16px 24px 16px 32px}
+#popover[data-knowledge-type="词汇"] .resource-popover-head,#popover[data-knowledge-type="语音"] .resource-popover-head,.ke-word-detail .resource-popover-head{font-weight:500}
+#popover .resource-popover-head small,.ke-word-detail .resource-popover-head small{font-size:calc(14px * var(--full-dialog-scale,1))}
+#popover .resource-popover-head>button:not(.ke-modal-expand),.ke-word-detail .resource-popover-head>button:not(.ke-modal-expand){flex:0 0 36px;width:36px;height:36px}
+#popover .resource-popover-body,.ke-word-detail .resource-popover-body{padding:28px;gap:24px}
+#popover[data-knowledge-type="实用表达"] .resource-popover-body{padding:32px}
+#popover .resource-popover-body p,.ke-word-detail .resource-popover-body p,#popover .resource-example-line>span,#popover .pronunciation-sentence>span{font-size:calc(24px * var(--full-dialog-scale,1));line-height:1.56}
+#popover .pronunciation-notes{font-size:calc(24px * var(--full-dialog-scale,1))!important}
+#popover .resource-popover-body>.resource-detail-title,#popover .resource-detail-copy>h3,#popover .ke-resource-content>h3{font-size:calc(28px * var(--full-dialog-scale,1));line-height:1.3;margin:0 0 20px}
+#popover .resource-detail-layout{gap:32px}
+#popover .resource-detail-copy{gap:24px}
+#popover[data-knowledge-type="语音"] .pronunciation-phenomenon p{margin:8px 0;font-weight:400;white-space:pre-wrap;overflow-wrap:anywhere}
+#popover[data-knowledge-type="语音"] .pronunciation-phenomenon p:first-child,#popover[data-knowledge-type="语音"] .pronunciation-sentence{font-weight:700}
+#popover .knowledge-explanation,.ke-word-detail .knowledge-explanation{margin-top:calc(18px * var(--full-dialog-scale,1));border-top:1px dashed var(--lecture-border)}
+#popover[data-knowledge-type="语法"] .ke-grammar-description{margin-top:calc(14px * var(--full-dialog-scale,1));padding-top:0;border-top:1px dashed var(--lecture-border)}
+#popover .resource-examples h4,.ke-word-detail .resource-examples h4,#popover .knowledge-explanation h4,.ke-word-detail .knowledge-explanation h4{font-size:calc(17px * var(--full-dialog-scale,1))}
+#popover .resource-examples small,.ke-word-detail .resource-examples small{font-size:calc(17px * var(--full-dialog-scale,1));line-height:1.56}
+
+/* WordEntriesV2 (5528876e) and SenseLine (509c7495). */
+#popover .knowledge-entry,.ke-word-detail .knowledge-entry{gap:calc(18px * var(--full-dialog-scale,1))}
+#popover .ke-vocabulary .resource-detail-layout.has-media,.ke-word-detail .ke-vocabulary .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) minmax(180px,32%);gap:28px}
+#popover .ke-vocabulary .resource-media-panel img,#popover .ke-vocabulary .resource-media-panel video,.ke-word-detail .ke-vocabulary .resource-media-panel img,.ke-word-detail .ke-vocabulary .resource-media-panel video{width:100%;height:auto;max-height:320px;object-fit:contain;border-radius:10px}
+#popover .knowledge-word,.ke-word-detail .knowledge-word{font-size:calc(48px * var(--full-dialog-scale,1));font-weight:700;line-height:1.15}
+#popover .knowledge-pos,.ke-word-detail .knowledge-pos{font-size:calc(28px * var(--full-dialog-scale,1))}
+#popover .pronunciation-entry.is-phrase .knowledge-word{font-size:calc(30px * var(--full-dialog-scale,1))}
+#popover .resource-pronunciations,.ke-word-detail .resource-pronunciations{gap:30px}
+#popover .resource-pronunciation-item,.ke-word-detail .resource-pronunciation-item{font-size:calc(32px * var(--full-dialog-scale,1));line-height:1}
+#popover .resource-pronunciation-item b,.ke-word-detail .resource-pronunciation-item b{font-size:calc(24px * var(--full-dialog-scale,1));font-weight:400}
+#popover .ke-vocabulary .resource-pronunciation-item em,.ke-word-detail .resource-pronunciation-item em{font-size:calc(19.2px * var(--full-dialog-scale,1.5625))!important;font-weight:400;line-height:1!important}
+#popover .ke-vocabulary .resource-pronunciations,.ke-word-detail .resource-pronunciations{margin-bottom:0}
+#popover .ke-vocabulary .knowledge-entry>.resource-pronunciations,.ke-word-detail .knowledge-entry>.resource-pronunciations,#popover .ke-vocabulary .knowledge-entry>.resource-pronunciation-groups,.ke-word-detail .knowledge-entry>.resource-pronunciation-groups{margin-bottom:calc(30px - 18px * var(--full-dialog-scale,1))}
+#popover .resource-pronunciation-item .resource-inline-audio,.ke-word-detail .resource-pronunciation-item .resource-inline-audio{width:calc(32px * var(--full-dialog-scale,1));height:calc(32px * var(--full-dialog-scale,1));flex-basis:calc(32px * var(--full-dialog-scale,1))}
+#popover .resource-pronunciation-item .resource-audio-icon,.ke-word-detail .resource-pronunciation-item .resource-audio-icon{width:calc(32px * var(--full-dialog-scale,1));height:calc(32px * var(--full-dialog-scale,1));flex-basis:calc(32px * var(--full-dialog-scale,1))}
+#popover .resource-pronunciation-item .resource-audio-icon svg,.ke-word-detail .resource-pronunciation-item .resource-audio-icon svg{width:calc(26.4px * var(--full-dialog-scale,1));height:calc(26.4px * var(--full-dialog-scale,1))}
+#popover .resource-sense-heading,.ke-word-detail .resource-sense-heading{gap:12px}
+#popover .resource-sense-heading .resource-sense-pos,#popover .resource-collapsed-pos,.ke-word-detail .resource-sense-heading .resource-sense-pos,.ke-word-detail .resource-collapsed-pos{flex:0 0 auto}
+#popover .resource-sense-pos,#popover .resource-collapsed-pos,#popover .resource-pronunciation-pos,.ke-word-detail .resource-sense-pos,.ke-word-detail .resource-collapsed-pos,.ke-word-detail .resource-pronunciation-pos{font-size:calc(22px * var(--full-dialog-scale,1));font-weight:700;line-height:1!important}
+#popover .resource-sense-line,.ke-word-detail .resource-sense-line{font-size:calc(19px * var(--full-dialog-scale,1));flex-wrap:wrap;line-height:1}
+#popover .resource-sense-copy,.ke-word-detail .resource-sense-copy{font-size:calc(21px * var(--full-dialog-scale,1));flex-wrap:wrap;white-space:normal;font-weight:500}
+#popover .resource-sense-meaning,.ke-word-detail .resource-sense-meaning{font-size:inherit;font-weight:500}
+#popover .resource-sense-meta span,.ke-word-detail .resource-sense-meta span{font-size:calc(19px * var(--full-dialog-scale,1));font-weight:400}
+#popover .resource-sense-chunk,.ke-word-detail .resource-sense-chunk{font-size:calc(16px * var(--full-dialog-scale,1));font-weight:400}
+#popover .resource-sense-line>b,.ke-word-detail .resource-sense-line>b{font-size:calc(13px * var(--full-dialog-scale,1));font-weight:500}
+#popover .resource-current-summary,.ke-word-detail .resource-current-summary{padding:16px 14px;column-gap:calc(12px * var(--full-dialog-scale,1))}
+#popover .resource-current-summary.has-part-pronunciations,.ke-word-detail .resource-current-summary.has-part-pronunciations{grid-template-columns:minmax(0,1fr) auto;row-gap:8px}
+#popover .resource-current-summary.has-part-pronunciations .resource-current-copy,.ke-word-detail .resource-current-summary.has-part-pronunciations .resource-current-copy{display:contents}
+#popover .resource-current-summary.has-part-pronunciations .resource-sense-heading,.ke-word-detail .resource-current-summary.has-part-pronunciations .resource-sense-heading{grid-column:1 / -1;grid-row:1;margin-bottom:22px}
+#popover .resource-current-summary.has-part-pronunciations .resource-sense-line,.ke-word-detail .resource-current-summary.has-part-pronunciations .resource-sense-line{grid-column:1;grid-row:2;padding-left:56px}
+#popover .resource-current-summary.has-part-pronunciations .ke-word-more,.ke-word-detail .resource-current-summary.has-part-pronunciations .ke-word-more{grid-column:2;grid-row:2}
+#popover .resource-sense-groups,.ke-word-detail .resource-sense-groups{padding:0 14px 12px}
+#popover .resource-sense-groups section,.ke-word-detail .resource-sense-groups section{padding:16px 0 8px;column-gap:calc(12px * var(--full-dialog-scale,1))}
+#popover .resource-sense-groups section:not(.has-part-pronunciations),.ke-word-detail .resource-sense-groups section:not(.has-part-pronunciations){grid-template-columns:max-content minmax(0,1fr)}
+#popover .resource-sense-list,.ke-word-detail .resource-sense-list{min-width:0}
+#popover .resource-sense-overview,.ke-word-detail .resource-sense-overview{padding:0 14px 12px}
+#popover .resource-sense-overview>section,.ke-word-detail .resource-sense-overview>section{padding:16px 0 8px;column-gap:calc(12px * var(--full-dialog-scale,1))}
+#popover .resource-sense-overview>section:not(.has-part-pronunciations),.ke-word-detail .resource-sense-overview>section:not(.has-part-pronunciations){grid-template-columns:max-content minmax(0,1fr)}
+#popover .resource-sense-overview>section:first-of-type,.ke-word-detail .resource-sense-overview>section:first-of-type{border-top:0}
+#popover .resource-sense-groups section.has-part-pronunciations .resource-sense-list,.ke-word-detail .resource-sense-groups section.has-part-pronunciations .resource-sense-list,#popover .resource-sense-overview>section.has-part-pronunciations .resource-sense-list,.ke-word-detail .resource-sense-overview>section.has-part-pronunciations .resource-sense-list{padding-left:56px}
+#popover .ke-word-more,.ke-word-detail .ke-word-more{font-size:calc(15px * var(--full-dialog-scale,1));font-weight:500}
+#popover .ke-exam-frequency{font-size:calc(18px * var(--full-dialog-scale,1));line-height:1}
+#popover .resource-word-note,.ke-word-detail .resource-word-note{margin-top:24px;padding:18px 20px;border:1px solid var(--lecture-border);border-radius:12px}
+#popover .resource-word-note h4,.ke-word-detail .resource-word-note h4{font-size:calc(18px * var(--full-dialog-scale,1))}
+#popover[data-knowledge-type="词汇"] .knowledge-explanation p,#popover[data-knowledge-type="语音"] .knowledge-explanation p,.ke-word-detail .knowledge-explanation p,#popover .resource-word-note p,.ke-word-detail .resource-word-note p{font-size:calc(20px * var(--full-dialog-scale,1));margin:8px 0}
+/* V1.2.4: WordDetailDialog说明继承20px×dialogScale / 1.5；富文本p仅8px段间距。
+ * 保留词典释义的1倍行距与音标30px，说明不属于词典释义。 */
+#popover[data-knowledge-type="词汇"] .knowledge-explanation,.ke-word-detail .knowledge-explanation{font-family:inherit;font-size:calc(20px * var(--full-dialog-scale,1));font-weight:400;line-height:1.5}
+#popover[data-knowledge-type="词汇"] .knowledge-explanation p,.ke-word-detail .knowledge-explanation p,#wordDetailDialog.wdc-dialog [data-case-module="explanation"] > p{font-family:inherit;font-size:calc(20px * var(--full-dialog-scale,1));font-weight:400;line-height:1.5!important;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}
+#popover[data-knowledge-type="词汇"] .knowledge-explanation p span,.ke-word-detail .knowledge-explanation p span,#wordDetailDialog.wdc-dialog [data-case-module="explanation"] > p span{line-height:inherit!important}
+#popover[data-knowledge-type="语音"] .knowledge-explanation p{line-height:1.56!important}
+
+/* New case area uses the same dialog scale and the approved body line-height. */
+.ke-word-detail .ke-all-meanings>h3,.ke-word-detail .ke-section-title h3{font-size:calc(24px * var(--full-dialog-scale,1))}
+.ke-word-detail .ke-case-source{font-size:calc(15px * var(--full-dialog-scale,1));flex-wrap:wrap}
+.ke-word-detail .ke-case-source small{font-size:calc(12px * var(--full-dialog-scale,1))}
+.ke-word-detail .ke-vocabulary .ke-exam-case p{font-size:calc(24px * var(--full-dialog-scale,1));line-height:1.56!important}
+.ke-word-detail .ke-vocabulary .ke-exam-case .ke-case-translation{font-size:calc(20px * var(--full-dialog-scale,1));line-height:1.56!important}
+.ke-word-detail .ke-demo-label{font-size:calc(13px * var(--full-dialog-scale,1))}
+.ke-word-detail .ke-missing-media{font-size:calc(15px * var(--full-dialog-scale,1))}
+.ke-word-detail .ke-exam-cases{scroll-margin-top:0}
+
+/* WikiDialog source geometry: natural media height; source copy/name styles. */
+#popover.ke-wiki-modal{width:min(1008px,calc(100vw - 64px));max-width:calc(100vw - 64px);max-height:min(1200px,calc(100dvh - 64px))}
+#popover.ke-wiki-modal.ke-has-media{width:min(1440px,calc(100vw - 64px))}
+#popover.ke-encyclopedia-modal.ke-has-media{width:min(1560px,calc(100vw - 64px))}
+#popover.ke-wiki-modal.ke-media-only{width:fit-content;max-width:calc(100vw - 64px)}
+#popover.ke-wiki-modal .resource-popover-body{padding:28px;min-height:0}
+#popover.ke-wiki-modal .resource-popover-body{display:flex;flex-direction:column;overflow:hidden}
+#popover.ke-wiki-modal .resource-popover-page>article{display:flex;flex-direction:column}
+#popover.ke-wiki-modal .resource-popover-body{flex:1 1 auto;gap:0}
+#popover.ke-wiki-modal .ke-wiki-name{display:block;flex-shrink:0;max-width:100%;margin:0 0 20px;font-size:calc(28px * var(--full-dialog-scale,1));font-weight:850;line-height:1.3;color:var(--lecture-primary);overflow-wrap:anywhere}
+#popover.ke-wiki-modal .ke-resource-content{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+#popover.ke-wiki-modal .resource-detail-layout,#popover.ke-wiki-modal .ke-topic-layout{flex:1 1 auto;grid-template-rows:minmax(0,1fr);min-height:0;overflow:hidden}
+#popover.ke-wiki-modal .resource-detail-copy,#popover.ke-wiki-modal .ke-topic-practice{display:block;min-height:0;overflow:hidden auto;overscroll-behavior:contain;scrollbar-gutter:stable;text-align:justify;padding-right:20px}
+#popover.ke-wiki-modal .resource-detail-layout:not(.has-media) .resource-detail-copy,#popover.ke-wiki-modal .ke-topic-layout:not(.has-media) .ke-topic-practice{scrollbar-gutter:auto;padding-right:0}
+#popover.ke-wiki-modal .resource-detail-title{font-size:calc(28px * var(--full-dialog-scale,1));font-weight:850;line-height:1.3;margin:0 0 20px}
+#popover.ke-wiki-modal .resource-popover-page>article>strong{padding:28px 28px 0;font-size:calc(28px * var(--full-dialog-scale,1));font-weight:850;line-height:1.3;overflow-wrap:anywhere}
+#popover.ke-wiki-modal .resource-popover-page>article>strong+.resource-popover-body{padding-top:20px}
+#popover.ke-wiki-modal .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) 400px;gap:32px;align-items:stretch}
+#popover.ke-encyclopedia-modal .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) 520px}
+#popover .ke-topic-layout{gap:32px}
+#popover .ke-topic-layout.has-media{grid-template-columns:minmax(849px,1fr) 400px}
+#popover .ke-topic-layout .resource-media-panel{width:400px;min-width:0}
+#popover .ke-topic-practice{min-width:0}
+#popover.ke-wiki-modal .resource-media-panel{position:static;width:var(--ke-media-width);min-width:0;max-width:100%;height:auto;overflow:visible;background:transparent;border-radius:0}
+#popover.ke-wiki-modal .resource-detail-layout.media-only .resource-media-panel{width:600px;max-width:100%}
+#popover.ke-wiki-modal .resource-media-panel img,#popover.ke-wiki-modal .resource-media-panel video,#popover.ke-wiki-modal .resource-image-frame:not(:fullscreen){width:100%;height:auto;max-width:100%;max-height:none;object-fit:contain;border-radius:12px}
+#popover .ke-media-slot{width:100%;height:auto}
+#popover .resource-image-fullscreen{font-size:calc(14px * var(--full-ui-scale,1.2));min-height:calc(36px * var(--full-ui-scale,1.2));gap:calc(6px * var(--full-ui-scale,1.2));padding:0 calc(12px * var(--full-ui-scale,1.2));border-radius:calc(8px * var(--full-ui-scale,1.2))}
+#popover .resource-image-fullscreen svg{width:calc(18px * var(--full-ui-scale,1.2));height:calc(18px * var(--full-ui-scale,1.2))}
+#popover .resource-inline-audio{width:calc(36px * var(--full-dialog-scale,1));height:calc(36px * var(--full-dialog-scale,1));flex-basis:calc(36px * var(--full-dialog-scale,1))}
+#popover .resource-inline-audio .resource-audio-icon svg{width:calc(22px * var(--full-dialog-scale,1));height:calc(22px * var(--full-dialog-scale,1))}
+#popover .resource-media-panel video{aspect-ratio:auto}
+#popover .resource-guidance-profile strong{font-size:calc(20px * var(--full-ui-scale,1.2))}
+#popover .resource-guidance-profile span,#popover .resource-guidance-player time{font-size:calc(16px * var(--full-ui-scale,1.2))}
+#popover .resource-guidance-card{font-size:calc(16px * var(--full-ui-scale,1.2))}
+#popover .resource-guidance-card,.ke-word-detail .resource-guidance-card{font-size:calc(16px * var(--full-ui-scale,1.2));line-height:normal}
+#popover .resource-guidance-profile strong,.ke-word-detail .resource-guidance-profile strong{font-size:calc(20px * var(--full-ui-scale,1.2));font-weight:700}
+#popover .resource-guidance-profile span,.ke-word-detail .resource-guidance-profile span,#popover .resource-guidance-player time,.ke-word-detail .resource-guidance-player time{font-size:calc(16px * var(--full-ui-scale,1.2))}
+#popover .resource-guidance-profile span,.ke-word-detail .resource-guidance-profile span{font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;line-height:normal!important}
+#popover .resource-guidance-player .resource-inline-audio,.ke-word-detail .resource-guidance-player .resource-inline-audio,#popover .resource-guidance-player .resource-audio-icon,.ke-word-detail .resource-guidance-player .resource-audio-icon{width:44px;height:44px;flex-basis:44px;border-radius:50%;background:var(--lecture-primary);color:#fff}
+#popover .resource-guidance-player .resource-audio-icon svg,.ke-word-detail .resource-guidance-player .resource-audio-icon svg{width:22px;height:22px;stroke-width:1.8}
+#popover .resource-guidance-player input,.ke-word-detail .resource-guidance-player input{min-width:0;margin:2px}
+#popover .resource-guidance-player time,.ke-word-detail .resource-guidance-player time{font-variant-numeric:tabular-nums;text-align:right}
+#popover .ke-topic-toolbar button{font-size:calc(17px * var(--full-dialog-scale,1))}
+#popover .ke-topic-group h3{font-size:calc(28px * var(--full-dialog-scale,1))}
+#popover .ke-topic-term{font-size:calc(24px * var(--full-dialog-scale,1))}
+#popover.ke-grammar-modal{width:min(1040px,calc(100vw - 64px))}
+#popover .ke-g-diagram{font-size:calc(24px * var(--full-dialog-scale,1));line-height:1.56}
+#popover .ke-g-measure,#popover .ke-g-line-words{line-height:1.56}
+#popover .ke-g-role{font-size:calc(16px * var(--full-dialog-scale,1));line-height:1.56}
+#popover .ke-g-relation-label,#popover .ke-g-structure,#popover .ke-g-all{font-size:calc(15px * var(--full-dialog-scale,1))}
+#popover .ke-modal-expand,.ke-word-detail .ke-modal-expand{font-size:calc(13px * var(--full-ui-scale,1.2))}
+#popover.ke-expanded,.ke-word-detail.ke-expanded{max-width:none;max-height:calc(100dvh - 24px)!important}
+@media(max-width:1390px){#popover .ke-topic-layout.has-media{grid-template-columns:minmax(0,1fr)}#popover .ke-topic-practice{min-width:0}#popover .ke-topic-layout .resource-media-panel{width:min(400px,100%)}}
+@media(max-width:720px){#popover.resource-popover,.resource-popover.ke-word-detail{width:calc(100vw - 24px);max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px)}#popover .resource-popover-body,.ke-word-detail .resource-popover-body{padding:24px 16px}#popover[data-knowledge-type="实用表达"] .resource-popover-body,#popover.ke-wiki-modal .resource-popover-body{padding:18px}#popover .resource-popover-head,.ke-word-detail .resource-popover-head{padding-left:18px}#popover .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr)!important}#popover .resource-current-summary.has-part-pronunciations,.ke-word-detail .resource-current-summary.has-part-pronunciations{grid-template-columns:minmax(0,1fr)}#popover .resource-current-summary.has-part-pronunciations .ke-word-more,.ke-word-detail .resource-current-summary.has-part-pronunciations .ke-word-more{grid-column:1;grid-row:3;justify-self:end}}
+
+/* V1.2.24: knowledge opens in the existing page-sized shell. Keep the original
+ * lecture layout switch and footer actions visible, including mirrored layout. */
+#popover.v1227-test-knowledge.ke-expanded > .classroom-modal-tools {
+  display:grid!important;grid-template-columns:max-content minmax(0,1fr) max-content!important;
+  grid-template-rows:40px!important;align-items:center!important;gap:12px!important;
+  min-height:60px!important;height:60px;box-sizing:border-box;padding:10px 24px!important;
+}
+#popover.v1227-test-knowledge.ke-expanded > .classroom-modal-tools > .classroom-modal-expand-host {
+  grid-column:1!important;grid-row:1!important;justify-self:start!important;align-self:center!important;
+}
+#popover.v1227-test-knowledge.ke-expanded > .classroom-modal-tools > .classroom-modal-toolstrip {
+  grid-column:2!important;grid-row:1!important;justify-self:start;max-width:100%!important;
+}
+#popover.v1227-test-knowledge.ke-expanded .v1224-knowledge-layout-host {
+  display:flex;align-items:center;grid-column:3;grid-row:1;justify-self:end;min-width:0;height:40px;
+}
+#popover.v1227-test-knowledge.ke-expanded[data-classroom-tools-side="right"] > .classroom-modal-tools > .classroom-modal-expand-host {grid-column:3!important;justify-self:end!important;}
+#popover.v1227-test-knowledge.ke-expanded[data-classroom-tools-side="right"] > .classroom-modal-tools > .classroom-modal-toolstrip {justify-self:end;}
+#popover.v1227-test-knowledge.ke-expanded[data-classroom-tools-side="right"] .v1224-knowledge-layout-host {grid-column:1;justify-self:start;}
+#popover.v1227-test-knowledge.ke-expanded .v1224-knowledge-layout-host > #dockLayoutSwitch {margin:0!important;}
+@media(max-width:720px){
+  #popover.v1227-test-knowledge.ke-expanded > .classroom-modal-tools {gap:8px!important;padding-inline:16px!important;}
+}
+
+/* Loaded images respect the actual content/footer budget, including short windows. */
+#popover.ke-wiki-modal[data-repair-media-layout="stack"] .resource-popover-body{overflow:auto!important;overscroll-behavior:contain;}
+#popover.ke-wiki-modal[data-repair-media-layout="stack"] .ke-resource-content,
+#popover.ke-wiki-modal[data-repair-media-layout="stack"] .resource-detail-layout{flex:0 0 auto;min-height:0;overflow:visible;}
+#popover.ke-wiki-modal[data-repair-media-layout="stack"] .resource-detail-copy{overflow:visible;}
+#popover.ke-wiki-modal .resource-image-frame.v1225-image-fitted:not(:fullscreen){height:var(--v1225-image-fit-height,180px)!important;min-height:48px;display:grid;place-items:center;}
+#popover.ke-wiki-modal .resource-image-frame.v1225-image-fitted:not(:fullscreen) img{width:100%!important;height:var(--v1225-image-fit-height,180px)!important;max-height:var(--v1225-image-fit-height,180px)!important;min-height:0;object-fit:contain;}
+.resource-image-frame[data-v1225-image-state]{position:relative;}
+.resource-image-frame[data-v1225-image-state]:not([data-v1225-image-state="ready"]):not(:fullscreen){aspect-ratio:var(--v1225-image-ratio,1.77778);min-height:120px;background:var(--lecture-panel-deep,#f1f5f9);border:1px solid var(--lecture-border,#cbd5e1);}
+.resource-image-frame[data-v1225-image-state]:not([data-v1225-image-state="ready"]) img{visibility:hidden;}
+#popover .resource-image-frame[data-v1225-image-state]:not([data-v1225-image-state="ready"]) [data-resource-image-fullscreen],
+.resource-image-frame[data-v1225-image-state]:not([data-v1225-image-state="ready"]) [data-resource-image-fullscreen]{display:none!important;}
+#popover [data-resource-image-fullscreen][data-v1225-image-unavailable="true"],
+#wordDetailDialog [data-resource-image-fullscreen][data-v1225-image-unavailable="true"],
+#lexicalChunkDialog [data-resource-image-fullscreen][data-v1225-image-unavailable="true"]{display:none!important;}
+.v1225-image-status{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:12px;color:var(--lecture-muted,#64748b);font-family:inherit;font-size:15px;font-weight:500;line-height:1.5;text-align:center;}
+.v1225-image-status[hidden],.v1225-image-retry[hidden]{display:none!important;}
+.v1225-image-retry{padding:7px 16px;border:1px solid var(--lecture-primary,#1268f3);border-radius:6px;background:var(--lecture-panel,#fff);color:var(--lecture-primary,#1268f3);font-family:inherit;font-size:13px;font-weight:600;line-height:1.3;cursor:pointer;}
+.v1225-image-retry:disabled{opacity:.6;cursor:wait;}
+.resource-image-frame[data-v1225-image-state="ready"]:fullscreen{display:grid;place-items:center;}
+.resource-image-frame:fullscreen>.v1225-image-status{display:none!important;}
+
+/* V1.2.27: restore current test KnowledgeListDialog geometry, not a new sizing
+ * algorithm. Source: LectureContainer-BQObm4ej.css, data-v-7669c770.
+ * The legacy fixed-position shell uses inset/margin to reproduce native dialog
+ * fit-content sizing across the viewport rather than half of the viewport. */
+#popover.ke-wiki-modal.v1227-test-knowledge:not(.ke-expanded){position:fixed;inset:0;margin:auto;transform:none;box-sizing:border-box;width:fit-content!important;min-width:0!important;max-width:calc(100vw - 64px)!important;height:fit-content!important;min-height:0;max-height:min(1200px,calc(100dvh - 64px))!important;overflow:hidden;}
+#popover.ke-wiki-modal.v1227-test-knowledge>.resource-popover-head,#popover.ke-wiki-modal.v1227-test-knowledge>.classroom-modal-tools{flex-shrink:0;}
+#popover.ke-wiki-modal.v1227-test-knowledge>.resource-popover-page,#popover.ke-wiki-modal.v1227-test-knowledge>.resource-popover-page>article{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow:hidden;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-popover-body{display:flex!important;flex-direction:column;flex:1 1 auto;box-sizing:border-box;min-width:0;min-height:0;max-height:none!important;height:auto;gap:0;padding:28px;overflow:auto hidden!important;}
+#popover.ke-wiki-modal.v1227-test-knowledge .ke-resource-content{box-sizing:border-box;display:flex;flex-direction:column;flex:1 1 auto;width:950px;min-width:0;max-width:100%;min-height:0;overflow:hidden;}
+#popover.ke-wiki-modal.v1227-test-knowledge.ke-has-media .ke-resource-content{width:1382px;}
+#popover.ke-wiki-modal.v1227-test-knowledge.ke-encyclopedia-modal.ke-has-media .ke-resource-content{width:1502px;}
+#popover.ke-wiki-modal.v1227-test-knowledge.ke-media-only .ke-resource-content{width:600px;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout{display:grid!important;flex:1 1 auto;width:100%;min-width:0;min-height:0;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:32px;align-items:stretch;overflow:hidden;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) 400px;align-items:stretch;}
+#popover.ke-wiki-modal.v1227-test-knowledge.ke-encyclopedia-modal .resource-detail-layout.has-media{grid-template-columns:minmax(0,1fr) 520px;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-copy{box-sizing:border-box;display:block;width:100%;min-width:0;min-height:0;max-height:none!important;height:auto;padding-right:20px;text-align:justify;overscroll-behavior:contain;scrollbar-gutter:stable;overflow:hidden auto;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout:not(.has-media) .resource-detail-copy{scrollbar-gutter:auto;padding-right:0;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout>.resource-media-panel{box-sizing:border-box;flex-shrink:0;align-self:start;width:100%;min-width:0;max-width:100%;height:auto;margin-top:0;overflow:visible;}
+#popover.ke-wiki-modal.v1227-test-knowledge .resource-image-frame:not(:fullscreen),#popover.ke-wiki-modal.v1227-test-knowledge .resource-image-frame:not(:fullscreen) img,#popover.ke-wiki-modal.v1227-test-knowledge .resource-media-panel video:not(:fullscreen){width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;}
+/* Retain the established small-screen stacked adaptation and original controls. */
+@media(max-width:1000px){
+ #popover.ke-wiki-modal.v1227-test-knowledge .resource-popover-body{overflow-y:auto!important;}
+ #popover.ke-wiki-modal.v1227-test-knowledge .ke-resource-content,#popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout{display:block;overflow:visible;flex:0 0 auto;}
+ #popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-copy{max-height:none;overflow:visible;padding-right:0;}
+ #popover.ke-wiki-modal.v1227-test-knowledge .resource-detail-layout>.resource-media-panel{width:var(--ke-media-width,400px);max-width:100%;margin-top:20px;}
+}
+@media(max-width:650px){
+ #popover.ke-wiki-modal.v1227-test-knowledge:not(.ke-expanded){width:calc(100vw - 24px)!important;max-width:calc(100vw - 24px)!important;max-height:min(1200px,calc(100dvh - 24px))!important;}
+ #popover.ke-wiki-modal.v1227-test-knowledge .resource-popover-body{padding:18px;}
+}
+
+/* V1.2.36: fullscreen uses the existing available width instead of retaining
+   the normal text-only 950px content width (including Black music). */
+#popover.ke-wiki-modal.v1227-test-knowledge.ke-expanded .ke-resource-content{
+ width:100%!important;max-width:100%!important;min-width:0!important;
+}
+#popover[data-knowledge-type="语法"] .ke-grammar-description[hidden],
+#popover[data-knowledge-type="语法"] [data-grammar-description-role][hidden]{display:none!important;}
+#popover .resource-detail-copy :is(.resource-markup-copy,.knowledge-explanation,.pronunciation-notes)[hidden]{display:none!important;}
+
+/* Existing media keeps its width; block margins separate it from the video and footer. */
+#popover[data-knowledge-type="语法"] .resource-detail-layout > .resource-media-panel{margin-block:28px;}
+/* Simulated teaching paragraphs keep their original font and line height. */
+#popover [data-knowledge-simulation="true"] .resource-markup-copy,
+#popover [data-knowledge-simulation="true"] .knowledge-explanation,
+#popover [data-knowledge-simulation="true"] .knowledge-explanation > p{margin-block:0!important;}
+
+/* Vocabulary mother popups: a full-width head followed by the native explanation rail. */
+#popover:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-layout{
+ border-top:1px dashed var(--lecture-border)!important;
+}
+#popover:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-copy :is(.resource-word-note,.knowledge-explanation),
+#popover:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-copy > p.resource-markup-copy{
+ border-top:0!important;margin-top:0!important;padding-top:0!important;
+}
+#popover[data-knowledge-type="词汇"] > .classroom-modal-tools{border-top:0!important;}
+
+/* Fullscreen grammar keeps the same image insets as its original text copy. */
+#popover[data-knowledge-type="语法"].ke-expanded .resource-detail-layout > .resource-media-panel{
+ box-sizing:border-box;width:100%;min-width:0;max-width:100%;padding-inline:28px;
+}
+#popover[data-knowledge-type="语法"].ke-expanded .resource-media-panel .ke-media-slot:not(.v15-video-player),
+#popover[data-knowledge-type="语法"].ke-expanded .resource-media-panel .resource-image-frame:not(:fullscreen){
+ box-sizing:border-box;width:100%!important;min-width:0!important;max-width:100%!important;height:auto!important;
+}
+#popover[data-knowledge-type="语法"].ke-expanded .resource-media-panel .resource-image-frame:not(:fullscreen) > img{
+ box-sizing:border-box;display:block;width:100%!important;max-width:100%!important;height:auto!important;object-fit:contain;
+}
+
+/* Word-style speech and vocabulary share one section rhythm around the divider.
+   Track widths and horizontal insets remain owned by the fixed popup geometry. */
+#popover.resource-popover.v1235-fixed-knowledge:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-mother-layout > .resource-detail-copy{
+ padding-bottom:calc(18px * var(--full-dialog-scale,1))!important;
+}
+#popover.resource-popover.v1235-fixed-knowledge:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-layout > .ke-vocabulary-explanation-copy{
+ padding-top:calc(18px * var(--full-dialog-scale,1))!important;
+}
+#popover.resource-popover.v1235-fixed-knowledge:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-layout > .resource-media-panel{
+ margin-top:calc(18px * var(--full-dialog-scale,1))!important;
+}
+#popover:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-copy > :first-child,
+#popover:is([data-knowledge-type="词汇"],[data-knowledge-type="语音"]) .ke-vocabulary-explanation-copy .knowledge-explanation > p:first-child{
+ margin-top:0!important;
+}

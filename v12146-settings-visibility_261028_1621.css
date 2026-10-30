@@ -1,0 +1,22 @@
+/* Scoped layout corrections; source records and feature handlers remain owned by their modules. */
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog .vwn-main-nav > button.active::after {left:50%!important;right:auto!important;width:24px!important;transform:translateX(-50%)!important;bottom:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] {min-height:0!important;padding-top:20px!important;padding-bottom:20px!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] .v1275-sense-body,
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .v1275-sense-toggle {display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog [data-v1275-sense-details="false"] > .resource-sense-copy {min-height:0!important;padding-bottom:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog #classroomDock.v12100-empty {gap:0!important;row-gap:0!important;padding:8px!important;min-height:0!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog #classroomDock.v12100-empty > :not(.dock-footer-actions):not(#interfaceSettingsPanel) {display:none!important;}
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog #classroomDock.v12100-empty > .dock-footer-actions {padding:0!important;margin:0!important;border:0!important;}
+.sgp-backdrop .sgp-header {display:flex;align-items:center;flex-wrap:nowrap;gap:12px!important;}
+.sgp-backdrop .sgp-header .sgp-title {flex:none;}
+.sgp-backdrop .sgp-header .sgp-module-tabs {margin-left:0!important;padding-left:12px;border-left:1px solid var(--sgp-line);gap:4px;flex:0 1 auto;min-width:0;}
+.sgp-backdrop .sgp-header .sgp-counter {margin-left:auto!important;white-space:nowrap;flex:none;}
+.sgp-backdrop .sgp-header .sgp-close {flex:none;}
+.sgp-backdrop .sgp-module-tabs > button[aria-selected="true"] {background:transparent!important;color:var(--sgp-blue)!important;font-weight:700;}
+.sgp-backdrop .sgp-module-tabs > button {padding:6px 8px;}
+.sgp-backdrop .sgp-media .concept-row {width:100%;gap:12px;}
+.sgp-backdrop .sgp-media .concept {min-width:0;flex:1;}
+.sgp-backdrop .sgp-media .concept b {font-size:clamp(18px,2vw,26px);}
+@media(max-width:700px){.sgp-backdrop .sgp-header{flex-wrap:wrap;}.sgp-backdrop .sgp-header .sgp-module-tabs{order:3;width:100%;border-left:0;border-top:1px solid var(--sgp-line);padding:10px 0 0;}.sgp-backdrop .sgp-header .sgp-counter{margin-left:auto!important;}.sgp-backdrop .sgp-media .concept-row{flex-wrap:wrap;}}
+
+#wordDetailDialog#wordDetailDialog#wordDetailDialog#wordDetailDialog:has(.v1287-complete-flow) .v1278-formation-content:has(> [data-latest-note="v1224-word-note:deep-fry"]:only-child) {display:none!important;}

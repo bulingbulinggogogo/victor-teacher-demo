@@ -1,0 +1,19 @@
+/* V1.2.116: use the current theme's reading color and fit only overflowing tools. */
+#popover#popover#popover.v105-vocabulary .v105-note-card,
+#popover#popover#popover.v105-vocabulary .v105-note-card p,
+#popover#popover#popover.v105-vocabulary .v105-note-card strong,
+#popover#popover#popover.v105-vocabulary .v105-source-note,
+#popover#popover#popover.v105-vocabulary .v105-note-tabs button:not(.is-active):not([aria-selected="true"]) {
+ color:var(--v105-text)!important;
+}
+#popover#popover#popover .ke-g-toolbar.classroom-tools-floating .ke-g-structure {
+ font-size:var(--v116-fit-font,var(--v106-tool-font,12px))!important;
+}
+#popover#popover#popover .ke-grammar-description [data-grammar-description-role][hidden] {display:none!important}
+
+/* Keep the source analysis' plain paragraph presentation when split by role. */
+#popover#popover#popover .ke-grammar-description [data-grammar-description-role] {
+ margin:0!important;padding:0!important;border:0!important;
+}
+#popover#popover#popover .ke-grammar-description [data-grammar-description-role] > h4 {display:none!important}
+#popover#popover#popover .ke-grammar-description [data-grammar-description-role] > p {color:inherit!important}

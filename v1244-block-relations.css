@@ -1,0 +1,6 @@
+/* Preserve native block labels, type and spacing; enforce actual off states. */
+#wordDetailDialog [data-v1244-block-relation-content][hidden],
+#wordDetailDialog [data-v1244-block-relation-controls][hidden],
+#wordDetailDialog [data-v1244-block-relation-controls] > button[hidden] {
+  display:none!important;
+}

@@ -1,0 +1,22 @@
+/* Sense cards reuse the existing disclosure controls and live source contents. */
+#wordDetailDialog .v1264-sense-card{box-sizing:border-box;width:100%;min-width:0;}
+#wordDetailDialog .v1264-sense-card[hidden]{display:none!important;}
+#wordDetailDialog .v1264-sense-card-body{min-width:0;}
+#wordDetailDialog .v1264-sense-card-body > .v1220-module,
+#wordDetailDialog .v1264-sense-card-body .v1220-note{margin:0;padding:0;border:0;}
+#wordDetailDialog .v1264-sense-card-body .v1220-note p{margin:0;}
+#wordDetailDialog .v1264-sense-card .vpi-module,
+#wordDetailDialog .v1264-sense-card .pgi-scene-slot,
+#wordDetailDialog .v1264-sense-card .pgi-scene-single{height:auto;min-height:0;flex:0 0 auto;}
+/* Branch controls precede the word; leaves keep the same text alignment. */
+#wordDetailDialog .v1222-family-tree .vft-node-content{position:relative;padding-inline-start:1.25em;}
+#wordDetailDialog .v1222-family-tree .vft-toggle{justify-content:flex-start;}
+#wordDetailDialog .v1222-family-tree .vft-toggle-icon{
+ position:absolute;inset-inline-start:0;top:.18em;display:inline-flex;align-items:center;justify-content:center;
+ width:1em;height:1em;box-sizing:border-box;border:1px solid var(--lecture-border);border-radius:3px;
+ color:var(--lecture-primary);font:inherit;font-weight:700;font-size:.85em;line-height:1;transform:none;
+}
+#wordDetailDialog .v1222-family-tree .vft-word strong .vft-affix,
+#wordDetailDialog .v1222-family-tree .vft-note-affix{
+ color:var(--lecture-primary)!important;font-weight:700;text-decoration:underline;text-underline-offset:.12em;
+}

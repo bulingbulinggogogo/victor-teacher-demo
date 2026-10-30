@@ -1,0 +1,90 @@
+/* A full equation on one horizontal line, with each term's original gloss below it. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow>.v1287-full-equation{display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;gap:clamp(12px,1.1vw,22px)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-equation,.v1287-derivation-chain){display:contents!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-equation-term,.v1287-derivation-stage){flex:none!important;white-space:nowrap!important;max-width:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1282-topic-block.v1287-full-equation .v1287-term-head{font-size:clamp(24px,2.45vw,42px)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-term-meaning{font-size:16px!important;margin-top:9px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-operator{font-size:25px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-result,.v1287-result-detail){font-size:clamp(16px,1.2vw,22px)!important;}
+@media(max-width:1250px){#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow{overflow-x:auto!important;}#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow>.v1287-full-equation{min-width:max-content;}}
+/* Categorical type colors retain readable labels in both light and dark themes. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-segment{background:var(--v1288-type-color)!important;color:#193554!important;border:2px solid transparent!important;border-radius:5px!important;opacity:1!important;box-shadow:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-strip{gap:4px!important;background:transparent!important;border-radius:6px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-segment[aria-pressed="true"]{border-color:var(--lecture-primary,#2563eb)!important;box-shadow:0 0 0 1px var(--lecture-primary,#2563eb)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-segment:is(:hover,:focus-visible){filter:brightness(.97);outline:2px solid var(--lecture-primary,#2563eb);outline-offset:2px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-segment b{color:#17345b!important;}
+#wordDetailDialog .v1288-exam-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;}
+#wordDetailDialog .v1288-exam-toolbar button,#wordDetailDialog .v1288-filter-chip{font:inherit;font-size:14px;padding:8px 13px;border:1px solid var(--v1275-edge,#b7caf0);border-radius:6px;background:var(--lecture-panel,#fff);color:var(--lecture-text,#243650);cursor:pointer;}
+#wordDetailDialog .v1288-exam-toolbar button[aria-pressed="true"]{background:var(--lecture-primary,#2563eb);color:#fff;border-color:var(--lecture-primary,#2563eb);}
+#wordDetailDialog .v1288-exam-toolbar button:disabled{opacity:.45;cursor:default;}
+#wordDetailDialog .v1288-filter-chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px;}
+#wordDetailDialog .v1288-filter-chips[hidden]{display:none!important;}
+#wordDetailDialog .v1288-filter-chip{padding:5px 10px;color:var(--lecture-primary,#2563eb);}
+#wordDetailDialog .v1288-stat-summary{display:flex;justify-content:flex-end;margin:8px 0;color:var(--lecture-muted,#657791);font-size:13px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-chart-tooltip{position:fixed!important;display:flex;flex-direction:column;gap:5px;max-width:280px;padding:12px 16px;z-index:20050;border-radius:9px;border:1px solid #5477b9;background:#183259;color:#fff;box-shadow:0 5px 20px #18325930;pointer-events:none;font-size:15px;line-height:1.6;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-chart-tooltip[hidden]{display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-chart-tooltip strong{color:#fff!important;font-size:16px!important;}
+#wordDetailDialog .v1288-chart-tooltip small{color:#d8e5ff;font-size:13px;}
+#wordDetailDialog .v1288-demo-label{display:inline-block;font-size:11px;padding:0 4px;margin-left:3px;border:1px solid var(--v1275-edge,#b7caf0);border-radius:3px;color:var(--lecture-muted,#657791);font-style:normal;}
+/* The image and all text now share the same left and right column edges. */
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1283-contrast] .image-panel{width:100%!important;height:auto!important;aspect-ratio:var(--v1285-image-ratio,1.3333333)!important;margin:0 0 calc(20px * var(--v1285-contrast-fit,1))!important;}
+/* Basic meaning is outside the horizontally scrolling lower graph. */
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen[data-v1263-interactive-module="illustrations"] :is(.vwn-content,.vwn-panel:not([hidden]),.vwn-panel-scroll){justify-content:flex-start!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network]{--v1279-network-scale:var(--v1288-network-scale,1)!important;margin-top:var(--v1288-network-top,0px)!important;width:100%!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-base{margin:0 auto 8px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-basic-node>img{height:var(--v1289-network-base,250px)!important;width:auto!important;max-height:none!important;min-height:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] :is(.pgi-connectors,.pgi-branches){height:var(--v1289-network-connectors,120px)!important;min-height:var(--v1289-network-connectors,120px)!important;width:100%!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-network-scroll{display:block!important;overflow-x:auto!important;overflow-y:hidden!important;width:100%!important;max-width:100%!important;scrollbar-gutter:auto;scrollbar-width:auto;overscroll-behavior-x:contain;padding-bottom:6px;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-network-track{width:var(--v1288-track-width,2800px)!important;min-width:100%!important;max-width:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] :is(.pgi-copy-row,.pgi-visual-row){display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:12px!important;width:100%!important;margin-top:8px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-copy-row[hidden]{display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-copy{white-space:nowrap!important;overflow:visible!important;padding:9px 12px!important;height:auto!important;min-height:0!important;width:100%!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-copy>span{white-space:nowrap!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] [data-pgi-row="derivation"] .pgi-copy{font-size:calc(24px * var(--v1288-network-scale,1))!important;line-height:1.5!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] [data-pgi-row="meaning"] .pgi-copy{font-size:calc(26px * var(--v1288-network-scale,1))!important;line-height:1.5!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-visual-row img{height:var(--v1288-network-image,180px)!important;min-height:0!important;max-height:none!important;width:100%!important;object-fit:contain!important;}
+#wordDetailDialog .v1288-network-row-controls{display:flex;flex-direction:column;gap:7px;margin:0 0 8px;width:100%;}
+#wordDetailDialog .v1288-network-row-controls[hidden]{display:none!important;}
+
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1279-stat-table :is(td,.v1279-stat-link,.v1279-stat-link span){color:var(--lecture-text,#243650)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow>.v1287-full-equation{align-items:flex-start!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-equation-term,.v1287-derivation-stage){align-self:flex-start!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-derivation-stage{padding-top:3px;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1288-chart-tooltip strong{color:#fff!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog [data-v1288-horizontal-network] .pgi-copy-row[hidden]{display:none!important;}
+
+/* V89: a fixed trunk is independent of the lower horizontal scroller. */
+#wordDetailDialog .v1289-network-lower{position:relative;width:100%;}
+#wordDetailDialog .v1289-fixed-stem{position:absolute;left:50%;top:0;height:calc(var(--v1289-network-connectors,120px) / 2);border-left:2px solid #3169ff;pointer-events:none;z-index:1;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-basic-node{gap:24px!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-basic-label{font-size:clamp(28px,2.6vw,44px)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow{overflow-x:auto!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow>.v1287-full-equation{width:max-content!important;min-width:100%!important;gap:clamp(10px,.85vw,16px)!important;box-sizing:border-box!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-term-head{font-size:clamp(24px,2.2vw,38px)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-result,.v1287-result-detail){font-size:clamp(16px,1.1vw,20px)!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-derivation-stage{white-space:nowrap!important;max-width:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam-toolbar{justify-content:flex-start!important;gap:12px!important;flex-wrap:wrap;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1289-filter-summary{color:var(--lecture-muted,#7b879a)!important;font-size:13px!important;font-weight:400!important;line-height:1.6;border:0!important;background:none!important;padding:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-clear-filters[hidden],#wordDetailDialog .v1288-exam .v1278-location-status{display:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-strip .v1278-type-segment[aria-pressed="true"]{background:var(--v1288-type-color)!important;border-color:var(--v1289-type-emphasis)!important;box-shadow:inset 0 -4px var(--v1289-type-emphasis)!important;outline:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-strip .v1278-type-segment:is(:hover,:focus-visible){outline:2px solid var(--v1289-type-emphasis)!important;outline-offset:2px;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-visual-row>.pgi-card{height:var(--v1288-network-image)!important;min-height:0!important;max-height:none!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-basic-node>p{font-size:clamp(28px,2.4vw,42px)!important;line-height:1.35!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-basic-node>p strong{font-size:1.2em!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog.v1263-interactive-fullscreen [data-v1288-horizontal-network] .pgi-visual-row{height:var(--v1288-network-image)!important;flex-basis:var(--v1288-network-image)!important;}
+
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-strip .v1278-type-segment[aria-pressed="true"],#wordDetailDialog.vwn-dialog.v1220-dialog .v1288-exam .v1278-type-strip .v1278-type-segment[aria-pressed="true"] :is(span,b){color:#193554!important;}
+
+/* One-line derivations and arrows share the vertical center of the whole term-plus-gloss group. */
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-complete-flow>.v1287-full-equation{align-items:center!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation :is(.v1287-equation-term,.v1287-derivation-stage,.v1287-operator){align-self:center!important;margin-block:0!important;}
+#wordDetailDialog.vwn-dialog.v1220-dialog .v1287-full-equation .v1287-derivation-stage{padding-top:0!important;}
+/* Whole-row controls reuse the neighboring native rail button rules. */
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock>.v1288-network-row-controls{gap:6px;margin-top:6px;margin-bottom:8px;}
+
+#wordDetailDialog.vwn-dialog #classroomDock.v1223-word-dock>.v1281-network-rail button{white-space:nowrap;padding:5px 0;overflow-wrap:normal;}

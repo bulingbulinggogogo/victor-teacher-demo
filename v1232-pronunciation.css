@@ -1,0 +1,111 @@
+/* V1.2.32: every multi-pronunciation row shares the same POS, accent,
+   transcription and playback tracks. The text face, size and color stay owned
+   by the existing lecture styles; empty playback slots are intentionally kept. */
+@supports (grid-template-columns: subgrid) {
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) {
+    --v1232-audio-column:calc(32px * var(--full-dialog-scale,1));
+    display:grid;
+    grid-template-columns:minmax(0,max-content) max-content minmax(0,max-content)
+      var(--v1232-audio-column) 14px max-content minmax(0,max-content)
+      var(--v1232-audio-column);
+    column-gap:8px;
+    row-gap:6px;
+    width:max-content;
+    max-width:100%;
+    min-width:0;
+    justify-content:start;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) > .resource-pronunciation-row {
+    display:grid;
+    grid-template-columns:subgrid;
+    grid-column:1 / -1;
+    align-items:center;
+    column-gap:8px;
+    min-width:0;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) > .resource-pronunciation-row > .resource-pronunciation-pos {
+    grid-column:1;
+    min-width:0;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) > .resource-pronunciation-row > .resource-pronunciations {
+    display:grid;
+    grid-template-columns:subgrid;
+    grid-column:2 / -1;
+    align-items:center;
+    column-gap:8px;
+    min-width:0;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) .resource-pronunciation-item {
+    display:grid;
+    grid-template-columns:subgrid;
+    grid-row:1;
+    align-items:center;
+    column-gap:8px;
+    min-width:0;
+    white-space:normal;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2))
+  .resource-pronunciation-item:is([data-pronunciation-accent="uk"],:first-child:not([data-pronunciation-accent="us"])) {
+    grid-column:1 / span 3;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2))
+  .resource-pronunciation-item:is([data-pronunciation-accent="us"],:nth-child(2):not([data-pronunciation-accent="uk"])) {
+    grid-column:5 / span 3;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) .resource-pronunciation-item > b {
+    grid-column:1;
+    grid-row:1;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) .resource-pronunciation-item > em {
+    grid-column:2;
+    grid-row:1;
+    min-width:0;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+  .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) .resource-pronunciation-item > :is(.resource-inline-audio,.resource-audio-icon) {
+    grid-column:3;
+    grid-row:1;
+    justify-self:start;
+  }
+  /* Keep a readable shared transcription track when the window is narrow.
+     Accent labels identify the UK/US lines and each row's POS remains at left. */
+  @media (max-width:850px) {
+    :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+    .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) {
+      grid-template-columns:minmax(0,max-content) max-content minmax(0,max-content) var(--v1232-audio-column);
+    }
+    :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+    .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2))
+    .resource-pronunciation-item:is([data-pronunciation-accent="uk"],:first-child:not([data-pronunciation-accent="us"]),[data-pronunciation-accent="us"],:nth-child(2):not([data-pronunciation-accent="uk"])) {
+      grid-column:1 / -1;
+    }
+    :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+    .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2))
+    .resource-pronunciation-item:is([data-pronunciation-accent="us"],:nth-child(2):not([data-pronunciation-accent="uk"])) {
+      grid-row:2;
+    }
+    :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+    .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) > .resource-pronunciation-row > .resource-pronunciation-pos {
+      grid-row:1;
+      align-self:start;
+    }
+    :is(#wordDetailDialog, #popover[data-knowledge-type="词汇"])
+    .resource-pronunciation-groups:has(> .resource-pronunciation-row:nth-child(2)) > .resource-pronunciation-row > .resource-pronunciations {
+      grid-row:1;
+      row-gap:6px;
+    }
+  }
+}

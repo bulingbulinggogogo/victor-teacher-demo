@@ -1,0 +1,39 @@
+/* Only the new source-conversion scene needs layout rules. Existing peer
+   modules, lecture type roles, controls and illustration styles are reused. */
+#wordDetailDialog .v1246-source-example {
+  margin:0 0 .35em;
+  font-family:inherit;
+  font-size:var(--v1242-content-body-size,var(--v1226-body-font,1em));
+  font-weight:400;
+  line-height:1.5;
+  color:var(--lecture-muted);
+}
+#wordDetailDialog .v1246-nominalization,
+#wordDetailDialog .v1246-nominalization .pgi-scene {
+  height:auto;
+  min-width:0;
+  --pgi-copy-font:var(--v1242-content-body-size,var(--v1226-body-font,30px));
+}
+#wordDetailDialog .v1246-conversion-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center;
+  gap:16px;
+  width:100%;
+  min-width:0;
+}
+#wordDetailDialog .v1246-conversion-grid .pgi-card>img {
+  flex:none;
+  width:100%;
+  height:clamp(180px,25vw,360px);
+  object-fit:contain;
+}
+#wordDetailDialog .v1246-conversion-grid .pgi-copy,
+#wordDetailDialog .v1246-nominalization .pgi-derivation {
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+#wordDetailDialog .v1246-nominalization .pgi-derivation {margin-top:.35em;}
+#wordDetailDialog [data-case-module="idioms"] [data-v1246-idiom-example] {margin-top:.6em;}
+#wordDetailDialog [data-case-module="idioms"] .v1246-idiom-blocks:empty {display:none;}
+#wordDetailDialog .vpi-tools[data-v1220-subnav-for="nominalization"][hidden] {display:none!important;}

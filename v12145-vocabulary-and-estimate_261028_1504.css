@@ -1,0 +1,36 @@
+/* Only the lecture route hides the estimate; audio-only playback keeps it. */
+#fullscreenPage:not(.audio-only-mode) #suiteEstimate{display:none!important}
+/* Keep the existing popup dimensions, font controls, notes, media, and palette. */
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-has-navigation{
+ display:grid!important;grid-template-columns:minmax(0,1fr) max-content!important;column-gap:28px!important;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-has-navigation>.v105-tags{grid-column:1;grid-row:1}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-has-navigation>.v105-word-headline{grid-column:1;grid-row:2;min-width:0}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-has-navigation>.resource-pronunciation-groups{grid-column:1;grid-row:3;min-width:0}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v105-word-features:empty{display:none!important}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-word-navigation{
+ grid-column:2;grid-row:1 / 4;align-self:center;display:flex;flex-direction:column;
+ min-width:calc(150px * var(--full-dialog-scale,1));padding-left:20px;border-left:1px solid var(--lecture-border);margin:8px 0;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary :is(.v145-word-navigation>button,.v105-sense-heading .ke-word-more){
+ display:flex!important;align-items:center!important;justify-content:space-between!important;gap:20px!important;
+ height:auto!important;min-height:0!important;max-height:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;
+ background:transparent!important;color:var(--lecture-muted,var(--v105-muted))!important;
+ font:inherit!important;font-size:calc(var(--v1229-copy-font) * .6666666667)!important;font-weight:600!important;line-height:1.4!important;
+ white-space:nowrap!important;position:static!important;transform:none!important;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-word-navigation>button{
+ width:100%!important;padding:12px 0!important;margin:0!important;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v145-word-navigation>button:not(:last-child){border-bottom:1px solid var(--lecture-border)!important}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary .v105-sense-heading .ke-word-more{padding:8px 0!important;margin-left:auto!important;flex:0 0 auto!important}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary :is(.v145-word-navigation>button,.v105-sense-heading .ke-word-more)::after{
+ content:'›'!important;display:block!important;position:static!important;margin:0!important;transform:none!important;
+ font:inherit!important;font-size:1.35em!important;line-height:1!important;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary :is(.v145-word-navigation>button,.v105-sense-heading .ke-word-more):hover{
+ color:var(--v105-blue)!important;background:transparent!important;
+}
+#popover#popover#popover#popover#popover#popover.v145-vocabulary :is(.v145-word-navigation>button,.v105-sense-heading .ke-word-more):focus-visible{
+ outline:2px solid var(--v105-blue)!important;outline-offset:3px!important;
+}

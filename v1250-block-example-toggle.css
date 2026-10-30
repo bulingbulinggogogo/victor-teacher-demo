@@ -1,0 +1,5 @@
+/* Reuse the native dock's button style; enforce only the switch's off state. */
+#wordDetailDialog [data-case-module="collocations"] [data-v1250-block-example][hidden],
+#wordDetailDialog [data-v1250-block-example-controls][hidden] {
+  display:none!important;
+}

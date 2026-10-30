@@ -1,0 +1,63 @@
+/* V1.2.33: the vocabulary mother popup has one explanation presentation.
+   Named dictionary notes, updated Word notes and completion/fallback notes all
+   follow the approved plain-paragraph separator. Word details are out of scope. */
+#popover[data-knowledge-type="词汇"] :is(.resource-word-note,.knowledge-explanation) {
+  display:grid;
+  gap:10px;
+  min-width:0;
+  max-width:100%;
+  margin:calc(18px * var(--full-dialog-scale,1)) 0 0;
+  padding:18px 0 0;
+  border:0;
+  border-top:1px dashed var(--lecture-border);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  font-family:inherit;
+  font-size:var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1)));
+  font-weight:400;
+  line-height:1.5;
+  color:var(--lecture-muted);
+  text-align:start;
+}
+#popover[data-knowledge-type="词汇"] .resource-word-note-copy {
+  display:grid;
+  gap:10px;
+  min-width:0;
+}
+#popover[data-knowledge-type="词汇"] :is(.resource-word-note,.knowledge-explanation) h4 {
+  display:none;
+}
+#popover[data-knowledge-type="词汇"] :is(.resource-word-note,.knowledge-explanation) p {
+  margin:8px 0;
+  padding:0;
+  font-family:inherit!important;
+  font-size:var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1)))!important;
+  font-weight:400;
+  line-height:1.5!important;
+  color:var(--lecture-muted);
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
+#popover[data-knowledge-type="词汇"] :is(.resource-word-note,.knowledge-explanation) p span {
+  line-height:inherit!important;
+}
+/* Dictionary-free resources can consist of just their original markup paragraph.
+   Its separator-to-copy distance equals the section + paragraph route above. */
+#popover[data-knowledge-type="词汇"] .resource-detail-copy > p.resource-markup-copy {
+  margin:calc(18px * var(--full-dialog-scale,1)) 0 8px;
+  padding:26px 0 0;
+  border:0;
+  border-top:1px dashed var(--lecture-border);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  font-family:inherit!important;
+  font-size:var(--v1229-copy-font,calc(24px * var(--full-dialog-scale,1)))!important;
+  font-weight:400;
+  line-height:1.5!important;
+  color:var(--lecture-muted);
+  text-align:start;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
